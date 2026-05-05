@@ -75,7 +75,7 @@ M5–D. Most-traded on H1 and H4.
 
 ## Common Mistakes
 
-- **Comparing unrelated pairs.** EURUSD vs USDJPY have weak (sometimes inverse) correlation; SMT logic inverts.
+- **Comparing weakly-correlated pairs.** EURUSD vs USDJPY has weaker / inconsistent correlation — SMT logic becomes unreliable, not inverted. Inverse SMT applies only to strong-negative pairings (e.g. EURUSD vs DXY).
 - **Wrong time alignment.** Compare 03:00 NY EURUSD with 03:00 NY GBPUSD, not adjacent candles.
 - **Ignoring the structural level.** SMT at a random pair of M1 candles is noise; SMT at a known SSL/BSL is the signal.
 
