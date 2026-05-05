@@ -21,9 +21,11 @@ The fractal hierarchy:
 | Year | Jan–Mar | Apr–Jun | Jul–Sep | Oct–Dec |
 | Month | week 1 | week 2 | week 3 | week 4 |
 | Week | Mon | Tue | Wed | Thu (Fri = closing) |
-| Day | Asia (18–00 NY) | London (00–06) | NY AM (06–12) | NY PM (12–18) |
+| Day (6h NY-clock blocks) | 18:00–00:00 | 00:00–06:00 | 06:00–12:00 | 12:00–18:00 |
 | 6-hour session-Q | first 90 min | second 90 min | third 90 min | fourth 90 min |
 | 90-min cycle | A 22.5m | M 22.5m | D 22.5m | X 22.5m |
+
+**Note on day quarters vs killzones:** Quarterly Theory's day quartering is a clean **6-hour NY-clock split** anchored at 18:00 NY (the forex daily candle open). The 6-hour blocks do not coincide perfectly with named ICT sessions (Asia 18:00–03:00, London 02:00–11:00, etc.) or killzones — they are a separate fractal lens. Use whichever framing the analysis context calls for.
 
 Roles attached to each quarter:
 
@@ -71,9 +73,12 @@ each level: split into 4 sub-periods, attach AMD-X roles by index
 ```
 Day fractal (NY time):
 
-    Q1 Asia       Q2 London     Q3 NY AM       Q4 NY PM
-    18:00–00:00    00:00–06:00   06:00–12:00    12:00–18:00
-    Accumulation   Manipulation  Distribution   Continuation/X
+    Q1            Q2            Q3             Q4
+    18:00–00:00   00:00–06:00   06:00–12:00    12:00–18:00
+    Accumulation  Manipulation  Distribution   Continuation/X
+    (overlaps    (overlaps     (overlaps      (overlaps
+     Asia)        Asia tail +   London tail +  NY PM session)
+                  London open)  NY AM)
 ```
 
 ## Timeframes
@@ -82,16 +87,17 @@ Every TF. Quarterly Theory's primary value is making the same lens applicable at
 
 ## Examples
 
-**Example 1 — daily Q1/Q2/Q3/Q4 mapping:**
-- Asia (Q1): EURUSD ranges 30 pips (accumulation).
-- London (Q2): sweeps Asian SSL (manipulation), then displaces 50 pips up.
-- NY AM (Q3): continues to PDH BSL, prints daily HOD (distribution).
-- NY PM (Q4): pulls back into NY AM range and consolidates (X / continuation drift).
+**Example 1 — daily Q1/Q2/Q3/Q4 mapping (6h NY-clock blocks):**
+- Q1 (18:00–00:00 NY, prev day): EURUSD overnight ranges 30 pips, low-volatility accumulation.
+- Q2 (00:00–06:00 NY): includes the late-Asia and London-open window; sweeps Asian SSL, manipulation completes.
+- Q3 (06:00–12:00 NY): captures London tail + NY AM; displaces 50 pips up to PDH BSL, distribution.
+- Q4 (12:00–18:00 NY): NY lunch + NY PM; pulls back, consolidates, continuation drift.
 
 ## Common Mistakes
 
 - **Treating quarter roles as deterministic.** AMD-X is a *typical* sequence, not a guarantee. Counter-examples are common; bias and HTF context still matter.
-- **Confusing day quarters with calendar quarters.** Day-Q1 = Asia (NY 18:00–00:00); year-Q1 = Jan–Mar. Same word, different scope.
+- **Confusing day quarters with calendar quarters.** Day-Q1 = NY 18:00–00:00 (the 6-hour block, not "Asia session" specifically); year-Q1 = Jan–Mar. Same word, different scope.
+- **Equating day quarters with named ICT sessions.** They overlap but don't match exactly — Asia session runs 18:00–03:00 NY (9 hours), Day-Q1 runs 18:00–00:00 NY (6 hours). Don't assume the labels interchange.
 - **Ignoring quarterly IPDA rotation.** The 3–4 month ERL↔IRL shift is a 2024–2025 refinement; older ICT content may not mention it.
 
 ## Related Concepts

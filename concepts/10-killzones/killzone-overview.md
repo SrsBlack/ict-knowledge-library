@@ -45,7 +45,7 @@ killzones_NY = {
 is_in_killzone(t) := any(start <= t < end for start, end in killzones_NY.values())
 ```
 
-(Asia killzone wraps midnight; treat as `[20:00, 24:00] ∪ [00:00, 00:00]`.)
+(Asia killzone runs 20:00 → 00:00 NY, ending at midnight. The "(prev → cur)" notation means the KZ starts the previous calendar day at 20:00 and ends at 00:00 the current day — i.e., `[20:00 prev, 24:00 prev]` in single-day terms.)
 
 ## Machine-Readable
 

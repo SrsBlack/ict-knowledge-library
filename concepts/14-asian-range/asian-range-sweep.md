@@ -73,12 +73,13 @@ M1 / M5 / M15.
 
 ## Examples
 
-**Example 1 — high-side sweep, bullish bias-aligned reversal:**
+**Example 1 — high-side sweep, bullish HTF (ambiguous read):**
 - Asian range 1.0848–1.0876.
 - HTF bias bullish.
-- 02:55 NY (LO-KZ + macro): M5 wicks 1.0879, closes 1.0871.
-- Wait — bullish bias should make this a **continuation** sweep (i.e., the algorithm took fuel but is going up). Sweep direction up matches HTF bias = run-and-continue scenario.
-- Confirmation needed: post-sweep, did the next 1–3 M5 candles displace up through 1.0879 with close + FVG? If yes, continuation; if displacement is down, the sweep WAS the Judas in a different setup (counter-bias, take only with reduced conviction).
+- 02:55 NY (LO-KZ + macro): M5 wicks 1.0879, closes 1.0871. The high was swept and price closed back inside the range.
+- This sweep is ambiguous given bullish HTF: it could be (a) a Judas-up + reversal-to-fakeout (bearish daily), OR (b) a brief fuel-grab before continuation up (run-and-continue).
+- Confirmation needed: read the post-sweep displacement direction over the next 1–3 M5 candles. Strong upward displacement through 1.0879 with FVG → run-and-continue; strong downward displacement with bearish FVG → HTF bias may be wrong, or this is a counter-bias day.
+- Lesson: high-side sweep on bullish HTF requires post-sweep confirmation before commitment.
 
 **Example 2 — low-side sweep, bullish bias = textbook Judas:**
 - Same range; HTF bullish.
