@@ -1,7 +1,7 @@
 # Liquidity Sweep
 
 **Category:** 02-liquidity
-**Aliases:** sweep, raid, liquidity raid, stop hunt, wick-sweep
+**Aliases:** sweep, raid, liquidity raid, stop hunt, wick-sweep, liquidity grab (SMC)
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
@@ -43,7 +43,7 @@ The 60% wick rule is a common quantification; ICT teaches it visually.
 {
   "id": "liquidity-sweep",
   "category": "02-liquidity",
-  "aliases": ["sweep", "raid", "liquidity-raid", "stop-hunt", "wick-sweep"],
+  "aliases": ["sweep", "raid", "liquidity-raid", "stop-hunt", "wick-sweep", "liquidity-grab"],
   "criteria": [
     {"id": "c1", "expr": "high_or_low_breaches_pool == true"},
     {"id": "c2", "expr": "close_returns_inside_pool == true"},

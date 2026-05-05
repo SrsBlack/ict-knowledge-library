@@ -1,7 +1,7 @@
 # Bullish Order Block
 
 **Category:** 07-order-blocks
-**Aliases:** bullish OB, BOB, demand OB
+**Aliases:** bullish OB, BOB, demand OB, demand zone (SMC), demand block (SMC)
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2022
@@ -41,7 +41,7 @@ bullish_ob_full_high := high(n)
 {
   "id": "bullish-order-block",
   "category": "07-order-blocks",
-  "aliases": ["bullish-OB", "BOB", "demand-OB"],
+  "aliases": ["bullish-OB", "BOB", "demand-OB", "demand-zone", "demand-block"],
   "criteria": [
     {"id": "c1", "expr": "candle is bearish (close < open)"},
     {"id": "c2", "expr": "last bearish candle before bullish displacement"},

@@ -1,7 +1,7 @@
 # Bearish Order Block
 
 **Category:** 07-order-blocks
-**Aliases:** bearish OB, BeOB, supply OB
+**Aliases:** bearish OB, BeOB, supply OB, supply zone (SMC), supply block (SMC)
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2022
@@ -37,7 +37,7 @@ bearish_ob_full_low  := low(n)
 {
   "id": "bearish-order-block",
   "category": "07-order-blocks",
-  "aliases": ["bearish-OB", "BeOB", "supply-OB"],
+  "aliases": ["bearish-OB", "BeOB", "supply-OB", "supply-zone", "supply-block"],
   "criteria": [
     {"id": "c1", "expr": "candle is bullish (close > open)"},
     {"id": "c2", "expr": "last bullish candle before bearish displacement"},

@@ -1,7 +1,7 @@
 # Turtle Soup
 
 **Category:** 20-turtle-soup
-**Aliases:** TS, false breakout, failed breakout, breakout-fade
+**Aliases:** TS, false breakout, failed breakout, breakout-fade, fakeout (SMC), swing failure (SMC)
 **ICT Confidence:** high
 **Year Introduced:** 2018
 **Year Refined:** 2022
@@ -41,7 +41,7 @@ bearish_turtle_soup := high(n) > known_BSL_level
 {
   "id": "turtle-soup",
   "category": "20-turtle-soup",
-  "aliases": ["TS", "false-breakout", "failed-breakout", "breakout-fade"],
+  "aliases": ["TS", "false-breakout", "failed-breakout", "breakout-fade", "fakeout", "swing-failure"],
   "criteria": [
     {"id": "c1", "expr": "wick_through_known_level == true"},
     {"id": "c2", "expr": "close_back_inside_within_few_bars == true"},

@@ -94,7 +94,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 - **SD** — Standard Deviation (in ICT's projection tool). Used at -1.5, -2, -2.5, -4 SD targets. → [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md)
 - **SIBI** — Sell-side Imbalance / Buy-side Inefficiency. The bearish form of an FVG. → [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md)
-- **SMC** — Smart Money Concepts. Community rebrand of ICT material. Distinct from ICT-original.
+- **SMC** — Smart Money Concepts. Community rebrand of ICT material. Distinct from ICT-original. SMC vocabulary maps to ICT concepts; see "SMC Vocabulary Cross-Reference" section at the bottom of this file.
 - **SMT** — Smart Money Technique (divergence). Divergence between correlated assets. → [smt-divergence](concepts/16-smt-divergence/smt-divergence.md)
 - **SSL** — Sell-Side Liquidity. Resting sell-stops below swing lows / equal lows. → [sell-side-liquidity](concepts/02-liquidity/sell-side-liquidity.md)
 
@@ -119,3 +119,30 @@ Standard chart timeframe abbreviations used throughout the library:
 - **D / D1** — Daily
 - **W / W1** — Weekly
 - **MN / MN1** — Monthly
+
+---
+
+## SMC Vocabulary Cross-Reference
+
+The Smart Money Concepts (SMC) community uses several terms that are **synonyms or near-synonyms for ICT-original concepts**. ICT did not author the SMC framework — it's a community rebrand — but for searchability, the most-common SMC terms are listed here with their ICT equivalents. Each ICT concept file's `Aliases:` field has been extended with the corresponding SMC term where applicable.
+
+| SMC term | ICT equivalent | File |
+|---|---|---|
+| Demand zone / demand block | Bullish Order Block | [bullish-order-block](concepts/07-order-blocks/bullish-order-block.md) |
+| Supply zone / supply block | Bearish Order Block | [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md) |
+| Liquidity grab | Liquidity Sweep (raid / stop hunt) | [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md) |
+| Fakeout / swing failure | Turtle Soup (failed breakout) | [turtle-soup](concepts/20-turtle-soup/turtle-soup.md) |
+| Internal BOS / external BOS | Internal vs external structure + BOS | [bos-bullish](concepts/01-market-structure/bos-bullish.md), [bos-bearish](concepts/01-market-structure/bos-bearish.md), [internal-structure](concepts/01-market-structure/internal-structure.md), [external-structure](concepts/01-market-structure/external-structure.md) |
+| Imbalance | FVG / volume imbalance | [imbalance-vs-fvg](concepts/26-imbalance/imbalance-vs-fvg.md) |
+| Buy-side imbalance (BISI) / Sell-side imbalance (SIBI) | Bullish / Bearish FVG | [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md), [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md) |
+| Equal highs / equal lows | Same as ICT (already shared vocabulary) | [equal-highs](concepts/02-liquidity/equal-highs.md), [equal-lows](concepts/02-liquidity/equal-lows.md) |
+| Premium / discount / equilibrium | Same (ICT-original) | [premium-array](concepts/05-pd-arrays/premium-array.md), [discount-array](concepts/05-pd-arrays/discount-array.md), [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md) |
+| Compression | Range contraction / accumulation phase | [range-contraction](concepts/01-market-structure/range-contraction.md), [accumulation-phase](concepts/12-power-of-three/accumulation-phase.md) |
+| Order flow | Same (covered as full directory) | [03-order-flow/](concepts/03-order-flow/) (6 files) |
+
+Terms in **SMC-only** territory (not ICT-original, not in this library):
+
+- **Engulfing block** — community-coined OB variant; not part of ICT canon.
+- **Wyckoff spring / upthrust** — Wyckoff terminology sometimes blended with SMC; out of scope per this library's ICT-only policy.
+
+If a community-attributed concept becomes important enough to add (precedent: CRT in `concepts/21-crt/`), it should be filed under its own directory with `confidence: community-attributed` and an explicit `## ICT vs Community` section per [`AGENTS.md`](AGENTS.md).

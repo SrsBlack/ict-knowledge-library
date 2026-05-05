@@ -76,4 +76,19 @@ Cleared 4 stale `(pending)` markers in TIMELINE (Phase 7 had left two on shipped
 
 Added `log.md` (this file) and `AGENTS.md` schema following the [Karpathy LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern. The library was already 90% aligned with the pattern — `INDEX.md` was already content-oriented per the design — so the adaptation was incremental: explicit log + explicit ingest/query/lint schema for future LLM sessions.
 
+→ commit `abc69ea`
+
+## [2026-05-05] lint | SMC alias coverage
+
+Added Smart Money Concepts (SMC) vocabulary aliases to 4 existing concept files for grep-discoverability. SMC is a community rebrand of ICT material, not its own framework — adding aliases lets SMC users find the right ICT files without claiming ICT authored the SMC framework.
+
+- `bullish-order-block.md` += `demand zone (SMC)`, `demand block (SMC)`
+- `bearish-order-block.md` += `supply zone (SMC)`, `supply block (SMC)`
+- `liquidity-sweep.md` += `liquidity grab (SMC)`
+- `turtle-soup.md` += `fakeout (SMC)`, `swing failure (SMC)`
+
+Both top-matter `**Aliases:**` fields and JSON `aliases[]` arrays updated.
+
+Also extended `GLOSSARY.md` with an "SMC Vocabulary Cross-Reference" section — full mapping table of SMC terms ↔ ICT equivalents + flagged terms that are SMC-only (engulfing block, Wyckoff spring/upthrust) as out-of-scope.
+
 → this commit
