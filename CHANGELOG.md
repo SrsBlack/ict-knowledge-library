@@ -273,3 +273,50 @@ Wrote 30 files across 6 directories — the named-models / setup-strategies laye
 - candle-range-theory + CRT files (Phase 7, community-attributed)
 
 **Cumulative: 166 / ~210 concept files = 79%.**
+
+---
+
+## Phase 5 review fix (2026-05-05)
+
+- `correlated-pairs-smt.md` Common Mistakes: said "EURUSD vs USDJPY (sometimes inverse) correlation; SMT logic inverts" — but parent `smt-divergence.md` correctly distinguishes weak (unreliable) from strong-negative (inverse SMT applies, e.g. EURUSD vs DXY). Reworded.
+
+---
+
+## Phase 6 — Bias, Named Models, Risk (2026-05-05)
+
+Wrote 28 files across 3 directories — the bias decision system, the named-models layer, and the risk-management discipline.
+
+**Added (28 files):**
+
+`25-htf-bias/` (7):
+- htf-bias-framework, monthly-bias, weekly-bias, daily-bias
+- bias-confluence, bias-invalidation, top-down-analysis
+
+`31-models/` (14):
+- ict-2022-model, ict-2023-model, ict-2024-model
+- unicorn-model, bread-and-butter-setup, diamond-pattern
+- ny-am-open-range-model, london-close-reversal, ny-pm-reversal
+- ndog, nwog, sunday-open-gap
+- venom-model (Apr 2025), zircon-model (Jan 2026 demo-stage)
+
+`32-risk-management/` (7):
+- risk-per-trade, r-multiple, position-sizing
+- stop-placement-by-pd-array, partial-takes
+- static-drawdown-2026, correlation-risk
+
+**Updated:**
+- `INDEX.md` — replaced 3 placeholders with 28 entries.
+- `TIMELINE.md` — backfilled 2017 (HTF bias + risk discipline), 2022 (ICT 2022 Model + named openings/reversals), 2023 (ICT 2023 + Unicorn/B&B/Diamond + NDOG/NWOG/Sunday-gap), 2024 (ICT 2024 Model). Stripped (pending) markers from 2025 Venom and 2026 Zircon/static-DD entries.
+
+**Phase 1-5 forward refs that now resolve:**
+- All references to `htf-bias-framework`, `monthly-bias`, `weekly-bias`, `daily-bias`, `bias-confluence`, `bias-invalidation`, `top-down-analysis`, `ict-2022-model`, `ict-2023-model`, `ict-2024-model`, `unicorn-model`, `bread-and-butter-setup`, `diamond-pattern`, `ny-am-open-range-model`, `london-close-reversal`, `ny-pm-reversal`, `ndog`, `nwog`, `sunday-open-gap`, `venom-model`, `zircon-model`, `risk-per-trade`, `r-multiple`, `position-sizing`, `stop-placement-by-pd-array`, `partial-takes`, `static-drawdown-2026`, `correlation-risk`.
+
+**Phase 6 forward refs to Phase 7/8 still pending:**
+- algorithmic-price-delivery + 03-order-flow files (Phase 7)
+- bullish/bearish-displacement, displacement-strength-criteria, gap-classification (Phase 7)
+- ipda-20/40/60-day-lookback, ipda-reference-points (Phase 7)
+- candle-range-theory + CRT files (Phase 7, community-attributed)
+- 22-quarterly-theory dir extras: yearly/monthly/weekly/daily-quarters, 90-minute-quarters, true-week-open, true-day-open, quarterly-shift-2025 (Phase 7)
+- 30-news-driven dir: news-driven-overview, fomc-two-stage-delivery, nfp-protocol, cpi-protocol, news-blackout-rules (Phase 7)
+
+**Cumulative: 194 / ~210 concept files = 92%.**

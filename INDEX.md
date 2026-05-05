@@ -216,7 +216,11 @@ Format: `- [Concept Name](path) — one-line summary`
 - [amd-vs-po3](concepts/24-amd-cycle/amd-vs-po3.md) — disambiguation (same cycle, two framings).
 
 ### 25 — HTF Bias
-- (Phase 6)
+- [htf-bias-framework](concepts/25-htf-bias/htf-bias-framework.md) — top-down bias decision system.
+- [monthly-bias](concepts/25-htf-bias/monthly-bias.md), [weekly-bias](concepts/25-htf-bias/weekly-bias.md), [daily-bias](concepts/25-htf-bias/daily-bias.md) — per-TF deep-dives.
+- [bias-confluence](concepts/25-htf-bias/bias-confluence.md) — multi-TF alignment scoring.
+- [bias-invalidation](concepts/25-htf-bias/bias-invalidation.md) — when bias must flip.
+- [top-down-analysis](concepts/25-htf-bias/top-down-analysis.md) — prescribed analysis sequence.
 
 ### 26 — Imbalance
 - [imbalance-definition](concepts/26-imbalance/imbalance-definition.md) — umbrella term for any unworked price region.
@@ -251,10 +255,29 @@ Format: `- [Concept Name](path) — one-line summary`
 - (Phase 7)
 
 ### 31 — Models
-- (Phase 6)
+- [ict-2022-model](concepts/31-models/ict-2022-model.md) — flagship multi-step setup framework.
+- [ict-2023-model](concepts/31-models/ict-2023-model.md) — Quarterly Theory + macro integration refinements.
+- [ict-2024-model](concepts/31-models/ict-2024-model.md) — FVG classification + IFVG + propulsion refinements.
+- [unicorn-model](concepts/31-models/unicorn-model.md) — rare A++ confluence: breaker + nested FVG + bias + sweep.
+- [bread-and-butter-setup](concepts/31-models/bread-and-butter-setup.md) — the recurring daily delivery sequence.
+- [diamond-pattern](concepts/31-models/diamond-pattern.md) — double-sweep consolidation breakout.
+- [ny-am-open-range-model](concepts/31-models/ny-am-open-range-model.md) — 08:00–08:30/09:00 NY OR sweep model.
+- [london-close-reversal](concepts/31-models/london-close-reversal.md) — 10:00–12:00 NY morning-fade pattern.
+- [ny-pm-reversal](concepts/31-models/ny-pm-reversal.md) — afternoon fade of AM trend.
+- [ndog](concepts/31-models/ndog.md) — New Day Opening Gap (midnight NY).
+- [nwog](concepts/31-models/nwog.md) — New Week Opening Gap (Sunday/Monday).
+- [sunday-open-gap](concepts/31-models/sunday-open-gap.md) — 18:00 NY Sunday open event.
+- [venom-model](concepts/31-models/venom-model.md) — Apr 2025; pre-cash-open range fake-breakout for US indices.
+- [zircon-model](concepts/31-models/zircon-model.md) — Jan 2026 silent demo (demo-stage).
 
 ### 32 — Risk Management
-- (Phase 6)
+- [risk-per-trade](concepts/32-risk-management/risk-per-trade.md) — per-trade % risk discipline.
+- [r-multiple](concepts/32-risk-management/r-multiple.md) — R as universal trade-quality measure.
+- [position-sizing](concepts/32-risk-management/position-sizing.md) — lot/contract calculation.
+- [stop-placement-by-pd-array](concepts/32-risk-management/stop-placement-by-pd-array.md) — structural SL.
+- [partial-takes](concepts/32-risk-management/partial-takes.md) — scaling-out ladder.
+- [static-drawdown-2026](concepts/32-risk-management/static-drawdown-2026.md) — 2026 prop-firm rule shift adaptation.
+- [correlation-risk](concepts/32-risk-management/correlation-risk.md) — cluster exposure tracking.
 
 ### 99 — Glossary (deep-dives)
 - (Phase 8)

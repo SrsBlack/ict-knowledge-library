@@ -46,6 +46,8 @@ Refinements of FVG and OB definitions; introduction of OTE and Fibonacci levels;
 - **liquidity-sweep** / **liquidity-run** — sweep and run-on-liquidity terminology. → [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md), [liquidity-run](concepts/02-liquidity/liquidity-run.md)
 - **ny-lunch** — dead-session designation. → [ny-lunch](concepts/15-sessions/ny-lunch.md)
 - **OTE methodology + ICT fib levels** introduced (0.62 / 0.705 / 0.79 retracement; -1.5/-2.0/-2.5/-4.0 projection). → [ote-overview](concepts/17-optimal-trade-entry/ote-overview.md), [ote-62](concepts/17-optimal-trade-entry/ote-62.md), [ote-705](concepts/17-optimal-trade-entry/ote-705.md), [ote-79](concepts/17-optimal-trade-entry/ote-79.md), [ote-rules](concepts/17-optimal-trade-entry/ote-rules.md), [ote-failure](concepts/17-optimal-trade-entry/ote-failure.md), [ict-fib-overview](concepts/28-fibonacci-levels/ict-fib-overview.md), [fib-62](concepts/28-fibonacci-levels/fib-62.md), [fib-705](concepts/28-fibonacci-levels/fib-705.md), [fib-79](concepts/28-fibonacci-levels/fib-79.md), [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md), [fib-vs-ote](concepts/28-fibonacci-levels/fib-vs-ote.md)
+- **HTF bias framework** introduced (top-down + per-TF reads + invalidation rules). → [htf-bias-framework](concepts/25-htf-bias/htf-bias-framework.md), [monthly-bias](concepts/25-htf-bias/monthly-bias.md), [weekly-bias](concepts/25-htf-bias/weekly-bias.md), [daily-bias](concepts/25-htf-bias/daily-bias.md), [bias-confluence](concepts/25-htf-bias/bias-confluence.md), [bias-invalidation](concepts/25-htf-bias/bias-invalidation.md), [top-down-analysis](concepts/25-htf-bias/top-down-analysis.md)
+- **Risk management** discipline (R-multiple, position sizing, structural SL, partial takes, correlation risk). → [risk-per-trade](concepts/32-risk-management/risk-per-trade.md), [r-multiple](concepts/32-risk-management/r-multiple.md), [position-sizing](concepts/32-risk-management/position-sizing.md), [stop-placement-by-pd-array](concepts/32-risk-management/stop-placement-by-pd-array.md), [partial-takes](concepts/32-risk-management/partial-takes.md), [correlation-risk](concepts/32-risk-management/correlation-risk.md)
 - **displacement** introduced as ICT's algorithmic-intent signature. → [displacement-definition](concepts/09-displacement/displacement-definition.md), [displacement-and-fvg](concepts/09-displacement/displacement-and-fvg.md)
 - **balanced-price-range (BPR)** introduced. → [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md)
 - **reversal-order-block** vs **continuation-order-block** distinction (refined 2023). → [reversal-order-block](concepts/07-order-blocks/reversal-order-block.md), [continuation-order-block](concepts/07-order-blocks/continuation-order-block.md)
@@ -96,6 +98,7 @@ ICT 2022 Mentorship; silver bullet windows formalized; **macro times introduced*
 - **range-expansion** / **range-contraction** — phase terminology operationalized. → [range-expansion](concepts/01-market-structure/range-expansion.md), [range-contraction](concepts/01-market-structure/range-contraction.md)
 - **macro-times-overview** — five canonical 20-min programmed-delivery windows introduced. → [macro-times-overview](concepts/04-time-cycles/macro-times-overview.md)
 - **silver-bullet** three windows formalized in 2022 mentorship. → [silver-bullet-overview](concepts/11-silver-bullet/silver-bullet-overview.md), [silver-bullet-london](concepts/11-silver-bullet/silver-bullet-london.md), [silver-bullet-ny-am](concepts/11-silver-bullet/silver-bullet-ny-am.md), [silver-bullet-ny-pm](concepts/11-silver-bullet/silver-bullet-ny-pm.md), [silver-bullet-rules](concepts/11-silver-bullet/silver-bullet-rules.md), [silver-bullet-failure-modes](concepts/11-silver-bullet/silver-bullet-failure-modes.md)
+- **ICT 2022 Model** — flagship multi-step framework. → [ict-2022-model](concepts/31-models/ict-2022-model.md), [ny-am-open-range-model](concepts/31-models/ny-am-open-range-model.md), [london-close-reversal](concepts/31-models/london-close-reversal.md), [ny-pm-reversal](concepts/31-models/ny-pm-reversal.md)
 - Per-macro deep dives shipped: [macro-time-0050-0110](concepts/04-time-cycles/macro-time-0050-0110.md), [macro-time-0250-0310](concepts/04-time-cycles/macro-time-0250-0310.md), [macro-time-0950-1010](concepts/04-time-cycles/macro-time-0950-1010.md), [macro-time-1350-1410](concepts/04-time-cycles/macro-time-1350-1410.md), [macro-time-1450-1510](concepts/04-time-cycles/macro-time-1450-1510.md).
 - All foundational structure / liquidity / session concepts (2016–2018 introductions) re-taught with refined operational rules in the 2022 mentorship. See `Year Refined: 2022` on most Phase-1 / Phase-2 files.
 
@@ -105,6 +108,9 @@ Quarterly Theory taught publicly; named models multiply (Unicorn, Diamond, Bread
 
 - **quarterly-shift-theory** — fractal time hierarchy taught publicly. → [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md)
 - **90-minute-cycle** — smallest fractal time unit operationalized within Quarterly Theory. → [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md)
+- **ICT 2023 Model** — refines 2022 with QT + macro integration. → [ict-2023-model](concepts/31-models/ict-2023-model.md)
+- **Unicorn / Bread-and-Butter / Diamond** named-model trio. → [unicorn-model](concepts/31-models/unicorn-model.md), [bread-and-butter-setup](concepts/31-models/bread-and-butter-setup.md), [diamond-pattern](concepts/31-models/diamond-pattern.md)
+- **NDOG / NWOG / Sunday Open Gap** taught. → [ndog](concepts/31-models/ndog.md), [nwog](concepts/31-models/nwog.md), [sunday-open-gap](concepts/31-models/sunday-open-gap.md)
 
 ## 2024 — Refinement & Naming
 
@@ -116,10 +122,11 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 - **FVG classification: immediate vs delayed rebalance** formalized. → [fvg-classification-2025](concepts/06-fair-value-gaps/fvg-classification-2025.md), [immediate-rebalance-fvg](concepts/06-fair-value-gaps/immediate-rebalance-fvg.md), [delayed-rebalance-fvg](concepts/06-fair-value-gaps/delayed-rebalance-fvg.md)
 - **IFVG formalized** as a standardized ICT structural reference. → [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md)
 - **propulsion-block** re-teach in 2024 mentorship module list. → [propulsion-block](concepts/07-order-blocks/propulsion-block.md)
+- **ICT 2024 Model** — disciplined integration of 2024 vocabulary expansions. → [ict-2024-model](concepts/31-models/ict-2024-model.md)
 
 ## 2025 — New Models & FOMC
 
-- **Venom Model** — released April 2025. NQ/ES/YM 90-min intraday strategy. → [venom-model](concepts/31-models/venom-model.md) `(pending)`
+- **Venom Model** — released April 2025. NQ/ES/YM 90-min intraday strategy. → [venom-model](concepts/31-models/venom-model.md)
 - **Two-stage FOMC delivery** — Sept 2025. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md) `(pending)`
 - **Advanced liquidity series** — Oct 2025. PD-array nesting strengthened. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md) `(pending)`
 - **CE as primary entry** — reinforced through 2025. → [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md)
@@ -130,8 +137,8 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 
 ## 2026 — Static Drawdown & Zircon
 
-- **Zircon Model** — Jan 2026 silent demo (content withheld). → [zircon-model](concepts/31-models/zircon-model.md) `(pending)`
-- **Static drawdown adaptation** — prop-firm rule shift; OB hold-time guidance updated. → [static-drawdown-2026](concepts/32-risk-management/static-drawdown-2026.md) `(pending)`
+- **Zircon Model** — Jan 2026 silent demo (content withheld; flagged demo-stage). → [zircon-model](concepts/31-models/zircon-model.md)
+- **Static drawdown adaptation** — prop-firm rule shift; OB hold-time guidance updated. → [static-drawdown-2026](concepts/32-risk-management/static-drawdown-2026.md)
 
 ---
 

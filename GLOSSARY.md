@@ -8,7 +8,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## A
 
-- **AMD** — Accumulation, Manipulation, Distribution. The three-phase market-maker cycle. → [power-of-three](concepts/12-power-of-three/power-of-three.md) `(pending)`
+- **AMD** — Accumulation, Manipulation, Distribution. The three-phase market-maker cycle. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
 - **APD** — Algorithmic Price Delivery. The notion that price is delivered by an algorithm, not random walk. → [algorithmic-price-delivery](concepts/03-order-flow/algorithmic-price-delivery.md) `(pending)`
 - **ATH / ATL** — All-Time High / All-Time Low.
 
@@ -47,7 +47,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 - **HH / HL / LH / LL** — Higher High / Higher Low / Lower High / Lower Low. The four basic structural relationships between consecutive swings. → [swing-high](concepts/01-market-structure/swing-high.md) / [swing-low](concepts/01-market-structure/swing-low.md)
 - **HOD** — High of Day. Daily high; structural reference. → covered in `25-htf-bias`
-- **HTF** — Higher Time Frame. Any TF used to set bias for a lower TF entry. → [htf-bias-framework](concepts/25-htf-bias/htf-bias-framework.md) `(pending)`
+- **HTF** — Higher Time Frame. Any TF used to set bias for a lower TF entry. → [htf-bias-framework](concepts/25-htf-bias/htf-bias-framework.md)
 
 ## I
 
@@ -62,15 +62,15 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## M
 
-- **MMBM** — Market Maker Buy Model. AMD running to upside distribution. → [power-of-three](concepts/12-power-of-three/power-of-three.md) `(pending)`
-- **MMSM** — Market Maker Sell Model. AMD running to downside distribution. → [power-of-three](concepts/12-power-of-three/power-of-three.md) `(pending)`
+- **MMBM** — Market Maker Buy Model. AMD running to upside distribution. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
+- **MMSM** — Market Maker Sell Model. AMD running to downside distribution. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
 - **MSS** — Market Structure Shift. A specific form of CHoCH characterized by displacement through the prior structure level. → [mss](concepts/01-market-structure/mss.md)
 
 ## N
 
-- **NDOG** — New Day Opening Gap. Gap between previous day's close and new day's open at midnight NY. → [ndog](concepts/31-models/ndog.md) `(pending)`
+- **NDOG** — New Day Opening Gap. Gap between previous day's close and new day's open at midnight NY. → [ndog](concepts/31-models/ndog.md)
 - **NFP** — Non-Farm Payrolls. Monthly US labor report; high-impact news. → [nfp-protocol](concepts/30-news-driven/nfp-protocol.md) `(pending)`
-- **NWOG** — New Week Opening Gap. Gap between Friday close and Sunday/Monday open. → [nwog](concepts/31-models/nwog.md) `(pending)`
+- **NWOG** — New Week Opening Gap. Gap between Friday close and Sunday/Monday open. → [nwog](concepts/31-models/nwog.md)
 - **NY** — New York time. The canonical timezone for every time-of-day reference in this library (subject to DST). → [dst-handling](concepts/04-time-cycles/dst-handling.md)
 
 ## O
@@ -83,19 +83,19 @@ Format: `**ABBR**` — full term — short note — link.
 - **PD Array** — Premium / Discount Array. Any institutional price level (FVG, OB, breaker, equilibrium, etc.). → [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md)
 - **PDH / PDL** — Previous Day High / Low. Liquidity reference levels for the current day. → covered in `02-liquidity` and `25-htf-bias`
 - **PMH / PML** — Previous Month High / Low. Monthly liquidity reference. → covered in `25-htf-bias`
-- **PO3** — Power of Three. Same as AMD. → [power-of-three](concepts/12-power-of-three/power-of-three.md) `(pending)`
+- **PO3** — Power of Three. Same as AMD. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
 - **PWH / PWL** — Previous Week High / Low. Weekly liquidity reference. → covered in `25-htf-bias`
 
 ## R
 
-- **R** — R-multiple. Profit/loss measured in units of initial risk. → [r-multiple](concepts/32-risk-management/r-multiple.md) `(pending)`
+- **R** — R-multiple. Profit/loss measured in units of initial risk. → [r-multiple](concepts/32-risk-management/r-multiple.md)
 
 ## S
 
 - **SD** — Standard Deviation (in ICT's projection tool). Used at -1.5, -2, -2.5, -4 SD targets. → [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md)
 - **SIBI** — Sell-side Imbalance / Buy-side Inefficiency. The bearish form of an FVG. → [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md)
 - **SMC** — Smart Money Concepts. Community rebrand of ICT material. Distinct from ICT-original.
-- **SMT** — Smart Money Technique (divergence). Divergence between correlated assets. → [smt-divergence](concepts/16-smt-divergence/smt-divergence.md) `(pending)`
+- **SMT** — Smart Money Technique (divergence). Divergence between correlated assets. → [smt-divergence](concepts/16-smt-divergence/smt-divergence.md)
 - **SSL** — Sell-Side Liquidity. Resting sell-stops below swing lows / equal lows. → [sell-side-liquidity](concepts/02-liquidity/sell-side-liquidity.md)
 
 ## T
