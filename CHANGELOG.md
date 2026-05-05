@@ -359,3 +359,58 @@ Wrote 32 files closing every remaining content directory. The library is content
 **Library content is COMPLETE.**
 
 Phase 8 is the audit pass — no new content, just verification: full link-check, JSON-block consistency, source-citation completeness, INDEX line-by-line vs Glob, TIMELINE coverage. Per build plan §7.
+
+---
+
+## Phase 8 — Final Audit (2026-05-05)
+
+Full verification pass. **The library is ship-ready.**
+
+### 8.1 — Count + structure + JSON
+
+- Total `.md` files in `concepts/`: 227 (226 concept files + 1 README in `99-glossary/`).
+- All 33 directories populated; per-dir counts match plan with one decision recorded:
+  - `99-glossary/` deferred per-letter deep-dives — single-page `GLOSSARY.md` at root supersedes; rename-history captured in disambiguation files. Documented in `99-glossary/README.md`.
+- All 226 concept files: 10 required sections present (`## Definition` through `## Citations`).
+- All 226 JSON blocks: parse cleanly with Python `json.loads`.
+- All 226 JSON `id` fields: match filename basename.
+
+### 8.2 — Cross-link integrity
+
+- All markdown body links of form `(../path/file.md)`: **0 broken** (across all 226 files).
+- All JSON `related[]` references: **0 orphans** — every referenced id resolves to an existing file.
+
+### 8.3 — Source-citation completeness
+
+- Every concept file has a populated `**Source IDs:**` field.
+- Every cited Source ID is registered in `SOURCES.md` (43 IDs total).
+- Zero orphan source citations.
+
+### 8.4 — INDEX.md ↔ Glob alignment
+
+- 226 files on disk = 226 INDEX entries.
+- Zero files missing from INDEX; zero phantom INDEX entries.
+
+### 8.5 — TIMELINE.md coverage
+
+- Closed 20 timeline gaps identified during audit:
+  - 2016 backfill: dst-handling, all 5 killzones + supporting (8 files), Asian range bounds (3), imbalance umbrella (3), institutional-order-flow.
+  - 2017 backfill: time-of-day-pivots, asian-range-sweep, asian-session-bias, imbalance-rebalance, bullish/bearish-order-flow + order-flow-shift + smart-money-footprint.
+  - 2018 backfill: algorithmic-price-delivery.
+- All 226 concept files now appear in TIMELINE under their `Year Introduced` section.
+
+### Final verdict
+
+| Check | Result |
+|---|---|
+| Concept count | 226 |
+| Required sections (10/10) | 226/226 ✓ |
+| JSON parse | 226/226 ✓ |
+| JSON id matches filename | 226/226 ✓ |
+| Markdown body cross-links resolve | All ✓ |
+| JSON related[] entries resolve | All ✓ |
+| Source IDs cited & registered | 226/226 ✓ |
+| INDEX ↔ disk match | 226/226 ✓ |
+| TIMELINE coverage | 226/226 ✓ |
+
+**The ICT Knowledge Library (2016–2026) is content-complete, internally consistent, and ship-ready.**
