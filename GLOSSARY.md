@@ -10,6 +10,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 - **AMD** — Accumulation, Manipulation, Distribution. The three-phase market-maker cycle. → [power-of-three](concepts/12-power-of-three/power-of-three.md) `(pending)`
 - **APD** — Algorithmic Price Delivery. The notion that price is delivered by an algorithm, not random walk. → [algorithmic-price-delivery](concepts/03-order-flow/algorithmic-price-delivery.md) `(pending)`
+- **ATH / ATL** — All-Time High / All-Time Low.
 
 ## B
 
@@ -34,6 +35,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 - **EQH** — Equal Highs. Two or more highs at the same price level — pool of liquidity. → [equal-highs](concepts/02-liquidity/equal-highs.md) `(pending)`
 - **EQL** — Equal Lows. Mirror of EQH on the sell side. → [equal-lows](concepts/02-liquidity/equal-lows.md) `(pending)`
+- **EQ** — Equilibrium. The 50% midpoint of a dealing range. → [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md) `(pending)`
 - **ERL** — External Range Liquidity. Liquidity outside the current dealing range. → [external-range-liquidity](concepts/02-liquidity/external-range-liquidity.md) `(pending)`
 
 ## F
@@ -43,6 +45,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## H
 
+- **HH / HL / LH / LL** — Higher High / Higher Low / Lower High / Lower Low. The four basic structural relationships between consecutive swings. → [swing-high](concepts/01-market-structure/swing-high.md) / [swing-low](concepts/01-market-structure/swing-low.md) `(pending)`
 - **HOD** — High of Day. Daily high; structural reference. → covered in `25-htf-bias`
 - **HTF** — Higher Time Frame. Any TF used to set bias for a lower TF entry. → [htf-bias-framework](concepts/25-htf-bias/htf-bias-framework.md) `(pending)`
 
@@ -68,6 +71,7 @@ Format: `**ABBR**` — full term — short note — link.
 - **NDOG** — New Day Opening Gap. Gap between previous day's close and new day's open at midnight NY. → [ndog](concepts/31-models/ndog.md) `(pending)`
 - **NFP** — Non-Farm Payrolls. Monthly US labor report; high-impact news. → [nfp-protocol](concepts/30-news-driven/nfp-protocol.md) `(pending)`
 - **NWOG** — New Week Opening Gap. Gap between Friday close and Sunday/Monday open. → [nwog](concepts/31-models/nwog.md) `(pending)`
+- **NY** — New York time. The canonical timezone for every time-of-day reference in this library (subject to DST). → [dst-handling](concepts/04-time-cycles/dst-handling.md) `(pending)`
 
 ## O
 
@@ -77,7 +81,10 @@ Format: `**ABBR**` — full term — short note — link.
 ## P
 
 - **PD Array** — Premium / Discount Array. Any institutional price level (FVG, OB, breaker, equilibrium, etc.). → [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md) `(pending)`
+- **PDH / PDL** — Previous Day High / Low. Liquidity reference levels for the current day. → covered in `02-liquidity` and `25-htf-bias`
+- **PMH / PML** — Previous Month High / Low. Monthly liquidity reference. → covered in `25-htf-bias`
 - **PO3** — Power of Three. Same as AMD. → [power-of-three](concepts/12-power-of-three/power-of-three.md) `(pending)`
+- **PWH / PWL** — Previous Week High / Low. Weekly liquidity reference. → covered in `25-htf-bias`
 
 ## R
 
@@ -96,3 +103,19 @@ Format: `**ABBR**` — full term — short note — link.
 - **TDO** — True Day Open. Midnight NY open of the daily candle. → [true-day-open](concepts/22-quarterly-theory/true-day-open.md) `(pending)`
 - **TF** — Time Frame.
 - **TWO** — True Week Open. Sunday 18:00 NY (or Monday 00:00 NY depending on broker). → [true-week-open](concepts/22-quarterly-theory/true-week-open.md) `(pending)`
+
+---
+
+## Timeframe Shorthand
+
+Standard chart timeframe abbreviations used throughout the library:
+
+- **M1** — 1-minute
+- **M5** — 5-minute
+- **M15** — 15-minute
+- **M30** — 30-minute
+- **H1** — 1-hour
+- **H4** — 4-hour
+- **D / D1** — Daily
+- **W / W1** — Weekly
+- **MN / MN1** — Monthly

@@ -46,8 +46,8 @@ gap_size      := L_{n+1} - H_{n-1}
   ],
   "timeframes": ["M1","M5","M15","H1","H4","D","W"],
   "confidence": "<high | medium | community-attributed | disputed | demo-stage>",
-  "year_introduced": 0,
-  "year_refined": 0,
+  "year_introduced": "YYYY",
+  "year_refined": "YYYY",
   "related": ["<related-concept-id>"],
   "sources": ["<SOURCES.md ID>"]
 }

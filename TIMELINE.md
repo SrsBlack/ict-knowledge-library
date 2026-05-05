@@ -58,7 +58,7 @@ Quarterly Theory taught publicly; named models multiply (Unicorn, Diamond, Bread
 
 ## 2024 — Refinement & Naming
 
-IFVG formalized; immediate vs delayed rebalance; advanced PD-array nesting principle.
+IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re-teach.
 
 - (pending)
 
