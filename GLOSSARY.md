@@ -9,7 +9,7 @@ Format: `**ABBR**` — full term — short note — link.
 ## A
 
 - **AMD** — Accumulation, Manipulation, Distribution. The three-phase market-maker cycle. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
-- **APD** — Algorithmic Price Delivery. The notion that price is delivered by an algorithm, not random walk. → [algorithmic-price-delivery](concepts/03-order-flow/algorithmic-price-delivery.md) `(pending)`
+- **APD** — Algorithmic Price Delivery. The notion that price is delivered by an algorithm, not random walk. → [algorithmic-price-delivery](concepts/03-order-flow/algorithmic-price-delivery.md)
 - **ATH / ATL** — All-Time High / All-Time Low.
 
 ## B
@@ -24,7 +24,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 - **CE** — Consequent Encroachment. The 50% midpoint of an FVG. → [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md)
 - **CHoCH** — Change of Character. A structural break in the opposite direction of the prior trend. → [choch-bullish](concepts/01-market-structure/choch-bullish.md) / [choch-bearish](concepts/01-market-structure/choch-bearish.md)
-- **CRT** — Candle Range Theory. Community-attributed (Romeo, ~2024). NOT ICT-original. → [candle-range-theory](concepts/21-crt/candle-range-theory.md) `(pending)`
+- **CRT** — Candle Range Theory. Community-attributed (Romeo, ~2024). NOT ICT-original. → [candle-range-theory](concepts/21-crt/candle-range-theory.md)
 
 ## D
 
@@ -40,7 +40,7 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## F
 
-- **FOMC** — Federal Open Market Committee. The macro event ICT's two-stage delivery model targets. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md) `(pending)`
+- **FOMC** — Federal Open Market Committee. The macro event ICT's two-stage delivery model targets. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md)
 - **FVG** — Fair Value Gap. Three-candle imbalance where the middle candle's range is not overlapped. → [fair-value-gap](concepts/06-fair-value-gaps/fair-value-gap.md)
 
 ## H
@@ -69,7 +69,7 @@ Format: `**ABBR**` — full term — short note — link.
 ## N
 
 - **NDOG** — New Day Opening Gap. Gap between previous day's close and new day's open at midnight NY. → [ndog](concepts/31-models/ndog.md)
-- **NFP** — Non-Farm Payrolls. Monthly US labor report; high-impact news. → [nfp-protocol](concepts/30-news-driven/nfp-protocol.md) `(pending)`
+- **NFP** — Non-Farm Payrolls. Monthly US labor report; high-impact news. → [nfp-protocol](concepts/30-news-driven/nfp-protocol.md)
 - **NWOG** — New Week Opening Gap. Gap between Friday close and Sunday/Monday open. → [nwog](concepts/31-models/nwog.md)
 - **NY** — New York time. The canonical timezone for every time-of-day reference in this library (subject to DST). → [dst-handling](concepts/04-time-cycles/dst-handling.md)
 
@@ -100,9 +100,9 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## T
 
-- **TDO** — True Day Open. Midnight NY open of the daily candle. → [true-day-open](concepts/22-quarterly-theory/true-day-open.md) `(pending)`
+- **TDO** — True Day Open. Midnight NY open of the daily candle. → [true-day-open](concepts/22-quarterly-theory/true-day-open.md)
 - **TF** — Time Frame.
-- **TWO** — True Week Open. Sunday 18:00 NY (or Monday 00:00 NY depending on broker). → [true-week-open](concepts/22-quarterly-theory/true-week-open.md) `(pending)`
+- **TWO** — True Week Open. Sunday 18:00 NY (or Monday 00:00 NY depending on broker). → [true-week-open](concepts/22-quarterly-theory/true-week-open.md)
 
 ---
 

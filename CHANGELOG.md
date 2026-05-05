@@ -320,3 +320,42 @@ Wrote 28 files across 3 directories — the bias decision system, the named-mode
 - 30-news-driven dir: news-driven-overview, fomc-two-stage-delivery, nfp-protocol, cpi-protocol, news-blackout-rules (Phase 7)
 
 **Cumulative: 194 / ~210 concept files = 92%.**
+
+---
+
+## Phase 7 — Final Content (2026-05-05)
+
+Wrote 32 files closing every remaining content directory. The library is content-complete.
+
+**Added (32 files across 6 dirs):**
+
+`21-crt/` (4 — all community-attributed):
+- candle-range-theory, crt-rules, crt-vs-amd, ict-response-to-crt
+
+`22-quarterly-theory/` (9):
+- quarterly-theory-overview, yearly-quarters, monthly-quarters, weekly-quarters, daily-quarters
+- 90-minute-quarters, true-day-open, true-week-open, quarterly-shift-2025
+
+`30-news-driven/` (5):
+- news-driven-overview, fomc-two-stage-delivery, nfp-protocol, cpi-protocol, news-blackout-rules
+
+`03-order-flow/` (6):
+- institutional-order-flow, algorithmic-price-delivery
+- bullish-order-flow, bearish-order-flow, order-flow-shift, smart-money-footprint
+
+`09-displacement/` (4 remaining):
+- bullish-displacement, bearish-displacement, displacement-strength-criteria, gap-classification
+
+`23-ipda/` (4 remaining):
+- ipda-20-day-lookback, ipda-40-day-lookback, ipda-60-day-lookback, ipda-reference-points
+
+**Updated:**
+- `INDEX.md` — replaced 4 `(Phase 7)` placeholders + 1 `(deferred to Phase 7)` marker; all 33 concept directories now fully indexed.
+- `TIMELINE.md` — backfilled 2017 (order-flow + displacement variants + news), 2018 (IPDA lookback expansion + gap-classification), 2023 (Quarterly Theory deep-dives), 2024 (CRT community-attributed), 2025 (Quarterly Shift + FOMC two-stage + CPI).
+- `GLOSSARY.md` — stripped final concept-file `(pending)` markers; only the explanatory header reference remains.
+
+**Cumulative: 226 concept files** (exceeded the original ~210 estimate; final count higher because each directory got fuller deep-dive coverage than initially estimated).
+
+**Library content is COMPLETE.**
+
+Phase 8 is the audit pass — no new content, just verification: full link-check, JSON-block consistency, source-citation completeness, INDEX line-by-line vs Glob, TIMELINE coverage. Per build plan §7.

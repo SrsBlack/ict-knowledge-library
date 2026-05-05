@@ -50,7 +50,11 @@ Format: `- [Concept Name](path) — one-line summary`
 - [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md) — within-tolerance EQH/EQL (REH/REL).
 
 ### 03 — Order Flow
-- (Phase 7)
+- [institutional-order-flow](concepts/03-order-flow/institutional-order-flow.md) — directional flow from algorithmic signatures.
+- [algorithmic-price-delivery](concepts/03-order-flow/algorithmic-price-delivery.md) — APD core thesis.
+- [bullish-order-flow](concepts/03-order-flow/bullish-order-flow.md), [bearish-order-flow](concepts/03-order-flow/bearish-order-flow.md) — directional states.
+- [order-flow-shift](concepts/03-order-flow/order-flow-shift.md) — bias-flip via CHoCH/MSS.
+- [smart-money-footprint](concepts/03-order-flow/smart-money-footprint.md) — multi-signature confluence read.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
@@ -114,7 +118,9 @@ Format: `- [Concept Name](path) — one-line summary`
 ### 09 — Displacement
 - [displacement-definition](concepts/09-displacement/displacement-definition.md) — wide-body force candle.
 - [displacement-and-fvg](concepts/09-displacement/displacement-and-fvg.md) — displacement ↔ FVG mutual implication.
-- (per-direction + classification + gap-classification deferred to Phase 7)
+- [bullish-displacement](concepts/09-displacement/bullish-displacement.md), [bearish-displacement](concepts/09-displacement/bearish-displacement.md) — directional variants.
+- [displacement-strength-criteria](concepts/09-displacement/displacement-strength-criteria.md) — 5-factor quality scoring.
+- [gap-classification](concepts/09-displacement/gap-classification.md) — FVG vs VI vs liquidity-void disambiguation.
 
 ### 10 — Killzones
 - [killzone-overview](concepts/10-killzones/killzone-overview.md) — five canonical KZs in NY time.
@@ -199,15 +205,29 @@ Format: `- [Concept Name](path) — one-line summary`
 - [stop-hunt-pattern](concepts/20-turtle-soup/stop-hunt-pattern.md) — broader stop-hunt umbrella.
 
 ### 21 — CRT (community-attributed)
-- (Phase 7)
+- [candle-range-theory](concepts/21-crt/candle-range-theory.md) — Romeo's CRT, NOT ICT-original.
+- [crt-rules](concepts/21-crt/crt-rules.md) — operational checklist.
+- [crt-vs-amd](concepts/21-crt/crt-vs-amd.md) — relationship to ICT's PO3.
+- [ict-response-to-crt](concepts/21-crt/ict-response-to-crt.md) — ICT public commentary.
 
 ### 22 — Quarterly Theory
-- (Phase 7)
+- [quarterly-theory-overview](concepts/22-quarterly-theory/quarterly-theory-overview.md) — fractal time framework.
+- [yearly-quarters](concepts/22-quarterly-theory/yearly-quarters.md) — annual AMD-X.
+- [monthly-quarters](concepts/22-quarterly-theory/monthly-quarters.md) — week-of-month AMD-X.
+- [weekly-quarters](concepts/22-quarterly-theory/weekly-quarters.md) — Mon-Tue-Wed-Thu AMD-X.
+- [daily-quarters](concepts/22-quarterly-theory/daily-quarters.md) — 6-hour NY blocks.
+- [90-minute-quarters](concepts/22-quarterly-theory/90-minute-quarters.md) — 22.5-min mini-quarters.
+- [true-day-open](concepts/22-quarterly-theory/true-day-open.md) — TDO at 00:00 NY.
+- [true-week-open](concepts/22-quarterly-theory/true-week-open.md) — TWO at Sunday/Monday open.
+- [quarterly-shift-2025](concepts/22-quarterly-theory/quarterly-shift-2025.md) — 2025 IPDA ERL/IRL rotation refinement.
 
 ### 23 — IPDA
 - [ipda-definition](concepts/23-ipda/ipda-definition.md) — Interbank Price Delivery Algorithm overview.
 - [ipda-data-ranges](concepts/23-ipda/ipda-data-ranges.md) — 20/40/60-day lookback windows.
-- (per-window deep dives shipped Phase 7: ipda-20-day-lookback, ipda-40-day-lookback, ipda-60-day-lookback, ipda-reference-points)
+- [ipda-20-day-lookback](concepts/23-ipda/ipda-20-day-lookback.md) — short-horizon, ~1 month.
+- [ipda-40-day-lookback](concepts/23-ipda/ipda-40-day-lookback.md) — mid-horizon, ~2 months.
+- [ipda-60-day-lookback](concepts/23-ipda/ipda-60-day-lookback.md) — long-horizon, ~3 months.
+- [ipda-reference-points](concepts/23-ipda/ipda-reference-points.md) — 5-tier reference grid.
 
 ### 24 — AMD Cycle
 - [amd-cycle-overview](concepts/24-amd-cycle/amd-cycle-overview.md) — cycle as repeating temporal pattern.
@@ -252,7 +272,11 @@ Format: `- [Concept Name](path) — one-line summary`
 - (stop-hunt-pattern shipped in `20-turtle-soup`)
 
 ### 30 — News Driven
-- (Phase 7)
+- [news-driven-overview](concepts/30-news-driven/news-driven-overview.md) — three-posture protocol.
+- [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md) — 2025 two-stage model.
+- [nfp-protocol](concepts/30-news-driven/nfp-protocol.md) — NFP-day handling.
+- [cpi-protocol](concepts/30-news-driven/cpi-protocol.md) — CPI/PCE handling.
+- [news-blackout-rules](concepts/30-news-driven/news-blackout-rules.md) — pre/post blackout windows.
 
 ### 31 — Models
 - [ict-2022-model](concepts/31-models/ict-2022-model.md) — flagship multi-step setup framework.

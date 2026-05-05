@@ -29,6 +29,7 @@ The original ICT mentorship year. Most foundational PD-array, killzone, and orde
 - **london-close** — European unwind window. → [london-close](concepts/15-sessions/london-close.md)
 - **session-overlaps** — overlap windows defined. → [session-overlaps](concepts/15-sessions/session-overlaps.md)
 - **session-vs-killzone** — terminology distinction. → [session-vs-killzone](concepts/15-sessions/session-vs-killzone.md)
+- **institutional-order-flow + algorithmic-price-delivery** — flow-reading framework. → [institutional-order-flow](concepts/03-order-flow/institutional-order-flow.md), [bullish-order-flow](concepts/03-order-flow/bullish-order-flow.md), [bearish-order-flow](concepts/03-order-flow/bearish-order-flow.md), [order-flow-shift](concepts/03-order-flow/order-flow-shift.md), [smart-money-footprint](concepts/03-order-flow/smart-money-footprint.md)
 
 ## 2017 — Charter Year
 
@@ -48,7 +49,8 @@ Refinements of FVG and OB definitions; introduction of OTE and Fibonacci levels;
 - **OTE methodology + ICT fib levels** introduced (0.62 / 0.705 / 0.79 retracement; -1.5/-2.0/-2.5/-4.0 projection). → [ote-overview](concepts/17-optimal-trade-entry/ote-overview.md), [ote-62](concepts/17-optimal-trade-entry/ote-62.md), [ote-705](concepts/17-optimal-trade-entry/ote-705.md), [ote-79](concepts/17-optimal-trade-entry/ote-79.md), [ote-rules](concepts/17-optimal-trade-entry/ote-rules.md), [ote-failure](concepts/17-optimal-trade-entry/ote-failure.md), [ict-fib-overview](concepts/28-fibonacci-levels/ict-fib-overview.md), [fib-62](concepts/28-fibonacci-levels/fib-62.md), [fib-705](concepts/28-fibonacci-levels/fib-705.md), [fib-79](concepts/28-fibonacci-levels/fib-79.md), [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md), [fib-vs-ote](concepts/28-fibonacci-levels/fib-vs-ote.md)
 - **HTF bias framework** introduced (top-down + per-TF reads + invalidation rules). → [htf-bias-framework](concepts/25-htf-bias/htf-bias-framework.md), [monthly-bias](concepts/25-htf-bias/monthly-bias.md), [weekly-bias](concepts/25-htf-bias/weekly-bias.md), [daily-bias](concepts/25-htf-bias/daily-bias.md), [bias-confluence](concepts/25-htf-bias/bias-confluence.md), [bias-invalidation](concepts/25-htf-bias/bias-invalidation.md), [top-down-analysis](concepts/25-htf-bias/top-down-analysis.md)
 - **Risk management** discipline (R-multiple, position sizing, structural SL, partial takes, correlation risk). → [risk-per-trade](concepts/32-risk-management/risk-per-trade.md), [r-multiple](concepts/32-risk-management/r-multiple.md), [position-sizing](concepts/32-risk-management/position-sizing.md), [stop-placement-by-pd-array](concepts/32-risk-management/stop-placement-by-pd-array.md), [partial-takes](concepts/32-risk-management/partial-takes.md), [correlation-risk](concepts/32-risk-management/correlation-risk.md)
-- **displacement** introduced as ICT's algorithmic-intent signature. → [displacement-definition](concepts/09-displacement/displacement-definition.md), [displacement-and-fvg](concepts/09-displacement/displacement-and-fvg.md)
+- **displacement** introduced as ICT's algorithmic-intent signature. → [displacement-definition](concepts/09-displacement/displacement-definition.md), [displacement-and-fvg](concepts/09-displacement/displacement-and-fvg.md), [bullish-displacement](concepts/09-displacement/bullish-displacement.md), [bearish-displacement](concepts/09-displacement/bearish-displacement.md), [displacement-strength-criteria](concepts/09-displacement/displacement-strength-criteria.md)
+- **News-driven trading discipline** — three-posture protocol + per-news rules. → [news-driven-overview](concepts/30-news-driven/news-driven-overview.md), [nfp-protocol](concepts/30-news-driven/nfp-protocol.md), [news-blackout-rules](concepts/30-news-driven/news-blackout-rules.md)
 - **balanced-price-range (BPR)** introduced. → [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md)
 - **reversal-order-block** vs **continuation-order-block** distinction (refined 2023). → [reversal-order-block](concepts/07-order-blocks/reversal-order-block.md), [continuation-order-block](concepts/07-order-blocks/continuation-order-block.md)
 - **breaker-block** introduced; **mitigation-block** distinct concept. → [breaker-block](concepts/08-breaker-blocks/breaker-block.md), [bullish-breaker](concepts/08-breaker-blocks/bullish-breaker.md), [bearish-breaker](concepts/08-breaker-blocks/bearish-breaker.md), [breaker-vs-mitigation](concepts/08-breaker-blocks/breaker-vs-mitigation.md), [failed-breaker](concepts/08-breaker-blocks/failed-breaker.md)
@@ -63,7 +65,8 @@ Mitigation, propulsion, rejection, vacuum block taxonomy; IFVG and CE introduced
 - **relative-equal-highs-lows (REH/REL)** — within-tolerance equality recognized. → [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md)
 - **judas-swing** terminology refined into a named ICT concept. → [judas-swing](concepts/13-judas-swing/judas-swing.md), [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md), [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md), [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md)
 - **asian-range-projections** — extension-target framework. → [asian-range-projections](concepts/14-asian-range/asian-range-projections.md)
-- **IPDA** introduced as the algorithm-name for institutional price delivery; 20/40/60-day lookback ranges established. → [ipda-definition](concepts/23-ipda/ipda-definition.md), [ipda-data-ranges](concepts/23-ipda/ipda-data-ranges.md)
+- **IPDA** introduced as the algorithm-name for institutional price delivery; 20/40/60-day lookback ranges established. → [ipda-definition](concepts/23-ipda/ipda-definition.md), [ipda-data-ranges](concepts/23-ipda/ipda-data-ranges.md), [ipda-20-day-lookback](concepts/23-ipda/ipda-20-day-lookback.md), [ipda-40-day-lookback](concepts/23-ipda/ipda-40-day-lookback.md), [ipda-60-day-lookback](concepts/23-ipda/ipda-60-day-lookback.md), [ipda-reference-points](concepts/23-ipda/ipda-reference-points.md)
+- **Gap classification** taxonomy (FVG vs VI vs liquidity-void). → [gap-classification](concepts/09-displacement/gap-classification.md)
 - **volume-imbalance** — body-vs-body imbalance distinction added. → [volume-imbalance-detail](concepts/26-imbalance/volume-imbalance-detail.md), [volume-imbalance](concepts/06-fair-value-gaps/volume-imbalance.md)
 - **symmetrical-price-projections** — equal-distance projection method. → [symmetrical-price-projections](concepts/28-fibonacci-levels/symmetrical-price-projections.md)
 - **inversion-fvg (IFVG)** introduced; **consequent-encroachment (CE)** introduced. → [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md), [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md)
@@ -108,6 +111,7 @@ Quarterly Theory taught publicly; named models multiply (Unicorn, Diamond, Bread
 
 - **quarterly-shift-theory** — fractal time hierarchy taught publicly. → [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md)
 - **90-minute-cycle** — smallest fractal time unit operationalized within Quarterly Theory. → [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md)
+- **Quarterly Theory deep-dives** — per-level fractal expansion. → [quarterly-theory-overview](concepts/22-quarterly-theory/quarterly-theory-overview.md), [yearly-quarters](concepts/22-quarterly-theory/yearly-quarters.md), [monthly-quarters](concepts/22-quarterly-theory/monthly-quarters.md), [weekly-quarters](concepts/22-quarterly-theory/weekly-quarters.md), [daily-quarters](concepts/22-quarterly-theory/daily-quarters.md), [90-minute-quarters](concepts/22-quarterly-theory/90-minute-quarters.md), [true-day-open](concepts/22-quarterly-theory/true-day-open.md), [true-week-open](concepts/22-quarterly-theory/true-week-open.md)
 - **ICT 2023 Model** — refines 2022 with QT + macro integration. → [ict-2023-model](concepts/31-models/ict-2023-model.md)
 - **Unicorn / Bread-and-Butter / Diamond** named-model trio. → [unicorn-model](concepts/31-models/unicorn-model.md), [bread-and-butter-setup](concepts/31-models/bread-and-butter-setup.md), [diamond-pattern](concepts/31-models/diamond-pattern.md)
 - **NDOG / NWOG / Sunday Open Gap** taught. → [ndog](concepts/31-models/ndog.md), [nwog](concepts/31-models/nwog.md), [sunday-open-gap](concepts/31-models/sunday-open-gap.md)
@@ -123,6 +127,7 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 - **IFVG formalized** as a standardized ICT structural reference. → [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md)
 - **propulsion-block** re-teach in 2024 mentorship module list. → [propulsion-block](concepts/07-order-blocks/propulsion-block.md)
 - **ICT 2024 Model** — disciplined integration of 2024 vocabulary expansions. → [ict-2024-model](concepts/31-models/ict-2024-model.md)
+- **CRT (Candle Range Theory)** popularized by Romeo / TTrades — community-attributed, not ICT-original. → [candle-range-theory](concepts/21-crt/candle-range-theory.md), [crt-rules](concepts/21-crt/crt-rules.md), [crt-vs-amd](concepts/21-crt/crt-vs-amd.md), [ict-response-to-crt](concepts/21-crt/ict-response-to-crt.md)
 
 ## 2025 — New Models & FOMC
 
@@ -134,6 +139,8 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 - **silver-bullet-formalized-2025** — micro-execution timing + CE-primary integration. → [silver-bullet-formalized-2025](concepts/11-silver-bullet/silver-bullet-formalized-2025.md)
 - **quarterly-shift-theory IPDA rotation refinement** — added 3-4 month ERL↔IRL rotation. → [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md)
 - **pd-array-nesting + pd-array-confluence "strengthening principle"** formalized in October 2025 advanced-liquidity series. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md), [pd-array-confluence](concepts/05-pd-arrays/pd-array-confluence.md)
+- **Two-stage FOMC delivery model** + **CPI protocol refinement**. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md), [cpi-protocol](concepts/30-news-driven/cpi-protocol.md)
+- **Quarterly Shift 2025** — IPDA ERL/IRL rotation explicit. → [quarterly-shift-2025](concepts/22-quarterly-theory/quarterly-shift-2025.md)
 
 ## 2026 — Static Drawdown & Zircon
 
@@ -144,4 +151,4 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 
 ## Community-Attributed (NOT ICT-original; flagged separately)
 
-- **2024 — Candle Range Theory (CRT)** — Romeo / TTrades. ICT publicly acknowledged but did not author. → [candle-range-theory](concepts/21-crt/candle-range-theory.md) `(pending)`
+- **2024 — Candle Range Theory (CRT)** — Romeo / TTrades. ICT publicly acknowledged but did not author. → [candle-range-theory](concepts/21-crt/candle-range-theory.md), [crt-rules](concepts/21-crt/crt-rules.md), [crt-vs-amd](concepts/21-crt/crt-vs-amd.md), [ict-response-to-crt](concepts/21-crt/ict-response-to-crt.md)
