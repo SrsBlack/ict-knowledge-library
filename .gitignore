@@ -1,0 +1,27 @@
+# OMC working files
+.omc/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Misc
+*.log
+*.tmp
+.env
+.env.local
