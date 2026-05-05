@@ -85,15 +85,11 @@ Mitigation, propulsion, rejection, vacuum block taxonomy; IFVG and CE introduced
 
 ## 2019 — Quiet / Iteration
 
-Mostly refinements; few new named concepts.
-
-- (pending)
+Mostly refinements; few new named concepts. No concept files in this library trace to a 2019 introduction date; refinements from this period are folded into the 2018 / 2020 / 2022 entries.
 
 ## 2020 — Free Tutoring Series
 
-Public YouTube re-teach of foundations. PO3 / AMD codified for free audience.
-
-- (pending)
+Public YouTube re-teach of foundations. PO3 / AMD codified for free audience. Most concepts re-taught here were originally introduced in 2016 (PO3) or 2017–2018 (vocabulary expansions); no concept files have a 2020 introduction date. The 2020 contribution shows up in `Year Refined` fields and in 2022 mentorship operationalizations.
 
 ## 2021 — DOL & Liquidity Matrix
 
@@ -141,8 +137,8 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 ## 2025 — New Models & FOMC
 
 - **Venom Model** — released April 2025. NQ/ES/YM 90-min intraday strategy. → [venom-model](concepts/31-models/venom-model.md)
-- **Two-stage FOMC delivery** — Sept 2025. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md) `(pending)`
-- **Advanced liquidity series** — Oct 2025. PD-array nesting strengthened. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md) `(pending)`
+- **Two-stage FOMC delivery** — Sept 2025. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md)
+- **Advanced liquidity series** — Oct 2025. PD-array nesting strengthened. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md)
 - **CE as primary entry** — reinforced through 2025. → [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md)
 - **macro-times precision update** — `Year Refined: 2025` on all 6 macro files. → [macro-times-overview](concepts/04-time-cycles/macro-times-overview.md)
 - **silver-bullet-formalized-2025** — micro-execution timing + CE-primary integration. → [silver-bullet-formalized-2025](concepts/11-silver-bullet/silver-bullet-formalized-2025.md)

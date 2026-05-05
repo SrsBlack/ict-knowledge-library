@@ -304,4 +304,4 @@ Format: `- [Concept Name](path) — one-line summary`
 - [correlation-risk](concepts/32-risk-management/correlation-risk.md) — cluster exposure tracking.
 
 ### 99 — Glossary (deep-dives)
-- (Phase 8)
+- Per-letter deep-dives deferred — single-page [`GLOSSARY.md`](GLOSSARY.md) at root supersedes. Rename-history is captured inline in disambiguation files (`mss-vs-choch`, `session-vs-killzone`, `breaker-vs-mitigation`, `amd-vs-po3`, `crt-vs-amd`, `imbalance-vs-fvg`, `liquidity-void-vs-fvg`, `fib-vs-ote`, `order-block-vs-supply-demand`, `killzone-vs-session`). See [`concepts/99-glossary/README.md`](concepts/99-glossary/README.md).
