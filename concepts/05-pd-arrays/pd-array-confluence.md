@@ -24,7 +24,7 @@ Independent confluence factors that ICT teaches:
 6. **Adjacent liquidity** — clear DOL above (longs) / below (shorts) within reach.
 7. **Fresh, unmitigated arrays** — preferred over already-tested ones.
 
-A high-confluence setup has 4+ factors firing. A low-confluence setup has 1–2.
+A medium-confluence setup has 3–4 factors firing; high-confluence has 5+; low-confluence has 1–2.
 
 ## Formula / Math
 

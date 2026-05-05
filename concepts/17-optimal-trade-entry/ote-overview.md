@@ -89,8 +89,8 @@ Most actionable on M5–H4 entry TFs. Daily OTE setups exist but the swing leg s
 - OTE zone = [1.0821, 1.0838], optimal at 1.08295.
 - Price retraces; M15 prints bullish FVG at 1.0828–1.0832 (within OTE).
 - Long entry at 1.0830 (≈ optimal), SL at 1.0815 (below 0.79 + 6-pip buffer).
-- Targets: -1.5 SD = 1.1050 (~145 pips), -2.0 SD = 1.1100.
-- R:R: 15-pip risk vs 145-pip first target = ~9.7R.
+- Targets: -1.5 SD = 1.1050 (~220 pips from entry), -2.0 SD = 1.1100 (~270 pips).
+- R:R: 15-pip risk vs 220-pip first target = ~14.7R to -1.5 SD; ~18R to -2.0 SD.
 
 ## Common Mistakes
 
