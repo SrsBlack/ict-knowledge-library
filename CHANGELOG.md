@@ -106,3 +106,57 @@ Wrote 28 concept files covering the time-domain layer of the library.
 - london-close-reversal / ny-pm-reversal (Phase 6)
 
 **Cumulative: 63 / ~210 concept files = 30%.**
+
+---
+
+## Phase 2 review fixes (2026-05-05)
+
+- `quarterly-shift-theory.md`: day-quarter table conflated 6h wall-clock blocks with named ICT sessions; clarified they're independent. Added Common Mistake.
+- `killzone-overview.md`: Asia-KZ midnight-wrap formula had `∪ [00:00, 00:00]` (empty set); replaced with prose.
+- `asian-range-sweep.md`: Example 1 had a "Wait —" interjection that read like internal monologue; rewrote as clean ambiguity-resolution example.
+
+---
+
+## Phase 3 — PD Arrays Core (2026-05-05)
+
+Wrote 33 concept files covering the conceptual heart of the library: PD arrays, premium/discount, equilibrium, fibonacci, OTE, and IPDA foundation.
+
+**Added (33 files):**
+
+`05-pd-arrays/` (9):
+- pd-array-definition, premium-array, discount-array, dealing-range
+- pd-array-hierarchy, pd-array-nesting, htf-pd-array-hierarchy
+- pd-array-matrix, pd-array-confluence
+
+`26-imbalance/` (5):
+- imbalance-definition, inefficiency, imbalance-vs-fvg, imbalance-rebalance, volume-imbalance-detail
+
+`27-equilibrium/` (4):
+- equilibrium-definition, dealing-range-equilibrium, equilibrium-as-decision-point, mean-threshold
+
+`28-fibonacci-levels/` (7):
+- ict-fib-overview, fib-62, fib-705, fib-79
+- standard-deviation-projections, symmetrical-price-projections, fib-vs-ote
+
+`17-optimal-trade-entry/` (6):
+- ote-overview, ote-62, ote-705, ote-79, ote-rules, ote-failure
+
+`23-ipda/` (2 of 6 — foundation only):
+- ipda-definition, ipda-data-ranges
+- (per-window deep-dives ipda-20-day-lookback / ipda-40-day-lookback / ipda-60-day-lookback / ipda-reference-points deferred to Phase 7)
+
+**Updated:**
+- `INDEX.md` — replaced Phase-3 placeholders with 33 real entries (+ a note about Phase 7 IPDA deferred files).
+- `TIMELINE.md` — backfilled 2017 (OTE + fib + PD-array vocabulary), 2018 (IPDA + volume-imbalance + symmetrical-projections), 2024 (PD-array nesting), and added 2025 nesting / confluence formalization entry.
+
+**Forward refs that now resolve from earlier phases:**
+- All references to `pd-array-definition`, `dealing-range`, `equilibrium-definition`, `consequent-encroachment` (FVG-CE), `fair-value-gap` (still pending Phase 4), `ote-overview`, `ipda-definition`, `htf-pd-array-hierarchy`, `pd-array-nesting`, `quarterly-shift-theory` (already from Phase 2).
+
+**Phase 3 forward refs to Phases 4–6 still pending:**
+- bullish-fvg, bearish-fvg, fair-value-gap, inversion-fvg, ce-as-primary-entry, immediate-rebalance-fvg, delayed-rebalance-fvg, fvg-mitigation (Phase 4)
+- bullish-order-block, bearish-order-block, breaker-block, order-block-criteria (Phase 4)
+- displacement-definition (Phase 4)
+- htf-bias-framework, top-down-analysis (Phase 6)
+- algorithmic-price-delivery (Phase 7)
+
+**Cumulative: 96 / ~210 concept files = 46%.**

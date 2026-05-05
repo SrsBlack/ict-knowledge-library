@@ -41,6 +41,8 @@ Refinements of FVG and OB definitions; introduction of OTE and Fibonacci levels;
 - **liquidity-void** — wide expansion-span concept. → [liquidity-void](concepts/02-liquidity/liquidity-void.md)
 - **liquidity-sweep** / **liquidity-run** — sweep and run-on-liquidity terminology. → [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md), [liquidity-run](concepts/02-liquidity/liquidity-run.md)
 - **ny-lunch** — dead-session designation. → [ny-lunch](concepts/15-sessions/ny-lunch.md)
+- **OTE methodology + ICT fib levels** introduced (0.62 / 0.705 / 0.79 retracement; -1.5/-2.0/-2.5/-4.0 projection). → [ote-overview](concepts/17-optimal-trade-entry/ote-overview.md), [ote-62](concepts/17-optimal-trade-entry/ote-62.md), [ote-705](concepts/17-optimal-trade-entry/ote-705.md), [ote-79](concepts/17-optimal-trade-entry/ote-79.md), [ote-rules](concepts/17-optimal-trade-entry/ote-rules.md), [ote-failure](concepts/17-optimal-trade-entry/ote-failure.md), [ict-fib-overview](concepts/28-fibonacci-levels/ict-fib-overview.md), [fib-62](concepts/28-fibonacci-levels/fib-62.md), [fib-705](concepts/28-fibonacci-levels/fib-705.md), [fib-79](concepts/28-fibonacci-levels/fib-79.md), [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md), [fib-vs-ote](concepts/28-fibonacci-levels/fib-vs-ote.md)
+- **PD array** vocabulary refined (premium / discount / hierarchy / dealing-range EQ). → [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md), [premium-array](concepts/05-pd-arrays/premium-array.md), [discount-array](concepts/05-pd-arrays/discount-array.md), [pd-array-hierarchy](concepts/05-pd-arrays/pd-array-hierarchy.md), [dealing-range](concepts/05-pd-arrays/dealing-range.md), [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md), [dealing-range-equilibrium](concepts/27-equilibrium/dealing-range-equilibrium.md), [equilibrium-as-decision-point](concepts/27-equilibrium/equilibrium-as-decision-point.md), [mean-threshold](concepts/27-equilibrium/mean-threshold.md)
 
 ## 2018 — Block Vocabulary Expansion
 
@@ -49,6 +51,9 @@ Mitigation, propulsion, rejection, vacuum block taxonomy; IFVG and CE introduced
 - **relative-equal-highs-lows (REH/REL)** — within-tolerance equality recognized. → [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md)
 - **judas-swing** terminology refined into a named ICT concept. → [judas-swing](concepts/13-judas-swing/judas-swing.md), [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md), [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md), [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md)
 - **asian-range-projections** — extension-target framework. → [asian-range-projections](concepts/14-asian-range/asian-range-projections.md)
+- **IPDA** introduced as the algorithm-name for institutional price delivery; 20/40/60-day lookback ranges established. → [ipda-definition](concepts/23-ipda/ipda-definition.md), [ipda-data-ranges](concepts/23-ipda/ipda-data-ranges.md)
+- **volume-imbalance** — body-vs-body imbalance distinction added. → [volume-imbalance-detail](concepts/26-imbalance/volume-imbalance-detail.md)
+- **symmetrical-price-projections** — equal-distance projection method. → [symmetrical-price-projections](concepts/28-fibonacci-levels/symmetrical-price-projections.md)
 
 ## 2019 — Quiet / Iteration
 
@@ -88,9 +93,11 @@ Quarterly Theory taught publicly; named models multiply (Unicorn, Diamond, Bread
 
 ## 2024 — Refinement & Naming
 
-IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re-teach.
+IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re-teach. PD-array nesting principle introduced; HTF top-down array hierarchy refined.
 
-- (pending)
+- **pd-array-nesting** introduced (formalized 2025 in adv-liquidity series, but rooted in 2024 mentorship modules). → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md)
+- **htf-pd-array-hierarchy** — multi-TF top-down framework refined. → [htf-pd-array-hierarchy](concepts/05-pd-arrays/htf-pd-array-hierarchy.md)
+- **pd-array-matrix** — pre-trade tabular discipline operationalized. → [pd-array-matrix](concepts/05-pd-arrays/pd-array-matrix.md)
 
 ## 2025 — New Models & FOMC
 
@@ -100,6 +107,7 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 - **CE as primary entry** — reinforced through 2025. → [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md) `(pending)`
 - **macro-times precision update** — `Year Refined: 2025` on all 6 macro files. → [macro-times-overview](concepts/04-time-cycles/macro-times-overview.md)
 - **quarterly-shift-theory IPDA rotation refinement** — added 3-4 month ERL↔IRL rotation. → [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md)
+- **pd-array-nesting + pd-array-confluence "strengthening principle"** formalized in October 2025 advanced-liquidity series. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md), [pd-array-confluence](concepts/05-pd-arrays/pd-array-confluence.md)
 
 ## 2026 — Static Drawdown & Zircon
 

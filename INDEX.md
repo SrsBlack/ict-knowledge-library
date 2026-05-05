@@ -65,7 +65,15 @@ Format: `- [Concept Name](path) — one-line summary`
 - [dst-handling](concepts/04-time-cycles/dst-handling.md) — DST mismatch + canonical NY-clock anchoring.
 
 ### 05 — PD Arrays
-- (Phase 3)
+- [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md) — umbrella concept for institutional price levels.
+- [premium-array](concepts/05-pd-arrays/premium-array.md) — PD arrays above EQ; sell-side references.
+- [discount-array](concepts/05-pd-arrays/discount-array.md) — PD arrays below EQ; buy-side references.
+- [dealing-range](concepts/05-pd-arrays/dealing-range.md) — LTH/LTL-bounded reference frame for premium/discount.
+- [pd-array-hierarchy](concepts/05-pd-arrays/pd-array-hierarchy.md) — type-by-type conviction ranking.
+- [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md) — overlapping arrays produce stronger zones (2024–2025 strengthening principle).
+- [htf-pd-array-hierarchy](concepts/05-pd-arrays/htf-pd-array-hierarchy.md) — multi-TF top-down array prioritization.
+- [pd-array-matrix](concepts/05-pd-arrays/pd-array-matrix.md) — pre-trade tabular map of PD arrays across TFs.
+- [pd-array-confluence](concepts/05-pd-arrays/pd-array-confluence.md) — multi-factor alignment scoring.
 
 ### 06 — Fair Value Gaps
 - (Phase 4)
@@ -124,7 +132,12 @@ Format: `- [Concept Name](path) — one-line summary`
 - (Phase 5)
 
 ### 17 — Optimal Trade Entry
-- (Phase 3)
+- [ote-overview](concepts/17-optimal-trade-entry/ote-overview.md) — canonical 0.62-0.79 entry methodology.
+- [ote-62](concepts/17-optimal-trade-entry/ote-62.md) — shallow OTE entry.
+- [ote-705](concepts/17-optimal-trade-entry/ote-705.md) — optimal mid-point entry.
+- [ote-79](concepts/17-optimal-trade-entry/ote-79.md) — deep OTE entry / invalidation reference.
+- [ote-rules](concepts/17-optimal-trade-entry/ote-rules.md) — full setup checklist.
+- [ote-failure](concepts/17-optimal-trade-entry/ote-failure.md) — invalidation & response.
 
 ### 18 — Mitigation
 - (Phase 4)
@@ -142,7 +155,9 @@ Format: `- [Concept Name](path) — one-line summary`
 - (Phase 7)
 
 ### 23 — IPDA
-- (Phase 3)
+- [ipda-definition](concepts/23-ipda/ipda-definition.md) — Interbank Price Delivery Algorithm overview.
+- [ipda-data-ranges](concepts/23-ipda/ipda-data-ranges.md) — 20/40/60-day lookback windows.
+- (per-window deep dives shipped Phase 7: ipda-20-day-lookback, ipda-40-day-lookback, ipda-60-day-lookback, ipda-reference-points)
 
 ### 24 — AMD Cycle
 - (Phase 5)
@@ -151,13 +166,26 @@ Format: `- [Concept Name](path) — one-line summary`
 - (Phase 6)
 
 ### 26 — Imbalance
-- (Phase 3)
+- [imbalance-definition](concepts/26-imbalance/imbalance-definition.md) — umbrella term for any unworked price region.
+- [inefficiency](concepts/26-imbalance/inefficiency.md) — synonym (microstructure framing).
+- [imbalance-vs-fvg](concepts/26-imbalance/imbalance-vs-fvg.md) — disambiguation; FVG ⊂ imbalance.
+- [imbalance-rebalance](concepts/26-imbalance/imbalance-rebalance.md) — when price returns to fill the imbalance.
+- [volume-imbalance-detail](concepts/26-imbalance/volume-imbalance-detail.md) — body-vs-body gap (not an FVG).
 
 ### 27 — Equilibrium
-- (Phase 3)
+- [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md) — 50% midpoint of any reference range.
+- [dealing-range-equilibrium](concepts/27-equilibrium/dealing-range-equilibrium.md) — primary EQ in the dealing-range frame.
+- [equilibrium-as-decision-point](concepts/27-equilibrium/equilibrium-as-decision-point.md) — operational EQ pivot rules.
+- [mean-threshold](concepts/27-equilibrium/mean-threshold.md) — OB body midpoint (MT).
 
 ### 28 — Fibonacci Levels
-- (Phase 3)
+- [ict-fib-overview](concepts/28-fibonacci-levels/ict-fib-overview.md) — ICT-specific fib retracement + projection set.
+- [fib-62](concepts/28-fibonacci-levels/fib-62.md) — upper OTE bound (shallow).
+- [fib-705](concepts/28-fibonacci-levels/fib-705.md) — OTE optimal entry mid-point.
+- [fib-79](concepts/28-fibonacci-levels/fib-79.md) — deep OTE / invalidation reference.
+- [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md) — extension targets (-1.5/-2.0/-2.5/-4.0).
+- [symmetrical-price-projections](concepts/28-fibonacci-levels/symmetrical-price-projections.md) — equal-distance leg projection.
+- [fib-vs-ote](concepts/28-fibonacci-levels/fib-vs-ote.md) — disambiguation (OTE ⊂ fib).
 
 ### 29 — Stop Runs
 - (Phase 5)
