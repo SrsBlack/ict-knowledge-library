@@ -16,7 +16,7 @@ Session overlaps are the time windows when two trading sessions are both active 
 
 The two notable overlaps:
 
-| Overlap | Window (NY DST) | Component sessions |
+| Overlap | Window (NY time) | Component sessions |
 |---|---|---|
 | Asia × London (early) | 02:00 – 03:00 | end of Asia + London open |
 | London Close × NY AM | 10:00 – 12:00 | tail of London + body of NY AM |
@@ -29,8 +29,8 @@ Behavioral characteristics:
 ## Formula / Math
 
 ```
-asia_london_overlap     = [02:00, 03:00] NY  (DST)
-london_close_ny_overlap = [10:00, 12:00] NY  (DST)
+asia_london_overlap     = [02:00, 03:00] NY
+london_close_ny_overlap = [10:00, 12:00] NY
 ```
 
 ## Machine-Readable

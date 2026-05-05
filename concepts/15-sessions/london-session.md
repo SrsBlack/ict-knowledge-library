@@ -10,11 +10,11 @@
 
 ## Definition
 
-The London session runs from 02:00 NY (DST) / 03:00 NY (non-DST) to 11:00 / 12:00 NY. It is the **first major liquidity-delivery session** of the trading day. ICT teaches that London almost always begins with a manipulation phase — a [judas-swing](../13-judas-swing/judas-swing.md) that sweeps one side of the [asian-range](../14-asian-range/asian-range.md) — and then expands in the *opposite* direction toward HTF DOL. London frequently establishes the day's high or low.
+The London session runs from 02:00 NY to 11:00 NY (canonical NY-time anchor — minor shifts in the brief DST/BST mismatch windows; see [dst-handling](../04-time-cycles/dst-handling.md)). It is the **first major liquidity-delivery session** of the trading day. ICT teaches that London almost always begins with a manipulation phase — a [judas-swing](../13-judas-swing/judas-swing.md) that sweeps one side of the [asian-range](../14-asian-range/asian-range.md) — and then expands in the *opposite* direction toward HTF DOL. London frequently establishes the day's high or low.
 
 ## Formal Criteria
 
-- Time window: 02:00 → 11:00 NY (DST) / 03:00 → 12:00 NY (non-DST).
+- Time window: 02:00 → 11:00 NY (canonical anchor).
 - Volatility: high. ATR substantially exceeds Asia.
 - Two characteristic phases:
   - **London open killzone** (~02:00–05:00 NY): manipulation + initial expansion. Most setup-rich.
@@ -24,9 +24,9 @@ The London session runs from 02:00 NY (DST) / 03:00 NY (non-DST) to 11:00 / 12:0
 ## Formula / Math
 
 ```
-london_window      = [02:00, 11:00] NY (DST)
-london_open_kz     = [02:00, 05:00] NY (DST)
-london_close_kz    = [10:00, 12:00] NY (DST)
+london_window      = [02:00, 11:00] NY
+london_open_kz     = [02:00, 05:00] NY
+london_close_kz    = [10:00, 12:00] NY
 ```
 
 ## Machine-Readable

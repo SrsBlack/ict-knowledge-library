@@ -14,7 +14,7 @@ London Close is the 10:00 → 12:00 NY window during which the European institut
 
 ## Formal Criteria
 
-- Time window: 10:00 → 12:00 NY (DST) / 11:00 → 13:00 NY (non-DST).
+- Time window: 10:00 → 12:00 NY (canonical NY-time anchor).
 - Overlaps NY AM (08:00 → 12:00) — high volume.
 - Behavior: often a reversal of London-open's direction as European books unwind, OR an acceleration when NY agrees with London's direction.
 - Window closes into NY Lunch — final London prints often coincide with NY AM-window peaks.
@@ -22,7 +22,7 @@ London Close is the 10:00 → 12:00 NY window during which the European institut
 ## Formula / Math
 
 ```
-london_close_window = [10:00, 12:00] NY (DST)
+london_close_window = [10:00, 12:00] NY
 
 overlaps with ny_am_window = [08:00, 12:00] NY     # 10:00–12:00 overlap
 ```

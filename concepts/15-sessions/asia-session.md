@@ -10,11 +10,11 @@
 
 ## Definition
 
-The Asia session covers the overnight trading window from 18:00 NY (prev day) to 03:00 NY (or 19:00 → 04:00 during non-DST). It is characterized by **low volatility, range-building, and accumulation** — institutions are typically not delivering large directional moves during Asia. The Asian range that forms here (Asian high and Asian low) becomes a primary set of liquidity pools for the London open, which routinely sweeps one side as part of its [judas-swing](../13-judas-swing/judas-swing.md).
+The Asia session covers the overnight trading window from 18:00 NY (prev day) to 03:00 NY. It is characterized by **low volatility, range-building, and accumulation** — institutions are typically not delivering large directional moves during Asia. The Asian range that forms here (Asian high and Asian low) becomes a primary set of liquidity pools for the London open, which routinely sweeps one side as part of its [judas-swing](../13-judas-swing/judas-swing.md). DST nuances → [dst-handling](../04-time-cycles/dst-handling.md).
 
 ## Formal Criteria
 
-- Time window: 18:00 NY (prev day) → 03:00 NY (DST) / 19:00 → 04:00 (non-DST).
+- Time window: 18:00 NY (prev day) → 03:00 NY (canonical; minor shift during DST/BST mismatch windows — see [dst-handling](../04-time-cycles/dst-handling.md)).
 - Volatility: typically the lowest of any session (ATR ~30–50% of London/NY ATR).
 - Behavior: range-bound, overlapping candles, often produces equal highs and equal lows along the bounds.
 - Output: an Asian range high (BSL pool) and Asian range low (SSL pool) that London targets.
@@ -22,7 +22,7 @@ The Asia session covers the overnight trading window from 18:00 NY (prev day) to
 ## Formula / Math
 
 ```
-asia_window = [18:00 NY prev day, 03:00 NY]    # DST, simplified
+asia_window = [18:00 NY prev day, 03:00 NY]    # canonical NY-time anchor
 
 asian_high = max(high(t)) for t in asia_window
 asian_low  = min(low(t))  for t in asia_window

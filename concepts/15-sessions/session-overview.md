@@ -14,18 +14,18 @@ ICT divides the 24-hour FX trading day into discrete sessions defined in **New Y
 
 ## Formal Criteria
 
-The ICT canonical session map (NY time):
+The ICT canonical session map (NY time, the times ICT uses most of the year):
 
 | Session | Start | End | Notes |
 |---|---|---|---|
-| Asia | 18:00 (prev day) / 19:00 (DST) | 03:00 / 04:00 | low volatility, range-building |
-| London | 02:00 / 03:00 | 11:00 / 12:00 | high volatility, often sets daily direction |
-| NY AM | 08:00 / 09:00 | 12:00 | major US news, NY Open displacement |
+| Asia | 18:00 (prev day) | 03:00 | low volatility, range-building |
+| London | 02:00 | 11:00 | high volatility, often sets daily direction |
+| NY AM | 08:00 | 12:00 | major US news, NY Open displacement |
 | NY Lunch | 12:00 | 13:30 | low volatility, consolidation |
-| NY PM | 13:30 | 16:00 / 17:00 | secondary delivery, reversals common |
+| NY PM | 13:30 | 16:00 | secondary delivery, reversals common |
 | London Close | 10:00 | 12:00 | overlaps NY AM; European book unwinds |
 
-Two start times reflect DST: the earlier time is during DST (mid-March–early-November NY); the later time is non-DST.
+These times shift by one hour during the brief windows when NY DST and UK BST are misaligned (mid-March → late-March, and early-November → late-October). During those gaps, London and NY are 4 hours apart instead of the usual 5; ICT-times anchored to NY clock continue to work, but if you're translating from GMT/UTC charts, see [dst-handling](../04-time-cycles/dst-handling.md).
 
 ## Formula / Math
 
@@ -37,10 +37,10 @@ session(t) :=
   elif 02:00 <= t < 08:00:               London (early)
   elif 08:00 <= t < 12:00:               NY AM (overlaps London Close)
   elif 12:00 <= t < 13:30:               NY Lunch
-  elif 13:30 <= t < 17:00:               NY PM
+  elif 13:30 <= t < 16:00:               NY PM
 ```
 
-(Some ICT references use 17:00 NY as the daily close; check broker. The boundary times shift by one hour during DST transitions.)
+(Some ICT references treat 17:00 NY as the daily close; broker-dependent. See [dst-handling](../04-time-cycles/dst-handling.md) for the brief twice-yearly windows when these boundaries shift one hour relative to GMT/UTC.)
 
 ## Machine-Readable
 

@@ -112,6 +112,12 @@ Files: `kebab-case.md` (e.g. `bullish-order-block.md`, `ny-am-killzone.md`).
 
 One concept per file. No exceptions. If something feels like "two concepts in one file," split it.
 
+## Cross-Links During Build
+
+Concept files cross-link to other concepts via relative paths (e.g. `(../06-fair-value-gaps/fair-value-gap.md)`). During the multi-phase build, **forward links to phases not yet shipped will not resolve** — this is intentional, not a bug. Each link references the canonical filename the concept will eventually have, so links auto-resolve as later phases land. The Phase 8 final sweep verifies every cross-link end-to-end.
+
+To check current coverage, see `INDEX.md` (lists shipped phases inline) and `CHANGELOG.md` (records which directories have been populated).
+
 ## Status
 
-Initial scaffold. Concepts will be added file-by-file. See `INDEX.md` for current coverage.
+Initial scaffold. Concepts are added phase-by-phase. See `INDEX.md` for current coverage and `CHANGELOG.md` for the build log.
