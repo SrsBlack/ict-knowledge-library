@@ -44,9 +44,11 @@ Refinements of FVG and OB definitions; introduction of OTE and Fibonacci levels;
 
 ## 2018 — Block Vocabulary Expansion
 
-Mitigation, propulsion, rejection, vacuum block taxonomy; IFVG and CE introduced.
+Mitigation, propulsion, rejection, vacuum block taxonomy; IFVG and CE introduced. Judas-swing terminology refined.
 
 - **relative-equal-highs-lows (REH/REL)** — within-tolerance equality recognized. → [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md)
+- **judas-swing** terminology refined into a named ICT concept. → [judas-swing](concepts/13-judas-swing/judas-swing.md), [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md), [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md), [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md)
+- **asian-range-projections** — extension-target framework. → [asian-range-projections](concepts/14-asian-range/asian-range-projections.md)
 
 ## 2019 — Quiet / Iteration
 
@@ -69,17 +71,20 @@ Draw On Liquidity language; IRL/ERL distinction emerges.
 
 ## 2022 — The 2022 Model Year
 
-ICT 2022 Mentorship; silver bullet windows formalized; macro times introduced. Most foundational concepts received their final operational framing in this year.
+ICT 2022 Mentorship; silver bullet windows formalized; **macro times introduced**. Most foundational concepts received their final operational framing in this year.
 
 - **internal-range-liquidity (IRL)** vs **external-range-liquidity (ERL)** distinction formalized. → [internal-range-liquidity](concepts/02-liquidity/internal-range-liquidity.md), [external-range-liquidity](concepts/02-liquidity/external-range-liquidity.md)
 - **range-expansion** / **range-contraction** — phase terminology operationalized. → [range-expansion](concepts/01-market-structure/range-expansion.md), [range-contraction](concepts/01-market-structure/range-contraction.md)
-- All foundational structure / liquidity / session concepts (2016–2018 introductions) re-taught with refined operational rules in the 2022 mentorship. See `Year Refined: 2022` on most Phase-1 files.
+- **macro-times-overview** — five canonical 20-min programmed-delivery windows introduced. → [macro-times-overview](concepts/04-time-cycles/macro-times-overview.md)
+- Per-macro deep dives shipped: [macro-time-0050-0110](concepts/04-time-cycles/macro-time-0050-0110.md), [macro-time-0250-0310](concepts/04-time-cycles/macro-time-0250-0310.md), [macro-time-0950-1010](concepts/04-time-cycles/macro-time-0950-1010.md), [macro-time-1350-1410](concepts/04-time-cycles/macro-time-1350-1410.md), [macro-time-1450-1510](concepts/04-time-cycles/macro-time-1450-1510.md).
+- All foundational structure / liquidity / session concepts (2016–2018 introductions) re-taught with refined operational rules in the 2022 mentorship. See `Year Refined: 2022` on most Phase-1 / Phase-2 files.
 
 ## 2023 — Quarterly Theory Era
 
 Quarterly Theory taught publicly; named models multiply (Unicorn, Diamond, Bread-and-Butter).
 
-- (pending)
+- **quarterly-shift-theory** — fractal time hierarchy taught publicly. → [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md)
+- **90-minute-cycle** — smallest fractal time unit operationalized within Quarterly Theory. → [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md)
 
 ## 2024 — Refinement & Naming
 
@@ -93,6 +98,8 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 - **Two-stage FOMC delivery** — Sept 2025. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md) `(pending)`
 - **Advanced liquidity series** — Oct 2025. PD-array nesting strengthened. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md) `(pending)`
 - **CE as primary entry** — reinforced through 2025. → [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md) `(pending)`
+- **macro-times precision update** — `Year Refined: 2025` on all 6 macro files. → [macro-times-overview](concepts/04-time-cycles/macro-times-overview.md)
+- **quarterly-shift-theory IPDA rotation refinement** — added 3-4 month ERL↔IRL rotation. → [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md)
 
 ## 2026 — Static Drawdown & Zircon
 

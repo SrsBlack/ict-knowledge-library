@@ -53,7 +53,16 @@ Format: `- [Concept Name](path) — one-line summary`
 - (Phase 7)
 
 ### 04 — Time Cycles
-- (Phase 2)
+- [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
+- [macro-time-0050-0110](concepts/04-time-cycles/macro-time-0050-0110.md) — pre-London early macro.
+- [macro-time-0250-0310](concepts/04-time-cycles/macro-time-0250-0310.md) — London open macro (canonical Judas).
+- [macro-time-0950-1010](concepts/04-time-cycles/macro-time-0950-1010.md) — NY pre-open macro.
+- [macro-time-1350-1410](concepts/04-time-cycles/macro-time-1350-1410.md) — NY first afternoon macro.
+- [macro-time-1450-1510](concepts/04-time-cycles/macro-time-1450-1510.md) — NY mid-afternoon macro (last).
+- [macro-times-overview](concepts/04-time-cycles/macro-times-overview.md) — five canonical 20-min programmed-delivery windows.
+- [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md) — fractal time hierarchy + 2024–2025 IPDA quarterly rotation.
+- [time-of-day-pivots](concepts/04-time-cycles/time-of-day-pivots.md) — TDO, 08:30, 09:30, PDH/PDL etc.
+- [dst-handling](concepts/04-time-cycles/dst-handling.md) — DST mismatch + canonical NY-clock anchoring.
 
 ### 05 — PD Arrays
 - (Phase 3)
@@ -71,7 +80,14 @@ Format: `- [Concept Name](path) — one-line summary`
 - (Phase 4)
 
 ### 10 — Killzones
-- (Phase 2)
+- [killzone-overview](concepts/10-killzones/killzone-overview.md) — five canonical KZs in NY time.
+- [asia-killzone](concepts/10-killzones/asia-killzone.md) — 20:00–00:00 NY; Asian range formation.
+- [london-open-killzone](concepts/10-killzones/london-open-killzone.md) — 02:00–05:00 NY; Judas-swing window.
+- [ny-am-killzone](concepts/10-killzones/ny-am-killzone.md) — 08:00–11:00 NY; highest-volume KZ.
+- [london-close-killzone](concepts/10-killzones/london-close-killzone.md) — 10:00–12:00 NY; overlaps NY AM.
+- [ny-pm-killzone](concepts/10-killzones/ny-pm-killzone.md) — 13:30–16:00 NY; secondary delivery.
+- [killzone-times-table](concepts/10-killzones/killzone-times-table.md) — quick-reference card.
+- [killzone-vs-session](concepts/10-killzones/killzone-vs-session.md) — disambiguation (mirror).
 
 ### 11 — Silver Bullet
 - (Phase 5)
@@ -80,10 +96,18 @@ Format: `- [Concept Name](path) — one-line summary`
 - (Phase 5)
 
 ### 13 — Judas Swing
-- (Phase 2)
+- [judas-swing](concepts/13-judas-swing/judas-swing.md) — session-open false-direction move + reversal.
+- [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md) — canonical LO-KZ Judas with Asian-range sweep.
+- [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md) — smaller-scale NY AM Judas.
+- [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md) — when no reversal happens.
 
 ### 14 — Asian Range
-- (Phase 2)
+- [asian-range](concepts/14-asian-range/asian-range.md) — bounded engineered-liquidity range from Asia session.
+- [asian-range-high](concepts/14-asian-range/asian-range-high.md) — BSL pool at the top.
+- [asian-range-low](concepts/14-asian-range/asian-range-low.md) — SSL pool at the bottom.
+- [asian-range-sweep](concepts/14-asian-range/asian-range-sweep.md) — London-driven sweep of one bound.
+- [asian-session-bias](concepts/14-asian-range/asian-session-bias.md) — secondary directional read from Asia close.
+- [asian-range-projections](concepts/14-asian-range/asian-range-projections.md) — 0.5×/1×/1.5×/2× extension targets.
 
 ### 15 — Sessions
 - [session-overview](concepts/15-sessions/session-overview.md) — full NY-time session map.
