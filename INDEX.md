@@ -127,10 +127,19 @@ Format: `- [Concept Name](path) — one-line summary`
 - [killzone-vs-session](concepts/10-killzones/killzone-vs-session.md) — disambiguation (mirror).
 
 ### 11 — Silver Bullet
-- (Phase 5)
+- [silver-bullet-overview](concepts/11-silver-bullet/silver-bullet-overview.md) — three SB windows, sweep+displacement+FVG framework.
+- [silver-bullet-london](concepts/11-silver-bullet/silver-bullet-london.md) — 03:00–04:00 NY.
+- [silver-bullet-ny-am](concepts/11-silver-bullet/silver-bullet-ny-am.md) — 10:00–11:00 NY (highest probability).
+- [silver-bullet-ny-pm](concepts/11-silver-bullet/silver-bullet-ny-pm.md) — 14:00–15:00 NY (lowest).
+- [silver-bullet-rules](concepts/11-silver-bullet/silver-bullet-rules.md) — 8-point checklist.
+- [silver-bullet-formalized-2025](concepts/11-silver-bullet/silver-bullet-formalized-2025.md) — 2025 micro-execution refinements.
+- [silver-bullet-failure-modes](concepts/11-silver-bullet/silver-bullet-failure-modes.md) — four common failure patterns.
 
 ### 12 — Power of Three
-- (Phase 5)
+- [power-of-three](concepts/12-power-of-three/power-of-three.md) — PO3 / AMD doctrine.
+- [accumulation-phase](concepts/12-power-of-three/accumulation-phase.md), [manipulation-phase](concepts/12-power-of-three/manipulation-phase.md), [distribution-phase](concepts/12-power-of-three/distribution-phase.md) — phases.
+- [intraday-amd](concepts/12-power-of-three/intraday-amd.md) — daily-scale Asia-London-NY mapping.
+- [htf-amd](concepts/12-power-of-three/htf-amd.md) — weekly/monthly/yearly AMD.
 
 ### 13 — Judas Swing
 - [judas-swing](concepts/13-judas-swing/judas-swing.md) — session-open false-direction move + reversal.
@@ -158,7 +167,11 @@ Format: `- [Concept Name](path) — one-line summary`
 - [session-vs-killzone](concepts/15-sessions/session-vs-killzone.md) — disambiguation page.
 
 ### 16 — SMT Divergence
-- (Phase 5)
+- [smt-divergence](concepts/16-smt-divergence/smt-divergence.md) — Smart Money Technique divergence between correlated assets.
+- [correlated-pairs-smt](concepts/16-smt-divergence/correlated-pairs-smt.md) — FX cross-pair SMT.
+- [index-smt](concepts/16-smt-divergence/index-smt.md) — NQ/ES/YM/RTY SMT.
+- [smt-confirmation](concepts/16-smt-divergence/smt-confirmation.md) — SMT as confluence factor.
+- [smt-failure](concepts/16-smt-divergence/smt-failure.md) — when divergence closes.
 
 ### 17 — Optimal Trade Entry
 - [ote-overview](concepts/17-optimal-trade-entry/ote-overview.md) — canonical 0.62-0.79 entry methodology.
@@ -181,7 +194,9 @@ Format: `- [Concept Name](path) — one-line summary`
 - [bearish-rejection-block](concepts/19-rejection-blocks/bearish-rejection-block.md) — upper-wick variant.
 
 ### 20 — Turtle Soup
-- (Phase 5)
+- [turtle-soup](concepts/20-turtle-soup/turtle-soup.md) — failed breakout pattern.
+- [bullish-turtle-soup](concepts/20-turtle-soup/bullish-turtle-soup.md), [bearish-turtle-soup](concepts/20-turtle-soup/bearish-turtle-soup.md) — directional variants.
+- [stop-hunt-pattern](concepts/20-turtle-soup/stop-hunt-pattern.md) — broader stop-hunt umbrella.
 
 ### 21 — CRT (community-attributed)
 - (Phase 7)
@@ -195,7 +210,10 @@ Format: `- [Concept Name](path) — one-line summary`
 - (per-window deep dives shipped Phase 7: ipda-20-day-lookback, ipda-40-day-lookback, ipda-60-day-lookback, ipda-reference-points)
 
 ### 24 — AMD Cycle
-- (Phase 5)
+- [amd-cycle-overview](concepts/24-amd-cycle/amd-cycle-overview.md) — cycle as repeating temporal pattern.
+- [amd-on-htf](concepts/24-amd-cycle/amd-on-htf.md) — weekly/monthly cycle.
+- [amd-on-intraday](concepts/24-amd-cycle/amd-on-intraday.md) — daily/90min cycle.
+- [amd-vs-po3](concepts/24-amd-cycle/amd-vs-po3.md) — disambiguation (same cycle, two framings).
 
 ### 25 — HTF Bias
 - (Phase 6)
@@ -223,7 +241,11 @@ Format: `- [Concept Name](path) — one-line summary`
 - [fib-vs-ote](concepts/28-fibonacci-levels/fib-vs-ote.md) — disambiguation (OTE ⊂ fib).
 
 ### 29 — Stop Runs
-- (Phase 5)
+- [stop-run-definition](concepts/29-stop-runs/stop-run-definition.md) — algorithmic stop-targeting umbrella.
+- [stop-run-into-fvg](concepts/29-stop-runs/stop-run-into-fvg.md) — sweep + displacement + FVG entry.
+- [stop-run-into-ob](concepts/29-stop-runs/stop-run-into-ob.md) — sweep + OB entry at MT.
+- [stop-run-into-breaker](concepts/29-stop-runs/stop-run-into-breaker.md) — sweep + breaker retest entry.
+- (stop-hunt-pattern shipped in `20-turtle-soup`)
 
 ### 30 — News Driven
 - (Phase 7)

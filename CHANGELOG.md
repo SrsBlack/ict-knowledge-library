@@ -221,3 +221,55 @@ Wrote 40 files across 6 directories — the largest single phase.
 - ipda-20/40/60-day-lookback, ipda-reference-points (Phase 7)
 
 **Cumulative: 136 / ~210 concept files = 65%.**
+
+---
+
+## Phase 4 review fix (2026-05-05)
+
+- GLOSSARY: stripped `(pending)` from 26 entries whose target files have shipped (BB, BISI, BOS, BPR, BSL, CE, CHoCH, DOL, EQH/EQL/ERL, FVG, IFVG, IPDA, IRL, MSS, OB, OTE, PD, PDH/PMH/PWH, SD, SIBI, SSL). Remaining 16 correctly point to Phase 5–7 deferred files.
+
+---
+
+## Phase 5 — Models & Strategies (2026-05-05)
+
+Wrote 30 files across 6 directories — the named-models / setup-strategies layer.
+
+**Added (30 files):**
+
+`11-silver-bullet/` (7):
+- silver-bullet-overview, silver-bullet-london, silver-bullet-ny-am, silver-bullet-ny-pm
+- silver-bullet-rules, silver-bullet-formalized-2025, silver-bullet-failure-modes
+
+`12-power-of-three/` (6):
+- power-of-three, accumulation-phase, manipulation-phase, distribution-phase
+- intraday-amd, htf-amd
+
+`24-amd-cycle/` (4):
+- amd-cycle-overview, amd-on-htf, amd-on-intraday, amd-vs-po3
+
+`20-turtle-soup/` (4):
+- turtle-soup, bullish-turtle-soup, bearish-turtle-soup, stop-hunt-pattern
+
+`16-smt-divergence/` (5):
+- smt-divergence, correlated-pairs-smt, index-smt, smt-confirmation, smt-failure
+
+`29-stop-runs/` (4):
+- stop-run-definition, stop-run-into-fvg, stop-run-into-ob, stop-run-into-breaker
+- (stop-hunt-pattern lives in `20-turtle-soup`; cross-linked from `29-stop-runs`)
+
+**Updated:**
+- `INDEX.md` — replaced 6 placeholders with 30 entries.
+- `TIMELINE.md` — backfill pending in commit; add 2016 (PO3, AMD) + 2018 (turtle-soup, SMT) + 2022 (silver bullet formalized) + 2025 (SB precision update).
+
+**Phase 5 forward refs that now resolve:**
+- All earlier-phase references to `silver-bullet-*`, `power-of-three`, `accumulation-phase`, `manipulation-phase`, `distribution-phase`, `intraday-amd`, `htf-amd`, `turtle-soup`, `bullish/bearish-turtle-soup`, `stop-hunt-pattern`, `smt-divergence`, `stop-run-definition`, `stop-run-into-*`, `amd-cycle-overview`, `amd-vs-po3`, etc.
+
+**Phase 5 forward refs to Phase 6/7 still pending:**
+- htf-bias-framework, top-down-analysis, monthly/weekly/daily-bias (Phase 6)
+- algorithmic-price-delivery (Phase 7)
+- ndog / nwog / sunday-open-gap, london-close-reversal, ny-pm-reversal (Phase 6)
+- bullish/bearish-displacement, displacement-strength-criteria, gap-classification (Phase 7)
+- ipda-20/40/60-day-lookback, ipda-reference-points (Phase 7)
+- candle-range-theory + CRT files (Phase 7, community-attributed)
+
+**Cumulative: 166 / ~210 concept files = 79%.**
