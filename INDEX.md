@@ -76,16 +76,45 @@ Format: `- [Concept Name](path) — one-line summary`
 - [pd-array-confluence](concepts/05-pd-arrays/pd-array-confluence.md) — multi-factor alignment scoring.
 
 ### 06 — Fair Value Gaps
-- (Phase 4)
+- [fair-value-gap](concepts/06-fair-value-gaps/fair-value-gap.md) — canonical 3-candle imbalance.
+- [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md) — BISI variant.
+- [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md) — SIBI variant.
+- [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md) — IFVG; polarity-flip after break.
+- [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md) — CE; FVG midpoint.
+- [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md) — 2025: CE elevated to default entry.
+- [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md) — BPR; overlapping bull+bear FVGs.
+- [volume-imbalance](concepts/06-fair-value-gaps/volume-imbalance.md) — body-vs-body gap.
+- [immediate-rebalance-fvg](concepts/06-fair-value-gaps/immediate-rebalance-fvg.md) — fills within 1-3 bars.
+- [delayed-rebalance-fvg](concepts/06-fair-value-gaps/delayed-rebalance-fvg.md) — stays unfilled 5+ bars.
+- [fvg-classification-2025](concepts/06-fair-value-gaps/fvg-classification-2025.md) — immediate/delayed taxonomy.
+- [liquidity-void-vs-fvg](concepts/06-fair-value-gaps/liquidity-void-vs-fvg.md) — disambiguation.
+- [fvg-mitigation](concepts/06-fair-value-gaps/fvg-mitigation.md) — fresh/partial/mitigated state.
+- [nested-fvg](concepts/06-fair-value-gaps/nested-fvg.md) — multi-TF FVG nesting.
 
 ### 07 — Order Blocks
-- (Phase 4)
+- [bullish-order-block](concepts/07-order-blocks/bullish-order-block.md) — last bearish candle before bullish displacement+BOS.
+- [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md) — mirror.
+- [order-block-criteria](concepts/07-order-blocks/order-block-criteria.md) — qualification rules.
+- [mitigated-order-block](concepts/07-order-blocks/mitigated-order-block.md) — tested OB state.
+- [unmitigated-order-block](concepts/07-order-blocks/unmitigated-order-block.md) — fresh OB, highest conviction.
+- [propulsion-block](concepts/07-order-blocks/propulsion-block.md) — wide-body displacement candle as continuation reference.
+- [vacuum-block](concepts/07-order-blocks/vacuum-block.md) — opening-gap candle.
+- [reversal-order-block](concepts/07-order-blocks/reversal-order-block.md) — OB at CHoCH/MSS pivot.
+- [continuation-order-block](concepts/07-order-blocks/continuation-order-block.md) — OB at BOS pivot in trend.
+- [order-block-vs-supply-demand](concepts/07-order-blocks/order-block-vs-supply-demand.md) — disambiguation.
 
 ### 08 — Breaker Blocks
-- (Phase 4)
+- [breaker-block](concepts/08-breaker-blocks/breaker-block.md) — failed OB whose polarity flips.
+- [bullish-breaker](concepts/08-breaker-blocks/bullish-breaker.md) — failed bearish OB → support.
+- [bearish-breaker](concepts/08-breaker-blocks/bearish-breaker.md) — failed bullish OB → resistance.
+- [mitigation-block](concepts/08-breaker-blocks/mitigation-block.md) — violated OB without polarity flip (BOS context).
+- [breaker-vs-mitigation](concepts/08-breaker-blocks/breaker-vs-mitigation.md) — disambiguation.
+- [failed-breaker](concepts/08-breaker-blocks/failed-breaker.md) — breaker that fails on retest.
 
 ### 09 — Displacement
-- (Phase 4)
+- [displacement-definition](concepts/09-displacement/displacement-definition.md) — wide-body force candle.
+- [displacement-and-fvg](concepts/09-displacement/displacement-and-fvg.md) — displacement ↔ FVG mutual implication.
+- (per-direction + classification + gap-classification deferred to Phase 7)
 
 ### 10 — Killzones
 - [killzone-overview](concepts/10-killzones/killzone-overview.md) — five canonical KZs in NY time.
@@ -140,10 +169,16 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ote-failure](concepts/17-optimal-trade-entry/ote-failure.md) — invalidation & response.
 
 ### 18 — Mitigation
-- (Phase 4)
+- [mitigation-definition](concepts/18-mitigation/mitigation-definition.md) — umbrella concept of zone "tested" state.
+- [mitigation-of-ob](concepts/18-mitigation/mitigation-of-ob.md) — MT-threshold OB mitigation.
+- [mitigation-of-fvg](concepts/18-mitigation/mitigation-of-fvg.md) — CE-threshold FVG mitigation (2025 default).
+- [mitigation-of-breaker](concepts/18-mitigation/mitigation-of-breaker.md) — breaker retest mechanics.
+- [partial-vs-full-mitigation](concepts/18-mitigation/partial-vs-full-mitigation.md) — fresh/partial/mitigated/fully-consumed lifecycle.
 
 ### 19 — Rejection Blocks
-- (Phase 4)
+- [rejection-block](concepts/19-rejection-blocks/rejection-block.md) — long-wick rejection at key level.
+- [bullish-rejection-block](concepts/19-rejection-blocks/bullish-rejection-block.md) — lower-wick variant.
+- [bearish-rejection-block](concepts/19-rejection-blocks/bearish-rejection-block.md) — upper-wick variant.
 
 ### 20 — Turtle Soup
 - (Phase 5)

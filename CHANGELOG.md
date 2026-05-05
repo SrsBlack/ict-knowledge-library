@@ -160,3 +160,64 @@ Wrote 33 concept files covering the conceptual heart of the library: PD arrays, 
 - algorithmic-price-delivery (Phase 7)
 
 **Cumulative: 96 / ~210 concept files = 46%.**
+
+---
+
+## Phase 3 review fixes (2026-05-05)
+
+- `pd-array-confluence.md`: Formal Criteria said "high-confluence has 4+" but Formula/Math said "5-6 = high"; unified.
+- `ote-overview.md` Example 1: bad math ("145 pips, R:R 9.7R" should be 220 pips, 14.7R); fixed.
+
+---
+
+## Phase 4 — FVG / OB / Breakers (2026-05-05)
+
+Wrote 40 files across 6 directories — the largest single phase.
+
+**Added (40 files):**
+
+`06-fair-value-gaps/` (14):
+- fair-value-gap, bullish-fvg, bearish-fvg, inversion-fvg
+- consequent-encroachment, ce-as-primary-entry
+- balanced-price-range, volume-imbalance
+- immediate-rebalance-fvg, delayed-rebalance-fvg, fvg-classification-2025
+- liquidity-void-vs-fvg, fvg-mitigation, nested-fvg
+
+`07-order-blocks/` (10):
+- order-block-criteria, bullish-order-block, bearish-order-block
+- mitigated-order-block, unmitigated-order-block
+- propulsion-block, vacuum-block
+- reversal-order-block, continuation-order-block, order-block-vs-supply-demand
+
+`08-breaker-blocks/` (6):
+- breaker-block, bullish-breaker, bearish-breaker
+- mitigation-block, breaker-vs-mitigation, failed-breaker
+
+`18-mitigation/` (5):
+- mitigation-definition, mitigation-of-ob, mitigation-of-fvg
+- mitigation-of-breaker, partial-vs-full-mitigation
+
+`19-rejection-blocks/` (3):
+- rejection-block, bullish-rejection-block, bearish-rejection-block
+
+`09-displacement/` (2 of 6 — foundation only):
+- displacement-definition, displacement-and-fvg
+- (4 remaining files deferred to Phase 7)
+
+**Updated:**
+- `INDEX.md` — replaced Phase-4 placeholders with 40 entries.
+- `TIMELINE.md` — added FVG/OB to 2016, displacement/BPR/blocks/CE/IFVG to 2017-2018, FVG-classification/IFVG-formalized/propulsion re-teach to 2024.
+
+**Phase 1-3 forward refs that now resolve:**
+- All references to `fair-value-gap`, `bullish-fvg`, `bearish-fvg`, `inversion-fvg`, `consequent-encroachment`, `ce-as-primary-entry`, `balanced-price-range`, `volume-imbalance`, `immediate-rebalance-fvg`, `delayed-rebalance-fvg`, `fvg-classification-2025`, `liquidity-void-vs-fvg`, `fvg-mitigation`, `nested-fvg`, all OB files, all breaker files, all mitigation files, all rejection-block files, `displacement-definition`, `displacement-and-fvg`.
+
+**Phase 4 forward refs to Phases 5-7 still pending:**
+- power-of-three / accumulation/manipulation/distribution-phase / silver-bullet (Phase 5)
+- htf-bias-framework, top-down-analysis (Phase 6)
+- turtle-soup, stop-run-definition (Phase 5)
+- algorithmic-price-delivery (Phase 7)
+- ndog / nwog / sunday-open-gap (Phase 6)
+- bullish/bearish-displacement, displacement-strength-criteria, gap-classification (Phase 7)
+- ipda-20/40/60-day-lookback, ipda-reference-points (Phase 7)
+
+**Cumulative: 136 / ~210 concept files = 65%.**

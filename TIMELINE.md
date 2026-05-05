@@ -14,6 +14,8 @@ The original ICT mentorship year. Most foundational PD-array, killzone, and orde
 
 - **swing-high** — 3-bar pivot definition. → [swing-high](concepts/01-market-structure/swing-high.md)
 - **swing-low** — 3-bar pivot definition. → [swing-low](concepts/01-market-structure/swing-low.md)
+- **fair-value-gap (FVG)** — 3-candle wick imbalance introduced. → [fair-value-gap](concepts/06-fair-value-gaps/fair-value-gap.md), [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md), [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md)
+- **order-block (OB)** — last opposite-color candle before displacement. → [order-block-criteria](concepts/07-order-blocks/order-block-criteria.md), [bullish-order-block](concepts/07-order-blocks/bullish-order-block.md), [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md), [mitigated-order-block](concepts/07-order-blocks/mitigated-order-block.md), [unmitigated-order-block](concepts/07-order-blocks/unmitigated-order-block.md), [order-block-vs-supply-demand](concepts/07-order-blocks/order-block-vs-supply-demand.md)
 - **buy-side-liquidity (BSL)** — resting buy stops above swing highs. → [buy-side-liquidity](concepts/02-liquidity/buy-side-liquidity.md)
 - **sell-side-liquidity (SSL)** — resting sell stops below swing lows. → [sell-side-liquidity](concepts/02-liquidity/sell-side-liquidity.md)
 - **liquidity-pool** — umbrella term for stop clusters. → [liquidity-pool](concepts/02-liquidity/liquidity-pool.md)
@@ -42,6 +44,12 @@ Refinements of FVG and OB definitions; introduction of OTE and Fibonacci levels;
 - **liquidity-sweep** / **liquidity-run** — sweep and run-on-liquidity terminology. → [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md), [liquidity-run](concepts/02-liquidity/liquidity-run.md)
 - **ny-lunch** — dead-session designation. → [ny-lunch](concepts/15-sessions/ny-lunch.md)
 - **OTE methodology + ICT fib levels** introduced (0.62 / 0.705 / 0.79 retracement; -1.5/-2.0/-2.5/-4.0 projection). → [ote-overview](concepts/17-optimal-trade-entry/ote-overview.md), [ote-62](concepts/17-optimal-trade-entry/ote-62.md), [ote-705](concepts/17-optimal-trade-entry/ote-705.md), [ote-79](concepts/17-optimal-trade-entry/ote-79.md), [ote-rules](concepts/17-optimal-trade-entry/ote-rules.md), [ote-failure](concepts/17-optimal-trade-entry/ote-failure.md), [ict-fib-overview](concepts/28-fibonacci-levels/ict-fib-overview.md), [fib-62](concepts/28-fibonacci-levels/fib-62.md), [fib-705](concepts/28-fibonacci-levels/fib-705.md), [fib-79](concepts/28-fibonacci-levels/fib-79.md), [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md), [fib-vs-ote](concepts/28-fibonacci-levels/fib-vs-ote.md)
+- **displacement** introduced as ICT's algorithmic-intent signature. → [displacement-definition](concepts/09-displacement/displacement-definition.md), [displacement-and-fvg](concepts/09-displacement/displacement-and-fvg.md)
+- **balanced-price-range (BPR)** introduced. → [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md)
+- **reversal-order-block** vs **continuation-order-block** distinction (refined 2023). → [reversal-order-block](concepts/07-order-blocks/reversal-order-block.md), [continuation-order-block](concepts/07-order-blocks/continuation-order-block.md)
+- **breaker-block** introduced; **mitigation-block** distinct concept. → [breaker-block](concepts/08-breaker-blocks/breaker-block.md), [bullish-breaker](concepts/08-breaker-blocks/bullish-breaker.md), [bearish-breaker](concepts/08-breaker-blocks/bearish-breaker.md), [breaker-vs-mitigation](concepts/08-breaker-blocks/breaker-vs-mitigation.md), [failed-breaker](concepts/08-breaker-blocks/failed-breaker.md)
+- **mitigation** as a state concept. → [mitigation-definition](concepts/18-mitigation/mitigation-definition.md), [mitigation-of-ob](concepts/18-mitigation/mitigation-of-ob.md), [mitigation-of-fvg](concepts/18-mitigation/mitigation-of-fvg.md), [mitigation-of-breaker](concepts/18-mitigation/mitigation-of-breaker.md), [partial-vs-full-mitigation](concepts/18-mitigation/partial-vs-full-mitigation.md)
+- **fvg-mitigation** as state lifecycle, **liquidity-void-vs-fvg** disambiguation, **nested-fvg** confluence. → [fvg-mitigation](concepts/06-fair-value-gaps/fvg-mitigation.md), [liquidity-void-vs-fvg](concepts/06-fair-value-gaps/liquidity-void-vs-fvg.md), [nested-fvg](concepts/06-fair-value-gaps/nested-fvg.md)
 - **PD array** vocabulary refined (premium / discount / hierarchy / dealing-range EQ). → [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md), [premium-array](concepts/05-pd-arrays/premium-array.md), [discount-array](concepts/05-pd-arrays/discount-array.md), [pd-array-hierarchy](concepts/05-pd-arrays/pd-array-hierarchy.md), [dealing-range](concepts/05-pd-arrays/dealing-range.md), [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md), [dealing-range-equilibrium](concepts/27-equilibrium/dealing-range-equilibrium.md), [equilibrium-as-decision-point](concepts/27-equilibrium/equilibrium-as-decision-point.md), [mean-threshold](concepts/27-equilibrium/mean-threshold.md)
 
 ## 2018 — Block Vocabulary Expansion
@@ -52,8 +60,10 @@ Mitigation, propulsion, rejection, vacuum block taxonomy; IFVG and CE introduced
 - **judas-swing** terminology refined into a named ICT concept. → [judas-swing](concepts/13-judas-swing/judas-swing.md), [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md), [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md), [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md)
 - **asian-range-projections** — extension-target framework. → [asian-range-projections](concepts/14-asian-range/asian-range-projections.md)
 - **IPDA** introduced as the algorithm-name for institutional price delivery; 20/40/60-day lookback ranges established. → [ipda-definition](concepts/23-ipda/ipda-definition.md), [ipda-data-ranges](concepts/23-ipda/ipda-data-ranges.md)
-- **volume-imbalance** — body-vs-body imbalance distinction added. → [volume-imbalance-detail](concepts/26-imbalance/volume-imbalance-detail.md)
+- **volume-imbalance** — body-vs-body imbalance distinction added. → [volume-imbalance-detail](concepts/26-imbalance/volume-imbalance-detail.md), [volume-imbalance](concepts/06-fair-value-gaps/volume-imbalance.md)
 - **symmetrical-price-projections** — equal-distance projection method. → [symmetrical-price-projections](concepts/28-fibonacci-levels/symmetrical-price-projections.md)
+- **inversion-fvg (IFVG)** introduced; **consequent-encroachment (CE)** introduced. → [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md), [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md)
+- **propulsion-block, vacuum-block, rejection-block, mitigation-block** taxonomy. → [propulsion-block](concepts/07-order-blocks/propulsion-block.md), [vacuum-block](concepts/07-order-blocks/vacuum-block.md), [rejection-block](concepts/19-rejection-blocks/rejection-block.md), [bullish-rejection-block](concepts/19-rejection-blocks/bullish-rejection-block.md), [bearish-rejection-block](concepts/19-rejection-blocks/bearish-rejection-block.md), [mitigation-block](concepts/08-breaker-blocks/mitigation-block.md)
 
 ## 2019 — Quiet / Iteration
 
@@ -98,13 +108,16 @@ IFVG formalized; immediate vs delayed rebalance distinction; propulsion block re
 - **pd-array-nesting** introduced (formalized 2025 in adv-liquidity series, but rooted in 2024 mentorship modules). → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md)
 - **htf-pd-array-hierarchy** — multi-TF top-down framework refined. → [htf-pd-array-hierarchy](concepts/05-pd-arrays/htf-pd-array-hierarchy.md)
 - **pd-array-matrix** — pre-trade tabular discipline operationalized. → [pd-array-matrix](concepts/05-pd-arrays/pd-array-matrix.md)
+- **FVG classification: immediate vs delayed rebalance** formalized. → [fvg-classification-2025](concepts/06-fair-value-gaps/fvg-classification-2025.md), [immediate-rebalance-fvg](concepts/06-fair-value-gaps/immediate-rebalance-fvg.md), [delayed-rebalance-fvg](concepts/06-fair-value-gaps/delayed-rebalance-fvg.md)
+- **IFVG formalized** as a standardized ICT structural reference. → [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md)
+- **propulsion-block** re-teach in 2024 mentorship module list. → [propulsion-block](concepts/07-order-blocks/propulsion-block.md)
 
 ## 2025 — New Models & FOMC
 
 - **Venom Model** — released April 2025. NQ/ES/YM 90-min intraday strategy. → [venom-model](concepts/31-models/venom-model.md) `(pending)`
 - **Two-stage FOMC delivery** — Sept 2025. → [fomc-two-stage-delivery](concepts/30-news-driven/fomc-two-stage-delivery.md) `(pending)`
 - **Advanced liquidity series** — Oct 2025. PD-array nesting strengthened. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md) `(pending)`
-- **CE as primary entry** — reinforced through 2025. → [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md) `(pending)`
+- **CE as primary entry** — reinforced through 2025. → [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md)
 - **macro-times precision update** — `Year Refined: 2025` on all 6 macro files. → [macro-times-overview](concepts/04-time-cycles/macro-times-overview.md)
 - **quarterly-shift-theory IPDA rotation refinement** — added 3-4 month ERL↔IRL rotation. → [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md)
 - **pd-array-nesting + pd-array-confluence "strengthening principle"** formalized in October 2025 advanced-liquidity series. → [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md), [pd-array-confluence](concepts/05-pd-arrays/pd-array-confluence.md)
