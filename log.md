@@ -6,6 +6,16 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-05-21] structural | wiki-skill adoption + lint
+
+Added `CLAUDE.md` at vault root mapping the existing layout to the `wiki` skill's operations vocabulary (`INDEX.md` ≡ `wiki/index.md`, `meta/hot.md` ≡ `wiki/hot.md`, etc.). Schema continues to live in `AGENTS.md`; the new file is a thin pointer + deviation note, not a duplicate.
+
+Established `meta/` directory and wrote two artifacts:
+- `meta/lint-report-2026-05-21.md` — full vault health check: 0 orphans, 0 dead links (1 intentional template placeholder), 0 frontmatter gaps, INDEX↔disk fully aligned. Vault publication-ready.
+- `meta/hot.md` — hot cache per the Karpathy pattern, ~500 words, overwrite-on-update.
+
+No concept files modified.
+
 ## [2026-05-05] structural | initial scaffold
 
 Repo initialized. Created concept directory tree (33 directories), `TEMPLATE.md`, `README.md`, `INDEX.md` skeleton.

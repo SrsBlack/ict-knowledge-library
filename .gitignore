@@ -12,6 +12,10 @@ desktop.ini
 *.swp
 *~
 
+# Per-machine vault state
+.obsidian/
+.claude/
+
 # Python
 __pycache__/
 *.pyc
