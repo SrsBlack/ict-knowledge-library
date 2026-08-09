@@ -10,25 +10,27 @@
 
 ## Definition
 
-The OTE 0.62 entry is the **shallowest acceptable OTE entry** — the upper bound of the OTE zone. Used when price retraces only to 0.62 and finds PD-array confluence there without going deeper. R:R is reduced versus 0.705 / 0.79 entries because the SL distance to 0.79 is larger.
+The OTE 0.62 entry is the **shallowest acceptable OTE entry** — the upper bound of the OTE zone. Used when price retraces only to 0.62 and finds PD-array confluence there without going deeper. It carries the **widest stop distance** of the three depths, because the taught stop sits at the leg origin regardless of entry depth. ICT: "at or very close to the 62%… I'm not going to demand 79%" (`ICT-2017-OTE`).
 
 ## Formal Criteria
 
 - Retracement reaches 0.62 of measured leg.
 - PD array (FVG / OB / breaker) present at or near 0.62.
 - HTF bias agreement.
-- SL placed beyond 0.79 (deep OTE bound).
+- **SL at the leg-origin extreme (fib 1.0)** — ⚠ *corrected 2026-08-05; this file previously said "beyond 0.79", which is the deepest entry, not the taught stop. See [ote-overview](ote-overview.md).*
 
 ## Formula / Math
 
 ```
 OTE_62_entry = leg_end - 0.62 * leg_size
-SL_reference = leg_end - 0.79 * leg_size      # plus buffer
+SL           = leg_start                      # fib 1.0, exactly
 
 # Bullish leg 1.0800 → 1.0900:
 OTE_62_entry = 1.08380
-SL_below_79  = 1.0815 (1.0821 - 6 pips)
-Risk         = 1.0838 - 1.0815 = 23 pips
+SL           = 1.0800
+Risk         = 1.0838 - 1.0800 = 38 pips
+# first target 1.0900 (fib 0.0) = 62 pips ≈ 1.6R — below the Primer's 2:1 floor,
+# which is exactly why the shallowest entry is the least attractive of the three.
 ```
 
 ## Machine-Readable

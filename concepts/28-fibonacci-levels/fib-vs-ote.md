@@ -30,7 +30,7 @@ OTE is a specific use of fib levels for entry. Fib also covers projections (targ
 
 - Defined as the retracement zone 0.62 – 0.79.
 - 0.705 is the optimal mid-point.
-- 0.79 is the deep / invalidation reference.
+- 0.79 is the deepest acceptable **entry** — ⚠ not the stop. The taught OTE stop is the leg-origin extreme (fib 1.0); see [ote-79](../17-optimal-trade-entry/ote-79.md). *(Corrected 2026-08-05.)*
 - OTE is **only the entry side** — not the projection side.
 
 ### The Containment Relationship
