@@ -1,0 +1,18 @@
+{
+  "id": "VL4YLTRerHY",
+  "title": "ICT Mentorship Core Content - Month 06 - The Million Dollar Swing Setup",
+  "channel": "The Inner Circle Trader",
+  "upload_date": "20220925",
+  "duration": "2307",
+  "webpage_url": "https://www.youtube.com/watch?v=VL4YLTRerHY",
+  "source_id": "ICT-2022-MENTORSHIP-CORE-CONTENT-MONTH-06-MILLION-DOLLAR-SWING-VL4YLTRerHY",
+  "confidence_hint": "high",
+  "sources_md": {
+    "source_id_taken": false,
+    "video_already_cited": [],
+    "total_source_ids": 59
+  },
+  "transcript_warnings": [
+    "4 consecutive identical lines \u2014 likely a decode loop: 'stop trailing.'"
+  ]
+}

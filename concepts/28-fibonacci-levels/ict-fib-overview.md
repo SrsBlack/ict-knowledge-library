@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-OTE, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-OTE, ICT-2020-OTE-EURUSD-EXAMPLE, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** fibonacci, fib, ote, retracement, projection
 
 ## Definition
@@ -29,11 +29,13 @@ ICT fib levels:
 
 The fib tool is anchored to a **measured swing leg**: from leg start to leg end. Retracements measure pullback into the leg; projections measure extensions beyond the leg's destination.
 
+⚠ **The anchors are candle-body extremes, not wick extremes** — "we want to look at the price move on the bodies of the candles… the wicks are always going to be the thinnest price action" (`ICT-2017-OTE`). Because every level below is computed from `leg_size`, this choice propagates into the whole set. See [fib-anchoring](fib-anchoring.md).
+
 ## Formula / Math
 
 ```
-leg_start = price at start of measured leg
-leg_end   = price at end of measured leg
+leg_start = body extreme at start of measured leg    # see fib-anchoring
+leg_end   = body extreme at end of measured leg      # NOT the wick extreme
 leg_size  = leg_end - leg_start          # signed by direction
 
 retrace(level) = leg_end - level * leg_size
@@ -63,8 +65,8 @@ SD_-2_0  = 1.0900 + 200 = 1.1100
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2022",
-  "related": ["fib-62","fib-705","fib-79","standard-deviation-projections","symmetrical-price-projections","fib-vs-ote","ote-overview","equilibrium-definition"],
-  "sources": ["ICT-2017-OTE","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "related": ["fib-anchoring","fib-62","fib-705","fib-79","standard-deviation-projections","symmetrical-price-projections","fib-vs-ote","ote-overview","equilibrium-definition"],
+  "sources": ["ICT-2017-OTE","ICT-2020-OTE-EURUSD-EXAMPLE","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -102,10 +104,12 @@ All TFs.
 
 - **Using classical fib set.** 0.382, 0.50, 0.618, 1.272, 1.618 are common but NOT ICT's primary set. Use 0.62 / 0.705 / 0.79 / SD ratios instead.
 - **Anchoring poorly.** Anchor to a clean swing leg with structural significance (a confirmed swing high to swing low, not a random pivot).
+- **Anchoring to wicks.** Charting tools snap to high/low by default; ICT anchors to candle bodies. See [fib-anchoring](fib-anchoring.md).
 - **Ignoring HTF.** Fib levels alone are not entries; require PD-array + HTF confluence at the level.
 
 ## Related Concepts
 
+- [fib-anchoring](fib-anchoring.md) — where the tool attaches (bodies, not wicks).
 - [fib-62](fib-62.md), [fib-705](fib-705.md), [fib-79](fib-79.md) — per-level deep dives.
 - [standard-deviation-projections](standard-deviation-projections.md) — projection side.
 - [symmetrical-price-projections](symmetrical-price-projections.md) — alternative projection method.
@@ -115,5 +119,6 @@ All TFs.
 
 ## Citations
 
-- `ICT-2017-OTE` — ICT fib levels introduced.
+- `ICT-2017-OTE` — ICT fib levels introduced; (35:36, 36:28) body-anchoring rule and its rationale, see [fib-anchoring](fib-anchoring.md).
+- `ICT-2020-OTE-EURUSD-EXAMPLE` (01:37) — body-anchoring restated in a worked example.
 - `ICT-2022-MENTORSHIP-OVERVIEW` — operational use refined.

@@ -1,7 +1,7 @@
 # Swing Low
 
 **Category:** 01-market-structure
-**Aliases:** pivot low, fractal low, short-term low (STL), intermediate-term low (ITL), long-term low (LTL)
+**Aliases:** pivot low, fractal low, short-term low (STL), intermediate-term low (ITL), long-term low (LTL), old low
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2017

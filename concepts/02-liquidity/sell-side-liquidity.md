@@ -1,7 +1,7 @@
 # Sell-Side Liquidity (SSL)
 
 **Category:** 02-liquidity
-**Aliases:** SSL, sellstops, resting sell orders, liquidity below
+**Aliases:** SSL, sellstops, resting sell orders, liquidity below, old low (as a target)
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2022

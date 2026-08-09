@@ -1,0 +1,18 @@
+{
+  "id": "npL3ZXJ5zOU",
+  "title": "ICT Mentorship Core Content - Month 04 - Reinforcing Liquidity Concepts & Price Delivery",
+  "channel": "The Inner Circle Trader",
+  "upload_date": "20220906",
+  "duration": "2614",
+  "webpage_url": "https://www.youtube.com/watch?v=npL3ZXJ5zOU",
+  "source_id": "ICT-2022-MENTORSHIP-CORE-CONTENT-MONTH-04-REINFORCING-LIQUIDITY-CONCEPTS-npL3ZXJ5zOU",
+  "confidence_hint": "high",
+  "sources_md": {
+    "source_id_taken": false,
+    "video_already_cited": [],
+    "total_source_ids": 59
+  },
+  "transcript_warnings": [
+    "6 consecutive identical lines \u2014 likely a decode loop: 'and then you can see the price.'"
+  ]
+}

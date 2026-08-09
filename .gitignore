@@ -29,3 +29,13 @@ venv/
 *.tmp
 .env
 .env.local
+
+# Ingest packets (tools/ingest_video.py): keep transcripts + metadata, drop binaries.
+# Frames and downloaded media are regenerable from the video id in meta.json.
+raw/*/work/frames/
+raw/*/work/download/
+raw/**/*.jpg
+raw/**/*.mp4
+raw/**/*.mp3
+raw/**/*.vtt
+raw/**/*.info.json

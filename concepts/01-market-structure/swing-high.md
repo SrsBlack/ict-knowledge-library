@@ -1,7 +1,7 @@
 # Swing High
 
 **Category:** 01-market-structure
-**Aliases:** pivot high, fractal high, short-term high (STH), intermediate-term high (ITH), long-term high (LTH)
+**Aliases:** pivot high, fractal high, short-term high (STH), intermediate-term high (ITH), long-term high (LTH), old high
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2017

@@ -39,6 +39,11 @@ The original ICT mentorship year. Most foundational PD-array, killzone, and orde
 
 Refinements of FVG and OB definitions; introduction of OTE and Fibonacci levels; structure terminology formalized.
 
+- **fib-anchoring** — fib attaches to candle **bodies**, not wicks, because wicks are the broker-variable part of a candle. → [fib-anchoring](concepts/28-fibonacci-levels/fib-anchoring.md)
+- **seasonal-tendency** — recurring annual tendency; the *ideal* form is maximum opposition between a pair's seasonal chart and the US Dollar Index seasonal chart. → [seasonal-tendency](concepts/04-time-cycles/seasonal-tendency.md)
+- **central-bank-dealers-range** — 2pm–8pm NY range, ideal <40 pips, standard deviations 1–4 frame the next day. → [central-bank-dealers-range](concepts/15-sessions/central-bank-dealers-range.md)
+- **open-interest** — outstanding futures contracts; rising OI in a trend = sponsorship. → [open-interest](concepts/03-order-flow/open-interest.md)
+- **dollar-index** — USDX/DXY as intermarket reference for FX, commodities and seasonals. → [dollar-index](concepts/03-order-flow/dollar-index.md)
 - **STH/ITH/LTH and STL/ITL/LTL fractal hierarchy** added to swing definitions. → [swing-high](concepts/01-market-structure/swing-high.md), [swing-low](concepts/01-market-structure/swing-low.md)
 - **internal-structure** vs **external-structure** distinction. → [internal-structure](concepts/01-market-structure/internal-structure.md), [external-structure](concepts/01-market-structure/external-structure.md)
 - **bos-bullish** / **bos-bearish** — BOS terminology. → [bos-bullish](concepts/01-market-structure/bos-bullish.md), [bos-bearish](concepts/01-market-structure/bos-bearish.md)

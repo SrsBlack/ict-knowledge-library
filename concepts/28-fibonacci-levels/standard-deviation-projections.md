@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-OTE, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-OTE, ICT-2020-OTE-VOL10, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** fibonacci, projections, targets, sd
 
 ## Definition
@@ -14,10 +14,12 @@ Standard Deviation projections are ICT's measured-leg extension targets — pric
 
 ## Formal Criteria
 
-- Anchor: the same swing leg used for retracement (start → end).
+- Anchor: the same swing leg used for retracement (start → end), on **candle bodies** — see [fib-anchoring](fib-anchoring.md).
 - Each negative fib ratio extends past `leg_end` by that multiple of `leg_size`.
 - Standard projection set: −1.5, −2.0, −2.5, −4.0.
 - Extreme: −4.0 used for major reversal-anchor targets (rarely reached in a single trade).
+
+⚠ **Two different SD sets are taught, and the OTE series uses the shallower one.** In the 2020 *OTE Pattern Recognition Series* the fib preset carries **half / full / one-and-a-half / two** standard deviations — i.e. **−0.5, −1.0, −1.5, −2.0** — with ICT walking the preset's levels directly: "you can add a negative 1.5 level… so that way you have your half standard deviation, full standard deviation, one and a half standard deviation and two standard deviations" (`ICT-2020-OTE-VOL10`, 01:39–02:00). The −0.5 and −1.0 levels are the routine scaling targets in that series (`ICT-2020-OTE-VOL04`–`VOL09`, `VOL12`, `VOL15`); −2.5 and −4.0 do not appear in it. Treat −1.5/−2.0/−2.5/−4.0 as the wider-context set and −0.5/−1.0/−1.5/−2.0 as the OTE-series set; state which one an implementation uses. *(Recorded 2026-08-09.)*
 
 ## Formula / Math
 
@@ -49,7 +51,7 @@ SD_-4_0 = 1.0900 + 400 = 1.1300
   "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["ict-fib-overview","symmetrical-price-projections","fib-62","fib-705","fib-79","draw-on-liquidity","external-range-liquidity"],
-  "sources": ["ICT-2017-OTE","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-OTE","ICT-2020-OTE-VOL10","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 

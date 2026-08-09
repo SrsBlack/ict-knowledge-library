@@ -5,36 +5,53 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-OTE, ICT-2022-MENTORSHIP-OVERVIEW
-**Tags:** ote, rules, checklist
+**Source IDs:** ICT-2017-OTE, ICT-2020-OTE-VOL01, ICT-2020-OTE-VOL02, ICT-2020-OTE-VOL10, ICT-2020-OTE-VOL15, ICT-2020-OTE-VOL19, ICT-2020-OTE-VOL20, ICT-2020-OTE-EURUSD-EXAMPLE, ICT-2022-MENTORSHIP-OVERVIEW
+**Tags:** ote, rules, checklist, continuation
 
 ## Definition
 
 OTE rules are the operational checklist for taking an OTE entry — the discipline that distinguishes a high-probability OTE from a low-probability fib-level fade. ICT teaches OTE not as "buy at 0.705" but as a **multi-condition checklist**.
 
+> ⚠ **Checklist corrected 2026-08-05.** Items 5–7 previously described a *reversal* entry (lower-TF MSS confirming "the reversal"), a stop beyond 0.79, and standard-deviation targets. The reversal framing belongs to the [ict-2022-model](../31-models/ict-2022-model.md) and that correction stands. Corrections are quoted to primary sources below; items 1–4 are unchanged.
+>
+> ⚠ **Partly reversed 2026-08-09 — the 08-05 pass over-corrected on two of the three.** It read 3 OTE videos; the official channel carries 43, including a 20-part *OTE Pattern Recognition Series* of which only Vol. 01 had been read. On the fuller corpus, **SD targets and non-leg-origin stops are both ICT-original** and are restored as disclosed era-forks in items 6 and 7. Only the reversal-framing correction survives unchanged. Root cause was sample size, not method — the confident negatives ("none of the three", "no primary-source quote") were unsupportable from 3 of 43.
+
 ## Formal Criteria — The OTE Checklist
 
 A valid OTE entry requires ALL of:
 
-1. **HTF bias direction confirmed.** Long OTEs only on bullish bias; shorts only on bearish.
-2. **Clean measured leg** (leg_start and leg_end are confirmed swing pivots, ideally with displacement).
-3. **Retracement enters [0.62, 0.79]**.
-4. **PD array at the entry level** (FVG / OB / breaker / mitigation).
-5. **Entry trigger** — typically a lower-TF MSS / CHoCH / FVG forming inside the OTE zone confirms the reversal.
-6. **SL beyond 0.79** with appropriate buffer.
-7. **Targets defined** — at minimum -1.5 SD and -2.0 SD, optionally aligned with HTF DOL.
+1. **HTF bias direction confirmed.** Long OTEs only on bullish bias; shorts only on bearish. *(Majority convention; ICT-original teaches the raw pattern bias-agnostically — "many times you don't even need a bias", `ICT-2020-OTE-VOL01`.)*
+2. **Clean measured leg** (leg_start and leg_end are confirmed swing pivots) that **breaks a prior swing level in the trade direction** — short-term, intermediate-term, or the previous day's high/low. Intermediate-term breaks are "much much more reliable" (`ICT-2017-OTE`). ⚠ This is a **with-trend continuation break, not a counter-directional sweep.**
+2b. **Fib anchored to candle bodies, not wicks** — the highest/lowest *body* of the terminal and origin swings (`ICT-2017-OTE`, 36:28; restated `ICT-2020-OTE-EURUSD-EXAMPLE`, 01:37). Wick-anchoring changes `leg_size` and therefore items 3, 6 and 7 below. See [fib-anchoring](../28-fibonacci-levels/fib-anchoring.md).
+3. **Retracement enters [0.62, 0.79]** — the whole zone is tradable; no pixel precision.
+4. **PD array at the entry level** (FVG / OB / breaker / mitigation). *(Shown in worked examples; not stated as a hard mandate in the dedicated material.)*
+5. **Entry executed in the impulse direction** — a limit at the chosen depth, or a lower-TF confirmation inside the zone if the trader wants one. ⚠ Any lower-TF trigger here confirms **continuation**, not a reversal; OTE does not wait for structure to break *against* the impulse.
+6. **Stop placement — a disclosed intra-primary fork.** **0.79 is the deepest entry, not the stop** in either branch.
+   - **Primer branch (2017, definitional):** SL at the leg-origin extreme (fib 1.0), exactly — "my stop will be exactly at this low, not 10 pips [or] 5 to 10 pips below that" (`ICT-2017-OTE`).
+   - **2020 applied branch:** a **fixed pip stop** sized to the setup, not to the leg. `ICT-2020-OTE-VOL01` (41:33) — "the stop would be 6430, so it's a 20 pip stop"; `ICT-2020-OTE-EURUSD-EXAMPLE` (02:50) — "using a 20 pip stop loss, that would put your stop just about in this high here, so you'd be able to withstand all of the expansion **beyond the 79% retracement level**". Recurs throughout the series: 10 pips (`ICT-2020-OTE-VOL02`, `ICT-2020-OTE-VOL10`, `ICT-2020-OTE-VOL15`, `ICT-2020-OTE-VOL19`), 30 pips (`ICT-2020-OTE-VOL20`).
+
+   The Primer governs as the definitional video, but the fixed-pip branch is **ICT-original and explicitly not leg-origin** — the EURUSD quote places the stop past 0.79 by design. State which branch a backtest or implementation uses; they produce materially different R. *(Corrected 2026-08-09: this item previously asserted the tighter stop had "no primary-source quote behind it". That was wrong — two of the three videos the 2026-08-05 pass itself relied on contain fixed-pip stop quotes.)*
+7. **Targets defined** — first partial at the prior extreme (fib 0.0), then an extension ladder; move the stop to 0.5 of the range after the first target (`ICT-2020-OTE-VOL01`). Optionally aligned with an HTF draw on liquidity. Two ladders are taught, and they are era-split:
+   - **Primer ladder (2017):** −0.27 / −0.62 / −1.0 of the same leg (`ICT-2017-OTE`), the last being the symmetrical price swing.
+   - **Standard-deviation ladder (2020 series):** half / full / one-and-a-half / two standard deviations of the fib range. `ICT-2020-OTE-VOL10` (01:39–02:00) walks the preset's own levels — "you can add a negative 1.5 level… so that way you have your half standard deviation, full standard deviation, one and a half standard deviation and two standard deviations". Used throughout `ICT-2020-OTE-VOL04`–`VOL09`, `VOL12`, `VOL15`. See [standard-deviation-projections](../28-fibonacci-levels/standard-deviation-projections.md).
+
+   *(Corrected 2026-08-09: the 2026-08-05 pass removed SD targets on the grounds that "none … is what the dedicated OTE material teaches". The OTE Pattern Recognition Series is dedicated OTE material and teaches them across at least nine volumes; the earlier pass had read only Vol. 01 of 20.)*
 
 Missing any of (1)–(6) significantly reduces conviction. (7) is for trade management; missing it doesn't invalidate the entry but does compromise execution.
+
+⚠ **Disclosed conflict on R:R:** the Primer requires "better than two to one"; Vol.01 rejects an R:R requirement outright ("if it's one to one it's still good") and imposes a ≥15-pip first-scale floor instead. The Primer governs as the definitional video.
 
 ## Formula / Math
 
 ```
 ote_entry_valid := htf_bias_agree
                     AND clean_measured_leg
+                    AND fib_anchored_to_candle_bodies
+                    AND leg_breaks_prior_swing_in_trade_direction
                     AND retracement_in [0.62, 0.79]
                     AND pd_array_at_entry_level
-                    AND entry_trigger_present
-                    AND sl_beyond_079_with_buffer
+                    AND entry_direction == impulse_direction
+                    AND (sl_at_leg_origin_extreme OR sl_fixed_pip)   # era-fork, item 6
 ```
 
 ## Machine-Readable
@@ -46,14 +63,17 @@ ote_entry_valid := htf_bias_agree
   "aliases": ["OTE-checklist", "OTE-rules"],
   "criteria": [
     {"id": "c1", "expr": "all six core checks pass"},
-    {"id": "c2", "expr": "checks: htf_bias, clean_leg, retracement_zone, pd_array, entry_trigger, sl_placement"}
+    {"id": "c2", "expr": "checks: htf_bias, clean_leg_with_structure_break, fib_anchored_to_bodies, retracement_zone, pd_array, entry_in_impulse_direction, stop_placed (leg_origin OR fixed_pip)"},
+    {"id": "c3", "expr": "counter_directional_sweep_required == false"},
+    {"id": "c4", "expr": "stop_rule in [leg_origin_extreme, fixed_pip]", "strength": "era-fork"},
+    {"id": "c5", "expr": "target_ladder in [primer(-0.27,-0.62,-1.0), sd(-0.5,-1.0,-1.5,-2.0)]", "strength": "era-fork"}
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2022",
-  "related": ["ote-overview","ote-62","ote-705","ote-79","ote-failure","htf-bias-framework","pd-array-definition"],
-  "sources": ["ICT-2017-OTE","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "related": ["fib-anchoring","ote-overview","ote-62","ote-705","ote-79","ote-failure","ict-2022-model","htf-bias-framework","pd-array-definition"],
+  "sources": ["ICT-2017-OTE","ICT-2020-OTE-VOL01","ICT-2020-OTE-VOL02","ICT-2020-OTE-VOL10","ICT-2020-OTE-VOL15","ICT-2020-OTE-VOL19","ICT-2020-OTE-VOL20","ICT-2020-OTE-EURUSD-EXAMPLE","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -64,11 +84,13 @@ ote_entry_valid := htf_bias_agree
 
    ☐ HTF bias bullish?                           [check D / W]
    ☐ Clean leg (start = LTL, end = recent LTH)?  [structural confirmation]
+   ☐ Leg TOOK OUT a prior high on the way up?    [with-trend structure break]
+   ☐ Fib anchored on BODIES, not wicks?          [anchoring — sets every level below]
    ☐ Retracement entered [0.62, 0.79]?           [fib measurement]
    ☐ FVG / OB / breaker at entry level?          [PD-array check]
-   ☐ M5 / M15 MSS or FVG trigger formed inside?  [entry confirmation]
-   ☐ SL set beyond 0.79 + 5-pip buffer?          [risk control]
-   ☐ Targets at -1.5 SD, -2.0 SD, HTF DOL?       [trade management]
+   ☐ Entering LONG, with the impulse?            [NOT fading a sweep — that's the 2022 model]
+   ☐ SL at the leg-origin low, exactly?          [risk control, fib 1.0]
+   ☐ Targets 0.0 / -0.27 / -0.62 / -1.0, HTF DOL? [trade management]
 
    All checked → take the entry.
    Missing any of 1-6 → skip or reduce conviction.
@@ -82,12 +104,12 @@ All TFs.
 
 **Example 1 — full checklist pass:**
 - Daily bias bullish ✓.
-- H1 leg 1.0800 → 1.0900 (clean, displacement-anchored) ✓.
+- H1 leg 1.0800 → 1.0900, clean, and it **took out the prior short-term high** at 1.0885 on the way up ✓.
 - Retracement reaches 1.0830 (0.705) ✓.
 - M15 bullish FVG at 1.0828–1.0832 ✓.
-- M5 prints bullish CHoCH inside the FVG zone ✓.
-- SL at 1.0815 (below 0.79 + 6-pip buffer) ✓.
-- Targets: -1.5 SD = 1.1050 (no nearby HTF DOL conflict) ✓.
+- Entry long, with the impulse ✓ (no counter-sweep is being faded).
+- **SL at 1.0800 — the leg-origin low, exactly** ✓. Risk = 30 pips.
+- Targets: 1.0900 first partial (70 pips ≈ 2.3R), then 1.0927 / 1.0962 / 1.1000 ✓.
 - → take the entry.
 
 **Example 2 — checklist fails on PD array:**
@@ -99,12 +121,17 @@ All TFs.
 - **Skipping the leg-quality check.** Choppy "legs" produce unreliable retracement levels.
 - **Skipping the entry trigger.** Pre-positioning at the fib level without a lower-TF confirmation candle invites SL hits on overshoots.
 - **Force-fitting OTEs onto every chart.** Not every retracement is OTE-grade; some moves don't pull back into 0.62–0.79 at all (price runs without retest).
+- ⚠ **Running the checklist on a counter-sweep setup.** If the trigger was a raid on the opposite side that you are now fading, you are trading the [ict-2022-model](../31-models/ict-2022-model.md), not OTE. Its criteria — and its FVG-at-CE entry — govern that trade.
+- ⚠ **Stopping out at 0.79.** The taught invalidation is the leg origin. A 0.79 stop turns a ~2:1 setup into a much tighter one with a different failure profile; whatever its merits, it is not the rule ICT states.
 
 ## Related Concepts
 
 - [ote-overview](ote-overview.md), [ote-62](ote-62.md), [ote-705](ote-705.md), [ote-79](ote-79.md), [ote-failure](ote-failure.md).
+- [ict-2022-model](../31-models/ict-2022-model.md) — the sweep-reversal composite that OTE is most often confused with.
+- [fib-anchoring](../28-fibonacci-levels/fib-anchoring.md) — item 2b; bodies, not wicks.
 - [htf-bias-framework](../25-htf-bias/htf-bias-framework.md), [pd-array-definition](../05-pd-arrays/pd-array-definition.md).
 
 ## Citations
 
-- `ICT-2017-OTE`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-OTE`, `ICT-2020-OTE-VOL01`, `ICT-2020-OTE-EURUSD-EXAMPLE`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- Item 2b added 2026-08-09 from a frames+transcript pass over the three dedicated OTE sources; `ICT-2017-OTE` (36:28) states the body-anchoring rule and its broker-variance rationale.

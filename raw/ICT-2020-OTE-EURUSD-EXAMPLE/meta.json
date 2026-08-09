@@ -1,0 +1,17 @@
+{
+  "id": "2mtzC7ajUew",
+  "title": "ICT Forex OTE Example : EurUsd",
+  "channel": "The Inner Circle Trader",
+  "upload_date": "20200810",
+  "duration": "309",
+  "webpage_url": "https://www.youtube.com/watch?v=2mtzC7ajUew",
+  "source_id": "ICT-2020-OTE-EURUSD-EXAMPLE",
+  "confidence_hint": "high",
+  "sources_md": {
+    "source_id_taken": true,
+    "video_already_cited": [
+      "- `ICT-2020-OTE-EURUSD-EXAMPLE` \u2014 \"ICT Forex OTE Example: EurUsd\", official channel `2mtzC7ajUew`, 2020-08-10 (upload date verified 2026-07-09). Worked bearish OTE example."
+    ],
+    "total_source_ids": 44
+  }
+}

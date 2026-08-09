@@ -55,9 +55,12 @@ Format: `- [Concept Name](path) — one-line summary`
 - [bullish-order-flow](concepts/03-order-flow/bullish-order-flow.md), [bearish-order-flow](concepts/03-order-flow/bearish-order-flow.md) — directional states.
 - [order-flow-shift](concepts/03-order-flow/order-flow-shift.md) — bias-flip via CHoCH/MSS.
 - [smart-money-footprint](concepts/03-order-flow/smart-money-footprint.md) — multi-signature confluence read.
+- [open-interest](concepts/03-order-flow/open-interest.md) — outstanding futures contracts; trend-sponsorship read.
+- [dollar-index](concepts/03-order-flow/dollar-index.md) — USDX/DXY as intermarket reference for FX and commodities.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
+- [seasonal-tendency](concepts/04-time-cycles/seasonal-tendency.md) — recurring annual tendency; ideal form = opposition vs the dollar index.
 - [macro-time-0050-0110](concepts/04-time-cycles/macro-time-0050-0110.md) — pre-London early macro.
 - [macro-time-0250-0310](concepts/04-time-cycles/macro-time-0250-0310.md) — London open macro (canonical Judas).
 - [macro-time-0950-1010](concepts/04-time-cycles/macro-time-0950-1010.md) — NY pre-open macro.
@@ -163,6 +166,7 @@ Format: `- [Concept Name](path) — one-line summary`
 
 ### 15 — Sessions
 - [session-overview](concepts/15-sessions/session-overview.md) — full NY-time session map.
+- [central-bank-dealers-range](concepts/15-sessions/central-bank-dealers-range.md) — 2pm-8pm NY range; SD 1-4 projections frame the next day.
 - [asia-session](concepts/15-sessions/asia-session.md) — 18:00 prev → 03:00 NY; accumulation / range-building.
 - [london-session](concepts/15-sessions/london-session.md) — 02:00 → 11:00 NY; manipulation + expansion.
 - [ny-am-session](concepts/15-sessions/ny-am-session.md) — 08:00 → 12:00 NY; distribution / largest range.
@@ -257,6 +261,7 @@ Format: `- [Concept Name](path) — one-line summary`
 
 ### 28 — Fibonacci Levels
 - [ict-fib-overview](concepts/28-fibonacci-levels/ict-fib-overview.md) — ICT-specific fib retracement + projection set.
+- [fib-anchoring](concepts/28-fibonacci-levels/fib-anchoring.md) — where the fib attaches: candle bodies, not wicks.
 - [fib-62](concepts/28-fibonacci-levels/fib-62.md) — upper OTE bound (shallow).
 - [fib-705](concepts/28-fibonacci-levels/fib-705.md) — OTE optimal entry mid-point.
 - [fib-79](concepts/28-fibonacci-levels/fib-79.md) — deep OTE / invalidation reference.

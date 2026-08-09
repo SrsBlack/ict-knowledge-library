@@ -1,7 +1,7 @@
 # Buy-Side Liquidity (BSL)
 
 **Category:** 02-liquidity
-**Aliases:** BSL, buystops, resting buy orders, liquidity above
+**Aliases:** BSL, buystops, resting buy orders, liquidity above, old high (as a target)
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2022

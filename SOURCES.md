@@ -21,9 +21,20 @@ The original mentorship; foundational vocabulary. Most lectures are private; cit
 ## ICT 2017 Charter
 
 - `ICT-2017-CHARTER-OVERVIEW` — refinements year.
-- `ICT-2017-OTE` — Optimal Trade Entry (.62 / .705 / .79).
+- `ICT-2017-OTE` — Optimal Trade Entry (.62 / .705 / .79). **The definitional OTE video: "OTE Primer", official channel `Cg0-CFJOJvg`, 2017-09-30** (upload date verified 2026-07-09). ICT defers to it from the 2022 mentorship ("what's my setup for my fib — I actually show that on the OTE Primer video", ep8). Where a dedicated OTE teaching conflicts with a later composite model, this video governs.
 - `ICT-2017-MSS` — Market Structure Shift formalized vs CHoCH.
 - `ICT-2017-DISPLACEMENT` — displacement criteria.
+- `ICT-2017-OTE-AUSSIE-NYO` — "Pattern Recognition - Aussie OTE NYO", official channel `OuwluDkvbxc`, 2017-10-10. **States the fib-anchoring rule in full: lowest body, open or close whichever is lowest, dragged to the highest body.**
+- `ICT-2017-OTE-FIBER-NYO` — "Pattern Recognition - Fiber OTE NYO and Asian Session", official channel `aQrd75xwBS4`, 2017-10-10. "Lowest body portion" anchoring.
+- `ICT-2017-OTE-DRILL-FIBER` — "ICT Pattern Recognition Drill - OTE Fiber EurUsd New York Session", official channel `mDk6ZBadNHk`, 2017-10-29. "I'm going to use this body open inside this swing"; "we're using the lowest body candle here."
+
+**ICT Mentorship Core Content (2017 curriculum, uploaded 2022).** ⚠ These lectures are the **January–June 2017 mentorship**, re-uploaded to the official channel in 2022 — each opens by naming its 2017 lesson number ("this is lesson 4.3 of the January 2017 ICT mentorship"). Cite them as **2017** material; the 2022 upload date is publication, not authorship. Added 2026-08-09 after channel enumeration found 114 Core Content videos and the library cited none of them individually.
+
+- `ICT-2017-SEASONAL-IDEAL` — "Month 05 — Ideal Seasonal Tendencies", `O2Sio7opKxo`, uploaded 2022-09-15 (Jan-2017 mentorship, lesson 4.3). Defines the *ideal* seasonal tendency as maximum opposition between a pair's seasonal chart and the US Dollar Index seasonal chart.
+- `ICT-2017-SEASONAL-COMMODITY` — "Month 10 — Commodity Seasonals Tendencies, My Personal Favorites", `R2NjnYozhdw`, uploaded 2022-10-17 (Jun-2017 mentorship, commodity lesson 3). Seasonals as "a road map"; explicit that they are not guarantees.
+- `ICT-2017-CBDR` — "Month 08 — Central Bank Dealers Range", `nI1AMOC1pro`, uploaded 2022-10-03 (Apr-2017 mentorship, lesson 3). **Defines CBDR: 2 p.m.–8 p.m. New York, ideal range <40 pips, standard deviations 1–4.**
+- `ICT-2017-OPEN-INTEREST` — "Month 10 — Open Interest Secrets & Smart Money Footprints", `qRYkTWePXF0`, uploaded 2022-10-16 (Jun-2017 mentorship, commodity lesson 5). Defines open interest and the trend-sponsorship read; attributes the framework to Larry Williams.
+- `ICT-2017-HIGH-REWARD-SETUPS` — "Month 02 — The Secrets To Selecting High Reward Setups", `bftKgceXqYo`, uploaded 2022-08-29. Commodities/dollar-index inverse relationship; interest-rate differentials and carrying-charge markets.
 
 ## ICT 2018–2020 Public Era
 
@@ -32,6 +43,23 @@ The original mentorship; foundational vocabulary. Most lectures are private; cit
 - `ICT-2018-CE` — Consequent Encroachment introduced.
 - `ICT-2018-IPDA` — IPDA 20/40/60-day lookback explanation.
 - `ICT-2020-FREE-TUTORING` — public YouTube re-teach of foundations.
+- `ICT-2020-OTE-VOL01` — "OTE Pattern Recognition Series — Vol. 01", official channel `E9F_aT9f038`, 2020-05-08 (upload date verified 2026-07-09). Session-pattern OTE teaching: PDH/PDL takes, the 08:30–11:00 NY window, trailing-stop and partial management. ⚠ Frequently mis-dated to 2017 in secondary write-ups.
+- `ICT-2020-OTE-EURUSD-EXAMPLE` — "ICT Forex OTE Example: EurUsd", official channel `2mtzC7ajUew`, 2020-08-10 (upload date verified 2026-07-09). Worked bearish OTE example.
+
+**OTE Pattern Recognition Series, Vols. 02–20** (official channel, May–June 2020). Vol. 01 above is the long-form opener; these are short applied examples posted near-daily. Added 2026-08-09 after channel enumeration showed the library cited 1 of 20 volumes. IDs below cover the volumes cited in concept files; the remaining volumes are ingested but uncited.
+
+- `ICT-2020-OTE-VOL02` — Vol. 02, `v6ATva5DF0I`, 2020-05-08. Worked example with an explicit 10-pip stop.
+- `ICT-2020-OTE-VOL04` — Vol. 04, `Q0SFXEQqI08`, 2020-05-12. Standard-deviation target on the range.
+- `ICT-2020-OTE-VOL05` — Vol. 05, `t6y637OyiDY`, 2020-05-13. Range/half-range partial scaling.
+- `ICT-2020-OTE-VOL06` — Vol. 06, `Vx25X2sbxPA`, 2020-05-14. First and second standard-deviation targets.
+- `ICT-2020-OTE-VOL07` — Vol. 07, `_x36n9Jc2JQ`, 2020-05-15. Half-SD of the fib range as second scaling.
+- `ICT-2020-OTE-VOL08` — Vol. 08, `ifFDif82Bmg`, 2020-05-19. "Half of the standard deviation that makes up the fib range."
+- `ICT-2020-OTE-VOL09` — Vol. 09, `uqptoSAGS30`, 2020-05-20. SD of the dealing range used for the fib.
+- `ICT-2020-OTE-VOL10` — Vol. 10, `j5x90p55O8A`, 2020-05-20. **Enumerates the fib preset's projection levels: half / full / 1.5 / 2 standard deviations.** Also a 10-pip stop.
+- `ICT-2020-OTE-VOL12` — Vol. 12, `6D3sKabkozk`, 2020-05-22. PDH/PDL run model; half- and full-SD targets.
+- `ICT-2020-OTE-VOL15` — Vol. 15, `RP6rVMJP4hA`, 2020-05-29. 08:30 time window, 62% entry, 10-pip stop, SD target ladder.
+- `ICT-2020-OTE-VOL19` — Vol. 19, `9F-anykT7J0`, 2020-06-04. 10-pip stop.
+- `ICT-2020-OTE-VOL20` — Vol. 20, `L--1zBIEanY`, 2020-06-05. 30-pip stop at the old level.
 
 ## ICT 2021–2022 Models Era
 

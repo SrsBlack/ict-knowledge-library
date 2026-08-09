@@ -6,6 +6,74 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-09] ingest | Core Content mined: the library was missing ICT's entire market-context layer
+
+Ingested the 114-video *Mentorship Core Content* curriculum (113 usable) bringing the corpus to 153 packets / 59 hrs. Ran a coverage scan — recurring 2–4 word phrases across all 148 usable transcripts, minus every term the library already names — and the gap was structural, not incidental.
+
+**The library documented ICT's price-structure half (228 files: FVG, order blocks, MSS, PD arrays, killzones) and had essentially nothing on his market-context half.** Verified absent by direct search, with corpus frequency / source-spread:
+
+| concept | mentions | sources | library hits before today |
+|---|---|---|---|
+| seasonal tendency | 398 | 51 | 0 |
+| dollar index | 334 | 33 | 0 |
+| interest rates / central bank | 272 | 32 | 0 |
+| bank dealers range | 228 | 10 | 0 |
+| open interest / COT | 175 | 16 | 0 |
+| average daily range | 123 | 15 | 0 |
+
+New concept files, each written from the dedicated lecture rather than from inference:
+[seasonal-tendency](concepts/04-time-cycles/seasonal-tendency.md),
+[central-bank-dealers-range](concepts/15-sessions/central-bank-dealers-range.md),
+[open-interest](concepts/03-order-flow/open-interest.md),
+[dollar-index](concepts/03-order-flow/dollar-index.md).
+Five new Source IDs.
+
+⚠ **Dating correction:** the Core Content lectures are the **2017 mentorship** re-uploaded in 2022 — each names its own 2017 lesson number ("lesson 4.3 of the January 2017 ICT mentorship"). Cited as 2017; the 2022 upload date is publication, not authorship. Anyone citing them as 2022 material is mis-dating the curriculum.
+
+**Not filed as new concepts:** `old high` / `old low` (541 mentions, 72 sources) are ICT's plain phrasing for prior swing levels used as liquidity targets, already covered by [swing-high](concepts/01-market-structure/swing-high.md), [swing-low](concepts/01-market-structure/swing-low.md), [buy-side-liquidity](concepts/02-liquidity/buy-side-liquidity.md) and [sell-side-liquidity](concepts/02-liquidity/sell-side-liquidity.md). Added as **aliases** — a new page would have duplicated four existing concepts. Coverage scans surface vocabulary, not concepts; every candidate still needs the source read before it earns a file.
+
+**Still open:** interest-rate differentials / carrying-charge markets and average-daily-range have corpus evidence but no dedicated lecture read yet. Commodity-specific material (Month 10) is largely unmined.
+
+## [2026-08-09] correction | Channel enumerated: 43 OTE videos, not 3 — the 08-05 pass is PARTLY REVERSED
+
+Enumerated the official channel (715 videos) instead of sampling. **43 carry OTE in the title; the library cited 3.** Among them a 20-part *OTE Pattern Recognition Series* of which only Vol. 01 had ever been read. Ingested 40 as transcripts (~7 h) via `tools/ingest_video.py`; 15 new Source IDs added for the volumes actually cited.
+
+Two claims from the 2026-08-05 correction do not survive the fuller corpus:
+
+1. **Standard-deviation targets are dedicated OTE material.** 08-05 removed them saying "none … is what the dedicated OTE material teaches". The series teaches them across ≥9 volumes; `ICT-2020-OTE-VOL10` (01:39–02:00) walks the fib preset's own levels — half / full / 1.5 / 2 SD. Restored in `ote-rules` item 7 as an era-fork. ⚠ Note the *set* differs from the library's: the OTE series uses **−0.5/−1.0/−1.5/−2.0**, `standard-deviation-projections` documents −1.5/−2.0/−2.5/−4.0. Both recorded.
+2. **The stop rule is a fork, not a single rule.** 08-05 asserted a tighter stop had "no primary-source quote behind it". Falsified by **two of the three videos that pass itself used**: `ICT-2020-OTE-VOL01` (41:33) "so it's a 20 pip stop"; `ICT-2020-OTE-EURUSD-EXAMPLE` (02:50) a 20-pip stop placed to survive expansion "beyond the 79% retracement level" — explicitly not leg-origin. Fixed-pip stops recur in Vols 02/10/15/19/20.
+
+The reversal-framing correction (OTE ≠ 2022 model) **stands unchanged** — the fuller corpus supports it.
+
+Root cause: sample size, not method. Confident negatives ("none of the three", "no primary-source quote") are unsupportable from 3 of 43 sources. Lesson banked: enumerate the source population before asserting an absence.
+
+Updated: `ote-rules.md` (items 6, 7, banner, formula, JSON), `ote-overview.md` (criteria, formula, JSON, ASCII), `standard-deviation-projections.md` (two-set note), `SOURCES.md` (+15 IDs), `fib-anchoring.md` (+3 corroborating sources).
+
+## [2026-08-09] ingest | Three dedicated OTE sources re-read with frames — fib anchoring documented for the first time
+
+Re-ingested `ICT-2017-OTE` (OTE Primer, 44m), `ICT-2020-OTE-VOL01` (57m) and `ICT-2020-OTE-EURUSD-EXAMPLE` (5m) as transcript + scene frames via `tools/ingest_video.py`. No new Source IDs — all three were already cited; the existing entries were re-read, not renumbered.
+
+**New concept: [fib-anchoring](concepts/28-fibonacci-levels/fib-anchoring.md).** ICT anchors the fib to **candle bodies, not wicks**, and states the reason: wicks are the part of a candle that differs most between brokers. Primer 36:28 — "we're going to put on the bodies of candles up here, this is the highest body right there… we're going to look at that as the open, so the open is 1.1799, so that's where our fib will be dropped". Restated in the EURUSD example at 01:37. The rule was absent from all 226 prior files despite being load-bearing: it sets `leg_size`, hence the OTE band, the stop at fib 1.0, and every target. Also recorded the contrasting PD-array convention — "the order block is starting at the wick" (`ICT-2020-OTE-VOL01`, 13:56).
+
+Updated: `ote-overview.md` (criterion + formula + mistake + related), `ote-rules.md` (checklist item 2b), `ict-fib-overview.md` (anchor note + formula + mistake), `INDEX.md`, `TIMELINE.md` (2017).
+
+⚠ The 2026-08-05 pass below ran on caption tracks and did not surface this. The rule is spoken plainly in the Primer, so the gap was one of search, not of source access — the frames corroborated the 1.1799 anchor but did not originate the finding.
+
+## [2026-08-05] correction | OTE category re-verified against primary sources — stop placement, continuation framing, target ladder
+
+First substantive content correction since the build. Seven files in `concepts/17-optimal-trade-entry/` and `concepts/28-fibonacci-levels/` carried claims that a primary-source verification pass (official-channel caption tracks, upload dates verified by `yt-dlp`) does not support. Two new Source IDs added: `ICT-2020-OTE-VOL01` (`E9F_aT9f038`, 2020-05-08 — ⚠ frequently mis-dated to 2017 in secondary write-ups) and `ICT-2020-OTE-EURUSD-EXAMPLE` (`2mtzC7ajUew`, 2020-08-10). `ICT-2017-OTE` annotated as the definitional "OTE Primer" (`Cg0-CFJOJvg`, 2017-09-30) which ICT himself defers to from the 2022 mentorship.
+
+**Corrected:**
+- **Stop placement.** The library said "SL beyond 0.79 + buffer" across `ote-overview`, `ote-rules`, `ote-62`, `ote-705`, `ote-79`. The Primer states the opposite in as many words: *"my stop will be exactly at this low, not 10 pips [or] 5 to 10 pips below that."* Vol.01's worked example placed its initial stop at the fib origin likewise. **0.79 is the deepest ENTRY; the stop is the leg-origin extreme (fib 1.0).** The 0.79-buffer stop is retained as an explicitly labelled community variant with no primary quote behind it.
+- **Continuation vs reversal.** `ote-rules` #5 described a lower-TF MSS/CHoCH "confirming the reversal". OTE is a **with-trend continuation** entry; a counter-directional sweep is not a precondition, and *sweep/raid/stop-hunt/inducement* appear nowhere as entry conditions in any dedicated OTE teaching. The sweep-reversal sequence is the separately-filed `ict-2022-model`. Cross-links added in both directions so the two are hard to confuse.
+- **Missing criterion.** The impulse leg must **break a prior swing level in the trade direction** (short-term / intermediate-term / PDH-PDL). This was absent from the criteria entirely; the Primer teaches intermediate-term breaks as "much much more reliable".
+- **Target ladder.** "-1.5 SD / -2.0 SD" replaced with the Primer's own ladder: first partial at the prior extreme (fib 0.0), then **-0.27 / -0.62 / -1.0**. The worked examples' R:R arithmetic (previously ~14-46R) is corrected accordingly and now lands at 1.6-3.8R across the three entry depths.
+- **Failure semantics.** `ote-failure` conflated the 0.79 close (a **warning** — out of zone) with invalidation (**leg-origin extreme taken out**). Separated, with a note that body-close-vs-wick semantics are unspecified in the primary material and must be pinned by any mechanical implementation.
+
+**Disclosed, not resolved:** two intra-primary conflicts now stated rather than silently picked — R:R floor (Primer "better than two to one" vs Vol.01's explicit rejection of R:R plus a 15-pip first-scale floor) and time window (Primer is time-silent; Vol.01 teaches 08:30-11:00 NY as constitutive). Both are ICT-original from different eras. The Primer governs as the definitional video; the alternatives are labelled as tracked variants. Bias-gate and PD-array-presence downgraded from hard criteria to strong conventions, since neither is stated as a mandate in the dedicated material.
+
+No other concept directories touched.
+
 ## [2026-05-21] structural | wiki-skill adoption + lint
 
 Added `CLAUDE.md` at vault root mapping the existing layout to the `wiki` skill's operations vocabulary (`INDEX.md` ≡ `wiki/index.md`, `meta/hot.md` ≡ `wiki/hot.md`, etc.). Schema continues to live in `AGENTS.md`; the new file is a thin pointer + deviation note, not a duplicate.
