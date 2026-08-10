@@ -39,6 +39,16 @@ The original mentorship; foundational vocabulary. Most lectures are private; cit
 - `ICT-2017-OPEN-FLOAT` — "Month 05 — Defining Open Float Liquidity Pools", `vqtA1S9JH34`, uploaded 2022 (Jan-2017 mentorship, lesson 1.4). **60 trading days back + 60 cast forward = 120-day open float**; highest high / lowest low mark the large-fund pools.
 - `ICT-2017-RATE-DIFFERENTIALS` — "Month 05 — Interest Rate Differentials", `w6VlX-rsTUs`, uploaded 2022 (Jan-2017 mentorship, lesson 2.3). Central-bank policy-rate table as the start of the macro read; capital flows to yield.
 - `ICT-2017-CARRYING-CHARGE` — "Month 10 — Premium Vs. Carrying Charge Market", `WsolkBzpDOQ`, uploaded 2022 (Jun-2017 mentorship, commodity lesson 4). Nearby vs next month out; no premium = carrying charge; premium = demand high / supply short.
+- `ICT-2017-FILLING-NUMBERS` — "Month 09 — Filling The Numbers", `zanmou0ic5U`, uploaded 2022-10-09 (May-2017 mentorship, amplified day trading lesson 2). The daily range fills ~four reference levels per day; zero-GMT pivot ladder; staged orders.
+- `ICT-2017-MEGA-COMMODITY` — "Month 11 — Commodity Mega-Trades", `u5S6Zt1ZIpA`, uploaded 2022-10-23 (Jul-2017 mentorship, mega-trades lesson 1). **Defines the mega-trade**; credits Larry Williams.
+- `ICT-2017-MEGA-FOREX` — "Month 11 — Forex & Currency Mega-Trades", `CxwFON8MLB0`, uploaded 2022-10-24 (lesson 2). Quarterly shifts as the FX driver.
+- `ICT-2017-MEGA-STOCK` — "Month 11 — Stock Mega-Trades", `kny8Kpisvoc`, uploaded 2022-10-25 (lesson 3). Six-to-nine-month equity duration.
+- `ICT-2017-MEGA-BOND` — "Month 11 — Bond Mega-Trades", `At43V93rnDQ`, uploaded 2022-10-26. 30-year treasury seasonal tendency as the driver.
+
+**ICT 2016 Mentorship, Core Content re-uploads.** Same 2022-upload caveat as above; these lectures name their 2016 origin.
+
+- `ICT-2016-RECLAIMED-OB` — "Month 04 — Reclaimed ICT Orderblock", `X5pQjfkAUCI`, uploaded 2022-09-08 (Dec-2016 mentorship, teaching 3.4 of 8). Reinforcing order-block theory; blocks from the opposing leg of a market maker curve reclaimed as new entries.
+- `ICT-2016-MARKET-EFFICIENCY-PARADIGM` — "Month 1 — How Market Makers Condition The Market", `XwYYWBttWro`, uploaded 2022-08-23. "They're not efficient for the speculators, they're efficient for the smart money."
 
 ## ICT 2018–2020 Public Era
 

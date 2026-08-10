@@ -6,6 +6,21 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-09] ingest | Distillation tranche 2 — mega-trade, filling the numbers, reclaimed OB, efficiency paradigm
+
+Backlog items A1, A4, A7, A16 from [distillation-backlog-2026-08-09](meta/distillation-backlog-2026-08-09.md).
+
+- [mega-trade](concepts/31-models/mega-trade.md) — **one page, four sources.** The four Mega-Trades lectures (stock/bond/commodity/forex, 161 min) teach one concept across four markets: the single prolonged annual move, six-to-nine months in equities, driven by seasonal tendency (quarterly shifts in FX), qualified by institutional sponsorship. Writing four near-identical pages would have been the obvious mistake.
+- [filling-the-numbers](concepts/04-time-cycles/filling-the-numbers.md) — the daily range fills **~four reference levels per day**: prior-day high/low plus the **zero-GMT** pivot ladder. Levels attract because staged orders rest there; *which* four fill is selected by order flow + the PD array matrix. Includes the retail inversion — S1/S2 below the central pivot as a short area, not a buy area.
+- [reclaimed-order-block](concepts/07-order-blocks/reclaimed-order-block.md) — a block formed on the **opposing leg** of a market maker curve, re-used in the opposite role. Distinct from mitigation: a mitigated block is spent, a reclaimed block is deliberately re-entered. `07-order-blocks` had ten files and none covered it.
+- [market-efficiency-paradigm](concepts/03-order-flow/market-efficiency-paradigm.md) — "they're not efficient for the speculators, they're efficient for the smart money"; smart money is the liquidity provider, "everyone else's liquidity". The premise beneath treating levels as destinations rather than barriers.
+
+⚠ The efficiency paradigm is recorded with an explicit confidence note: ICT asserts it as fact about market structure; the library records the assertion and its lineage and takes no position on whether it is empirically true, per `CONTRIBUTING.md`.
+
+Seven new Source IDs (four mega-trade lectures + three). Lint clean: 240 concept files, 75 source ids.
+
+**Remaining backlog: 12 concepts + 2 merges (~6 hrs).**
+
 ## [2026-08-09] ingest | Distillation tranche 1 — four concepts from dedicated Core Content lectures
 
 Continuing the market-context backlog. Method: a **curriculum map** — a lecture *titled* after a concept is far stronger evidence than a frequent phrase — which ranked 36 lectures (14.2 hrs) whose subject the library did not cover. Tranche 1 took the four with the strongest dedicated teaching behind them.

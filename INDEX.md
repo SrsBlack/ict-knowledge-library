@@ -61,10 +61,12 @@ Format: `- [Concept Name](path) — one-line summary`
 - [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md) — weekly CFTC commercial positioning; zero-line buy/sell programs.
 - [interest-rate-differentials](concepts/03-order-flow/interest-rate-differentials.md) — central-bank rate spread as HTF macro bias.
 - [premium-vs-carrying-charge-market](concepts/03-order-flow/premium-vs-carrying-charge-market.md) — commodity delivery-month curve; premium = demand > supply.
+- [market-efficiency-paradigm](concepts/03-order-flow/market-efficiency-paradigm.md) — markets are efficient FOR smart money; everyone else is the liquidity.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
 - [seasonal-tendency](concepts/04-time-cycles/seasonal-tendency.md) — recurring annual tendency; ideal form = opposition vs the dollar index.
+- [filling-the-numbers](concepts/04-time-cycles/filling-the-numbers.md) — the daily range fills ~4 reference levels; zero-GMT pivot ladder.
 - [macro-time-0050-0110](concepts/04-time-cycles/macro-time-0050-0110.md) — pre-London early macro.
 - [macro-time-0250-0310](concepts/04-time-cycles/macro-time-0250-0310.md) — London open macro (canonical Judas).
 - [macro-time-0950-1010](concepts/04-time-cycles/macro-time-0950-1010.md) — NY pre-open macro.
@@ -108,6 +110,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [order-block-criteria](concepts/07-order-blocks/order-block-criteria.md) — qualification rules.
 - [mitigated-order-block](concepts/07-order-blocks/mitigated-order-block.md) — tested OB state.
 - [unmitigated-order-block](concepts/07-order-blocks/unmitigated-order-block.md) — fresh OB, highest conviction.
+- [reclaimed-order-block](concepts/07-order-blocks/reclaimed-order-block.md) — block from the opposing leg of a market maker curve, re-used as a new entry.
 - [propulsion-block](concepts/07-order-blocks/propulsion-block.md) — wide-body displacement candle as continuation reference.
 - [vacuum-block](concepts/07-order-blocks/vacuum-block.md) — opening-gap candle.
 - [reversal-order-block](concepts/07-order-blocks/reversal-order-block.md) — OB at CHoCH/MSS pivot.
@@ -289,6 +292,7 @@ Format: `- [Concept Name](path) — one-line summary`
 
 ### 31 — Models
 - [ict-2022-model](concepts/31-models/ict-2022-model.md) — flagship multi-step setup framework.
+- [mega-trade](concepts/31-models/mega-trade.md) — the one prolonged annual move; months-long, seasonally driven, sponsorship-verified.
 - [ict-2023-model](concepts/31-models/ict-2023-model.md) — Quarterly Theory + macro integration refinements.
 - [ict-2024-model](concepts/31-models/ict-2024-model.md) — FVG classification + IFVG + propulsion refinements.
 - [unicorn-model](concepts/31-models/unicorn-model.md) — rare A++ confluence: breaker + nested FVG + bias + sweep.
