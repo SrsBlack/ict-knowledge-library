@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2017
-**Source IDs:** ICT-2017-COT
+**Source IDs:** ICT-2017-COT, ICT-2017-EXPLOSIVE-MARKETS
 **Tags:** order-flow, futures, commercials, positioning, htf-bias, cftc
 
 ## Definition
@@ -37,6 +37,13 @@ itself it means that they are in a **buy program**" (`ICT-2017-COT`, 07:41).
   program rather than a passing hedge (07:34).
 - Commercials also run **hedging programs** inside a buy program — selling some while
   accumulating — so short bursts against the net position are expected (08:03, 08:52).
+- **Recentred zero line (refinement, `ICT-2017-EXPLOSIVE-MARKETS`, 15:18–16:28).** When the
+  COT is used to qualify a specific trade, ICT **discards the printed zero line** and
+  builds his own: take the commercial line's **highest and lowest readings over the last 12
+  months, divide that range in half, and treat the midpoint as the bull/bear boundary** —
+  "I ignore the zero line on the standard net trader position chart". A market whose
+  commercials sat below the absolute zero line all year can still be **buying aggressively**
+  by this measure, which is exactly the case the refinement exists to catch.
 
 ## Formula / Math
 
@@ -50,12 +57,19 @@ phase(t) := BUY_PROGRAM  if net_commercial(t) > 0
 band_above := [min(net > 0 over 12m), max(net > 0 over 12m)]
 band_below := [min(net < 0 over 12m), max(net < 0 over 12m)]
 
+# Recentred boundary used when qualifying a trade (ICT-2017-EXPLOSIVE-MARKETS):
+band_hi   := max(net_commercial over 12m)
+band_lo   := min(net_commercial over 12m)
+zero_new  := (band_hi + band_lo) / 2          # replaces the printed zero line
+phase(t)  := BUY_PROGRAM if net_commercial(t) > zero_new else SELL_PROGRAM
+
 # Worked example (ICT-2017-COT, 02:36-02:49), Japanese yen:
 #   commercial long - commercial short = +67,024 contracts  -> net long
 ```
 
 No numeric threshold for "extreme" is taught. The read is positional within the
-year's range, and discretionary.
+year's range, and discretionary — the recentred midpoint is the only boundary ICT
+computes rather than reads off the chart.
 
 ## Machine-Readable
 
@@ -70,14 +84,15 @@ year's range, and discretionary.
     {"id": "c3", "expr": "net_commercial == commercial_long - commercial_short"},
     {"id": "c4", "expr": "net_commercial > 0 => buy_program"},
     {"id": "c5", "expr": "lookback_months in [6, 12]"},
+    {"id": "c5b", "expr": "qualifying_boundary := midpoint(max,min of net_commercial over 12m); printed zero line ignored"},
     {"id": "c6", "expr": "supplies_entry == false"}
   ],
   "timeframes": ["W","M"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2017",
-  "related": ["open-interest", "institutional-order-flow", "seasonal-tendency", "dollar-index"],
-  "sources": ["ICT-2017-COT"]
+  "related": ["open-interest", "institutional-order-flow", "seasonal-tendency", "dollar-index", "explosive-market-selection", "mega-trade"],
+  "sources": ["ICT-2017-COT", "ICT-2017-EXPLOSIVE-MARKETS"]
 }
 ```
 
@@ -95,6 +110,16 @@ year's range, and discretionary.
    Commercials above the zero line for 6+ months  -> buy program
    Commercials below the zero line                -> sell program
    Position is read against that market's OWN 12-month high/low band.
+
+   RECENTRED BOUNDARY (when qualifying a trade):
+     +  ┤
+        │   ╱‾‾‾╲                          band_hi
+     0  ┼────────────────────────────────  printed zero  (IGNORED)
+        │ ══════════════════════════════   zero_new = (band_hi + band_lo) / 2
+        │      ╲___╱‾‾╲___╱‾               band_lo
+     -  ┤
+   Commercials can sit below the printed zero all year and still be BUYING
+   once they cross above the recentred midpoint.
 ```
 
 ## Timeframes
@@ -123,6 +148,9 @@ positioning. It has no intraday application.
 - **Trading it directly.** COT is macro context; it supplies no entry, stop, or target.
 - **Reading a hedging burst as a phase change.** Commercials sell inside a buy program
   by design.
+- **Using the printed zero line when qualifying a trade.** The recentred 12-month midpoint
+  is the boundary ICT actually acts on; the printed line can label an accumulating market
+  bearish for a full year.
 
 ## Related Concepts
 
@@ -130,7 +158,10 @@ positioning. It has no intraday application.
 - [institutional-order-flow](institutional-order-flow.md) — the broader directional read this feeds.
 - [seasonal-tendency](../04-time-cycles/seasonal-tendency.md) — the other HTF context input taught alongside it.
 - [dollar-index](dollar-index.md) — intermarket context for the same bias stack.
+- [explosive-market-selection](../31-models/explosive-market-selection.md) — where the recentred zero line is taught, as hallmark 3 of 8.
+- [mega-trade](../31-models/mega-trade.md) — the position-scale idea this sponsorship check feeds.
 
 ## Citations
 
 - `ICT-2017-COT` (00:54) — "ICT commodity trading lesson one, commitment of traders, how I use the data"; (01:08) "the raw data comes by way of a weekly report released by the CFTC"; (01:53) "I look at only the futures positions"; (02:01) "you want to be looking in the center column here where it says commercial"; (02:32–02:49) net = long − short, yen example at +67,024 contracts net long; (03:44–03:50) commercials red, large traders green, small speculators blue; (07:34–07:46) "the commercials have been net long for over six months… by itself it means that they are in a buy program"; (08:13–08:41) the 12-to-6-month lookback and the high/low readings above and below the zero line; (08:48) "there's a buy program when they're above the zero line and a sell program when they're below it."
+- `ICT-2017-EXPLOSIVE-MARKETS` (15:18–16:28) the recentred zero line — "I frame the last 12 months and look at the highest high and the lowest low and divide it in half, and I have a new zero line… so I ignore the zero line on the standard net trader position chart"; (16:28–17:26) the December-2016 crossing above the recentred midpoint while still below the printed zero, read as aggressive commercial buying; (13:14–14:12) commercials defined as the producers/providers, hedging on a 12-month plan.

@@ -56,12 +56,13 @@ Format: `- [Concept Name](path) — one-line summary`
 - [bullish-order-flow](concepts/03-order-flow/bullish-order-flow.md), [bearish-order-flow](concepts/03-order-flow/bearish-order-flow.md) — directional states.
 - [order-flow-shift](concepts/03-order-flow/order-flow-shift.md) — bias-flip via CHoCH/MSS.
 - [smart-money-footprint](concepts/03-order-flow/smart-money-footprint.md) — multi-signature confluence read.
-- [open-interest](concepts/03-order-flow/open-interest.md) — outstanding futures contracts; trend-sponsorship read.
+- [open-interest](concepts/03-order-flow/open-interest.md) — outstanding futures contracts; trend-sponsorship read; 10–15 % gate for the qualifying read.
 - [dollar-index](concepts/03-order-flow/dollar-index.md) — USDX/DXY as intermarket reference for FX and commodities.
-- [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md) — weekly CFTC commercial positioning; zero-line buy/sell programs.
+- [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md) — weekly CFTC commercial positioning; buy/sell programs; recentred 12-month zero line.
 - [interest-rate-differentials](concepts/03-order-flow/interest-rate-differentials.md) — central-bank rate spread as HTF macro bias.
 - [premium-vs-carrying-charge-market](concepts/03-order-flow/premium-vs-carrying-charge-market.md) — commodity delivery-month curve; premium = demand > supply.
 - [market-efficiency-paradigm](concepts/03-order-flow/market-efficiency-paradigm.md) — markets are efficient FOR smart money; everyone else is the liquidity.
+- [bond-yield-analysis](concepts/03-order-flow/bond-yield-analysis.md) — 10Y note vs dollar index; tandem = consolidation, inverse = trending; "crack in correlation".
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
@@ -252,6 +253,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [bias-confluence](concepts/25-htf-bias/bias-confluence.md) — multi-TF alignment scoring.
 - [bias-invalidation](concepts/25-htf-bias/bias-invalidation.md) — when bias must flip.
 - [top-down-analysis](concepts/25-htf-bias/top-down-analysis.md) — prescribed analysis sequence.
+- [timeframe-selection](concepts/25-htf-bias/timeframe-selection.md) — timeframe-to-style map; five trader models; the three setups ICT actually trades.
 
 ### 26 — Imbalance
 - [imbalance-definition](concepts/26-imbalance/imbalance-definition.md) — umbrella term for any unworked price region.
@@ -293,6 +295,8 @@ Format: `- [Concept Name](path) — one-line summary`
 ### 31 — Models
 - [ict-2022-model](concepts/31-models/ict-2022-model.md) — flagship multi-step setup framework.
 - [mega-trade](concepts/31-models/mega-trade.md) — the one prolonged annual move; months-long, seasonally driven, sponsorship-verified.
+- [explosive-market-selection](concepts/31-models/explosive-market-selection.md) — the eight hallmarks that qualify a market for an explosive swing move.
+- [ict-day-trading-model](concepts/31-models/ict-day-trading-model.md) — 65–70 % of the daily range; five-day ADR, Sunday-open filter, day-of-week profiles.
 - [ict-2023-model](concepts/31-models/ict-2023-model.md) — Quarterly Theory + macro integration refinements.
 - [ict-2024-model](concepts/31-models/ict-2024-model.md) — FVG classification + IFVG + propulsion refinements.
 - [unicorn-model](concepts/31-models/unicorn-model.md) — rare A++ confluence: breaker + nested FVG + bias + sweep.

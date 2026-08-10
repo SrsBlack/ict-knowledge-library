@@ -44,11 +44,17 @@ The original mentorship; foundational vocabulary. Most lectures are private; cit
 - `ICT-2017-MEGA-FOREX` — "Month 11 — Forex & Currency Mega-Trades", `CxwFON8MLB0`, uploaded 2022-10-24 (lesson 2). Quarterly shifts as the FX driver.
 - `ICT-2017-MEGA-STOCK` — "Month 11 — Stock Mega-Trades", `kny8Kpisvoc`, uploaded 2022-10-25 (lesson 3). Six-to-nine-month equity duration.
 - `ICT-2017-MEGA-BOND` — "Month 11 — Bond Mega-Trades", `At43V93rnDQ`, uploaded 2022-10-26. 30-year treasury seasonal tendency as the driver.
+- `ICT-2017-10YR-HTF` — "Month 05 — Using 10 Year Notes In HTF Analysis", `z-7ypchAMDE`, uploaded 2022-09-13 (Jan-2017 mentorship, lesson 2.1). Note price inverted to yield; 10Y and dollar-index seasonal templates; **tandem movement of notes and DXY = large consolidation, inverse movement = trending regime**.
+- `ICT-2017-10YR-QUALIFYING` — "Month 05 — Qualifying Trade Conditions With 10 Year Yields", `N8_8tEw2_44`, uploaded 2022-09-13 (Jan-2017 mentorship, lesson 2.2). **"Crack in correlation"** — broken mirror symmetry between the 10Y note and the dollar index, named in-lecture as an SMT divergence; ~3-month time horizon.
+- `ICT-2017-EXPLOSIVE-MARKETS` — "Month 06 — Keys To Selecting Markets That Will Move Explosively", `Hoo_wTMgdcY`, uploaded 2022-09-24 (Feb-2017 mentorship, swing-trading lesson 7). **The eight hallmarks of an explosive swing trade.** Refines two existing pages: the **recentred COT zero line** (12-month midpoint replaces the printed zero) and the **10–15 % open-interest gate**. Also: 15-period Williams %R as the sentiment gauge; inside bar / narrowest-of-3 / narrowest-of-7 as the volatility filter.
+- `ICT-2017-DAYTRADE-ESSENTIALS` — "Month 08 — Essentials To ICT Daytrading", `-cXnnHjy9s0`, uploaded 2022-10-02 (Apr-2017 mentorship, lesson 1 of 8). **The day-trading model**: 65–70 % of the daily range, five-day ADR, two setups a day, the Sunday-opening-price filter, day-of-week profiles, FOMC/NFP stand-aside.
+- `ICT-2017-DAYTRADE-HTF` — "Month 08 — Integrating Daytrades With HTF Trade Entries", `1MnfiqKx5Uo`, uploaded 2022-10-08 (Apr-2017 mentorship, lesson 8 of 8). Entering higher-timeframe setups at the **0 GMT open** with a five-day-ADR stop, without trading the London session. ⚠ Transcript has two whisper repetition loops (~13:03, ~16:57); quoted passages avoid both.
 
 **ICT 2016 Mentorship, Core Content re-uploads.** Same 2022-upload caveat as above; these lectures name their 2016 origin.
 
 - `ICT-2016-RECLAIMED-OB` — "Month 04 — Reclaimed ICT Orderblock", `X5pQjfkAUCI`, uploaded 2022-09-08 (Dec-2016 mentorship, teaching 3.4 of 8). Reinforcing order-block theory; blocks from the opposing leg of a market maker curve reclaimed as new entries.
 - `ICT-2016-MARKET-EFFICIENCY-PARADIGM` — "Month 1 — How Market Makers Condition The Market", `XwYYWBttWro`, uploaded 2022-08-23. "They're not efficient for the speculators, they're efficient for the smart money."
+- `ICT-2016-TIMEFRAME-SELECTION` — "Month 03 — Timeframe Selection & Defining Setups", `UF5J0nEBc0E`, uploaded 2022-08-31 (Nov-2016 mentorship, teaching 1 of 8). Timeframe-to-style map (monthly=position, weekly=swing, daily=short-term, H4-and-below=day trading); five trader models; **ICT reduces his own repertoire to three setups** — return into an exposed range, order block, stop run.
 
 ## ICT 2018–2020 Public Era
 

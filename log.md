@@ -6,6 +6,24 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-09] ingest | Distillation tranche 3 — day trading model, timeframe selection, bond yields, explosive market selection
+
+Backlog items A2, A3, A5, A6 from [distillation-backlog-2026-08-09](meta/distillation-backlog-2026-08-09.md). 175 minutes of lecture across six transcripts, all read in full before writing.
+
+- [ict-day-trading-model](concepts/31-models/ict-day-trading-model.md) — **one page, two lectures** (Month 08 lessons 1 and 8). Target **65–70 % of the daily range**, expected range = the **five-day ADR**, **two setups per day on average**, and the **Sunday-opening-price filter** projected on the hourly through Thursday. Lesson 8 folds in as the HTF-integration section: enter at the **0 GMT open** (or a 10–20-pip limit beyond it) with a five-day-ADR stop, no London session required.
+- [timeframe-selection](concepts/25-htf-bias/timeframe-selection.md) — the timeframe→style map (monthly = position, weekly = swing, daily = short-term, H4-and-below = day trading), five trader models, and **ICT's reduction of his own repertoire to three setups**: return into an exposed range, order block, stop run. Distinct from [top-down-analysis](concepts/25-htf-bias/top-down-analysis.md), which is the descent sequence every trader performs; this page is which row you *trade* on.
+- [bond-yield-analysis](concepts/03-order-flow/bond-yield-analysis.md) — **one page, two lectures.** The 10-year note read against the dollar index. Its primary output is a **regime test**, not a direction: notes and DXY moving **in tandem** = large consolidation across bonds, dollar and FX (day trades only); moving **inversely** with the seasonal = trending (position trades). Qualified by a **"crack in correlation"** — broken mirror symmetry, which ICT himself names as an SMT divergence.
+- [explosive-market-selection](concepts/31-models/explosive-market-selection.md) — the **eight hallmarks** of an explosive swing trade: ≥2 of 4 asset classes trending (one from {commodities, stocks} *and* one from {currencies, interest rates}), intermarket confluence, COT alignment, open interest, seasonal tendency, volatility contraction, contrarian headlines, and a 15-period Williams %R. Adjacent to [mega-trade](concepts/31-models/mega-trade.md) — ICT names it as the precursor — but swing-scale, not position-scale.
+
+⚠ **Two existing pages were refined, not duplicated.** Both refinements came out of the explosive-markets lecture and would have been silently forked into the new page if the sibling check had been skipped:
+
+- [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md) — **recentred zero line.** When qualifying a trade ICT discards the printed zero line and uses the **midpoint of the commercial line's 12-month high/low range**. A market whose commercials sat below absolute zero all year can still be buying by this measure.
+- [open-interest](concepts/03-order-flow/open-interest.md) — **10–15 % qualifying gate.** The page previously stated "no numeric threshold for *rising* is taught". That was true of the trend-sponsorship read and **wrong** for the qualifying read: a decline of 10–15 %+ paired with a rising commercial net line is short covering (bullish); the mirror is bearish. The claim is now scoped to the read it actually describes.
+
+Six new Source IDs (five 2017 Core Content, one 2016). Lint clean: **243 concept pages** (+1 directory README = 244 files under `concepts/`; earlier entries counted the README, which is where "240" came from), **81 Source IDs**, 0 dead links, 0 dead `related[]`, INDEX↔disk aligned, TIMELINE covers all four new pages. `meta/hot.md` refreshed — it had been stale since 2026-05-21.
+
+**Remaining backlog: 8 concepts + 2 merges.**
+
 ## [2026-08-09] ingest | Distillation tranche 2 — mega-trade, filling the numbers, reclaimed OB, efficiency paradigm
 
 Backlog items A1, A4, A7, A16 from [distillation-backlog-2026-08-09](meta/distillation-backlog-2026-08-09.md).

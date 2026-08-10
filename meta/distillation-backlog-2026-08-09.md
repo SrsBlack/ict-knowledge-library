@@ -19,13 +19,13 @@ Ordered by teaching time, which is a rough proxy for how much substance sits beh
 
 | # | concept (proposed id) | lecture(s) | mins | note |
 |---|---|---|---|---|
-| A1 | `mega-trade` | Month 11 — Stock / Bond / Commodity / Forex Mega-Trades | 161 | **One page, four sources.** Same concept across four markets: "trades that are significant in magnitude", longer-term, driven by seasonal tendencies + quarterly shifts. Do NOT write four pages. |
-| A2 | `ict-day-trading-model` | Month 08 — Essentials To Daytrading; Integrating Daytrades With HTF Entries | 71 | Belongs in `31-models`. Second lecture folds in as the HTF-integration section. |
-| A3 | `timeframe-selection` | Month 03 — Timeframe Selection & Defining Setups | 49 | "the first of eight teachings in the third month" — foundational. |
-| A4 | `filling-the-numbers` | Month 09 — Filling The Numbers | 29 | Specific and mechanical: the daily range "will seek to fill or trade to **four specific levels each trading day**". High value. |
-| A5 | `bond-yield-analysis` | Month 05 — Using 10 Year Notes In HTF Analysis; Qualifying Trade Conditions With 10 Year Yields | 28 | One page, two sources. Ties to `seasonal-tendency` and `interest-rate-differentials`. |
-| A6 | `explosive-market-selection` | Month 06 — Keys To Selecting Markets That Will Move Explosively | 27 | "the hallmarks to explosive swing trades". |
-| A7 | `market-efficiency-paradigm` | Month 1 — How Market Makers Condition The Market | 25 | Named ICT concept, zero coverage. |
+| A1 | ✅ `mega-trade` | Month 11 — Stock / Bond / Commodity / Forex Mega-Trades | 161 | **One page, four sources.** Same concept across four markets: "trades that are significant in magnitude", longer-term, driven by seasonal tendencies + quarterly shifts. Do NOT write four pages. |
+| A2 | ✅ `ict-day-trading-model` | Month 08 — Essentials To Daytrading; Integrating Daytrades With HTF Entries | 71 | Belongs in `31-models`. Second lecture folds in as the HTF-integration section. |
+| A3 | ✅ `timeframe-selection` | Month 03 — Timeframe Selection & Defining Setups | 49 | "the first of eight teachings in the third month" — foundational. |
+| A4 | ✅ `filling-the-numbers` | Month 09 — Filling The Numbers | 29 | Specific and mechanical: the daily range "will seek to fill or trade to **four specific levels each trading day**". High value. |
+| A5 | ✅ `bond-yield-analysis` | Month 05 — Using 10 Year Notes In HTF Analysis; Qualifying Trade Conditions With 10 Year Yields | 28 | One page, two sources. Ties to `seasonal-tendency` and `interest-rate-differentials`. |
+| A6 | ✅ `explosive-market-selection` | Month 06 — Keys To Selecting Markets That Will Move Explosively | 27 | "the hallmarks to explosive swing trades". |
+| A7 | ✅ `market-efficiency-paradigm` | Month 1 — How Market Makers Condition The Market | 25 | Named ICT concept, zero coverage. |
 | A8 | `swing-trading-hallmarks` | Month 06 — Elements To Successful Swing Trading | 22 | Enumerated criteria: HTF trend, clear institutional order flow, interest-rate support. |
 | A9 | `equity-seasonal-windows` | Month 10 — Stock Trading, Valuation Stock Selection | 19 | Feb–May buy programs, May–late-Sep short. May instead extend `seasonal-tendency`; decide on reading. |
 | A10 | `macro-to-micro-framework` | Month 03 — Macro Economic To Micro Technical | 19 | Top-down chain from fundamentals to entry. |
@@ -34,7 +34,7 @@ Ordered by teaching time, which is a rough proxy for how much substance sits beh
 | A13 | `anticipatory-setup-development` | Month 03 — The Next Setup, Anticipatory Skill Development | 15 | Monthly chart + institutional order flow to pre-locate setups. |
 | A14 | `sentiment-effect` | Month 09 — The Sentiment Effect | 13 | When buying/selling probabilities are highest; Asian range + opening. |
 | A15 | `market-protraction` | Month 1 — Impulse Price Swings & Market Protraction | 12 | **Two concepts in one lecture** — `impulse-price-swing` may warrant its own page or fold into market structure. Split on reading. |
-| A16 | `reclaimed-order-block` | Month 04 — Reclaimed Orderblock | 11 | "reinforcing order block theory and reclaimed blocks". `07-order-blocks` has 10 files and none cover this. |
+| A16 | ✅ `reclaimed-order-block` | Month 04 — Reclaimed Orderblock | 11 | "reinforcing order block theory and reclaimed blocks". `07-order-blocks` has 10 files and none cover this. |
 
 ## B. MERGE into an existing page (2 items, ~0.9 hrs)
 
@@ -59,6 +59,17 @@ files would inflate the library with material that has no formal criteria.
 | Pattern Recognition — Fiber OTE NYO; Aussie OTE NYO | 10 | **Already cited** as `ICT-2017-OTE-FIBER-NYO` / `ICT-2017-OTE-AUSSIE-NYO` in [fib-anchoring](../concepts/28-fibonacci-levels/fib-anchoring.md). They surfaced only because their title words are absent from library vocabulary — a known false-positive mode of the curriculum map. |
 
 ---
+
+## Progress
+
+✅ = written. **Tranche 2:** A1, A4, A7, A16. **Tranche 3:** A2, A3, A5, A6.
+**Remaining: 8 concepts (A8–A15) + the 2 merges in section B.**
+
+Tranche 3 also produced two **refinements** of existing pages rather than new files —
+`commitment-of-traders` (recentred 12-month zero line) and `open-interest` (10–15 %
+qualifying gate, which corrected a standing "no threshold is taught" claim). Both came
+from the A6 lecture. Expect more of these: the later mentorship months revisit earlier
+material, so a lecture on the CONCEPT list can legitimately resolve to an edit.
 
 ## Realistic yield
 

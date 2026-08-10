@@ -23,6 +23,7 @@ The original ICT mentorship year. Most foundational PD-array, killzone, and orde
 - **liquidity-pool** — umbrella term for stop clusters. → [liquidity-pool](concepts/02-liquidity/liquidity-pool.md)
 - **market-efficiency-paradigm** — markets are efficient FOR smart money; everyone else is the liquidity. → [market-efficiency-paradigm](concepts/03-order-flow/market-efficiency-paradigm.md)
 - **reclaimed-order-block** — reinforcing order-block theory; opposing-leg blocks re-used as entries. → [reclaimed-order-block](concepts/07-order-blocks/reclaimed-order-block.md)
+- **timeframe-selection** — timeframe-to-style map (monthly=position, weekly=swing, daily=short-term, H4-and-below=day trading); five trader models; ICT's own three setups. → [timeframe-selection](concepts/25-htf-bias/timeframe-selection.md)
 - **session-overview** — six-session NY-time map. → [session-overview](concepts/15-sessions/session-overview.md)
 - **asia-session** — accumulation window. → [asia-session](concepts/15-sessions/asia-session.md)
 - **london-session** — manipulation + expansion window. → [london-session](concepts/15-sessions/london-session.md)
@@ -43,6 +44,9 @@ Refinements of FVG and OB definitions; introduction of OTE and Fibonacci levels;
 
 - **fib-anchoring** — fib attaches to candle **bodies**, not wicks, because wicks are the broker-variable part of a candle. → [fib-anchoring](concepts/28-fibonacci-levels/fib-anchoring.md)
 - **seasonal-tendency** — recurring annual tendency; the *ideal* form is maximum opposition between a pair's seasonal chart and the US Dollar Index seasonal chart. → [seasonal-tendency](concepts/04-time-cycles/seasonal-tendency.md)
+- **bond-yield-analysis** — the 10-year note against the dollar index; tandem movement = consolidation, inverse = trending; "crack in correlation" as an SMT divergence. → [bond-yield-analysis](concepts/03-order-flow/bond-yield-analysis.md)
+- **explosive-market-selection** — the eight hallmarks of an explosive swing trade; also **refines** the COT zero line (recentred 12-month midpoint) and open interest (10–15 % gate). → [explosive-market-selection](concepts/31-models/explosive-market-selection.md), [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md), [open-interest](concepts/03-order-flow/open-interest.md)
+- **ict-day-trading-model** — 65–70 % of the daily range, five-day ADR, Sunday-opening-price filter, day-of-week profiles; 0 GMT entries for HTF setups. → [ict-day-trading-model](concepts/31-models/ict-day-trading-model.md)
 - **central-bank-dealers-range** — 2pm–8pm NY range, ideal <40 pips, standard deviations 1–4 frame the next day. → [central-bank-dealers-range](concepts/15-sessions/central-bank-dealers-range.md)
 - **open-interest** — outstanding futures contracts; rising OI in a trend = sponsorship. → [open-interest](concepts/03-order-flow/open-interest.md)
 - **dollar-index** — USDX/DXY as intermarket reference for FX, commodities and seasonals. → [dollar-index](concepts/03-order-flow/dollar-index.md)
