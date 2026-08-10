@@ -3,14 +3,32 @@
 **Category:** 02-liquidity
 **Aliases:** liquidity map, pool matrix, multi-TF liquidity grid
 **ICT Confidence:** medium
-**Year Introduced:** 2021
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-PD-ARRAY-MATRIX, ICT-2017-TOPDOWN-SHORT-TERM
 **Tags:** liquidity, matrix, multi-tf, mapping
 
 ## Definition
 
 A liquidity matrix is the analyst's organized view of every relevant liquidity pool across multiple timeframes — a cross-TF map of BSL/SSL/EQH/EQL/session-extremes/PWH-PDH/PWL-PDL stacked above and below current price. ICT teaches the matrix as a **pre-trade preparation tool**: before any setup, list every pool, identify which are likely DOL, and use that map to select entries and targets.
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2021` while citing
+only `ICT-2022-MENTORSHIP-OVERVIEW` — a claimed year *earlier* than its own sole source. **The exact
+phrase "liquidity matrix" appears zero times across all 153 corpus packets.** What ICT does teach,
+and names, is the **PD array matrix**, and he defines it in the **Feb-2017** mentorship: "This is the
+PD array matrix. And every array **above** market price is the premium spectrum. And every array
+**below** current market action is the discount spectrum" (`ICT-2017-PD-ARRAY-MATRIX`, 04:21–04:27).
+The multi-timeframe pre-trade routine this page describes is stated outright in the **Aug-2017**
+top-down lecture: "I go through the daily and work my way through the four hour doing the PD array
+matrix. **Note all the discount and premium arrays** ... knowing what's above us in terms of where
+price may reach and what's below us in terms of where price may reach, we calibrate those levels"
+(`ICT-2017-TOPDOWN-SHORT-TERM`, 23:53–24:48). Re-dated to 2017. ⚠ Two caveats: "liquidity matrix" is
+a **community label**, not ICT's; and ICT's matrix inventories *all* PD arrays (order blocks, FVGs,
+breakers, mitigation blocks, liquidity voids) alongside liquidity pools, where this page describes
+the liquidity-pool-only subset. Searched all 153 packets for "liquidity matrix" (0 hits), "matrix"
+(31 packets, **all 2017, none in the Sep-2016 → Jan-2017 Months 1–05**; every one of the ~90
+occurrences is "PD array matrix" — or a whisper mangling of it, or an elided back-reference such as
+"the discount matrix"), and "liquidity map" (0 hits).
 
 ## Formal Criteria
 
@@ -49,10 +67,10 @@ matrix(t) = sort_by_price([
   ],
   "timeframes": ["M15","H1","H4","D","W"],
   "confidence": "medium",
-  "year_introduced": "2021",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["draw-on-liquidity","liquidity-pool","internal-range-liquidity","external-range-liquidity","htf-bias-framework"],
-  "sources": ["ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-PD-ARRAY-MATRIX","ICT-2017-TOPDOWN-SHORT-TERM"]
 }
 ```
 
@@ -101,6 +119,13 @@ The matrix is always multi-TF by definition. The instrument-specific TF set vari
 
 ## Citations
 
-- `ICT-2022-MENTORSHIP-OVERVIEW` — liquidity-mapping discipline taught in 2022 mentorship.
+- `ICT-2017-PD-ARRAY-MATRIX` — defines the matrix and its two spectra: "This is the PD array matrix.
+  And every array above market price is the premium spectrum. And every array below current market
+  action is the discount spectrum" [04:21–04:27]; the per-array checklist to run inside a defined
+  range — mitigation blocks, breakers, liquidity voids, fair value gaps, order blocks [17:26–17:44].
+- `ICT-2017-TOPDOWN-SHORT-TERM` — the multi-TF pre-trade routine: daily then four-hour, "note all the
+  discount and premium arrays ... the ones that are there, you highlight them" [23:53–24:13], then
+  "knowing what's above us in terms of where price may reach and what's below us ... we calibrate
+  those levels to the nearest 10 or nearest 5 level" [24:36–24:49].
 
-> Confidence is `medium` because the term "liquidity matrix" is used across the ICT community with slight variations; ICT's own usage emphasizes the discipline more than the specific name.
+> Confidence is `medium` because "liquidity matrix" is a community label that does not appear anywhere in the ICT corpus; ICT's own name is the **PD array matrix**, and his usage emphasizes the discipline more than the specific name.

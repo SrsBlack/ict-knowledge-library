@@ -84,7 +84,8 @@ M5 / M15 are the practical TFs for marking bounds. H1 captures the entire range 
 
 - **Using broker time.** All ICT Asian range references are NY-anchored.
 - **Ignoring the killzone-vs-session distinction.** The full Asia session (18:00–03:00) range and the Asian KZ range (20:00–00:00) often differ; specify which you're using. Most ICT references use the KZ window.
-- **Treating the range as a pivot, not as liquidity.** The Asian range is not a "support/resistance" zone — it is **engineered liquidity** that London is going to take. Bias should be set by HTF, not by the range alone.
+- **Treating the range as a pivot *before* it is swept.** Going into London, the Asian range is not a "support/resistance" zone — it is **engineered liquidity** that London is going to take. Bias should be set by HTF, not by the range alone.
+  ⚠ **Scoped 2026-08-10.** This warning previously denied the pivot reading outright, which contradicted ICT. **After** the sweep, he uses the bound as a pivot by name: "if I'm bullish I expect the **Asian range high to be retested for entry as support**, or adding to open positions for long" (`ICT-2017-INTRADAY-TOP-DOWN` [11:14–11:20]); "sometimes during the New York open the Asian range high, when it's been bullish, will be retreated to and **retested as support**" [11:49]; bearish mirror at [12:08–12:20]. The two readings are sequential, not opposed — liquidity first, pivot after the flip. A reader following the unscoped version would refuse the New-York add ICT explicitly teaches.
 
 ## Related Concepts
 

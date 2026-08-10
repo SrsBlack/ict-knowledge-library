@@ -3,10 +3,22 @@
 **Category:** 13-judas-swing
 **Aliases:** NY AM Judas, New York Judas
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-MARKET-REVERSALS, ICT-2017-BREAD-BUTTER-BUY, ICT-2017-BREAD-BUTTER-SELL, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** judas, ny-am, sweep
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018`
+sourced only to `ICT-2017-CHARTER-OVERVIEW` + `ICT-2022-MENTORSHIP-OVERVIEW` — neither is a
+2018 source, so the year was unsupported by the page's own citations. The May-2017 lecture
+*Trading Market Reversals* names it outright: "we can reduce it to the London open for Judas,
+**the CME open for the New York Judas**, and Asia it has its Judas at eight o'clock … and then
+you have it also in London close" [28:07]. Re-dated to **2017**.
+
+⚠ **A 2026-08-09 pass wrongly closed this.** It reported that all 16 corpus files mentioning
+"Judas" attach the label to the London/after-midnight protraction only. That is false: three
+May-2017 lectures name the New York Judas explicitly. The earlier pass enumerated the file
+population but did not read the mentions inside it.
 
 ## Definition
 
@@ -15,10 +27,18 @@ A NY Judas swing is the smaller-scale session-open Judas at NY AM (08:00 NY) —
 ## Formal Criteria
 
 - Killzone: NY AM-KZ (08:00–11:00 NY).
+- **Anchor time is the 08:20 NY CME open**, not the 08:00 session open. ICT's 2017 formulation is explicit: mark 08:20 and *anticipate* the Judas from there — "if you're bullish in New York you're looking for 820 and the Judas swing dropping down after 820" (`ICT-2017-BREAD-BUTTER-BUY` [20:35]).
 - Sweep target: London session high/low, premarket extremes, or PDH/PDL.
+- **Objective is the 5-day ADR bound plus the next-HTF array.** Fade the Judas toward the five-day average-daily-range high (sells: low) *and* the next higher-timeframe premium (sells: discount) array located on H4 or H1 (`ICT-2017-BREAD-BUTTER-BUY` [19:20–19:27], `ICT-2017-BREAD-BUTTER-SELL` [08:29–08:37]).
+- **The 10:00 partial rule:** if the ADR bound is reached before 10:00 NY, take 80 % off.
 - Macro overlap: often sets up via the 08:30 news candle and resolves around the 09:50–10:10 macro.
 - Reversal: occurs within the killzone, displaces, leaves FVG, aligns with HTF bias.
 - **Lower frequency than London Judas:** when London already delivered the daily direction, NY tends to extend rather than reverse.
+
+⚠ **NY is one of four session Judas swings, not the second of two.** `ICT-2017-MARKET-REVERSALS`
+[28:07] enumerates London open, CME open (New York), Asia at 20:00 NY / 00:00 GMT, and London
+close. This library has pages for the London and NY variants only — the Asia and London-close
+Judas swings are named in the corpus but undocumented here.
 
 ## Formula / Math
 
@@ -43,10 +63,10 @@ ny_judas := session == NY_AM_KZ [08:00, 11:00] NY
   ],
   "timeframes": ["M1","M5","M15"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["judas-swing","london-judas-swing","judas-swing-failure","ny-am-killzone","macro-time-0950-1010","silver-bullet-ny-am"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-MARKET-REVERSALS","ICT-2017-BREAD-BUTTER-BUY","ICT-2017-BREAD-BUTTER-SELL","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -94,4 +114,7 @@ M1 / M5 / M15.
 
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-MARKET-REVERSALS` — "the CME open for the New York Judas" [28:07]; enumerates all four session Judas swings.
+- `ICT-2017-BREAD-BUTTER-BUY` — 08:20 CME open anchor, 5-day ADR high + next-HTF premium array, 80 %-before-10:00 rule [19:12–19:35, 20:29–20:42].
+- `ICT-2017-BREAD-BUTTER-SELL` — sell-side mirror, 5-day ADR low + next-HTF discount array [08:21–08:41].
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

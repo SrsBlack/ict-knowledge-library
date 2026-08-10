@@ -3,10 +3,25 @@
 **Category:** 29-stop-runs
 **Aliases:** stop run + FVG entry, FVG-anchored stop run
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-DISPLACEMENT, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-FVG-REINFORCED, ICT-2017-BOND-SPLIT-SESSION
 **Tags:** stop-run, fvg, entry
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018`
+sourced only to the placeholder IDs `ICT-2017-DISPLACEMENT` and
+`ICT-2022-MENTORSHIP-OVERVIEW`. The **Month 04** (December 2016) lecture *ICT Fair Value
+Gaps FVG* teaches the pairing in both roles. As a **draw**: "we have a low delineated for
+potential liquidity run on sell stops below the low… and now we can expect to see what form?
+A turtle soup, or a false break below an old low. Why would we reasonably expect it to go
+back up to fill in that gap? Because we've already taken the sell-side liquidity out by
+running an old low" (`ICT-2016-FVG-REINFORCED`, 06:42–07:09). As an **entry** — the sequence
+this page describes: "now I'm going to show you what it looks like when we have a run above
+an old high… so it's running buy stops, but also it's hitting that fair value gap also, so
+it's trading into the fair value gap" (10:22–10:47), then "we can be a seller at a more
+refined price level… we could be a seller at 104.70 on a limit; when price trades back up to
+that level… there's your sell" (12:42–13:07). Re-dated to **2016**. ⚠ `Year Refined: 2022`
+is retained but remains **uncited**.
 
 ## Definition
 
@@ -47,10 +62,10 @@ stop_run_into_fvg(setup):
   ],
   "timeframes": ["M5","M15","H1","H4"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["stop-run-definition","stop-run-into-ob","stop-run-into-breaker","fair-value-gap","ce-as-primary-entry","liquidity-sweep","silver-bullet-rules"],
-  "sources": ["ICT-2017-DISPLACEMENT","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-FVG-REINFORCED","ICT-2017-BOND-SPLIT-SESSION"]
 }
 ```
 
@@ -96,4 +111,5 @@ M5–H4.
 
 ## Citations
 
-- `ICT-2017-DISPLACEMENT`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-FVG-REINFORCED` (06:42–07:09) stop run below an old low as the reason the gap above gets filled; (10:22–10:47) "a run above an old high… it's running buy stops, but also it's hitting that fair value gap also, so it's trading into the fair value gap"; (12:42–13:07) the gap as the refined limit entry after the run; (07:58–08:08) "looking for stops and looking for fair value gaps" named as the range-bound trading style.
+- `ICT-2017-BOND-SPLIT-SESSION` (13:37–13:47) "when there's a large opening range, we want to start looking for retracement ideas or fair value ideas — in other words, bullish order blocks, fair value gaps to be a buyer or seller in"; (14:02–15:15) the turtle soup below the 8–9 a.m. opening range, then "price trades down into, fills the fair value gap at 154.03 into 154.02… and price rallies from 154.02 all the way up into 154.10."

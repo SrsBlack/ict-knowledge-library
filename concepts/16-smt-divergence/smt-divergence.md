@@ -3,10 +3,18 @@
 **Category:** 16-smt-divergence
 **Aliases:** SMT, Smart Money Technique, smart money divergence, intermarket divergence
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-USDX-SMT, ICT-2017-HIGH-REWARD-SETUPS, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** smt, divergence, intermarket, foundational
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced only to
+the placeholder IDs `ICT-2017-CHARTER-OVERVIEW` and `ICT-2022-MENTORSHIP-OVERVIEW`. The **Month 03**
+lecture *Institutional Market Structure* (`ICT-2016-USDX-SMT`, Nov 2016) defines the acronym and the
+signal outright at **[02:21]** — "stands for smart money tool or smart money technique and we're going
+to be looking for a divergence between closely correlated or inversely correlated assets" — and the
+**Month 02** lecture *The Secrets To Selecting High Reward Setups* (`ICT-2017-HIGH-REWARD-SETUPS`,
+Oct 2016) already teaches it a month earlier at **[39:44]**. Re-dated to **2016**.
 
 ## Definition
 
@@ -51,10 +59,10 @@ bearish_smt(t):
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["correlated-pairs-smt","index-smt","smt-confirmation","smt-failure","liquidity-sweep","htf-bias-framework"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-USDX-SMT","ICT-2017-HIGH-REWARD-SETUPS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -100,5 +108,6 @@ M5–D. HTF SMT (D, W) is most reliable; LTF SMT (M5) noisier but useful for ent
 
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW` — SMT terminology refined.
-- `ICT-2022-MENTORSHIP-OVERVIEW` — operational SMT use.
+- `ICT-2016-USDX-SMT` (02:21) "stands for smart money tool or smart money technique and we're going to be looking for a divergence between closely correlated or inversely correlated assets"; (05:28) "when the dollar index makes a lower low in the foreign currency fails to trade higher than a previous high — this is US dollar index SMT or USDX SMT; this does not confirm current price action and the underlying trend is likely not to continue"; (08:28) "do we see a lower low form in the dollar index? No — that's a USDX SMT bullish divergence". The earliest dedicated SMT teaching located in the corpus, which is why this page is dated 2016 rather than 2018.
+- `ICT-2017-HIGH-REWARD-SETUPS` (39:44, Oct-2016 lecture despite the ID's year token) "the dollar index SMT analysis is basically just looking at the relationship between the dollar making higher highs … if the British pound versus the dollar fails to make lower lows, that's a crack in correlation" — earliest mention in the corpus.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — operational SMT use in the 2022 re-teaching (basis for `Year Refined`).

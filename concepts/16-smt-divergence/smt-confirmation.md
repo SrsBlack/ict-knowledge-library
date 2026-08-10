@@ -3,10 +3,18 @@
 **Category:** 16-smt-divergence
 **Aliases:** SMT-confirmed setup, divergence confirmation, SMT confluence
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-HIGH-REWARD-SETUPS, ICT-2016-USDX-SMT, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** smt, confirmation, confluence
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced only to
+the placeholder IDs `ICT-2017-CHARTER-OVERVIEW` and `ICT-2022-MENTORSHIP-OVERVIEW`. The **Month 02**
+lecture *The Secrets To Selecting High Reward Setups* (`ICT-2017-HIGH-REWARD-SETUPS`, Oct 2016) already
+makes SMT a *required confluence element* rather than a setup, at **[44:02]** — "you have to have your
+dollar index giving you an indication that it's showing you a crack in correlation, or correlated pair
+SMT is giving you insight" — one of three things that "must come by way of these three areas of study"
+[43:48]. Re-dated to **2016**.
 
 ## Definition
 
@@ -46,10 +54,10 @@ setup_with_smt_confirmation := standard_ICT_setup
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["smt-divergence","correlated-pairs-smt","index-smt","smt-failure","pd-array-confluence","silver-bullet-rules","ote-rules"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-HIGH-REWARD-SETUPS","ICT-2016-USDX-SMT","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -94,4 +102,6 @@ M5–D.
 
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-HIGH-REWARD-SETUPS` (43:48) "three things must come by way of these three areas of study — correlation analysis, time and price theory, and the IPTA … preferably you have to have at least one from each"; (44:02) "you have to have your dollar index giving you an indication that it's showing you a crack in correlation, or correlated pair SMT is giving you insight." SMT is positioned as one confluence input among three, not a standalone trigger. ⚠ ID carries a `2017` token but the lecture is Month 02 = **October 2016** — see the registry note on [correlated-pairs-smt](correlated-pairs-smt.md).
+- `ICT-2016-USDX-SMT` (02:47) "when the dollar index makes a lower low, foreign currencies we expect that to make a higher high; when we see this this confirms current price action" — the confirm / does-not-confirm framing this page rests on.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — operational use in the 2022 re-teaching (basis for `Year Refined`).

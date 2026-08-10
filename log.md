@@ -6,6 +6,53 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-10] redate | The 2018 cohort was a build artifact — 21 pages re-dated to 2016–2017 against primary audio
+
+An audit compared every page's `Year Introduced` against the years of the Source IDs it cites.
+**23 pages claimed a year no cited source carried.** Twenty of them cited only the placeholder pair
+`ICT-2017-CHARTER-OVERVIEW` + `ICT-2022-MENTORSHIP-OVERVIEW` while claiming 2018 — filler citations
+from the 2026-05 single-session build, never provenance.
+
+**21 pages re-dated, every change grounded in a transcript quote with a timestamp.** Turtle soup,
+stop runs, SMT, relative equal highs/lows, volume imbalance, gap classification and symmetrical
+projections are **2016**. The NY and failed Judas swings, Asian-range projections, index SMT,
+draw-on-liquidity and the liquidity matrix are **2017**. `TIMELINE.md` rewritten to match; its 2018
+section had listed eight concept groups that do not belong to 2018, and its 2021 section is now
+empty of concept files.
+
+**The 2026-08-09 pass got the NY Judas wrong.** It closed the question by reporting that all 16
+corpus files mentioning "Judas" attach the label to the London protraction only. False — three
+May-2017 lectures name the New York Judas outright, and ICT enumerates **four** session Judas swings:
+"the London open for Judas, the CME open for the New York Judas, and Asia it has its Judas at eight
+o'clock … and then you have it also in London close" (`ICT-2017-MARKET-REVERSALS` [28:07]). The
+earlier pass enumerated the file population but never read the mentions inside it. ⚠ **The Asia and
+London-close Judas swings remain undocumented in this library.**
+
+**Two "failure" pages had no source at all.** `judas-swing-failure` and `smt-failure` were both
+assigned `2018` + `high` confidence on nothing. Full-corpus enumeration finds ICT teaching each base
+concept but never its named failure mode — what he actually teaches is the *delayed protraction* and
+the openly accepted no-entry day. Both downgraded to `medium` with the searched population recorded
+on-page. Same shape twice; flagged as a probable build-era defect class.
+
+**Turtle soup is not ICT-original**, and the library had never said so. He credits it outright —
+"Street Smarts book, where I got the inspiration for this pattern" [30:19]; "Linda Rashkin … in her
+book with Larry Connors" [32:53] — and states his own extension: the raid must land in a
+pre-identified HTF discount array, not merely below an old low.
+
+**The corpus now self-dates.** Three lectures state their calendar month in their own audio —
+*Liquidity Voids* [00:37], *Divergence Phantoms* [00:30], *Double Bottom Double Top* [00:30], all
+"December 2016". The Month→calendar map is no longer an inference from lecture ordering.
+
+⚠ **New registry rule, added after a near-miss:** lesson numbers are either a verbatim quote with a
+timestamp or marked unknown — **never inferred from upload order.** A "teaching 6 of 8" was one
+commit from freezing into the append-only registry for a lecture that states no lesson number at all.
+Month 04 holds 13 packets, not 8, and upload order does not track lesson order: one lecture
+self-states "third teaching of eight" while sitting 4th by upload, another "7 of 8" while sitting 12th.
+
+18 new Source IDs registered. Three duplicate-ID collisions caught and consolidated before commit —
+two agents had independently minted separate IDs for the same video, which an append-only registry
+cannot undo.
+
 ## [2026-08-10] lint+refine | Closed the three open threads; added a lint check that catches silent header/JSON drift
 
 The three items left open at the end of the distillation programme are resolved. None needed a

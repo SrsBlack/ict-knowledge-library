@@ -2,11 +2,28 @@
 
 **Category:** 16-smt-divergence
 **Aliases:** failed SMT, SMT invalidated, SMT continuation
-**ICT Confidence:** high
+**ICT Confidence:** medium
 **Year Introduced:** 2018
 **Year Refined:** 2022
 **Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** smt, failure, risk
+
+⚠ **Dating NOT corrected 2026-08-10 — provenance still unresolved.** The 2026-08-10 SMT re-dating pass
+moved the other four pages in this folder off their placeholder citations onto real 2016/2017 lectures.
+This page could not be moved: a full enumeration of every SMT mention in the local corpus (**~90 mentions
+across 20 packets**, all 153 packets searched) found **no lecture that teaches SMT *failure*** — i.e. the
+divergence later closing and invalidating the premise. ICT's own phrase "failure swing" denotes the
+*divergent* leg (the asset that fails to confirm), which is the SMT signal itself, not its invalidation.
+`Year Introduced: 2018` and the two placeholder Source IDs below are therefore **unverified**; treat this
+page's dating as an open question, not as sourced fact. See [smt-divergence](smt-divergence.md) for the
+evidenced 2016 dating of the parent concept. **Confidence downgraded `high` → `medium` 2026-08-10** to
+match: a page with unverified provenance cannot also assert high ICT confidence.
+
+⚠ This page is the structural twin of [judas-swing-failure](../13-judas-swing/judas-swing-failure.md) —
+both are *failure/invalidation* pages that the original build assigned `2018` + `high` on no located
+source, and in both cases enumeration of the whole corpus found ICT teaching the base concept but never
+its named failure mode. When a third such page turns up, treat the pattern as a build-era defect class
+rather than three coincidences.
 
 ## Definition
 
@@ -45,7 +62,7 @@ smt_failure(asset_A, asset_B, original_divergence_direction):
     {"id": "c2", "expr": "divergence closed; signal invalidated"}
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
-  "confidence": "high",
+  "confidence": "medium",
   "year_introduced": "2018",
   "year_refined": "2022",
   "related": ["smt-divergence","correlated-pairs-smt","index-smt","smt-confirmation","htf-bias-framework"],

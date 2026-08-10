@@ -2,11 +2,19 @@
 
 **Category:** 13-judas-swing
 **Aliases:** Judas failure, failed Judas, no-reversal open, Judas trap
-**ICT Confidence:** high
-**Year Introduced:** 2018
+**ICT Confidence:** medium
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-INTRADAY-PROFILES, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** judas, failure, false-judas, risk
+
+⚠ **Dating corrected and confidence downgraded 2026-08-10.** This page previously carried
+`Year Introduced: 2018` at `ICT Confidence: high`, sourced only to `ICT-2017-CHARTER-OVERVIEW` +
+`ICT-2022-MENTORSHIP-OVERVIEW` — neither is a 2018 source. **"Judas swing failure" is not a
+label ICT uses anywhere in the 153-packet corpus.** Searched: `judas` (16 packets, 39 mentions,
+all read), `failed judas`, `judas fail`, `false judas` (0 packets each). What ICT does teach is
+the **delayed protraction** — see `ICT-2017-INTRADAY-PROFILES`, Apr 2017 — plus the plainly
+accepted no-entry day. Re-dated to that antecedent and marked `medium`; see *ICT vs Community*.
 
 ## Definition
 
@@ -45,11 +53,11 @@ The simplest live tell: by 30–45 minutes into the killzone, if the price is **
     {"id": "c3", "expr": "continuation_same_direction_with_displacement == true"}
   ],
   "timeframes": ["M1","M5","M15"],
-  "confidence": "high",
-  "year_introduced": "2018",
+  "confidence": "medium",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["judas-swing","london-judas-swing","ny-judas-swing","liquidity-run","htf-bias-framework"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-INTRADAY-PROFILES","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -95,6 +103,26 @@ M1 / M5 / M15.
 - [liquidity-run](../02-liquidity/liquidity-run.md) — run-and-continue alternative read.
 - [htf-bias-framework](../25-htf-bias/htf-bias-framework.md) — Judas-failure often signals HTF bias is flipping.
 
+## ICT vs Community
+
+**ICT does not teach a "Judas swing failure."** He teaches two responses to a Judas that does
+not appear on schedule, both in `ICT-2017-INTRADAY-PROFILES`:
+
+1. **Delayed protraction.** If the 00:00→02:00 NY protraction never forms, the setup is not
+   dead — "draw a vertical line at 2 a.m. … between 2 o'clock and 3 a.m., that Judas swing
+   should occur" [21:19–21:27]. The profile is *delayed*, not *failed*, and it is one of the two
+   profiles he says he trades.
+2. **The no-entry day, accepted as such.** "There's going to be times where it won't provide you
+   an entry. The market will just probably keep on going up … And guess what that means? That's a
+   trade that you missed" [20:24–20:42]. He offers no rule for trading it — the taught response is
+   to stand down.
+
+The framing on this page — that the open move *was* the real delivery and will run the opposite
+pool — is a derived community reading, not a located ICT teaching. It is retained because it is
+operationally useful and consistent with the corpus, but its `Year Introduced` marks ICT's
+nearest antecedent rather than an introduction of this concept under this name.
+
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-INTRADAY-PROFILES` — delayed protraction and the accepted no-entry day [09:39–10:16, 20:24–21:27].
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

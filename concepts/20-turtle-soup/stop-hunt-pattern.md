@@ -3,10 +3,27 @@
 **Category:** 20-turtle-soup
 **Aliases:** stop hunt, stop run pattern, liquidity grab pattern
 **ICT Confidence:** high
-**Year Introduced:** 2017
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2016-LIQUIDITY, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-EQUILIBRIUM-DISCOUNT, ICT-2016-TIMEFRAME-SELECTION
 **Tags:** stop-hunt, turtle-soup-related, foundational
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2017`,
+which matched neither cited source (`ICT-2016-LIQUIDITY`, 2016, and
+`ICT-2022-MENTORSHIP-OVERVIEW`, 2022 — both build-time placeholders). The **Month 1**
+(September 2016) lecture *Equilibrium Vs. Discount* teaches the mechanic and its price
+target: "markets move in intraday price action in grades of 10 — 10 and 20 pip ranges above
+a high; that's how far they'll reach for a stop. Boom. There you go. **There's your stop run
+on equal highs**" (`ICT-2016-EQUILIBRIUM-DISCOUNT`, 51:02–51:21), and poses the
+reversal-vs-continuation question this page is built on: "how do I know if the market's
+going to keep going lower, or if it's going to just go below an old low, and then rally up?"
+(40:26–40:32). Re-dated to **2016**.
+
+⚠ **Terminology.** "Stop hunt" is **not** ICT's phrase. Across all 153 corpus packets the
+string *stop hunt* / *stop-hunt* occurs **0 times**; ICT says **stop run** (55×) and **run
+on / out the stops** (56×), with *raid* (10×) from 2017 onward. The title and the "stop
+hunt" alias are the library's own coinage, kept for searchability — cite `stop run` when
+quoting ICT.
 
 ## Definition
 
@@ -46,10 +63,10 @@ stop_hunt_pattern(level):
   ],
   "timeframes": ["M1","M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2017",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["turtle-soup","bullish-turtle-soup","bearish-turtle-soup","liquidity-sweep","liquidity-run","stop-run-definition","judas-swing"],
-  "sources": ["ICT-2016-LIQUIDITY","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-EQUILIBRIUM-DISCOUNT","ICT-2016-TIMEFRAME-SELECTION"]
 }
 ```
 
@@ -96,4 +113,5 @@ All TFs.
 
 ## Citations
 
-- `ICT-2016-LIQUIDITY`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-EQUILIBRIUM-DISCOUNT` (51:02–51:21) the 10-and-20-pip reach above a high, "there's your stop run on equal highs… mark out areas where there's equal highs, they're too clean, the market's going to want to run there"; (40:26–40:37) the reversal-vs-continuation question stated as the central one; (52:55–53:03) "this is a turtle soup, it's a run on stops… why? because it already took the stops out."
+- `ICT-2016-TIMEFRAME-SELECTION` (42:22–42:39) "if you are looking to trade only stop runs, you first have to know why the stop run would be necessary… and you get that from the higher time frame"; (46:50) "you'll clearly see where the stop runs are and you'll be able to trade turtle soups."

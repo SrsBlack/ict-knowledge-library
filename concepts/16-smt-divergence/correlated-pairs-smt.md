@@ -3,10 +3,18 @@
 **Category:** 16-smt-divergence
 **Aliases:** FX SMT, currency-pair SMT, cross-pair divergence
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-HIGH-REWARD-SETUPS, ICT-2016-USDX-SMT, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** smt, fx, correlated-pairs
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced only to
+the placeholder IDs `ICT-2017-CHARTER-OVERVIEW` and `ICT-2022-MENTORSHIP-OVERVIEW`. The **Month 02**
+lecture *The Secrets To Selecting High Reward Setups* (`ICT-2017-HIGH-REWARD-SETUPS`, Oct 2016 — the
+ID's `2017` token is a registry error, see note below) names and teaches the concept at **[40:10]**:
+"the other correlation analysis concept that I use is correlated pair SMT analysis, where we look at
+closely correlated pairs like, for instance, the euro dollar and the British pound dollar." Re-dated to
+**2016**.
 
 ## Definition
 
@@ -49,10 +57,10 @@ bearish_smt(asset_A, asset_B, t):
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["smt-divergence","index-smt","smt-confirmation","smt-failure"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-HIGH-REWARD-SETUPS","ICT-2016-USDX-SMT","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -85,4 +93,7 @@ M5–D. Most-traded on H1 and H4.
 
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-HIGH-REWARD-SETUPS` (40:10) "the other correlation analysis concept that I use is correlated pair SMT analysis, where we look at closely correlated pairs like, for instance, the euro dollar and the British pound dollar, because usually they move in general same direction"; (40:27) "generally, when there's a symmetrical market … correlated pairs move in tandem. When they do not move in tandem, that obviously gives us a lot of insight." Earliest teaching of this concept located in the corpus.
+  ⚠ **Registry note:** this Source ID carries a `2017` year token, but the lecture is **Month 02 of the mentorship = October 2016** under the verified month→year map (Month 04 self-identifies as "the December 2016 content" at 00:30). The ID is stable and append-only, so it is cited as-is; the year token should not be read as the teaching date.
+- `ICT-2016-USDX-SMT` (02:21) defines SMT as "a divergence between closely correlated or inversely correlated assets" — the parent definition this page specialises to FX pairings.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — operational use in the 2022 re-teaching (basis for `Year Refined`).

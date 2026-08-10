@@ -3,10 +3,21 @@
 **Category:** 20-turtle-soup
 **Aliases:** bullish TS, BTS, failed bearish breakout
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-EQUILIBRIUM-DISCOUNT, ICT-2016-EQUILIBRIUM-PREMIUM
 **Tags:** turtle-soup, bullish
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018`
+sourced only to the placeholder IDs `ICT-2017-CHARTER-OVERVIEW` and
+`ICT-2022-MENTORSHIP-OVERVIEW`. The **Month 1** (September 2016) lecture *Equilibrium Vs.
+Discount* teaches the bullish direction by name — "if you ever see the conditions that's
+bullish, and a low is swept out, that's when you anticipate a turtle soup"
+(`ICT-2016-EQUILIBRIUM-DISCOUNT`, 40:18–40:23) and "wait for the **turtle soup buy**"
+(53:53) — and its companion *Equilibrium Vs. Premium* names the pair in one sentence: "if it
+takes out a previous low, when it is in discount, it is probably going to be a turtle soup
+buy" (`ICT-2016-EQUILIBRIUM-PREMIUM`, 07:16–07:20). Re-dated to **2016**. ⚠ `Year Refined:
+2022` is retained but remains **uncited**.
 
 ## Definition
 
@@ -44,10 +55,10 @@ bullish_ts(level, n):
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["turtle-soup","bearish-turtle-soup","stop-hunt-pattern","sell-side-liquidity","liquidity-sweep","bullish-rejection-block"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-EQUILIBRIUM-DISCOUNT","ICT-2016-EQUILIBRIUM-PREMIUM"]
 }
 ```
 
@@ -89,4 +100,5 @@ M5+.
 
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-EQUILIBRIUM-DISCOUNT` (40:18–40:23) "if you ever see the conditions that's bullish, and a low is swept out, that's when you anticipate a turtle soup"; (53:44–53:53) "if it goes lower than the optimal trade entry between 62 % and 79 % retracement levels and your underlying bullishness is there, wait for the turtle soup buy"; (56:01) "turtle soup longs" listed among the bullish entry patterns.
+- `ICT-2016-EQUILIBRIUM-PREMIUM` (07:16–07:20) "if it takes out a previous low, when it is in discount, it is probably going to be a turtle soup buy."

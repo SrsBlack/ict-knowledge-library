@@ -3,10 +3,19 @@
 **Category:** 16-smt-divergence
 **Aliases:** US index SMT, NQ-ES SMT, indices divergence
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2017
 **Year Refined:** 2023
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-INDEX-SMT-AM-TREND, ICT-2017-INDEX-TRADE-SETUPS, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** smt, indices, nq, es
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced only to
+the placeholder IDs `ICT-2017-CHARTER-OVERVIEW` and `ICT-2022-MENTORSHIP-OVERVIEW`. The **Month 10**
+lecture *Index Futures — AM Trend* (`ICT-2017-INDEX-SMT-AM-TREND`), which self-identifies at **[00:20]**
+as "June 2017, ICT Mentorship, ICT Index Trading, Lesson 2, The AM Trend", teaches equity-index SMT in
+full at **[08:05]** — "when institutional order flow is bullish … we have to be comparing relative lows
+across the three indices; one index will fail to confirm a lower low … that's your bullish confirmation
+for trading the AM trend." Re-dated to **2017**. (The 2016 `index SMT` hits elsewhere in the corpus are
+*dollar-index* SMT — see [smt-divergence](smt-divergence.md) — not equity indices.)
 
 ## Definition
 
@@ -24,6 +33,13 @@ The four US indices and their typical SMT pairings:
 | NQ vs RTY | High | Tech vs small-cap. |
 
 SMT logic same as [smt-divergence](smt-divergence.md): one index makes new extreme, the other does not.
+
+⚠ **Source scope.** The 2017 primary sources teach index SMT across **three** indices only — NASDAQ, Dow
+and E-mini S&P ("we're going to be comparing the index SMT divergences at the lows comparably against the
+Dow and NASDAQ with the S&P mini", `ICT-2017-INDEX-TRADE-SETUPS` 16:09). RTY does not appear in them, and
+the per-pairing reliability ranks in the table above are not attributable to a located source.
+`ICT-2017-INDEX-SMT-AM-TREND` also brackets the comparison to a **5:00 a.m.–9:30 a.m. New York window**
+[07:57], a constraint this page does not currently carry.
 
 ## Formula / Math
 
@@ -51,10 +67,10 @@ bullish_index_smt(idx_A, idx_B, t):
   ],
   "timeframes": ["M1","M5","M15","H1","H4"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2017",
   "year_refined": "2023",
   "related": ["smt-divergence","correlated-pairs-smt","smt-confirmation","smt-failure"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-INDEX-SMT-AM-TREND","ICT-2017-INDEX-TRADE-SETUPS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -85,4 +101,6 @@ M1 / M5 / M15 are intraday-tradeable; H1 / H4 for setup conviction.
 
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-INDEX-SMT-AM-TREND` (00:20) "June 2017, ICT Mentorship, ICT Index Trading, Lesson 2, The AM Trend" — self-dates the lecture; (07:57) "between 5 a.m. and 9:30 a.m. New York time, relative highs and lows should be compared"; (08:13) "one index will fail to confirm a lower low … when that occurs, that's your bullish confirmation for trading the AM trend"; (13:13) "it will show you that crack in correlation where otherwise the indices should be moving in tandem." Earliest equity-index SMT teaching located in the corpus, which is why this page is dated 2017 rather than 2018.
+- `ICT-2017-INDEX-TRADE-SETUPS` (16:09) "we're going to be comparing the index SMT divergences at the lows comparably against the Dow and NASDAQ with the S&P mini" — the same-month setup lecture; fixes the three-index scope.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — operational use in the 2022 re-teaching.

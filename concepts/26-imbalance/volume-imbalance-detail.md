@@ -3,10 +3,25 @@
 **Category:** 26-imbalance
 **Aliases:** VI, body imbalance, body-vs-body gap
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-DISPLACEMENT, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-LIQUIDITY-VOIDS, ICT-2016-FVG-REINFORCED, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** imbalance, volume, body-gap
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced
+only to the generic `ICT-2017-DISPLACEMENT` and `ICT-2022-MENTORSHIP-OVERVIEW` placeholders. The
+**December-2016** mentorship lecture *Liquidity Voids* teaches this pattern and names it: "you see
+that little space right there where **the bodies don't close in**? What is this? This is a gap.
+Okay, it's a price gap" [10:34–10:43]; "when we see a gap where price has closed from one candle
+and gaps into another opening of another candle … **it creates a common gap**" [12:23–12:37]; and
+"once it closes in that gap, **only the body closes it in. It wicks up into the body**, but the
+bodies of the up candle as it closes that gap, that's all that's necessary" [13:03–13:06]
+(`ICT-2016-LIQUIDITY-VOIDS`). The same month's *ICT Fair Value Gaps FVG* teaches the identical
+geometry at [12:26–13:33] (`ICT-2016-FVG-REINFORCED`). That lecture opens by stating its own date —
+"this is teaching number five of eight for the ICT mentorship content for **December 2016**"
+[00:37] — independently confirming the Month-04 → Dec-2016 mapping. Re-dated to 2016. ⚠ The
+*label* "volume imbalance" appears nowhere in the 153-packet local corpus; ICT's 2016 name for it
+is **common gap**. `Year Refined` stays 2022 as the era the modern label comes from.
 
 ## Definition
 
@@ -51,10 +66,10 @@ A volume imbalance is meaningful when the body gap is substantial (≥ 30% of av
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["imbalance-definition","imbalance-vs-fvg","fair-value-gap","volume-imbalance","displacement-definition"],
-  "sources": ["ICT-2017-DISPLACEMENT","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-LIQUIDITY-VOIDS","ICT-2016-FVG-REINFORCED","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -101,4 +116,12 @@ M5+ generally. Lower TFs have noise-driven body gaps that aren't institutional i
 
 ## Citations
 
-- `ICT-2017-DISPLACEMENT`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-LIQUIDITY-VOIDS` — "Month 04 — Liquidity Voids", `HTQgH11W37o` (Dec 2016). "The bodies don't close in … this is a gap" [10:34]; **common gap** named at [12:37]; body-only fill sufficient at [13:03].
+- `ICT-2016-FVG-REINFORCED` — "Month 04 — ICT Fair Value Gaps FVG", `FgacYSN9QEo` (Dec 2016). Close-to-open body gap [12:26–12:41]; "the wick trades through the body, but the bodies of the candle completely close in here" [13:19].
+- `ICT-2022-MENTORSHIP-OVERVIEW` — retained for the 2022 refinement, the origin of the *name* "volume imbalance".
+
+⚠ The `vi_size >= 0.3 * avg_body_size` significance threshold in the criteria block above is **not
+ICT's** — no such figure appears in the corpus. On the closely related question of gap-fill
+probability ICT explicitly declines to quantify: "I'm not going to give you a specific percentage
+because there's no real accurate way of depicting that" (`ICT-2016-VACUUM-BLOCK`, [04:40]). Treat
+the 0.3 figure as a library-local heuristic.

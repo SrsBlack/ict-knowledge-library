@@ -3,10 +3,23 @@
 **Category:** 06-fair-value-gaps
 **Aliases:** VI, body imbalance, volume gap
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-DISPLACEMENT, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-FVG-REINFORCED, ICT-2016-LIQUIDITY-VOIDS, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** fvg, volume-imbalance, body-gap
+
+⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced
+only to the generic `ICT-2017-DISPLACEMENT` and `ICT-2022-MENTORSHIP-OVERVIEW` placeholders. The
+**December-2016** mentorship lecture *ICT Fair Value Gaps FVG* teaches this exact geometry — "we
+gap from this candle's close, 104.72, to an opening on this candle of 104.70 … now it's only two
+pips difference, but that creates a what? A gap" [12:26–12:41], and then "**the wick trades
+through the body, but the bodies of the candle completely close in here** … so this gap between
+these two candles … this gap in between the bodies have perfectly been filled in with this up
+candle" [13:19–13:33] (`ICT-2016-FVG-REINFORCED`). The companion lecture *Liquidity Voids* names
+the same two-candle body gap a **common gap** [12:37] (`ICT-2016-LIQUIDITY-VOIDS`). Re-dated to
+2016. ⚠ The *label* "volume imbalance" does not appear anywhere in the 153-packet local corpus;
+it is later (2022-mentorship-era) terminology for a 2016 concept, which is why `Year Refined`
+stays 2022.
 
 ## Definition
 
@@ -48,10 +61,10 @@ vi_size       := vi_high - vi_low
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["fair-value-gap","imbalance-vs-fvg","volume-imbalance-detail","imbalance-definition","displacement-definition"],
-  "sources": ["ICT-2017-DISPLACEMENT","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-FVG-REINFORCED","ICT-2016-LIQUIDITY-VOIDS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -95,4 +108,6 @@ M5+. M1 VIs are micro-noise.
 
 ## Citations
 
-- `ICT-2017-DISPLACEMENT`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-FVG-REINFORCED` — "Month 04 — ICT Fair Value Gaps FVG", `FgacYSN9QEo` (Dec 2016). Close-to-open body gap at [12:26–12:41]; wick-through-body / bodies-fill-the-gap at [13:19–13:33].
+- `ICT-2016-LIQUIDITY-VOIDS` — "Month 04 — Liquidity Voids", `HTQgH11W37o` (Dec 2016). "That little space right there where the bodies don't close in … this is a gap" [10:34–10:43]; named a **common gap** at [12:37]; body-only fill is sufficient at [13:03].
+- `ICT-2022-MENTORSHIP-OVERVIEW` — retained for the 2022 refinement, which is where the *name* "volume imbalance" originates.
