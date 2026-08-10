@@ -63,11 +63,13 @@ Format: `- [Concept Name](path) — one-line summary`
 - [premium-vs-carrying-charge-market](concepts/03-order-flow/premium-vs-carrying-charge-market.md) — commodity delivery-month curve; premium = demand > supply.
 - [market-efficiency-paradigm](concepts/03-order-flow/market-efficiency-paradigm.md) — markets are efficient FOR smart money; everyone else is the liquidity.
 - [bond-yield-analysis](concepts/03-order-flow/bond-yield-analysis.md) — 10Y note vs dollar index; tandem = consolidation, inverse = trending; "crack in correlation".
+- [macro-to-micro-framework](concepts/03-order-flow/macro-to-micro-framework.md) — 30Y bond + 10Y note → dollar direction → pair selection → daily PD-array entry.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
 - [seasonal-tendency](concepts/04-time-cycles/seasonal-tendency.md) — recurring annual tendency; ideal form = opposition vs the dollar index.
 - [filling-the-numbers](concepts/04-time-cycles/filling-the-numbers.md) — the daily range fills ~4 reference levels; zero-GMT pivot ladder.
+- [equity-seasonal-windows](concepts/04-time-cycles/equity-seasonal-windows.md) — three divisions of the stock year; May–Oct low-magnitude period; Dow month table.
 - [macro-time-0050-0110](concepts/04-time-cycles/macro-time-0050-0110.md) — pre-London early macro.
 - [macro-time-0250-0310](concepts/04-time-cycles/macro-time-0250-0310.md) — London open macro (canonical Judas).
 - [macro-time-0950-1010](concepts/04-time-cycles/macro-time-0950-1010.md) — NY pre-open macro.
@@ -296,6 +298,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ict-2022-model](concepts/31-models/ict-2022-model.md) — flagship multi-step setup framework.
 - [mega-trade](concepts/31-models/mega-trade.md) — the one prolonged annual move; months-long, seasonally driven, sponsorship-verified.
 - [explosive-market-selection](concepts/31-models/explosive-market-selection.md) — the eight hallmarks that qualify a market for an explosive swing move.
+- [swing-trading-hallmarks](concepts/31-models/swing-trading-hallmarks.md) — seven cumulative checks for whether a swing trade is valid; static rule filtering.
+- [projected-range-objectives](concepts/31-models/projected-range-objectives.md) — taxonomy of index-futures daily profiles by AM / lunch / PM.
 - [ict-day-trading-model](concepts/31-models/ict-day-trading-model.md) — 65–70 % of the daily range; five-day ADR, Sunday-open filter, day-of-week profiles.
 - [ict-2023-model](concepts/31-models/ict-2023-model.md) — Quarterly Theory + macro integration refinements.
 - [ict-2024-model](concepts/31-models/ict-2024-model.md) — FVG classification + IFVG + propulsion refinements.

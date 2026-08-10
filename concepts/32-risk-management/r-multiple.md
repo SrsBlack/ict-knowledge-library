@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2017-SWING-ELEMENTS, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** risk, r-multiple, foundational
 
 ## Definition
@@ -36,6 +36,13 @@ ICT-recommended baseline R ratios:
 | OTE 0.705 with PD-array confluence | 5R-10R |
 | Unicorn / A+ confluence | 8R-15R |
 
+**Why R is the lever, not accuracy** (`ICT-2017-SWING-ELEMENTS`, 12:35–13:33). Raising R
+lowers the win rate needed to break even: "limiting setups to **three to one** reward risk
+permits as low as **34 % accuracy** to be net profitable… that means you're making money
+when you're **wrong 66 % of the time**." ICT calls 3:1 only *marginally* profitable and
+prefers **5×** risk, which "endures losses much easier". The setups with the most movement
+potential are the ones that offer the better ratios.
+
 ## Formula / Math
 
 ```
@@ -45,6 +52,12 @@ R = abs(target - entry) / abs(entry - sl)
 # risk = 1.0830 - 1.0815 = 15 pips
 # reward = 1.0885 - 1.0830 = 55 pips
 # R = 55 / 15 = 3.67R
+
+# Breakeven accuracy required at a given R:
+breakeven_win_rate(R) = 1 / (1 + R)
+#   R = 1  -> 50.0%
+#   R = 3  -> 25.0%   (ICT quotes 34% as the net-profitable floor once costs are carried)
+#   R = 5  -> 16.7%
 ```
 
 ## Machine-Readable
@@ -57,7 +70,8 @@ R = abs(target - entry) / abs(entry - sl)
   "criteria": [
     {"id": "c1", "expr": "R = abs(target - entry) / abs(entry - sl)"},
     {"id": "c2", "expr": "minimum target typically 1.5R-2R"},
-    {"id": "c3", "expr": "high-conviction targets 5R+"}
+    {"id": "c3", "expr": "high-conviction targets 5R+"},
+    {"id": "c4", "expr": "breakeven_win_rate(R) == 1/(1+R); R=3 quoted as ~34% net-profitable floor"}
   ],
   "timeframes": ["all"],
   "confidence": "high",
@@ -109,3 +123,4 @@ All TFs.
 ## Citations
 
 - `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-SWING-ELEMENTS` (12:35–13:33) "probabilities reward diligence… limiting setups to three to one reward risk permits as low as 34 % accuracy to be net profitable… that means you're making money when you're wrong 66 % of the time"; 5× risk preferred as it "endures losses much easier"; "the setups that we have the most movement potential offer the better risk to reward ratios."

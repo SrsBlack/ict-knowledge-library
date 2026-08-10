@@ -6,6 +6,27 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-09] ingest | Distillation tranche 4 — swing hallmarks, projected ranges, macro-to-micro, equity seasonals
+
+Backlog items A8, A9, A10, A11. Five transcripts read in full (two were needed to settle A9).
+
+- [swing-trading-hallmarks](concepts/31-models/swing-trading-hallmarks.md) — **seven cumulative** checks for whether a swing trade is valid; COT and seasonals flagged by ICT himself as optional enhancers. Also carries the static rule-filter doctrine — *"you don't side with ICT, you side with your rule-based ideas"* — and the risk/equity gate that can veto a valid setup.
+- [projected-range-objectives](concepts/31-models/projected-range-objectives.md) — the taxonomy of index-futures daily profiles across AM / lunch / PM. The load-bearing rule is the **PM continuation filter**: whether the PM resumes the AM direction depends on the *timeframe rank* of the array the AM reversed at — H4-or-higher can be recapitalised, M15/H1 gets traded through.
+- [macro-to-micro-framework](concepts/03-order-flow/macro-to-micro-framework.md) — a **3–6 month currency outlook from the debt market**, cascaded to a pair list and then to ordinary daily PD-array entries. Contains the **10Y-vs-30Y internal SMT divergence**, which appears nowhere else in the library, and the Nov-2016 election fake-move filter.
+- [equity-seasonal-windows](concepts/04-time-cycles/equity-seasonal-windows.md) — three divisions of the stock year, the **May–October low-magnitude period**, and the month-by-month Dow tendency table.
+
+⚠ **A9 was misclassified in the backlog.** It pointed at *Stock Trading — Valuation Stock Selection* for the Feb–May / May–Sep windows. Reading it showed the lecture is actually **long-call / long-put option mechanics** — out of scope for this library — with the seasonal windows stated in its first 60 seconds as context. The real source is *Stock Trading — Seasonals & Monthly Swings*, which was not on the A-list at all. The page is written from the seasonals lecture, with the options lecture cited only for the three program windows and its scope exclusion recorded on the page and in `SOURCES.md`.
+
+⚠ **Count discrepancy recorded, not smoothed over.** ICT says "eight projected ranges" twice; the lesson enumerates and diagrams **six**. The page states both facts rather than inventing two profiles to reach eight.
+
+⚠ **[macro-to-micro-framework](concepts/03-order-flow/macro-to-micro-framework.md) vs [bond-yield-analysis](concepts/03-order-flow/bond-yield-analysis.md)** — the closest near-duplicate this programme has produced. Both read debt against the dollar index. They differ on instrument (30Y vs 10Y), on whether seasonals are used, on output (a **direction** cascaded to pairs vs a **regime** classification), and on signature signal (10Y-vs-30Y internal divergence vs tandem-vs-inverse DXY movement). A comparison table sits on the macro page and both cross-link.
+
+**One refinement:** [r-multiple](concepts/32-risk-management/r-multiple.md) gained the breakeven-accuracy arithmetic — `1/(1+R)`, with ICT's own quote that **3:1 permits as low as 34 % accuracy to be net profitable** and his preference for 5×. The page previously had target-R tables and no statement of why R is the lever.
+
+Five new Source IDs. Lint clean: **247 concept pages**, **86 Source IDs**, 0 dead links, 0 dead `related[]`, INDEX↔disk aligned, TIMELINE covers all four.
+
+**Remaining backlog: 4 concepts + 2 merges.**
+
 ## [2026-08-09] ingest | Distillation tranche 3 — day trading model, timeframe selection, bond yields, explosive market selection
 
 Backlog items A2, A3, A5, A6 from [distillation-backlog-2026-08-09](meta/distillation-backlog-2026-08-09.md). 175 minutes of lecture across six transcripts, all read in full before writing.
