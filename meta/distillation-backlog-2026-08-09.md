@@ -30,10 +30,10 @@ Ordered by teaching time, which is a rough proxy for how much substance sits beh
 | A9 | ✅ `equity-seasonal-windows` | Month 10 — Stock Trading, Valuation Stock Selection | 19 | Feb–May buy programs, May–late-Sep short. May instead extend `seasonal-tendency`; decide on reading. |
 | A10 | ✅ `macro-to-micro-framework` | Month 03 — Macro Economic To Micro Technical | 19 | Top-down chain from fundamentals to entry. |
 | A11 | ✅ `projected-range-objectives` | Month 10 — Index Futures, Projected Range & Objectives | 18 | Index-futures range projection. |
-| A12 | `market-maker-trap` | Month 03 — Market Maker Trap Head Shoulders Pattern | 18 | False tops/bottoms via classical H&S. Zero coverage of H&S in the library. |
-| A13 | `anticipatory-setup-development` | Month 03 — The Next Setup, Anticipatory Skill Development | 15 | Monthly chart + institutional order flow to pre-locate setups. |
-| A14 | `sentiment-effect` | Month 09 — The Sentiment Effect | 13 | When buying/selling probabilities are highest; Asian range + opening. |
-| A15 | `market-protraction` | Month 1 — Impulse Price Swings & Market Protraction | 12 | **Two concepts in one lecture** — `impulse-price-swing` may warrant its own page or fold into market structure. Split on reading. |
+| A12 | ✅ `market-maker-trap` | Month 03 — Market Maker Trap Head Shoulders Pattern | 18 | False tops/bottoms via classical H&S. Zero coverage of H&S in the library. |
+| A13 | ✅ `anticipatory-setup-development` | Month 03 — The Next Setup, Anticipatory Skill Development | 15 | Monthly chart + institutional order flow to pre-locate setups. |
+| A14 | ✅ `sentiment-effect` | Month 09 — The Sentiment Effect | 13 | When buying/selling probabilities are highest; Asian range + opening. |
+| A15 | ✅ `market-protraction` | Month 1 — Impulse Price Swings & Market Protraction | 12 | **Two concepts in one lecture** — `impulse-price-swing` may warrant its own page or fold into market structure. Split on reading. |
 | A16 | ✅ `reclaimed-order-block` | Month 04 — Reclaimed Orderblock | 11 | "reinforcing order block theory and reclaimed blocks". `07-order-blocks` has 10 files and none cover this. |
 
 ## B. MERGE into an existing page (2 items, ~0.9 hrs)
@@ -63,7 +63,22 @@ files would inflate the library with material that has no formal criteria.
 ## Progress
 
 ✅ = written. **Tranche 2:** A1, A4, A7, A16. **Tranche 3:** A2, A3, A5, A6. **Tranche 4:** A8, A9, A10, A11.
-**Remaining: 4 concepts (A12–A15) + the 2 merges in section B.**
+**Tranche 5:** A12, A13, A14, A15 + both section-B merges.
+
+# ✅ BACKLOG CLOSED — 16/16 concepts, 2/2 merges.
+
+Final yield: **17 new concept pages** (A12 absorbed four lectures into one page; B1 became a
+page instead of a merge) plus **6 refinements of existing pages** and **3 dating corrections**.
+
+Three classification errors were caught by reading. They are recorded because they characterise
+the method's failure modes, not because they were embarrassing:
+
+- **A9** pointed at a lecture that is actually options mechanics; the real source was never on the list.
+- **B1** was slated as a merge; it is a distinct named concept (the interest rate triad).
+- **A12** named one lecture where the corpus holds a four-lecture series.
+
+All three are the same underlying fault: **the curriculum map ranks titles, and a title is
+evidence about a lecture's subject only until you read it.**
 
 ⚠ **A9's classification was wrong.** The lecture named there (*Valuation Stock Selection*)
 is long-call/long-put option mechanics — out of scope. The equity seasonal windows come from
@@ -75,8 +90,10 @@ Tranche 3 also produced two **refinements** of existing pages rather than new fi
 `commitment-of-traders` (recentred 12-month zero line) and `open-interest` (10–15 %
 qualifying gate, which corrected a standing "no threshold is taught" claim). Both came
 from the A6 lecture. Tranche 4 added a third: `r-multiple` gained the breakeven-accuracy
-arithmetic from A8. Expect more of these: the later mentorship months revisit earlier
-material, so a lecture on the CONCEPT list can legitimately resolve to an edit.
+arithmetic from A8. Tranche 5 added three more, two of them **dating corrections** - `judas-swing`
+and `london-judas-swing` moved 2018 -> 2016, `trendline-liquidity` 2017 -> 2016. Expect these: the
+later mentorship months revisit earlier material, so a lecture on the CONCEPT list can
+legitimately resolve to an edit, and an early lecture can re-date a page written from a later one.
 
 ## Realistic yield
 

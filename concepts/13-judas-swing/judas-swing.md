@@ -3,14 +3,21 @@
 **Category:** 13-judas-swing
 **Aliases:** Judas, opening Judas, false-direction open, betrayal swing
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW, ICT-2016-PROTRACTION
 **Tags:** judas, manipulation, sweep, foundational
 
 ## Definition
 
 A Judas swing is the **deceptive opening move at the start of a session** that goes in the opposite direction of the session's true intended delivery. Named for the New Testament betrayal — the move "betrays" inattentive traders into committing to the wrong direction before the algorithm reverses and runs the actual delivery. The Judas swing is ICT's name for the manipulation phase ([manipulation-phase](../12-power-of-three/manipulation-phase.md)) at the session-open scale. It is most commonly observed at the London open ([london-judas-swing](london-judas-swing.md)) but also appears at the NY AM open ([ny-judas-swing](ny-judas-swing.md)).
+
+⚠ **Dating corrected 2026-08-09.** This page previously carried `Year Introduced: 2018`. The
+**September-2016** mentorship lecture on market protraction uses the term directly — "we see
+that as market protraction **or a Judas swing**; it's a false rally to sell into"
+(`ICT-2016-PROTRACTION`, 06:40) and again at 09:50 — and describes the London instance in full.
+The term is therefore in use in 2016, and the year has been corrected. See
+[market-protraction](market-protraction.md) for the parent concept.
 
 ## Formal Criteria
 
@@ -50,10 +57,10 @@ judas_swing(session) :=
   ],
   "timeframes": ["M1","M5","M15"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["london-judas-swing","ny-judas-swing","judas-swing-failure","manipulation-phase","liquidity-sweep","asian-range-sweep","power-of-three"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-PROTRACTION", "ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -107,3 +114,4 @@ M1 / M5 / M15 — the Judas itself usually plays out in the first 15–60 minute
 
 - `ICT-2017-CHARTER-OVERVIEW` — Judas swing terminology refined.
 - `ICT-2022-MENTORSHIP-OVERVIEW` — operational framework for Judas + reversal entry.
+- `ICT-2016-PROTRACTION` (06:32–06:49) "if we see a movement higher and we're bearish, we see that as market protraction or a Judas swing; it's a false rally to sell into"; (09:50) "in the next London session, it's in Judas swing lower or market protractionary phase" — the earliest use of the term located in the corpus, which is why this page is dated 2016 rather than 2018.

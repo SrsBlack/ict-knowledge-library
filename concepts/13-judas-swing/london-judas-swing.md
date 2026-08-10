@@ -3,14 +3,19 @@
 **Category:** 13-judas-swing
 **Aliases:** London Judas, LDN Judas, London-open Judas
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW, ICT-2016-PROTRACTION
 **Tags:** judas, london, sweep
 
 ## Definition
 
 The London Judas swing is the canonical session-open Judas — the deceptive directional move at the start of London (02:00 NY) that sweeps the [asian-range](../14-asian-range/asian-range.md) on the wrong side before the algorithm reverses and delivers the true HTF-bias-aligned move. This is the most-frequent Judas pattern in ICT's framework and the highest-quality version because the Asian range is a clean, well-defined liquidity setup overnight.
+
+⚠ **Dating corrected 2026-08-09** from 2018. The September-2016 protraction lecture describes
+this exact instance — a counter-directional move after midnight New York / 4 GMT — and names it
+a Judas swing (`ICT-2016-PROTRACTION`, 04:04–04:44, 06:32–06:49). See
+[market-protraction](market-protraction.md).
 
 ## Formal Criteria
 
@@ -43,10 +48,10 @@ london_judas := session == London_Open_KZ [02:00, 05:00] NY
   ],
   "timeframes": ["M1","M5","M15"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["judas-swing","ny-judas-swing","judas-swing-failure","london-open-killzone","asian-range","asian-range-sweep","macro-time-0250-0310"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-PROTRACTION", "ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -105,3 +110,4 @@ M1 / M5 / M15.
 ## Citations
 
 - `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-PROTRACTION` (04:04–04:44) the counter-directional move right after midnight New York, "designed to fake out the individuals that chase that initial move"; (06:32–06:49) the same window given as "after 4 GMT" and named a Judas swing.

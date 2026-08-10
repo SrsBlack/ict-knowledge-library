@@ -6,6 +6,29 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-09] ingest | Distillation tranche 5 - market maker traps, protraction, anticipatory setups, sentiment, rate triad. BACKLOG CLOSED.
+
+Backlog items A12-A15 plus both section-B merges. Nine transcripts read in full (~2.7 hrs).
+
+- [market-maker-trap](concepts/31-models/market-maker-trap.md) - **one page, four sources.** The backlog listed a single Head & Shoulders lecture; the corpus holds a deliberate **four-lecture series** (False Flag, False Breakouts, Trendline Phantoms, Head & Shoulders - 90 min across two months). One mechanism: a classical retail pattern printed *against* HTF order flow, so the pattern's textbook trigger is the liquidity pool. Writing it from the one lecture the backlog named would have repeated the 2026-08-05 sampling error exactly.
+- [market-protraction](concepts/13-judas-swing/market-protraction.md) - a small counter-directional impulse swing at **20:00 / 00:00 / 07:00 New York**. Backlog flagged a possible split with `impulse-price-swing`; reading settled it - ICT defines protraction *against* the untimed impulse swing ("the difference... is the fact that there is a **time element**"), so the primitive is defined inline and no second page was written.
+- [anticipatory-setup-development](concepts/25-htf-bias/anticipatory-setup-development.md) - **two monthly candles define the range**: the most recent down candle and the nearest up candle whose low exceeds its high. Whichever has been violated becomes an order block; the other is the objective. Then refine W -> D -> H1.
+- [sentiment-effect](concepts/31-models/sentiment-effect.md) - short-term sentiment is **maximally opposed at the entry**. Four buy/sell conditions on the Asian range and midnight-NY open, with an explicit odds-decay rule: the longer price hovers at the 15-minute array, "the odds drop off precipitously".
+- [interest-rate-triad](concepts/03-order-flow/interest-rate-triad.md) - 30-year / 10-year / 5-year read against each other; **a failure swing in one validates a dollar-index PD array, and its absence is a pass rule**.
+
+⚠ **Backlog item B1 was misclassified as a MERGE.** It was slated to append "smart-money framing" to `interest-rate-differentials`. The lecture's actual subject is the named **interest rate triad** with its own instruments, signal and pass rule - a distinct concept, not a paragraph. It also resolves a garbled quote already in the library: `bond-yield-analysis` cites "an intratrade triad", which is whisper mis-hearing **interest rate triad**.
+
+⚠ **Two dating corrections, both forced by reading rather than by audit:**
+
+- **[judas-swing](concepts/13-judas-swing/judas-swing.md) and [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md): 2018 -> 2016.** The September-2016 protraction lecture uses the term outright - "we see that as market protraction **or a Judas swing**" - and describes the London instance in full. `ny-judas-swing` and `judas-swing-failure` were **left at 2018**: the same lecture describes the 07:00 NY window but does not attach the Judas label to it, so the evidence does not extend there. Flagged for a future pass rather than swept along.
+- **[trendline-liquidity](concepts/02-liquidity/trendline-liquidity.md): 2017 -> 2016**, and materially extended. The page treated trendlines as unreliable; the 2016 lecture rejects the *premise* - "price has no awareness of your trendline" - and supplies the counter-entry rule (fade the swing point between touch 2 and touch 3; the stops rest at point 2, not point 3).
+
+**Both merges completed.** B2 (*Reducing Risk & Maximizing Reward*) went into [risk-per-trade](concepts/32-risk-management/risk-per-trade.md) - leverage as a trap rather than a resource (**3:1, not 50:1**), H4 entries on monthly/weekly frames to compress the stop, one to two swing trades every four to six weeks - and [r-multiple](concepts/32-risk-management/r-multiple.md) - 200-500 pip ranges yielding up to 10R. ⚠ It also exposed a **discrepancy in ICT's own numbers**: this lecture says 3:1 needs **30 %** accuracy, `ICT-2017-SWING-ELEMENTS` says **34 %**, and the arithmetic breakeven is **25 %**. All three are recorded on `r-multiple`; none was quietly selected.
+
+Nine new Source IDs. Lint clean: **252 concept pages**, **95 Source IDs**, 0 dead links, 0 dead `related[]`, INDEX-disk aligned, TIMELINE covers all five new pages, header/JSON years agree on every file.
+
+**The distillation backlog is closed: 16 of 16 concepts written, 2 of 2 merges done** (one merge reclassified to a concept).
+
 ## [2026-08-09] ingest | Distillation tranche 4 — swing hallmarks, projected ranges, macro-to-micro, equity seasonals
 
 Backlog items A8, A9, A10, A11. Five transcripts read in full (two were needed to settle A9).

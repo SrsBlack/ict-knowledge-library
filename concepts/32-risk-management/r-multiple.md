@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2017-SWING-ELEMENTS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2017-SWING-ELEMENTS, ICT-2017-SWING-REDUCE-RISK, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** risk, r-multiple, foundational
 
 ## Definition
@@ -43,6 +43,19 @@ when you're **wrong 66 % of the time**." ICT calls 3:1 only *marginally* profita
 prefers **5×** risk, which "endures losses much easier". The setups with the most movement
 potential are the ones that offer the better ratios.
 
+⚠ **ICT quotes two different figures for the same 3:1 ratio, four lessons apart in the same
+month.** `ICT-2017-SWING-ELEMENTS` (12:38) says "as low as **34 %** accuracy to be net
+profitable"; `ICT-2017-SWING-REDUCE-RISK` (07:29) says "you only need to be accurate **30 %**
+of the time to be profitable". The arithmetic breakeven at R=3 is **25 %**; both quoted figures
+sit above it, consistent with carrying costs, and neither is derived on air. The library records
+both rather than selecting one. Treat the range 30–34 % as ICT's rule-of-thumb floor, not a
+computed constant.
+
+`ICT-2017-SWING-REDUCE-RISK` also sets the practical expectation for swing setups framed on
+monthly/weekly arrays with four-hour entries: 3:1 is the floor and hard to find, "many times
+it's going to be five to one, ten to one is not unheard of", and higher-timeframe ranges of
+**200–500 pips can yield up to 10R** (07:00–07:29, 11:41–12:22).
+
 ## Formula / Math
 
 ```
@@ -56,7 +69,7 @@ R = abs(target - entry) / abs(entry - sl)
 # Breakeven accuracy required at a given R:
 breakeven_win_rate(R) = 1 / (1 + R)
 #   R = 1  -> 50.0%
-#   R = 3  -> 25.0%   (ICT quotes 34% as the net-profitable floor once costs are carried)
+#   R = 3  -> 25.0%   (ICT quotes 30-34% as the practical floor; see the note above)
 #   R = 5  -> 16.7%
 ```
 
@@ -71,7 +84,8 @@ breakeven_win_rate(R) = 1 / (1 + R)
     {"id": "c1", "expr": "R = abs(target - entry) / abs(entry - sl)"},
     {"id": "c2", "expr": "minimum target typically 1.5R-2R"},
     {"id": "c3", "expr": "high-conviction targets 5R+"},
-    {"id": "c4", "expr": "breakeven_win_rate(R) == 1/(1+R); R=3 quoted as ~34% net-profitable floor"}
+    {"id": "c4", "expr": "breakeven_win_rate(R) == 1/(1+R); ICT quotes 30-34% as the practical floor at R=3 (two different lessons)"},
+    {"id": "c5", "expr": "HTF ranges of 200-500 pips with H4 entries can yield up to 10R"}
   ],
   "timeframes": ["all"],
   "confidence": "high",
@@ -124,3 +138,4 @@ All TFs.
 
 - `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`.
 - `ICT-2017-SWING-ELEMENTS` (12:35–13:33) "probabilities reward diligence… limiting setups to three to one reward risk permits as low as 34 % accuracy to be net profitable… that means you're making money when you're wrong 66 % of the time"; 5× risk preferred as it "endures losses much easier"; "the setups that we have the most movement potential offer the better risk to reward ratios."
+- `ICT-2017-SWING-REDUCE-RISK` (07:00–07:29) "use nothing less than three to one reward to risk ratios… many times it's going to be five to one, ten to one is not unheard of"; (07:29–07:54) "when you trade with reward to risk ratio conditions, you only need to be accurate 30 % of the time to be profitable… you can lose 70 % of the time if you're trading with three to one"; (11:41–12:22) R-multiple defined as reward on the risk associated with the trade, with professionals putting "very little money at risk to get huge price moves"; (12:14–12:26) "higher time frame levels that offer ranges of 200 to 500 pips, they can yield up to 10 R wins".

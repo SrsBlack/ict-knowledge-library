@@ -3,9 +3,9 @@
 **Category:** 02-liquidity
 **Aliases:** trendline stops, retail trendline liquidity, sloped liquidity
 **ICT Confidence:** high
-**Year Introduced:** 2017
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-MMT-TRENDLINE, ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** liquidity, trendline, sloped, retail-trap
 
 ## Definition
@@ -24,6 +24,20 @@ A bearish-side (BSL) trendline:
 
 - Two or more descending swing highs can be connected by a straight line.
 - Retail traders treat the line as resistance and place stops just above.
+
+**ICT rejects trendline theory itself, not just its reliability** (`ICT-2016-MMT-TRENDLINE`,
+02:08–03:32): "there's **no statistical edge** that I've been able to build with use of diagonal
+support or resistance… **price has no awareness of your trendline** — price only respects where
+the actual liquidity is in the marketplace." The line is a stop-cluster marker and nothing else.
+
+**The counter-entry rule** (07:58–11:45). Rather than trading the line, fade the swing point
+*between* the touches:
+
+- **Ascending (retail-bullish) line, bearish HTF:** take the **high formed between touch 2 and
+  touch 3** as a bearish order block, or allow a brief poke above it for a turtle-soup short.
+- **Descending (retail-bearish) line, bullish HTF:** take the **low formed between high 2 and
+  high 3** as a bullish order block, or a break just below it as a turtle-soup long.
+- **The stops rest at point 2, not point 3** — "that's where everyone's stop loss is going to be."
 
 Trendline liquidity is most attractive when:
 
@@ -55,7 +69,7 @@ The stop level moves with time (slope), unlike horizontal SSL/BSL.
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2017",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["buy-side-liquidity","sell-side-liquidity","liquidity-sweep","equal-highs","equal-lows","stop-run-definition"],
   "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
@@ -118,3 +132,4 @@ Most useful M15 → D. Lower TFs have noisy "trendlines" of little structural si
 
 - `ICT-2017-CHARTER-OVERVIEW` — trendline liquidity introduced.
 - `ICT-2022-MENTORSHIP-OVERVIEW` — operational use as sweep target.
+- `ICT-2016-MMT-TRENDLINE` (00:30) "teaching number 7 of 8 for the month of November 2016… trendline phantoms or false trendlines"; (02:08–02:32) "there's no basis on trendline theory in the form of diagonal support or diagonal resistance… no statistical edge that I've been able to build"; (03:09–03:32) "price has no awareness of your trendline… price only respects where the actual liquidity is in the marketplace"; (07:28–07:44) the influx of weak-handed money at the line "provides liquidity for the market maker"; (07:58–09:01) fade the high between touch 2 and touch 3; (10:06–10:58) the bearish-line mirror; (11:00–11:45) "that's where everyone's stop loss is going to be" — point 2. ⚠ This 2016 lecture is why the page is dated 2016 rather than 2017.

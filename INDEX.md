@@ -64,6 +64,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [market-efficiency-paradigm](concepts/03-order-flow/market-efficiency-paradigm.md) — markets are efficient FOR smart money; everyone else is the liquidity.
 - [bond-yield-analysis](concepts/03-order-flow/bond-yield-analysis.md) — 10Y note vs dollar index; tandem = consolidation, inverse = trending; "crack in correlation".
 - [macro-to-micro-framework](concepts/03-order-flow/macro-to-micro-framework.md) — 30Y bond + 10Y note → dollar direction → pair selection → daily PD-array entry.
+- [interest-rate-triad](concepts/03-order-flow/interest-rate-triad.md) — 30Y/10Y/5Y; a failure swing in one validates a DXY PD array, its absence is a pass rule.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
@@ -165,6 +166,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md) — canonical LO-KZ Judas with Asian-range sweep.
 - [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md) — smaller-scale NY AM Judas.
 - [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md) — when no reversal happens.
+- [market-protraction](concepts/13-judas-swing/market-protraction.md) — time-anchored counter-directional impulse swing; the parent concept of the Judas swing.
 
 ### 14 — Asian Range
 - [asian-range](concepts/14-asian-range/asian-range.md) — bounded engineered-liquidity range from Asia session.
@@ -256,6 +258,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [bias-invalidation](concepts/25-htf-bias/bias-invalidation.md) — when bias must flip.
 - [top-down-analysis](concepts/25-htf-bias/top-down-analysis.md) — prescribed analysis sequence.
 - [timeframe-selection](concepts/25-htf-bias/timeframe-selection.md) — timeframe-to-style map; five trader models; the three setups ICT actually trades.
+- [anticipatory-setup-development](concepts/25-htf-bias/anticipatory-setup-development.md) — two monthly candles define the range and the objective; refine downward.
 
 ### 26 — Imbalance
 - [imbalance-definition](concepts/26-imbalance/imbalance-definition.md) — umbrella term for any unworked price region.
@@ -300,6 +303,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [explosive-market-selection](concepts/31-models/explosive-market-selection.md) — the eight hallmarks that qualify a market for an explosive swing move.
 - [swing-trading-hallmarks](concepts/31-models/swing-trading-hallmarks.md) — seven cumulative checks for whether a swing trade is valid; static rule filtering.
 - [projected-range-objectives](concepts/31-models/projected-range-objectives.md) — taxonomy of index-futures daily profiles by AM / lunch / PM.
+- [market-maker-trap](concepts/31-models/market-maker-trap.md) — classical retail patterns printed against HTF flow; four variants, one mechanism.
+- [sentiment-effect](concepts/31-models/sentiment-effect.md) — sentiment is most opposed at the entry; Asian-range + midnight-open day-trade conditions.
 - [ict-day-trading-model](concepts/31-models/ict-day-trading-model.md) — 65–70 % of the daily range; five-day ADR, Sunday-open filter, day-of-week profiles.
 - [ict-2023-model](concepts/31-models/ict-2023-model.md) — Quarterly Theory + macro integration refinements.
 - [ict-2024-model](concepts/31-models/ict-2024-model.md) — FVG classification + IFVG + propulsion refinements.
