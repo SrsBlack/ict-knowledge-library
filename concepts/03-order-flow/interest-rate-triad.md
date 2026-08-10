@@ -4,8 +4,8 @@
 **Aliases:** interest rate triad, rate triad, 30-10-5 divergence, interest rate divergence, yield triad
 **ICT Confidence:** high
 **Year Introduced:** 2016
-**Year Refined:** 2016
-**Source IDs:** ICT-2016-RATE-TRIAD
+**Year Refined:** 2017
+**Source IDs:** ICT-2016-RATE-TRIAD, ICT-2017-BOND-TRENDING-DAYS
 **Tags:** order-flow, intermarket, bonds, interest-rates, dollar-index, smt, validation, accumulation-distribution
 
 ## Definition
@@ -66,6 +66,28 @@ All three are futures markets; ICT names **barchart.com** as the free data sourc
 - Sequence: price reaches a focus point (order block / liquidity pool / liquidity void / fair
   value gap) → **then** consult the triad and the dollar index → confirm or pass.
 
+**The intraday form — a fixed clock window** (`ICT-2017-BOND-TRENDING-DAYS`, added 2017)
+
+The 2016 lecture leaves the comparison moment defined only as "when the dollar index is at a
+significant price point". The Month-10 bond lecture of June 2017 pins it to a clock and attaches
+a day-selection recipe:
+
+- **Compare the three at the extreme forming in the 08:00 → 08:30 NY window** — "the lower low
+  going into the opening, or in this case, it's the **8 to 8:30 a.m.**" (04:54–05:23). Charts in
+  that lecture are shown in **Central time**, one hour behind.
+- The trigger is stated in the same failure-swing terms: "**notice that it did not go lower.
+  That's our trigger. That's where we see the professional accumulation**" (06:01–06:05).
+- **Analysis timeframes:** "doing your analysis on the higher timeframe charts, but **focusing
+  primarily on the daily, the four hour and two hour**" (07:52).
+- **Three preconditions must already be in place** for the divergence to matter that morning:
+  small prior daily range(s), price recently in a discount (or premium) array, and a
+  **high-to-medium-impact US report scheduled for 08:30 NY**. See
+  [bond-trending-and-consolidation-days](../31-models/bond-trending-and-consolidation-days.md).
+- **What it buys you** is not a bond trade but a cross-asset expectation: "we will know
+  **beforehand** that price will be allowed to **expand dynamically across other asset
+  classes**" (08:31). The worked days are FX moves — EURUSD, AUDUSD, USDJPY, GBPUSD — read off
+  the ZB/ZN/ZF comparison.
+
 **The general accumulation / distribution frame** (02:44–06:39)
 
 The triad is one instance of a broader comparison ICT teaches with a **base asset or benchmark**
@@ -122,14 +144,17 @@ if NOT failure_swing at the moment price hits the array:
     {"id": "c6", "expr": "no failure swing at the array => pass on the trade"},
     {"id": "c7", "expr": "requires a predetermined directional idea BEFORE consulting the triad"},
     {"id": "c8", "expr": "general frame: benchmark higher_highs + correlates lower_highs => distribution; benchmark lower_lows + correlates higher_lows => accumulation"},
-    {"id": "c9", "expr": "supplies validation, not bias and not entry"}
+    {"id": "c9", "expr": "supplies validation, not bias and not entry"},
+    {"id": "c10", "expr": "2017 form: compare the three at the extreme forming in [08:00,08:30] NY, read on daily/H4/H2"},
+    {"id": "c11", "expr": "2017 form requires small prior daily ranges + recent discount/premium array + 08:30 NY high/medium impact US report"},
+    {"id": "c12", "expr": "2017 form outputs a cross-asset range-expansion expectation, not a bond trade"}
   ],
-  "timeframes": ["H1","H4","D"],
+  "timeframes": ["H1","H2","H4","D"],
   "confidence": "high",
   "year_introduced": "2016",
-  "year_refined": "2016",
-  "related": ["macro-to-micro-framework", "bond-yield-analysis", "dollar-index", "interest-rate-differentials", "smt-divergence", "index-smt", "institutional-order-flow", "order-block-criteria"],
-  "sources": ["ICT-2016-RATE-TRIAD"]
+  "year_refined": "2017",
+  "related": ["macro-to-micro-framework", "bond-yield-analysis", "dollar-index", "interest-rate-differentials", "smt-divergence", "index-smt", "institutional-order-flow", "order-block-criteria", "bond-trending-and-consolidation-days", "multi-asset-analysis"],
+  "sources": ["ICT-2016-RATE-TRIAD", "ICT-2017-BOND-TRENDING-DAYS"]
 }
 ```
 
@@ -199,6 +224,9 @@ swing validation, not a macro horizon. For the multi-month horizon see
   uses the 30-year and 10-year for a **3–6 month directional outlook**; the triad adds the
   5-year and works at **swing-validation** scale.
 - **Skipping the pass rule.** No divergence at the array means no trade — that is the deliverable.
+- **Taking the 2017 clock window as universal.** The 08:00–08:30 NY comparison is the **bond-market
+  day-selection** form. The original 2016 form has no clock — it fires whenever price reaches the
+  dollar-index array.
 
 ## Related Concepts
 
@@ -209,7 +237,10 @@ swing validation, not a macro horizon. For the multi-month horizon see
 - [smt-divergence](../16-smt-divergence/smt-divergence.md), [index-smt](../16-smt-divergence/index-smt.md) — the divergence logic applied elsewhere.
 - [order-block-criteria](../07-order-blocks/order-block-criteria.md) — the arrays this filter validates.
 - [swing-trading-hallmarks](../31-models/swing-trading-hallmarks.md) — hallmark 3, "interest rate markets support the trade", in its most mechanical form.
+- [bond-trending-and-consolidation-days](../31-models/bond-trending-and-consolidation-days.md) — the 2017 day-selection recipe the 08:00–08:30 comparison sits inside.
+- [multi-asset-analysis](multi-asset-analysis.md) — the regime read this validates within.
 
 ## Citations
 
 - `ICT-2016-RATE-TRIAD` (00:26–00:56) "smart money accumulation, distribution fundamentally speaking… **interest rates are the single most influential driving force behind market moves**"; (01:06–01:15) "interest rate triads provide a visual depiction of smart money accumulation and distribution"; (01:15–01:50) the 30-year bond, 10-year note and 5-year note as long, intermediate and short-term rates, all futures markets; (01:58–02:07) "failure swings at opportunistic times can validate institutional order flow"; (02:55–04:19) distribution — the benchmark making higher highs while correlated assets make lower highs; (04:24–06:39) accumulation — the benchmark making lower lows while correlates make higher lows, "because that is the basis of supply and demand"; (07:17–07:35) "the three interest rates should confirm each higher high or lower low at moments when the US dollar index is at a significant price point"; (07:44–08:25) "you just need one to break that pattern… it invariably will show smart money participation"; (08:38–09:23) the pairing with a dollar-index bullish order block; (09:23–09:43) barchart.com as the free data source; (10:12–11:11) the dollar index at 99.50 and the aggressive rally away; (11:11–11:41) the 30-year failure swing on the 90-minute chart between the 5th and 8th; "now when this takes place by itself it doesn't mean anything"; (11:41–12:39) the 10-year unchanged and the 5-year clear higher high — "that highlights there's a shift in the interest rate market"; (13:09–13:25) "you don't go into looking at the bond market just for these types of scenarios — you have to have a predetermined idea"; (13:25–14:00) the divergence against the dollar index lower low; (14:00–15:06) the November order block retested on 8 December at 99.50 and strongly rejected; (15:22–15:48) "if you can see the interest rate divergence or interest rate triad… and price is hitting a specific order block on the dollar index, that gives you the green light"; (15:48–17:17) the EURUSD and GBPUSD cascade; (17:17–17:47) "what makes that strong dollar so significant is that it had a divergence in the interest rate triad"; (17:56–18:10) the caveat that longer-term shifts can disrupt the short-term read; (18:23–19:10) the action plan — at an order block, liquidity pool, liquidity void or fair value gap, "you refer to the interest rate triad and dollar index… if there is no obvious indication that they are moving large funds, pass on the trade idea"; (20:03–20:20) the price/rate/dollar direction convention.
+- `ICT-2017-BOND-TRENDING-DAYS` (00:20–00:28) "**June 2017 content, ICT Mentorship. ICT Bond Trading Lesson 4, Trending Days**" — self-dates the lecture; (04:54–05:23) "the lower low going into the opening, or in this case, it's the **8 to 8:30 a.m.**… the chart that's shown here is in **central time**, so it's going to be an hour earlier"; (05:58–06:08) "look at the lows in the treasury bond here in relationship to the **10-year note. Notice that it did not go lower. That's our trigger. That's where we see the professional accumulation**"; (06:08–06:32) "**they don't cause small little moves when they step in — it's noticeable**… you see the divergence between the 10-year and the 30-year"; (07:44–08:12) "you have to have the **sponsorship** behind it by way of the interest rate markets… looking at the **five year, the 10 year and the 30 year** and comparing them… **focusing primarily on the daily, the four hour and two hour**"; (08:16–08:37) "when you see that divergence there and the stage is set for an expansion and we have volatility injections by way of the economic calendar, we will know **beforehand** that price will be allowed to **expand dynamically across other asset classes**"; (13:56–14:15) "you'd be looking at the lows going into that **7 o'clock on the chart, because that's going to be 8 o'clock New York time**… you're going to see the trigger occur between the 5-year, the 10-year and the 30-year note. When that occurs, that **buying signal gives you confirmation that your expansion move is about to take place**"; (19:23–19:49) the contrast case — a bond market declining from a premium array means rising rates, a rallying dollar and declining foreign currencies.

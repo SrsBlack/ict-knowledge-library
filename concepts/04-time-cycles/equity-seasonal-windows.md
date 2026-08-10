@@ -5,8 +5,8 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2017
-**Source IDs:** ICT-2017-STOCK-SEASONALS, ICT-2017-STOCK-OPTIONS
-**Tags:** time-cycles, seasonality, equities, indices, dow, buy-program, sell-program
+**Source IDs:** ICT-2017-STOCK-SEASONALS, ICT-2017-STOCK-OPTIONS, ICT-2017-STOCK-BUY-WATCHLIST, ICT-2017-STOCK-SELL-WATCHLIST
+**Tags:** time-cycles, seasonality, equities, indices, dow, buy-program, sell-program, swing-windows
 
 ## Definition
 
@@ -44,6 +44,23 @@ Research** and read as 20-year, 15-year and 5-year averages (00:38, 06:21).
 - **February → May** — buy program.
 - **May → second half of September** — sell program.
 - **Late September / early October → end of year** — buy program.
+
+**Swing-setup windows** (`ICT-2017-STOCK-BUY-WATCHLIST`, 02:09; `ICT-2017-STOCK-SELL-WATCHLIST`, 01:50, 03:05)
+
+The two watchlist lectures of the same week restate the programs as **swing-setup windows** —
+the form actually used to time [stock-watchlist-construction](../31-models/stock-watchlist-construction.md):
+
+| Direction | Windows |
+|---|---|
+| **Long swing setups** | **February → May**, and **October → January** |
+| **Short swing setups** | **January**, and **May → July** — primary encapsulation "**beginning of May to the first of August**" |
+
+⚠ **Conflict, unresolved.** The buy lecture extends the autumn long window through **January**
+("the October to January months are ideal long swing setups as well"), while the sell lecture
+names **January** as an ideal short-swing month and the seasonals lecture lists January as
+**bearish** with the buy program ending at year-end. All three statements are ICT's, recorded in
+the same week of June 2017. The library carries all three; the **late-September/October →
+year-end** long window is the one corroborated twice.
 
 **Month-by-month tendency, Dow Jones Industrial** (05:03–06:21)
 
@@ -135,14 +152,16 @@ turn_confirmed := index_SMT_divergence(NASDAQ, ES, YM) at the seasonal window
     {"id": "c7", "expr": "instrument == DJIA for simplicity; SP500 stated as more accurate"},
     {"id": "c8", "expr": "seasonal turns confirmed by index_SMT across NASDAQ/ES/YM"},
     {"id": "c9", "expr": "aberrations expected; tendency is not a guarantee"},
-    {"id": "c10", "expr": "supplies_entry == false"}
+    {"id": "c10", "expr": "supplies_entry == false"},
+    {"id": "c11", "expr": "long swing windows == Feb..May and Oct..Jan; short swing windows == Jan and May..Jul (primary 1 May..1 Aug)"},
+    {"id": "c12", "expr": "CONFLICT: Oct..Jan long window vs January listed bearish and named a short-swing month; unresolved in source"}
   ],
   "timeframes": ["D","W","M"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2017",
-  "related": ["seasonal-tendency", "index-smt", "smt-divergence", "mega-trade", "explosive-market-selection", "quarterly-shift-theory"],
-  "sources": ["ICT-2017-STOCK-SEASONALS", "ICT-2017-STOCK-OPTIONS"]
+  "related": ["seasonal-tendency", "index-smt", "smt-divergence", "mega-trade", "explosive-market-selection", "quarterly-shift-theory", "stock-watchlist-construction", "relative-strength-analysis"],
+  "sources": ["ICT-2017-STOCK-SEASONALS", "ICT-2017-STOCK-OPTIONS", "ICT-2017-STOCK-BUY-WATCHLIST", "ICT-2017-STOCK-SELL-WATCHLIST"]
 }
 ```
 
@@ -221,8 +240,12 @@ confirmation across the NASDAQ, e-mini S&P and Dow futures.
 - [quarterly-shift-theory](quarterly-shift-theory.md) — the three-to-four-month cadence underneath the divisions.
 - [mega-trade](../31-models/mega-trade.md) — the six-to-nine-month equity move these windows bracket.
 - [explosive-market-selection](../31-models/explosive-market-selection.md) — where seasonal alignment appears as hallmark 5.
+- [stock-watchlist-construction](../31-models/stock-watchlist-construction.md) — the selection funnel these windows time.
+- [relative-strength-analysis](../03-order-flow/relative-strength-analysis.md) — how the survivors of that funnel are ranked.
 
 ## Citations
 
 - `ICT-2017-STOCK-SEASONALS` (00:09–00:25) "we're in the final week of **June 2017** ICT mentorship content… ICT stock trading, lesson one, seasonals and monthly swings"; (00:38–00:43) the seasonal data credited to Steve Moore / Moore Research; (00:57–01:42) the Dow's 30 blue chips used for simplicity, with the S&P 500 stated as "a more accurate depiction of what the stock market is doing"; (02:00–03:26) the first-half high-magnitude division and the bullish final quarter "laden with holidays and year-end spending"; (03:27–04:39) "the last and most critical one you need to understand is this portion in the middle… **low magnitude period, and it begins in May and it ends in October**", with the instruction to use less leverage and less activity and to expect range-bound consolidation; (04:43–04:56) "you primarily want to focus on being a trader from October to the end of the year and from February to May"; (05:03–06:21) the month-by-month tendency table through the December "Santa Claus rally"; (06:21–07:21) the 20-, 15- and 5-year averages and what consistency does and does not mean; (08:10–08:23) March, June and August as the low-probability months; (08:28–08:57) "there's always going to be some aberration where it just simply doesn't fit the seasonal, and that's okay"; (09:24–10:05) bearish months as "supercharged short selling months" in bear markets; (11:00–15:29) the February, March, April and May case studies with index SMT across the NASDAQ, e-mini S&P and Dow; (15:43–16:18) 2017 called "an unorthodox stock market" making higher highs while leadership stopped confirming; (18:39) "there's times you want to be in stocks and times you want to be out of stocks".
 - `ICT-2017-STOCK-OPTIONS` (00:00) "lesson 5 of the June 2017 ICT mentorship, using options and stocks"; (00:12–00:54) the three programs — "we look for **February to May** for our buy programs… from **May going into the second half of September** for our shorting of stocks… and then around the **last portion of September, beginning of October, till the end of the year** where we are bullish again". ⚠ The remainder of this lecture teaches long-call and long-put option mechanics (strike and expiration selection), which is outside this library's scope and is deliberately not documented here.
+- `ICT-2017-STOCK-BUY-WATCHLIST` (00:08) "**lesson two of the ICT Mentorship June 2017 content**… building buy watch lists"; (02:07–02:19) "**the February to May months are ideal long swing setups and the October to January months are ideal long swing setups as well**" ⚠ — the January half of the autumn window is not corroborated by the other two lectures.
+- `ICT-2017-STOCK-SELL-WATCHLIST` (00:00) "**lesson three of the ICT stock trading June 2017 content**… building sell watch lists"; (01:50–01:59) "**the months of January and May through July are ideal short swing setups**"; (02:53–03:16) "**January generally is a bearish month**, but we're going to focus primarily on the condition from **May high through the month of July**… the entire encapsulation of **beginning of May to the first of August**".

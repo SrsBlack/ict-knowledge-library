@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2017
-**Source IDs:** ICT-2017-DAYTRADE-ESSENTIALS, ICT-2017-DAYTRADE-HTF
+**Source IDs:** ICT-2017-DAYTRADE-ESSENTIALS, ICT-2017-DAYTRADE-HTF, ICT-2017-INTRADAY-TOP-DOWN
 **Tags:** models, day-trading, daily-range, adr, sunday-open, weekly-bias, killzones
 
 ## Definition
@@ -79,6 +79,16 @@ ever watching the London session (`ICT-2017-DAYTRADE-HTF`).
 - **Friday** — quiet if the weekly PD-array objective was met by Thursday; capable of a
   surprise expansion if it was not (22:21–22:52).
 
+**ADR extension when the range is exceeded** (refinement, `ICT-2017-INTRADAY-TOP-DOWN`, 17:29–18:15)
+
+The April model stops at the five-day ADR high/low. The August capstone adds what to do once that bound breaks:
+
+- Lay a **Fibonacci across the ADR high and low** and read the **127 % and 162 % extensions** as the next objectives.
+- **The extensions are inert on their own** — "by themselves they're nothing… I look for 127 to line up with a premium array on a 60-minute or 15-minute timeframe, or 162 extension to overlap with a 60-minute or 15-minute premium array" (17:57–18:08). Mirrored with **discount** arrays when bearish.
+- Blended with the [central-bank-dealers-range](../15-sessions/central-bank-dealers-range.md), [asian-range](../14-asian-range/asian-range.md) and [flout](../15-sessions/flout.md) deviations, the projection lands "many times **within 10 pips** of the daily high and low" (18:48).
+- **Bank early on purpose.** "That's the reason why I want to get out 10 pips before… I don't mind getting out and leaving the last 25, 30 pips on the table" (18:55, 20:24). Intraday positions are collapsed "starting at the **10 o'clock to 11 o'clock** in the morning New York time window" (08:05) — the earlier bound of the April model's noon-to-14:00 exit guidance, not a replacement for it.
+- **Projections are not guarantees.** "These are all projections; projections are not absolutions. The standard deviations are **assisting**, they are **not guaranteeing**" (19:26–19:33).
+
 **No-trade conditions**
 
 - **FOMC and Non-Farm Payroll days are no-setup days** (06:47–07:26).
@@ -149,14 +159,17 @@ target_long        := opposing HTF premium PD array          # held beyond the d
     {"id": "c7", "expr": "no_trade if day in {FOMC, NFP, Sunday}"},
     {"id": "c8", "expr": "skip_NY if london_range >= 0.80 * ADR5"},
     {"id": "c9", "expr": "tuesday_london makes week_low ~0.70 probability in bullish weeks (mirrored in bearish)"},
-    {"id": "c10", "expr": "HTF_integration: prev_day respected daily discount/premium array => entry at open_0GMT (or +/- 10-20 pips), stop = ADR5"}
+    {"id": "c10", "expr": "HTF_integration: prev_day respected daily discount/premium array => entry at open_0GMT (or +/- 10-20 pips), stop = ADR5"},
+    {"id": "c11", "expr": "if ADR5 bound broken => fib(ADR_high, ADR_low) 1.27 and 1.62 extensions as next objectives"},
+    {"id": "c12", "expr": "extension actionable only where it overlaps an M15-H1 premium array (bearish target: discount array)"},
+    {"id": "c13", "expr": "intraday positions collapsed starting 10:00-11:00 America/New_York; exit ~10 pips inside the projection"}
   ],
   "timeframes": ["M15","H1","H4","D","W"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2017",
-  "related": ["bread-and-butter-setup", "power-of-three", "true-day-open", "central-bank-dealers-range", "filling-the-numbers", "london-open-killzone", "daily-bias", "judas-swing", "nfp-protocol"],
-  "sources": ["ICT-2017-DAYTRADE-ESSENTIALS", "ICT-2017-DAYTRADE-HTF"]
+  "related": ["bread-and-butter-setup", "power-of-three", "true-day-open", "central-bank-dealers-range", "filling-the-numbers", "london-open-killzone", "daily-bias", "judas-swing", "nfp-protocol", "flout", "ict-core-patterns", "top-down-analysis"],
+  "sources": ["ICT-2017-DAYTRADE-ESSENTIALS", "ICT-2017-DAYTRADE-HTF", "ICT-2017-INTRADAY-TOP-DOWN"]
 }
 ```
 
@@ -235,6 +248,12 @@ All three are GBPUSD daily-chart case studies from `ICT-2017-DAYTRADE-ESSENTIALS
   it the ADR-wide stop is unprotected (`ICT-2017-DAYTRADE-HTF`, 15:21).
 - **Reading "65–70 %" as a requirement.** Capturing 30–40 pips of a 100-pip day is
   explicitly called successful, not a miss (05:55–06:29).
+- **Taking a 127 % or 162 % ADR extension as a target on its own.** The extension has to
+  overlap an M15–H1 array on the correct side; unpaired, "by themselves they're nothing"
+  (`ICT-2017-INTRADAY-TOP-DOWN`, 17:57).
+- **Holding for the projected extreme.** ICT reports the opposite habit as costly — "every
+  time I've tried to be that consistent or that accurate, it's always hurt me" (20:46) — and
+  banks roughly ten pips inside the projection.
 
 ## Related Concepts
 
@@ -248,8 +267,12 @@ All three are GBPUSD daily-chart case studies from `ICT-2017-DAYTRADE-ESSENTIALS
 - [daily-bias](../25-htf-bias/daily-bias.md), [weekly-bias](../25-htf-bias/weekly-bias.md) — the directional inputs.
 - [nfp-protocol](../30-news-driven/nfp-protocol.md), [news-blackout-rules](../30-news-driven/news-blackout-rules.md) — the stand-aside days.
 - [timeframe-selection](../25-htf-bias/timeframe-selection.md) — where day trading sits among the trading styles.
+- [flout](../15-sessions/flout.md) — the third overnight range blended with the ADR projection in the August-2017 refinement.
+- [ict-core-patterns](ict-core-patterns.md) — the entry patterns the ADR objectives are targets *for*; ICT separates setup from targeting explicitly.
+- [top-down-analysis](../25-htf-bias/top-down-analysis.md) — the four-tier protocol whose tier 4 is this model's analysis layer.
 
 ## Citations
 
 - `ICT-2017-DAYTRADE-ESSENTIALS` (00:00–00:22) "this is April 2017 content for the ICT mentorship… we'll be teaching my day trading model, this is lesson one"; (01:18–01:33) "just because the name… is day trading it does not mean or equate to every day trading… generally there are two setups per trading day on average"; (01:52–02:02) "our expectation is to capitalize on at least 65 to 70 percent of the daily range"; (02:14–02:30) five-day average daily range; (06:47–06:56) "FOMC days and non-farm payroll days keep us on the sidelines and they are basically a no setup day"; (07:37–08:16) monthly/weekly/daily PD arrays over the last 20, 40 and 60 trading days, daily primary for day trades; (10:39–10:46) "you have to be flexible with time and demand specifics in price"; (11:44–12:38) London killzone 01:00–05:00 NY, hotspot 02:00–04:00, four-hour envelope to absorb DST; (13:55–14:31) skip New York if London puts in 80 % of the average daily range; (15:36–16:24) 14:00 hour and the 15:00 bond close; (16:31–17:17) Asia open 20:00; (17:20–18:58) London lunch 05:00–07:00; (18:47–22:52) day-of-week profiles including "Tuesday has a 70 [%] likelihood of creating the low of the week in London"; (23:09–24:06) Sunday opening price drawn on the hourly through Thursday; (24:06–25:35) Thursday cross-back = intra-week reversal; (26:45–27:40) sell every day below the Sunday open until a contrary HTF PD array; (28:04–29:07) bullish mirror; (35:01–44:24) the three GBPUSD case studies; (45:22–45:47) "you don't look at the opening price on Sunday and therefore it's above or below so I'm going to just do that — no, you have to incorporate the PD arrays".
 - `ICT-2017-DAYTRADE-HTF` (00:00–00:19) "lesson 8, the final of April 2017 content… integrating day trades with higher time frame trade entries"; (00:49–01:07) the London killzone is not required; (05:47–06:04) 0 GMT as the daily reset / true day open; (08:54–09:38) the previous day must have respected a daily discount or premium array; (13:12–13:51) a 90–100-pip stop is insignificant against several-hundred-pip HTF targets; (14:00–14:09) stop = five-day ADR from the 0 GMT open; (16:01–16:40) sell at 0 GMT or 0 GMT +20 pips; (18:03–18:51) split the position half at market, half on the limit; (19:10–20:39) 10–20-pip limits either side and why the ADR stop is rarely reached; (22:06–22:26) 5-period ATR on the daily as a substitute for the ICT ADR indicator.
+- `ICT-2017-INTRADAY-TOP-DOWN` — August-2017 capstone, lesson 4 of 4; refines the ADR layer only. (08:05–08:34) "I look to collapse the bulk or all of my intraday positions starting at the 10 o'clock to 11 o'clock in the morning New York time window — that's profit taking"; (17:29–17:44) "I use a five day average daily range to help me determine possible intraday range extremes for the single day that I'm trading"; (17:44–18:15) "if this average daily range high is broken I use the Fibonacci on the average daily range high and low… for 127 extension and 162 extensions as targets — by themselves they're nothing, but I look for a premium array… on a 60 minute or 15 minute timeframe", and the bearish mirror against a discount array; (18:41–19:02) blending flout, CBDR and Asian-range deviations puts the read "within 10 pips of the daily high and low"; (19:26–19:37) "projections are not absolutions… the standard deviations are assisting, they are not guaranteeing"; (20:24–20:52) "I don't mind getting out and leaving the last 25, 30 pips on the table… every time I've tried to be that consistent or that accurate it's always hurt me."

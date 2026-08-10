@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2017
-**Source IDs:** ICT-2017-OPEN-INTEREST, ICT-2017-EXPLOSIVE-MARKETS
+**Source IDs:** ICT-2017-OPEN-INTEREST, ICT-2017-EXPLOSIVE-MARKETS, ICT-2017-TOPDOWN-SHORT-TERM
 **Tags:** order-flow, futures, commodities, sponsorship, smart-money-footprint
 
 ## Definition
@@ -38,6 +38,21 @@ Larry Williams (01:50).
   commercial net line is simultaneously rising toward zero. The mirror, an **increase of
   10–15 % or more while commercials increase net selling**, is **bearish**. The threshold
   is paired with the COT line; neither leg is read alone.
+- **A second, independent gate — conditioned on PD-array location, not the COT line**
+  (`ICT-2017-TOPDOWN-SHORT-TERM`, 11:03–11:38, Aug 2017). Six months after the lecture
+  above, ICT states the same magnitude against a different variable: a decline of
+  **~15 % or more while price trades at a higher-timeframe *discount* array** is
+  "extremely bullish, especially when the monthly, weekly are bullish as well"; an
+  increase of **~15 % or more at a higher-timeframe *premium* array** is "extremely
+  bearish". ⚠ **These two gates are complementary, not rival readings** — same threshold,
+  different qualifying condition (commercial net line vs array location). Nothing in
+  either lecture ranks one above the other.
+- ⚠ **The hard "otherwise ignore" rule.** Outside those two conditions ICT discards the
+  indicator outright: "in between either of the above conditions, for my personal style of
+  trading, **open interest is not considered in my analysis** — it either has to meet one of
+  these two criterias, or I'm not going to refer to it at all" (`ICT-2017-TOPDOWN-SHORT-TERM`,
+  11:26–11:38). This is stronger than a confidence caveat and the page previously lacked it:
+  an un-gated open-interest read is not a weak ICT signal, it is **not an ICT signal**.
 - **Contract selection:** the highest-open-interest contract is not always the nearby
   month. ICT notes a case where "the open interest is the highest in September
   contract, even though the nearby contract is June" (00:29). Read the contract where
@@ -56,17 +71,26 @@ uptrend   AND delta_OI > 0  -> bullish; move is sponsored
 uptrend   AND delta_OI < 0  -> sponsorship leaving the move
 downtrend AND delta_OI > 0  -> bearish; move is sponsored
 
-# Qualifying read, gated (ICT-2017-EXPLOSIVE-MARKETS):
+# Qualifying read A — gated on the COT line (ICT-2017-EXPLOSIVE-MARKETS):
 dOI_pct   := (OI(t) - OI(t-n)) / OI(t-n)
 short_covering := dOI_pct <= -0.10          # 10-15% or more decline
                   AND net_commercial rising toward zero      -> BULLISH
 distribution   := dOI_pct >= +0.10
                   AND net_commercial falling (more net short) -> BEARISH
+
+# Qualifying read B — gated on PD-array location (ICT-2017-TOPDOWN-SHORT-TERM):
+oi_bullish := dOI_pct <= -0.15 AND price_at_HTF_discount_array  -> EXTREMELY BULLISH
+oi_bearish := dOI_pct >= +0.15 AND price_at_HTF_premium_array   -> EXTREMELY BEARISH
+
+# The discard rule — neither A nor B satisfied:
+otherwise  := open_interest NOT CONSIDERED        # not a weak signal; no signal
 ```
 
 For the **trend-sponsorship** read no numeric threshold is taught — it is directional,
-not gated. The **10–15 % gate applies only to the qualifying read**, where open interest
-is paired with the commercial net position to confirm a specific trade idea.
+not gated. The percentage gates apply only to the **qualifying** reads, of which there are
+**two**: read A pairs open interest with the commercial net position, read B pairs it with
+higher-timeframe array location. ⚠ Outside both, ICT drops the indicator entirely rather
+than weighting it down.
 
 ## Machine-Readable
 
@@ -82,14 +106,17 @@ is paired with the commercial net position to confirm a specific trade idea.
     {"id": "c4", "expr": "available_in in [futures, options]"},
     {"id": "c5", "expr": "read_contract_with_highest_OI (not necessarily nearby month)"},
     {"id": "c6", "expr": "qualifying: delta_OI_pct <= -0.10 AND net_commercial rising => short_covering => bullish"},
-    {"id": "c7", "expr": "qualifying: delta_OI_pct >= +0.10 AND net_commercial falling => bearish"}
+    {"id": "c7", "expr": "qualifying: delta_OI_pct >= +0.10 AND net_commercial falling => bearish"},
+    {"id": "c8", "expr": "qualifying: delta_OI_pct <= -0.15 AND price_at_HTF_discount_array => extremely_bullish"},
+    {"id": "c9", "expr": "qualifying: delta_OI_pct >= +0.15 AND price_at_HTF_premium_array => extremely_bearish"},
+    {"id": "c10", "expr": "NOT (c6 OR c7 OR c8 OR c9) => open_interest_not_considered"}
   ],
   "timeframes": ["D","W"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2017",
   "related": ["institutional-order-flow", "seasonal-tendency", "dollar-index", "commitment-of-traders", "explosive-market-selection"],
-  "sources": ["ICT-2017-OPEN-INTEREST", "ICT-2017-EXPLOSIVE-MARKETS"]
+  "sources": ["ICT-2017-OPEN-INTEREST", "ICT-2017-EXPLOSIVE-MARKETS", "ICT-2017-TOPDOWN-SHORT-TERM"]
 }
 ```
 

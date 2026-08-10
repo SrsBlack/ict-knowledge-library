@@ -65,6 +65,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [bond-yield-analysis](concepts/03-order-flow/bond-yield-analysis.md) — 10Y note vs dollar index; tandem = consolidation, inverse = trending; "crack in correlation".
 - [macro-to-micro-framework](concepts/03-order-flow/macro-to-micro-framework.md) — 30Y bond + 10Y note → dollar direction → pair selection → daily PD-array entry.
 - [interest-rate-triad](concepts/03-order-flow/interest-rate-triad.md) — 30Y/10Y/5Y; a failure swing in one validates a DXY PD array, its absence is a pass rule.
+- [relative-strength-analysis](concepts/03-order-flow/relative-strength-analysis.md) — ranks a group against a benchmark; the member refusing to follow is the leadership issue, the one that follows is sympathetic.
+- [multi-asset-analysis](concepts/03-order-flow/multi-asset-analysis.md) — bonds / currencies / commodities / stocks as one regime read; coupling sets magnitude expectation, not direction.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
@@ -185,6 +187,10 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ny-lunch](concepts/15-sessions/ny-lunch.md) — 12:00 → 13:30 NY; dead session, skip.
 - [ny-pm-session](concepts/15-sessions/ny-pm-session.md) — 13:30 → 16:00 NY; secondary delivery, reversals.
 - [london-close](concepts/15-sessions/london-close.md) — 10:00 → 12:00 NY; European unwind; overlaps NY AM.
+- [futures-opening-range](concepts/15-sessions/futures-opening-range.md) — 08:00–09:00 NY for bonds, 09:30–10:30 NY for index futures; the day's primary reference block.
+- [bond-split-session-rules](concepts/15-sessions/bond-split-session-rules.md) — ZB day map: London reference 02:00–05:00, AM 08:00–12:00, PM 12:00–15:00.
+- [index-am-pm-trend](concepts/15-sessions/index-am-pm-trend.md) — AM trend 09:30–12:00 and PM trend 13:00–16:00; index SMT windows 05:00–09:30 and 12:00–15:00.
+- [flout](concepts/15-sessions/flout.md) — CBDR + Asian range combined; SD unit is HALF the range, projected from its centre, unbounded count.
 - [session-overlaps](concepts/15-sessions/session-overlaps.md) — high-volume intersection windows.
 - [session-vs-killzone](concepts/15-sessions/session-vs-killzone.md) — disambiguation page.
 
@@ -310,6 +316,9 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ict-2024-model](concepts/31-models/ict-2024-model.md) — FVG classification + IFVG + propulsion refinements.
 - [unicorn-model](concepts/31-models/unicorn-model.md) — rare A++ confluence: breaker + nested FVG + bias + sweep.
 - [bread-and-butter-setup](concepts/31-models/bread-and-butter-setup.md) — the recurring daily delivery sequence.
+- [bond-trending-and-consolidation-days](concepts/31-models/bond-trending-and-consolidation-days.md) — forecasts the bond day type; the four-condition expansion stack and the six consolidation causes.
+- [stock-watchlist-construction](concepts/31-models/stock-watchlist-construction.md) — Dow 30 funnelled to 2–4 names by season, weekly order flow, two-layer SMT and an extension test.
+- [ict-core-patterns](concepts/31-models/ict-core-patterns.md) — condition → stage → execution; ICT's complete repertoire of two patterns (OTE, turtle soup) plus the breaker contingency.
 - [diamond-pattern](concepts/31-models/diamond-pattern.md) — double-sweep consolidation breakout.
 - [ny-am-open-range-model](concepts/31-models/ny-am-open-range-model.md) — 08:00–08:30/09:00 NY OR sweep model.
 - [london-close-reversal](concepts/31-models/london-close-reversal.md) — 10:00–12:00 NY morning-fade pattern.

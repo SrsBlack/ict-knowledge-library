@@ -92,6 +92,7 @@ M5–H1.
 ## Related Concepts
 
 - [ict-2022-model](ict-2022-model.md), [silver-bullet-ny-am](../11-silver-bullet/silver-bullet-ny-am.md), [ny-am-killzone](../10-killzones/ny-am-killzone.md), [ny-am-session](../15-sessions/ny-am-session.md), [liquidity-sweep](../02-liquidity/liquidity-sweep.md), [htf-bias-framework](../25-htf-bias/htf-bias-framework.md).
+- [futures-opening-range](../15-sessions/futures-opening-range.md) — the June-2017 futures form of the same construct: **08:00–09:00 NY for the 30-year bond** and **09:30–10:30 NY for the index futures**, each anchored to that market's own volume peak. It is the earliest opening-range teaching located in the corpus, and it also carries the range-size rules (≤12 ticks = squeeze; extended range = expect a return) that this page does not.
 
 ## Citations
 
