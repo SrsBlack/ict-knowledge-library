@@ -6,6 +6,48 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-10] lint+refine | Closed the three open threads; added a lint check that catches silent header/JSON drift
+
+The three items left open at the end of the distillation programme are resolved. None needed a
+new page — two were answered by **enumerating the corpus** rather than by finding new material.
+
+- **"Eight vs six" projected ranges — RESOLVED.** `projected-range-objectives` recorded that ICT
+  says "eight" twice while enumerating six. Searching all **five** Month-10 index-futures
+  lectures: only two mention profile names, and the follow-up lesson
+  [`ICT-2017-INDEX-TRADE-SETUPS`] walks **the same six**, one by one. **Six is the taught set**;
+  "eight" is a repeated misstatement, not a pointer to missing profiles.
+- **That follow-up lesson was itself uncovered material**, so `projected-range-objectives` gained
+  a **trigger layer**: index SMT across S&P/NASDAQ/Dow as the entry signal for every profile,
+  time-of-day holds (10:30–11:00 AM minimum; PM toward the 15:00 bond close), the AM/PM extremes
+  as M15/H1 arrays, and the rule that a reversal needs that array **nested** with an H4/daily one.
+- **The 30 % vs 34 % accuracy discrepancy — RESOLVED.** Enumerating every accuracy figure in the
+  corpus gives **three**: 30 % (recurring), 33 % once, 34 % once. **30 % is the convention**, and
+  `ICT-2016-NO-FEAR-LOSING` builds it arithmetically — $5,000, 10 trades, 30 % accuracy → 2 %/month
+  at 3:1 and 8 %/month at 5:1. `r-multiple` now carries the worked table instead of "he says both".
+  ⚠ That lecture was correctly classified NOT-A-CONCEPT (psychology); it is cited only for the
+  arithmetic. **A rejected lecture can still be a legitimate source for one fact.**
+- **`ny-judas-swing` / `judas-swing-failure` dating — CONFIRMED at 2018, deliberately.** All 16
+  corpus files mentioning "Judas" were checked. Both 2016 lectures and the 7 mentions in the
+  Apr-2017 intraday-profiles lecture attach the label to the **London / after-midnight**
+  protraction only. There is no NY-Judas naming anywhere earlier than the existing date, so the
+  two pages stay at 2018. The absence is now **sourced against the enumerated population**, not
+  assumed — per [[feedback-enumerate-before-asserting-absence]].
+
+⚠ **A silent failure mode was found and closed.** Three pages had a `**Source IDs:**` header that
+disagreed with their JSON `sources[]`: edits updated the header and missed the JSON because the
+array's formatting differed from what the edit expected. Every existing check reads only **one**
+of the two lists, so nothing noticed — the same shape as the `bad_lines` defect found in the
+trading repo the same day: *a check that cannot fail because it never looks at the thing that
+breaks.* Fixed on `trendline-liquidity`, `risk-per-trade` and `r-multiple`.
+
+**New: `tools/lint.py`** — the lint is now a committed script rather than a re-typed one-liner,
+with two checks added: **header↔JSON source agreement** and **header↔JSON year agreement**. Both
+verified by mutation (drop a source, change a year → lint exits 1 naming the file).
+
+Two new Source IDs. Lint clean: **252 concept pages**, **97 Source IDs**, exit 0.
+
+**All distillation threads are now closed.**
+
 ## [2026-08-09] ingest | Distillation tranche 5 - market maker traps, protraction, anticipatory setups, sentiment, rate triad. BACKLOG CLOSED.
 
 Backlog items A12-A15 plus both section-B merges. Nine transcripts read in full (~2.7 hrs).

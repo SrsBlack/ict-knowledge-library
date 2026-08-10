@@ -72,7 +72,7 @@ The stop level moves with time (slope), unlike horizontal SSL/BSL.
   "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["buy-side-liquidity","sell-side-liquidity","liquidity-sweep","equal-highs","equal-lows","stop-run-definition"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-MMT-TRENDLINE","ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 

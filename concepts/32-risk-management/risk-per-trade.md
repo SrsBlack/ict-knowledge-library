@@ -84,7 +84,7 @@ target_leverage    := ~3        # NOT the 50:1 or 100:1 a broker offers
   "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["r-multiple","position-sizing","stop-placement-by-pd-array","partial-takes","correlation-risk"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2017-SWING-REDUCE-RISK","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 

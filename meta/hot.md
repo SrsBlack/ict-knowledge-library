@@ -17,7 +17,7 @@ resolved: **17 new concept pages, 6 refinements of existing pages, 3 dating corr
 
 - **252 concept pages** across 33 numbered domain folders (+1 directory README in
   `99-glossary/`, which is why earlier entries said "240 files" for 239 pages — the count
-  now states both). **95 Source IDs.**
+  now states both). **97 Source IDs.**
 - **Two-layer state is intentional.** `raw/` holds 153 packets / 59 hrs / 148 usable;
   only a minority is distilled into concept pages. The rest is searchable but uncited.
 - ⚠ **Core Content lectures are the 2016–2017 mentorship re-uploaded in 2022.** Each names
@@ -53,15 +53,18 @@ resolved: **17 new concept pages, 6 refinements of existing pages, 3 dating corr
 
 - **Backlog CLOSED:** [distillation-backlog-2026-08-09](distillation-backlog-2026-08-09.md).
   16/16 concepts, 2/2 merges. Nothing pending from it.
-- **Open for a future pass:** `ny-judas-swing` and `judas-swing-failure` still carry
-  `Year Introduced: 2018`. The 2016 protraction lecture describes the 07:00 NY window but does
-  not attach the Judas label to it, so they were deliberately not re-dated with their two
-  siblings. Worth a targeted search of the corpus.
-- **Open discrepancy, recorded not resolved:** ICT quotes both **30 %** and **34 %** as the
-  breakeven accuracy at 3:1, four lessons apart; the arithmetic figure is 25 %. All three sit on
-  `r-multiple`.
-- **Open discrepancy:** `projected-range-objectives` — ICT says "eight projected ranges" twice
-  while the lesson enumerates six. The missing two are not identified in that source.
+- **All three open threads closed 2026-08-10, two by enumeration rather than new material:**
+  - *"Eight vs six" projected ranges* — six is the taught set; all five Month-10 index lectures
+    checked, the follow-up lesson walks the same six. "Eight" is a repeated misstatement.
+  - *30 % vs 34 % breakeven accuracy* — three figures exist in the corpus (30 % recurring,
+    33 % once, 34 % once). **30 % is the convention**, modelled arithmetically in
+    `ICT-2016-NO-FEAR-LOSING`. `r-multiple` carries the worked table.
+  - *`ny-judas-swing` / `judas-swing-failure` at 2018* — **confirmed, not changed.** All 16
+    corpus files mentioning "Judas" attach the label to the London/after-midnight protraction
+    only. The absence is sourced against the enumerated population.
+- **Lint is now `tools/lint.py`**, not a re-typed one-liner. It gained header↔JSON checks for
+  **sources** and **year** after three pages were found with headers that disagreed with their
+  JSON — an edit-shape failure no existing check could see. Run it before every commit.
 - Remaining corpus (~120 packets) is searchable but uncited. That two-layer state is intended.
 - Layout deviates from the canonical wiki-skill scaffold (kebab-case files, markdown
   relative links, bold-key headers, no `wiki/` wrapper). Deliberate; see `CLAUDE.md`.

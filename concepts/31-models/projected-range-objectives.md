@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2017
-**Source IDs:** ICT-2017-INDEX-PROJECTED-RANGE
+**Source IDs:** ICT-2017-INDEX-PROJECTED-RANGE, ICT-2017-INDEX-TRADE-SETUPS
 **Tags:** models, index-futures, daily-profile, am-session, pm-session, ny-lunch, taxonomy
 
 ## Definition
@@ -20,10 +20,13 @@ interpret how the daily range should fulfil for … indices"
 (`ICT-2017-INDEX-PROJECTED-RANGE`, 01:07). The selector across every profile is the same
 one question: **has price already traded into the opposing four-hour-or-higher PD array?**
 
-⚠ **Count discrepancy.** ICT states the number twice — "these **eight** ways of projecting
-the range" (03:05) and "there's only **eight** projected ranges that I use for the S&P"
-(16:38) — but this lesson enumerates and diagrams **six**. The six below are what is
-actually taught here; the remaining two are not identified in this source.
+⚠ **Count discrepancy — resolved by enumeration, 2026-08-10.** ICT states the number twice
+— "these **eight** ways of projecting the range" (03:05) and "there's only **eight** projected
+ranges that I use for the S&P" (16:38) — but enumerates **six**. All five Month-10
+index-futures lectures were then searched; only two mention profile names, and the follow-up
+lesson `ICT-2017-INDEX-TRADE-SETUPS` walks **the same six**, one by one, adding entry triggers
+rather than new profiles. **Six is the taught set.** "Eight" is a misstatement ICT repeats, not
+a pointer to two undocumented profiles.
 
 ## Formal Criteria
 
@@ -57,6 +60,31 @@ actually taught here; the remaining two are not identified in this source.
 - **Which high or low the PM runs** is decided the same way: if the AM already hit an HTF
   premium array, that level has been defended and the PM will likely only take the **lunch**
   extreme; if it did not, the PM can run the **intraday** extreme (13:19–13:54).
+
+**The trigger layer** (`ICT-2017-INDEX-TRADE-SETUPS`, the follow-up lesson)
+
+The profiles above say *what shape the day takes*; this lesson supplies *what fires the entry*.
+
+- **Index SMT divergence is the trigger for every profile.** Compare the **S&P against the
+  NASDAQ and the Dow** — lows for a buy, highs for a sell — across the **London session into
+  the 09:30 equities open**. One average failing to make the matching extreme is the signal:
+  "if the NASDAQ fails to go lower, that in itself supports the idea that the S&P should rally"
+  (02:33). The same comparison is repeated at the **lunch-hour extreme** and at the extreme
+  formed **immediately after 13:00** (02:15–02:33).
+- **Hold for time of day, not for a handle count.** Minimum **10:30–11:00** NY on the AM leg;
+  expect consolidation or retracement after 11:00 into lunch. On the PM leg hold toward the
+  close — "at least try to hold on to it until **3 p.m. bond close**", ideally 16:00
+  (07:17–07:44). Taking a few handles early forfeits the range the profile predicts.
+- **The AM and PM extremes are 15-minute or 60-minute PD arrays** (04:15, 07:44, 10:03).
+- **A reversal needs a nested higher-timeframe array.** A 15m/60m premium alone will not turn
+  the day; the catalyst is that level **overlapping a 4-hour or daily array** — "we're going to
+  be looking for an overlap or a **nested** premium array" (10:50–11:16). This is the same
+  continuation filter as above, stated from the entry side.
+- **The PM leg may run in two stages** — falling short of its 15m/60m array, retracing, then
+  ramping again in the last hour to reach it (04:44, 08:02).
+- **Consolidation profiles are not held to the close.** The comparable PM extreme forms around
+  **14:00**, and the expectation afterwards is "not further upside, but a retracement and
+  gravitation back to the **equilibrium** price point of the day" (14:12–16:02).
 
 **Invariants**
 
@@ -108,7 +136,7 @@ lunch := consolidation with shallow retracements
   "category": "31-models",
   "aliases": ["projected-range", "daily-profiles", "index-day-profiles"],
   "criteria": [
-    {"id": "c1", "expr": "profiles_taught_in_source == 6 (ICT states 8; two are not enumerated here)"},
+    {"id": "c1", "expr": "profiles_taught == 6 (ICT says 8 twice; enumeration of all 5 index lectures finds only these 6)"},
     {"id": "c2", "expr": "trending_profile valid only while opposing H4_or_higher array not yet traded to"},
     {"id": "c3", "expr": "reversal_profile requires near HTF premium (bullish) or discount (bearish) array"},
     {"id": "c4", "expr": "consolidation_profile requires neutral order_flow AND no medium/high impact news"},
@@ -116,14 +144,18 @@ lunch := consolidation with shallow retracements
     {"id": "c6", "expr": "am_reversal_array_tf in {M15,H1} => pm trades through it"},
     {"id": "c7", "expr": "pm_target := am_hit_HTF_array ? lunch_extreme : intraday_extreme"},
     {"id": "c8", "expr": "lunch == shallow_consolidation for all profiles except trending days with a strong catalyst"},
-    {"id": "c9", "expr": "consolidation_day != seek_and_destroy (reserved for NFP in S&P)"}
+    {"id": "c9", "expr": "consolidation_day != seek_and_destroy (reserved for NFP in S&P)"},
+    {"id": "c10", "expr": "trigger := index_SMT divergence S&P vs NASDAQ vs DOW at London->09:30, lunch extreme, and post-13:00 extreme"},
+    {"id": "c11", "expr": "AM/PM extremes are M15 or H1 PD arrays; reversal requires that level NESTED with an H4/D array"},
+    {"id": "c12", "expr": "hold AM leg to >=10:30-11:00 NY; PM leg toward 15:00 bond close, ideally 16:00"},
+    {"id": "c13", "expr": "consolidation profiles: PM extreme ~14:00 then gravitation back to daily equilibrium"}
   ],
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2017",
-  "related": ["ny-am-session", "ny-lunch", "ny-pm-session", "ny-pm-reversal", "ny-am-open-range-model", "pd-array-hierarchy", "institutional-order-flow", "bread-and-butter-setup", "ict-day-trading-model"],
-  "sources": ["ICT-2017-INDEX-PROJECTED-RANGE"]
+  "related": ["ny-am-session", "ny-lunch", "ny-pm-session", "ny-pm-reversal", "ny-am-open-range-model", "pd-array-hierarchy", "institutional-order-flow", "bread-and-butter-setup", "ict-day-trading-model", "index-smt", "smt-divergence", "equilibrium-definition"],
+  "sources": ["ICT-2017-INDEX-PROJECTED-RANGE", "ICT-2017-INDEX-TRADE-SETUPS"]
 }
 ```
 
@@ -205,7 +237,10 @@ Intraday execution (M15–H1) inside a **daily** profile; the selector arrays ar
 - [institutional-order-flow](../03-order-flow/institutional-order-flow.md) — the input that selects trending vs neutral.
 - [ict-day-trading-model](ict-day-trading-model.md) — the FX-side equivalent of forecasting the day before it starts.
 - [bread-and-butter-setup](bread-and-butter-setup.md) — the session-sequence framing of the same day.
+- [index-smt](../16-smt-divergence/index-smt.md), [smt-divergence](../16-smt-divergence/smt-divergence.md) — the trigger for every profile.
+- [equilibrium-definition](../27-equilibrium/equilibrium-definition.md) — where a consolidation day gravitates back to.
 
 ## Citations
 
 - `ICT-2017-INDEX-PROJECTED-RANGE` (00:14–00:30) "June 2017 ICT mentorship, index trading concepts, lesson [4], projected range and objectives"; (01:07–01:22) "these are my general classifications or how I interpret how the daily range should fulfil for … indices"; (01:23–02:00) two-session up close; (02:02–02:50) the lunch-hour exception on strong trending days; (03:05) "these eight ways of projecting the range"; (03:12–04:39) two-session down close; (04:39–05:44) trending profiles hold only until an opposing H4/daily/weekly array is traded to; (05:51–07:08) AM rally, PM reversal; (07:23–07:44) the PM high may be relative only to the lunch hour, creating a failure swing; (07:44–09:02) the PM continuation filter — H4/daily/weekly arrays can be recapitalised, "if it's not a four-hour or a daily or higher than that discount array, expect it to trade through it and go lower"; (09:04–11:08) AM decline, PM reversal and its mirror filter; (11:09–11:46) consolidation profiles require neutral order flow and "a vacuum of any real market drivers"; (12:06–12:43) the live 22 June 2017 S&P short at 2437; (13:14–13:54) which extreme the PM runs, decided by whether the AM hit an HTF premium array; (14:01, 15:39) the PM may simply consolidate into the close; (14:13–15:39) consolidation, AM decline, PM rally; (16:14–16:36) do not expect consolidation profiles when directional bias is strong; consolidation is not seek-and-destroy, which is reserved for NFP; (16:38) "there's only eight projected ranges that I use for the S&P"; (16:54–17:16) the lunch hour is identical across profiles except on trending days; (17:22–17:40) "on an intraday basis you have to understand it's all about liquidity and where the stops are — it's a trader's market".
+- `ICT-2017-INDEX-TRADE-SETUPS` (00:25) "June 2017 ICT mentorship… index trading concepts, lesson five, index trade setups"; (00:31–00:46) "I gave you the range projections and objectives lesson in lesson four and I'm going to amplify those for trade setups" — the same six profiles, walked one by one; (01:02–02:33) index SMT across the S&P, NASDAQ and Dow at the London-into-09:30 lows, at the lunch extreme and at the extreme after 13:00 — "if the NASDAQ fails to go lower, that in itself supports the idea that the S&P should rally"; (02:41–03:18, 07:17–07:44) hold for time of day, minimum 10:30–11:00 on the AM leg and toward the 15:00 bond close (ideally 16:00) on the PM; (04:15–04:44, 07:44–08:02, 10:03) the AM and PM extremes as 15-minute or 60-minute PD arrays, and the two-stage PM leg; (08:36–10:03) the AM rally / PM reversal walk-through; (10:50–11:16) "we're going to be looking for an overlap or a nested premium array, like seen on a 15 or 60-minute and daily or 4-hour" — the nesting requirement for a reversal; (11:16–13:28) AM decline / PM reversal and its nested discount mirror; (13:28–16:02) the consolidation profiles, the ~14:00 comparable extreme and "a retracement and gravitation back to the equilibrium price point of the day"; (18:11–19:59) the worked example of 23 June 2017 — the Dow failed to make the lower low while the NASDAQ and S&P did, and the S&P rallied.
