@@ -3,9 +3,9 @@
 **Category:** 22-quarterly-theory
 **Aliases:** QT 2025 update, IPDA quarterly rotation, ERL-IRL quarterly shift
 **ICT Confidence:** high
-**Year Introduced:** 2024
+**Year Introduced:** 2025
 **Year Refined:** 2025
-**Source IDs:** ICT-2024-MENTORSHIP-MODULE-LIST, ICT-2025-ADV-LIQUIDITY
+**Source IDs:** ICT-2025-ADV-LIQUIDITY
 **Tags:** quarterly-theory, 2025-refinement, ipda-rotation
 
 ## Definition
@@ -51,10 +51,10 @@ if state == "IRL": prefer internal-PD-array targets
   ],
   "timeframes": ["D","W","MN"],
   "confidence": "high",
-  "year_introduced": "2024",
+  "year_introduced": "2025",
   "year_refined": "2025",
   "related": ["quarterly-theory-overview","quarterly-shift-theory","ipda-definition","internal-range-liquidity","external-range-liquidity","draw-on-liquidity","pd-array-nesting"],
-  "sources": ["ICT-2024-MENTORSHIP-MODULE-LIST","ICT-2025-ADV-LIQUIDITY"]
+  "sources": ["ICT-2025-ADV-LIQUIDITY"]
 }
 ```
 

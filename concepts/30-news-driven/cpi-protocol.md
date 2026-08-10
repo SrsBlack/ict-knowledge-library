@@ -4,8 +4,8 @@
 **Aliases:** CPI day, inflation-data protocol, PCE protocol (similar)
 **ICT Confidence:** high
 **Year Introduced:** 2022
-**Year Refined:** 2024
-**Source IDs:** ICT-2022-MENTORSHIP-OVERVIEW
+**Year Refined:** 2025
+**Source IDs:** ICT-2022-MENTORSHIP-OVERVIEW, ICT-2025-FOMC-2STAGE
 **Tags:** news, cpi, inflation
 
 ## Definition
@@ -51,9 +51,9 @@ cpi_protocol:
   "timeframes": ["M1","M5","M15"],
   "confidence": "high",
   "year_introduced": "2022",
-  "year_refined": "2024",
+  "year_refined": "2025",
   "related": ["news-driven-overview","nfp-protocol","fomc-two-stage-delivery","news-blackout-rules","htf-bias-framework"],
-  "sources": ["ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2022-MENTORSHIP-OVERVIEW","ICT-2025-FOMC-2STAGE"]
 }
 ```
 

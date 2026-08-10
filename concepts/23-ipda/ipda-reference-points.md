@@ -3,9 +3,9 @@
 **Category:** 23-ipda
 **Aliases:** IPDA references, IPDA anchors, algorithmic reference levels
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-IPDA, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-IPDA-DATA-RANGES, ICT-2017-QUARTERLY-SHIFTS, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** ipda, references, anchors
 
 ## Definition
@@ -57,10 +57,10 @@ next_DOL := select(reference_set, criteria=[
   ],
   "timeframes": ["all"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["ipda-definition","ipda-data-ranges","ipda-20-day-lookback","ipda-40-day-lookback","ipda-60-day-lookback","time-of-day-pivots","draw-on-liquidity","htf-pd-array-hierarchy","liquidity-matrix"],
-  "sources": ["ICT-2018-IPDA","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-IPDA-DATA-RANGES","ICT-2017-QUARTERLY-SHIFTS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -110,4 +110,6 @@ All TFs.
 
 ## Citations
 
-- `ICT-2018-IPDA`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-IPDA-DATA-RANGES` (81:03) — "It's January 12, 2017"; (27:52–28:27) "if you look back 60 days in the past, what was the highest high in the last 60 days? There's going to be buy stops above that high… Inside of the range of 20 days, 40 days, and 60 days."
+- `ICT-2017-QUARTERLY-SHIFTS` (00:21) — "the January 2017 ICT Mentorship Long Term Analysis Lesson 1.1"; (22:22–23:41) "60 trading days, 40 trading days, and 20 trading days… and they're all trading days, not calendar days."
+- `ICT-2022-MENTORSHIP-OVERVIEW` — the windows re-taught in the 2022 season.

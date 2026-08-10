@@ -45,7 +45,8 @@ Common signals:
   - *Bearish week:* **Tuesday makes the high of the week**, **Thursday's New York open makes the low**, and Friday and Monday are consolidation (14:19–14:38).
 - **Forecast confidence is stated numerically:** with Monday behind you, "about a **60 %** likelihood that I'll be able to determine… what the weekly profile is going to be"; it "goes into a **70 %** likelihood" once Tuesday is resolved (18:25–18:47). ICT concedes he has "never been able to create a systematic approach for forecasting weekly profiles" (18:19).
 - **Two opening prices are projected across the entire week on the hourly:** Sunday's natural forex open, and **midnight New York on Monday** — "whatever the opening price is on the hourly at midnight Monday… that's the opening price I use for the weekly" (19:05–21:27). Bullish → want price *below* those into a discount array; bearish → *above* them into a premium array (20:41–21:04).
-- ICT defers the full profile catalogue to the **March-2017** content (16:16), which this library has not yet distilled.
+- ICT defers the full profile catalogue to the **March-2017** content (16:16). That catalogue is now distilled at [weekly-range-profiles](weekly-range-profiles.md) — twelve variants across six bidirectional families.
+- ⚠ **The two lectures disagree about the window.** This lecture says the weekly range forms **Tuesday to Thursday**; the March-2017 module says the weekly high or low forms **Monday through Wednesday**, "with the 70% odds of it happening". The 70 % figures are also different quantities — here it is the confidence with which the *profile* can be named once Tuesday resolves, there it is the frequency with which the *extreme* falls in the window. Both are recorded; see [monday-wednesday-range](monday-wednesday-range.md).
 
 ## Formula / Math
 
@@ -85,7 +86,7 @@ daily_bias :=
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2022",
-  "related": ["htf-bias-framework","monthly-bias","weekly-bias","bias-confluence","top-down-analysis","true-day-open","time-of-day-pivots","commitment-of-traders","open-interest","breaker-block","mitigation-block","smt-divergence"],
+  "related": ["htf-bias-framework","monthly-bias","weekly-bias","bias-confluence","top-down-analysis","true-day-open","time-of-day-pivots","commitment-of-traders","open-interest","breaker-block","mitigation-block","smt-divergence","weekly-range-profiles","monday-wednesday-range"],
   "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2017-TOPDOWN-SHORT-TERM","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
@@ -130,6 +131,8 @@ D / H4 / H1.
 ## Related Concepts
 
 - [htf-bias-framework](htf-bias-framework.md), [monthly-bias](monthly-bias.md), [weekly-bias](weekly-bias.md), [bias-confluence](bias-confluence.md), [top-down-analysis](top-down-analysis.md).
+- [weekly-range-profiles](weekly-range-profiles.md) — the twelve-variant catalogue this lecture defers to.
+- [monday-wednesday-range](monday-wednesday-range.md) — the March-2017 day-of-week window and the tension with the Tuesday-to-Thursday statement above.
 - [true-day-open](../22-quarterly-theory/true-day-open.md), [time-of-day-pivots](../04-time-cycles/time-of-day-pivots.md).
 - [commitment-of-traders](../03-order-flow/commitment-of-traders.md), [open-interest](../03-order-flow/open-interest.md) — tier-3 inputs 1 and 2.
 - [breaker-block](../08-breaker-blocks/breaker-block.md), [mitigation-block](../08-breaker-blocks/mitigation-block.md) — read on the daily above every other timeframe.

@@ -3,9 +3,18 @@
 **Category:** 23-ipda
 **Aliases:** Interbank Price Delivery Algorithm, the algorithm, the algo
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2025
-**Source IDs:** ICT-2018-IPDA, ICT-2022-MENTORSHIP-OVERVIEW, ICT-2025-ADV-LIQUIDITY
+**Source IDs:** ICT-2016-ELEMENTS-OF-A-TRADE-SETUP, ICT-2017-IPDA-DATA-RANGES, ICT-2017-QUARTERLY-SHIFTS, ICT-2022-MENTORSHIP-OVERVIEW, ICT-2025-ADV-LIQUIDITY
+
+⚠ **Re-dated 2017 → 2016 on 2026-08-10, splitting the algorithm from its measurement windows.**
+Two concurrent passes disagreed: one dated this page to the Jan-2017 IPDA lectures, the other
+located the algorithm's definition a year earlier. The earlier evidence wins — ICT defines IPDA in
+**Sep 2016**: "the **interbank price delivery algorithm** … is the actual, basically artificial
+intelligence. **It's a price engine** … 90 % done by electronic algorithms"
+(`ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` [04:44–05:12]). The **20/40/60-day data ranges** remain
+**2017** — see [ipda-data-ranges](ipda-data-ranges.md). The algorithm and its measurement windows
+are taught a year apart and should not share one date.
 **Tags:** ipda, algorithm, foundational
 
 ## Definition
@@ -55,10 +64,10 @@ IPDA references these to identify untaken liquidity at ERL and IRL.
   ],
   "timeframes": ["D","W","MN"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2025",
   "related": ["ipda-data-ranges","ipda-20-day-lookback","ipda-40-day-lookback","ipda-60-day-lookback","ipda-reference-points","quarterly-shift-theory","internal-range-liquidity","external-range-liquidity","draw-on-liquidity","algorithmic-price-delivery"],
-  "sources": ["ICT-2018-IPDA","ICT-2022-MENTORSHIP-OVERVIEW","ICT-2025-ADV-LIQUIDITY"]
+  "sources": ["ICT-2016-ELEMENTS-OF-A-TRADE-SETUP","ICT-2017-IPDA-DATA-RANGES","ICT-2017-QUARTERLY-SHIFTS","ICT-2022-MENTORSHIP-OVERVIEW","ICT-2025-ADV-LIQUIDITY"]
 }
 ```
 
@@ -107,6 +116,7 @@ D / W / MN are the natural TFs for IPDA-level reference. Lookback ranges are mea
 
 ## Citations
 
-- `ICT-2018-IPDA` — IPDA terminology introduced.
+- `ICT-2017-IPDA-DATA-RANGES` (81:03) — "It's January 12, 2017"; (21:38–21:46) "IPTA is the Interbank Price Delivery Algorithm"; (27:52–28:27) "if you look back 60 days in the past, what was the highest high in the last 60 days? There's going to be buy stops above that high… Inside of the range of 20 days, 40 days, and 60 days."
+- `ICT-2017-QUARTERLY-SHIFTS` (00:21) — "the January 2017 ICT Mentorship Long Term Analysis Lesson 1.1"; (22:22–23:41) "60 trading days, 40 trading days, and 20 trading days… and they're all trading days, not calendar days."
 - `ICT-2022-MENTORSHIP-OVERVIEW` — operational use refined.
 - `ICT-2025-ADV-LIQUIDITY` — quarterly rotation refinement.

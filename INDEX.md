@@ -32,6 +32,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [mss-vs-choch](concepts/01-market-structure/mss-vs-choch.md) — disambiguation page.
 - [range-expansion](concepts/01-market-structure/range-expansion.md) — momentum phase post-breakout.
 - [range-contraction](concepts/01-market-structure/range-contraction.md) — accumulation/consolidation phase.
+- [institutional-swing-points](concepts/01-market-structure/institutional-swing-points.md) — the only two ways a market turns: breaker swing point or failure swing.
+- [quarterly-market-structure-shift](concepts/01-market-structure/quarterly-market-structure-shift.md) — the daily chart changes direction every 3–4 months; anchors the IPDA data ranges.
 
 ### 02 — Liquidity
 - [buy-side-liquidity](concepts/02-liquidity/buy-side-liquidity.md) — resting buy stops above price (BSL).
@@ -40,6 +42,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [equal-lows](concepts/02-liquidity/equal-lows.md) — densest SSL pool form (EQL).
 - [trendline-liquidity](concepts/02-liquidity/trendline-liquidity.md) — sloped liquidity along retail trendlines.
 - [liquidity-pool](concepts/02-liquidity/liquidity-pool.md) — umbrella concept for any concentrated stop cluster.
+- [low-resistance-liquidity-run](concepts/02-liquidity/low-resistance-liquidity-run.md) — unobstructed travel between opposing PD arrays; 60-day range graded body-to-body into quadrants (LRLR).
 - [liquidity-void](concepts/02-liquidity/liquidity-void.md) — wide multi-bar expansion span with no two-sided trade.
 - [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md) — wick-through-pool followed by close back inside.
 - [liquidity-run](concepts/02-liquidity/liquidity-run.md) — full approach + sweep + resolution sequence.
@@ -56,7 +59,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [bullish-order-flow](concepts/03-order-flow/bullish-order-flow.md), [bearish-order-flow](concepts/03-order-flow/bearish-order-flow.md) — directional states.
 - [order-flow-shift](concepts/03-order-flow/order-flow-shift.md) — bias-flip via CHoCH/MSS.
 - [smart-money-footprint](concepts/03-order-flow/smart-money-footprint.md) — multi-signature confluence read.
-- [open-interest](concepts/03-order-flow/open-interest.md) — outstanding futures contracts; trend-sponsorship read; 10–15 % gate for the qualifying read.
+- [open-interest](concepts/03-order-flow/open-interest.md) — outstanding futures contracts; trend-sponsorship read; three independent qualifying gates plus a hard discard rule.
 - [dollar-index](concepts/03-order-flow/dollar-index.md) — USDX/DXY as intermarket reference for FX and commodities.
 - [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md) — weekly CFTC commercial positioning; buy/sell programs; recentred 12-month zero line.
 - [interest-rate-differentials](concepts/03-order-flow/interest-rate-differentials.md) — central-bank rate spread as HTF macro bias.
@@ -250,6 +253,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ipda-40-day-lookback](concepts/23-ipda/ipda-40-day-lookback.md) — mid-horizon, ~2 months.
 - [ipda-60-day-lookback](concepts/23-ipda/ipda-60-day-lookback.md) — long-horizon, ~3 months.
 - [ipda-reference-points](concepts/23-ipda/ipda-reference-points.md) — 5-tier reference grid.
+- [ipda-data-range-calibration](concepts/23-ipda/ipda-data-range-calibration.md) — where to anchor the 20/40/60 windows and how to cast them forward.
 
 ### 24 — AMD Cycle
 - [amd-cycle-overview](concepts/24-amd-cycle/amd-cycle-overview.md) — cycle as repeating temporal pattern.
@@ -265,6 +269,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [top-down-analysis](concepts/25-htf-bias/top-down-analysis.md) — prescribed analysis sequence.
 - [timeframe-selection](concepts/25-htf-bias/timeframe-selection.md) — timeframe-to-style map; five trader models; the three setups ICT actually trades.
 - [anticipatory-setup-development](concepts/25-htf-bias/anticipatory-setup-development.md) — two monthly candles define the range and the objective; refine downward.
+- [weekly-range-profiles](concepts/25-htf-bias/weekly-range-profiles.md) — the twelve weekly profiles: classic Tuesday, Wednesday, Thursday reversal, midweek, seek and destroy, weekly reversal.
+- [monday-wednesday-range](concepts/25-htf-bias/monday-wednesday-range.md) — weekly extreme forms Mon–Wed ~70 %; 30–50 % of the range done by Wednesday's London close; the break as confirmation.
 
 ### 26 — Imbalance
 - [imbalance-definition](concepts/26-imbalance/imbalance-definition.md) — umbrella term for any unworked price region.
@@ -328,6 +334,10 @@ Format: `- [Concept Name](path) — one-line summary`
 - [sunday-open-gap](concepts/31-models/sunday-open-gap.md) — 18:00 NY Sunday open event.
 - [venom-model](concepts/31-models/venom-model.md) — Apr 2025; pre-cash-open range fake-breakout for US indices.
 - [zircon-model](concepts/31-models/zircon-model.md) — Jan 2026 silent demo (demo-stage).
+- [intraweek-market-reversal](concepts/31-models/intraweek-market-reversal.md) — abnormal Mon/Tue distance into a HTF array; overlapping models, higher timeframe wins.
+- [market-maker-manipulation-template](concepts/31-models/market-maker-manipulation-template.md) — entry/target overlay per weekly profile; the target array must sit on a lesser timeframe than the entry array.
+- [one-shot-one-kill](concepts/31-models/one-shot-one-kill.md) — ICT's short-term model: monthly/weekly opposing arrays, H1 execution, 50–75 pips a week (OSOK).
+- [htf-daily-candle-entries](concepts/31-models/htf-daily-candle-entries.md) — buy stop at the down candle's open, buy limit at its close.
 
 ### 32 — Risk Management
 - [risk-per-trade](concepts/32-risk-management/risk-per-trade.md) — per-trade % risk discipline.
@@ -337,6 +347,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [partial-takes](concepts/32-risk-management/partial-takes.md) — scaling-out ladder.
 - [static-drawdown-2026](concepts/32-risk-management/static-drawdown-2026.md) — 2026 prop-firm rule shift adaptation.
 - [correlation-risk](concepts/32-risk-management/correlation-risk.md) — cluster exposure tracking.
+- [capital-allocation-30-percent](concepts/32-risk-management/capital-allocation-30-percent.md) — risk % is taken on 30 % of equity, not the whole account.
+- [ipda-trailing-stop](concepts/32-risk-management/ipda-trailing-stop.md) — trail behind the 40-day extreme, tighten to 20-day late in the move.
 
 ### 99 — Glossary (deep-dives)
 - Per-letter deep-dives deferred — single-page [`GLOSSARY.md`](GLOSSARY.md) at root supersedes. Rename-history is captured inline in disambiguation files (`mss-vs-choch`, `session-vs-killzone`, `breaker-vs-mitigation`, `amd-vs-po3`, `crt-vs-amd`, `imbalance-vs-fvg`, `liquidity-void-vs-fvg`, `fib-vs-ote`, `order-block-vs-supply-demand`, `killzone-vs-session`). See [`concepts/99-glossary/README.md`](concepts/99-glossary/README.md).

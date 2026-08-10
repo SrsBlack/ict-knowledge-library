@@ -3,9 +3,9 @@
 **Category:** 23-ipda
 **Aliases:** 40-day window, IPDA mid-horizon, ~2-month window
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-IPDA, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-IPDA-DATA-RANGES, ICT-2017-QUARTERLY-SHIFTS, ICT-2022-MENTORSHIP-OVERVIEW, ICT-2017-STT-BLENDING-IPDA-PD
 **Tags:** ipda, lookback, 40-day
 
 ## Definition
@@ -38,10 +38,10 @@ ipda_40_low  = min(low)  over last 40 trading days
   ],
   "timeframes": ["D","W"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["ipda-definition","ipda-data-ranges","ipda-20-day-lookback","ipda-60-day-lookback","ipda-reference-points","draw-on-liquidity"],
-  "sources": ["ICT-2018-IPDA","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-IPDA-DATA-RANGES","ICT-2017-QUARTERLY-SHIFTS","ICT-2022-MENTORSHIP-OVERVIEW","ICT-2017-STT-BLENDING-IPDA-PD"]
 }
 ```
 
@@ -83,4 +83,8 @@ D / W.
 
 ## Citations
 
-- `ICT-2018-IPDA`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-STT-BLENDING-IPDA-PD` (04:52–05:06) — **the month-equivalence stated verbatim**, previously asserted in this page's prose without a quote: "we break it into 20 trading days, which is essentially one month, 40 trading days, which is essentially two months, and 60 trading days, which is essentially three trading months" — here, **40 trading days, which is essentially two months**. ⚠ Pair [00:56] ("casting forward for a new set of 20, 40, and 60. Each new day, you shift that range forward") with [00:46] ("provides you a context to **look back**") if either is ever quoted: it is a **rolling lookback advancing one day at a time**, not a forward projection re-anchored daily.
+
+- `ICT-2017-IPDA-DATA-RANGES` (81:03) — "It's January 12, 2017"; (27:52–28:27) "if you look back 60 days in the past, what was the highest high in the last 60 days? There's going to be buy stops above that high… Inside of the range of 20 days, 40 days, and 60 days."
+- `ICT-2017-QUARTERLY-SHIFTS` (00:21) — "the January 2017 ICT Mentorship Long Term Analysis Lesson 1.1"; (22:22–23:41) "60 trading days, 40 trading days, and 20 trading days… and they're all trading days, not calendar days."
+- `ICT-2022-MENTORSHIP-OVERVIEW` — the windows re-taught in the 2022 season.

@@ -3,9 +3,9 @@
 **Category:** 08-breaker-blocks
 **Aliases:** none (disambiguation page)
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-BREAKER-BLOCK, ICT-2016-MITIGATION-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** breaker, mitigation, disambiguation, terminology
 
 ## Definition
@@ -65,10 +65,10 @@ classify(ob_violated):
   ],
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["breaker-block","bullish-breaker","bearish-breaker","mitigation-block","bullish-order-block","bearish-order-block","choch-bullish","choch-bearish","bos-bullish","bos-bearish"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-BREAKER-BLOCK","ICT-2016-MITIGATION-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 

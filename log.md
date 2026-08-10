@@ -6,6 +6,57 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-10] distill+redate | Months 05 and 07 read in full; the 17 TIMELINE mismatches resolved; IPDA splits into two dates
+
+**21 packets read in full** — the January-2017 long-term-analysis module (13, including the
+122-minute longest packet in the corpus) and the March-2017 short-term-trading module (8,
+self-numbered lessons 1–8 assembling the one-shot-one-kill model). 12 new pages, 21 new Source IDs.
+`SOURCES.md` now carries **155 IDs**; lint and TIMELINE placement are both at **zero**.
+
+**The 17 pre-existing TIMELINE mismatches are closed** — pages whose `Year Introduced` disagreed
+with the section listing them. Resolved by deciding which side was wrong, not by mechanical
+reconciliation: 9 page-year corrections, 8 cases where the page was right and the placement lied.
+
+⚠ **"array" appears in ZERO of the 35 Sep–Dec 2016 packets** (full enumeration, independently
+reproduced). The **PD-array umbrella term is Jan-2017**; the premium/discount *market states* are
+Sep 2016. Same shape as draw-on-liquidity — idea first, name later. `pd-array-definition`,
+`pd-array-confluence` and `htf-pd-array-hierarchy` re-dated accordingly.
+
+⚠ **IPDA is two dates, not one.** The **algorithm** is defined Sep 2016 — "the interbank price
+delivery algorithm … is the actual, basically artificial intelligence. **It's a price engine** …
+90 % done by electronic algorithms" (`ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` [04:44–05:12]) — while
+the **20/40/60 data ranges** are Jan 2017. Surfaced only because two concurrent passes disagreed.
+
+⚠ **A previous note of ours was refuted.** The claim that `stop-run-into-breaker` "stays 2018
+because breaker vocabulary does not exist until then" is false: the breaker is named Nov 2016
+(`ICT-2016-TIMEFRAME-SELECTION` [36:20]) and has a dedicated Dec-2016 lecture. Breaker vocabulary
+is **2016**; `breaker-vs-mitigation` and `mitigation-of-breaker` re-dated 2018 → 2016.
+
+⚠ **`open-interest` now carries THREE independent gates, and the earliest is Jan 2017** — the same
+~15 % threshold paired with three different second variables: price sideways at a major level
+(Jan), the COT commercial line (Feb), higher-timeframe array location (Aug). The page's
+"refinement" framing had the chronology backwards. Plus the hard discard rule it lacked: outside
+all three, open interest is **not a weak signal, it is not a signal**.
+
+⚠ **Fourth instance of the failure-page defect class.** `failed-breaker` joins `judas-swing-failure`
+and `smt-failure`: a *failure/invalidation* concept the original build assigned a year and `high`
+confidence on no located source. 37 "breaker" packets scanned, 15 failure-adjacent windows, none
+naming a failed breaker. Downgraded to `medium` with the enumeration recorded. `nested-fvg` is a
+fifth of the same shape — array-in-array nesting is Feb 2017, but the strict same-polarity
+FVG-in-FVG construction is nowhere in the corpus.
+
+**Two near-misses caught by cross-checking, both rejected on the evidence:** the open-float page's
+"120 trading days" is correct (ICT states both "three months of data" and "120 trading days" thirty
+seconds apart; the 120 is the precise definition), and the Month-07 cast-forward line is a rolling
+lookback, not a daily re-anchored projection — both now recorded on-page so the wrong reading
+cannot be re-derived.
+
+⚠ **`ICT-2017-OPEN-FLOAT` and `ICT-2017-OPEN-FLOAT-L12` are different lectures** — lesson 1.4
+"Defining Open Float Liquidity Pools" (`vqtA1S9JH34`) and lesson 1.2 "Open Float" (`BkmZgjuYREU`).
+A tranche brief wrongly told an agent to reuse the first ID for the second; the agent refused.
+
+**61 of 153 packets now cited.** Of the 92 remaining, ~39 are short OTE pattern-recognition drills.
+
 ## [2026-08-10] redate | The 2018 cohort was a build artifact — 21 pages re-dated to 2016–2017 against primary audio
 
 An audit compared every page's `Year Introduced` against the years of the Source IDs it cites.

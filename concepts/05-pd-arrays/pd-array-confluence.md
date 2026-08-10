@@ -3,9 +3,9 @@
 **Category:** 05-pd-arrays
 **Aliases:** PDA confluence, multi-array alignment, confluence stacking
 **ICT Confidence:** high
-**Year Introduced:** 2022
+**Year Introduced:** 2017
 **Year Refined:** 2025
-**Source IDs:** ICT-2022-MENTORSHIP-OVERVIEW, ICT-2025-ADV-LIQUIDITY
+**Source IDs:** ICT-2017-INDEX-TRADE-SETUPS, ICT-2022-MENTORSHIP-OVERVIEW, ICT-2025-ADV-LIQUIDITY
 **Tags:** pd-array, confluence, alignment
 
 ## Definition
@@ -51,10 +51,10 @@ confluence_score(setup) = sum(1 for factor in factors if active(factor, setup))
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2022",
+  "year_introduced": "2017",
   "year_refined": "2025",
   "related": ["pd-array-definition","pd-array-hierarchy","pd-array-nesting","htf-pd-array-hierarchy","htf-bias-framework","killzone-overview","macro-times-overview","draw-on-liquidity"],
-  "sources": ["ICT-2022-MENTORSHIP-OVERVIEW","ICT-2025-ADV-LIQUIDITY"]
+  "sources": ["ICT-2017-INDEX-TRADE-SETUPS","ICT-2022-MENTORSHIP-OVERVIEW","ICT-2025-ADV-LIQUIDITY"]
 }
 ```
 

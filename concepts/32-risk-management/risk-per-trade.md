@@ -10,7 +10,7 @@
 
 ## Definition
 
-Risk per trade is the **percentage of account equity** the trader is willing to lose on a single setup if the SL is hit. ICT teaches conservative risk discipline: typically **0.5% to 1% per trade** for funded accounts, sometimes up to 2% for personal accounts in high-conviction setups. Risk per trade is the most fundamental position-sizing input — every position size calculation starts from a chosen risk-per-trade percentage and the trade's SL distance.
+Risk per trade is the **percentage of account equity** the trader is willing to lose on a single setup if the SL is hit. ⚠ For long-term position trading ICT re-bases this: the percentage is taken on **30% of total equity**, not on the full account, so his taught 1% is 0.3% of the account — see [capital-allocation-30-percent](capital-allocation-30-percent.md). ICT teaches conservative risk discipline: typically **0.5% to 1% per trade** for funded accounts, sometimes up to 2% for personal accounts in high-conviction setups. Risk per trade is the most fundamental position-sizing input — every position size calculation starts from a chosen risk-per-trade percentage and the trade's SL distance.
 
 ## Formal Criteria
 
@@ -83,7 +83,7 @@ target_leverage    := ~3        # NOT the 50:1 or 100:1 a broker offers
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2022",
-  "related": ["r-multiple","position-sizing","stop-placement-by-pd-array","partial-takes","correlation-risk"],
+  "related": ["r-multiple","position-sizing","stop-placement-by-pd-array","partial-takes","correlation-risk","capital-allocation-30-percent","ipda-trailing-stop"],
   "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2017-SWING-REDUCE-RISK","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
@@ -125,6 +125,8 @@ All TFs.
 ## Related Concepts
 
 - [r-multiple](r-multiple.md), [position-sizing](position-sizing.md), [stop-placement-by-pd-array](stop-placement-by-pd-array.md), [partial-takes](partial-takes.md), [correlation-risk](correlation-risk.md).
+- [capital-allocation-30-percent](capital-allocation-30-percent.md) — the 30%-of-equity base ICT applies this percentage to for position trading.
+- [ipda-trailing-stop](ipda-trailing-stop.md) — the trailing rule that governs risk once the position is open.
 
 ## Citations
 

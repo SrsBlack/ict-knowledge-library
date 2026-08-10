@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2017
-**Source IDs:** ICT-2017-OPEN-INTEREST, ICT-2017-EXPLOSIVE-MARKETS, ICT-2017-TOPDOWN-SHORT-TERM
+**Source IDs:** ICT-2017-OPEN-INTEREST, ICT-2017-IPDA-DATA-RANGES, ICT-2017-EXPLOSIVE-MARKETS, ICT-2017-TOPDOWN-SHORT-TERM
 **Tags:** order-flow, futures, commodities, sponsorship, smart-money-footprint
 
 ## Definition
@@ -31,23 +31,31 @@ Larry Williams (01:50).
   trend, it will have the necessary **sponsorship** to continue" (04:00).
 - Falling open interest in a trend indicates the move is losing sponsorship —
   positions are being closed rather than opened.
-- **Magnitude threshold (refinement, `ICT-2017-EXPLOSIVE-MARKETS`, 19:22–19:49).** When
+- **Earliest gate — conditioned on price being sideways at a major level**
+  (`ICT-2017-IPDA-DATA-RANGES`, 58:23–59:26, **Jan 2017**). A drop of "**15 % or more**" in open
+  interest *while price is sideways in a months-long range at major support* marks the liquidity
+  provider closing its short book, and is read **bullish**: "open interest reflects the selling
+  side of a provider of liquidity. If this open interest declines aggressively like this, that's
+  indicating they do not want to hold the heavy short position they would be having by being a
+  provider for those that want to buy." Peaks in open interest mark where the sell programs were
+  placed (59:47–60:47). ICT credits the framework to Larry Williams here as well.
+- **Magnitude threshold (`ICT-2017-EXPLOSIVE-MARKETS`, 19:22–19:49, Feb 2017).** When
   open interest is used to qualify a trade, ICT does gate it: a **decline of 10–15 % or
   more is commercial short covering** — "if open interest declines 10% or 15% or more,
   that's indicative of commercial short covering" — and is read **bullish** when the
   commercial net line is simultaneously rising toward zero. The mirror, an **increase of
   10–15 % or more while commercials increase net selling**, is **bearish**. The threshold
   is paired with the COT line; neither leg is read alone.
-- **A second, independent gate — conditioned on PD-array location, not the COT line**
-  (`ICT-2017-TOPDOWN-SHORT-TERM`, 11:03–11:38, Aug 2017). Six months after the lecture
-  above, ICT states the same magnitude against a different variable: a decline of
+- **A third gate — conditioned on PD-array location**
+  (`ICT-2017-TOPDOWN-SHORT-TERM`, 11:03–11:38, Aug 2017). Seven months after the Jan-2017
+  formulation, ICT states the same magnitude against a third variable: a decline of
   **~15 % or more while price trades at a higher-timeframe *discount* array** is
   "extremely bullish, especially when the monthly, weekly are bullish as well"; an
   increase of **~15 % or more at a higher-timeframe *premium* array** is "extremely
-  bearish". ⚠ **These two gates are complementary, not rival readings** — same threshold,
-  different qualifying condition (commercial net line vs array location). Nothing in
-  either lecture ranks one above the other.
-- ⚠ **The hard "otherwise ignore" rule.** Outside those two conditions ICT discards the
+  bearish". ⚠ **All three gates are complementary, not rival readings** — one threshold, three
+  different qualifying conditions (price sideways at a major level, commercial net line,
+  array location). No lecture ranks them against one another.
+- ⚠ **The hard "otherwise ignore" rule.** Outside these conditions ICT discards the
   indicator outright: "in between either of the above conditions, for my personal style of
   trading, **open interest is not considered in my analysis** — it either has to meet one of
   these two criterias, or I'm not going to refer to it at all" (`ICT-2017-TOPDOWN-SHORT-TERM`,
@@ -71,6 +79,9 @@ uptrend   AND delta_OI > 0  -> bullish; move is sponsored
 uptrend   AND delta_OI < 0  -> sponsorship leaving the move
 downtrend AND delta_OI > 0  -> bearish; move is sponsored
 
+# Qualifying read C — gated on price being sideways at a major level (ICT-2017-IPDA-DATA-RANGES):
+oi_provider_unwind := dOI_pct <= -0.15 AND price_sideways_at_major_support -> BULLISH
+
 # Qualifying read A — gated on the COT line (ICT-2017-EXPLOSIVE-MARKETS):
 dOI_pct   := (OI(t) - OI(t-n)) / OI(t-n)
 short_covering := dOI_pct <= -0.10          # 10-15% or more decline
@@ -82,14 +93,16 @@ distribution   := dOI_pct >= +0.10
 oi_bullish := dOI_pct <= -0.15 AND price_at_HTF_discount_array  -> EXTREMELY BULLISH
 oi_bearish := dOI_pct >= +0.15 AND price_at_HTF_premium_array   -> EXTREMELY BEARISH
 
-# The discard rule — neither A nor B satisfied:
+# The discard rule — none of A, B or C satisfied:
 otherwise  := open_interest NOT CONSIDERED        # not a weak signal; no signal
 ```
 
 For the **trend-sponsorship** read no numeric threshold is taught — it is directional,
 not gated. The percentage gates apply only to the **qualifying** reads, of which there are
-**two**: read A pairs open interest with the commercial net position, read B pairs it with
-higher-timeframe array location. ⚠ Outside both, ICT drops the indicator entirely rather
+**three**, each pairing open interest with a different second variable: the commercial net
+position (A), higher-timeframe array location (B), or price being sideways at a major level (C).
+⚠ Note the chronology — C is the **earliest** (Jan 2017), so the COT pairing is not the original
+formulation the page once implied. ⚠ Outside all three, ICT drops the indicator entirely rather
 than weighting it down.
 
 ## Machine-Readable
@@ -109,14 +122,15 @@ than weighting it down.
     {"id": "c7", "expr": "qualifying: delta_OI_pct >= +0.10 AND net_commercial falling => bearish"},
     {"id": "c8", "expr": "qualifying: delta_OI_pct <= -0.15 AND price_at_HTF_discount_array => extremely_bullish"},
     {"id": "c9", "expr": "qualifying: delta_OI_pct >= +0.15 AND price_at_HTF_premium_array => extremely_bearish"},
-    {"id": "c10", "expr": "NOT (c6 OR c7 OR c8 OR c9) => open_interest_not_considered"}
+    {"id": "c9b", "expr": "qualifying: delta_OI_pct <= -0.15 AND price_sideways_at_major_support => bullish"},
+    {"id": "c10", "expr": "NOT (c6 OR c7 OR c8 OR c9 OR c9b) => open_interest_not_considered"}
   ],
   "timeframes": ["D","W"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2017",
   "related": ["institutional-order-flow", "seasonal-tendency", "dollar-index", "commitment-of-traders", "explosive-market-selection"],
-  "sources": ["ICT-2017-OPEN-INTEREST", "ICT-2017-EXPLOSIVE-MARKETS", "ICT-2017-TOPDOWN-SHORT-TERM"]
+  "sources": ["ICT-2017-OPEN-INTEREST", "ICT-2017-IPDA-DATA-RANGES", "ICT-2017-EXPLOSIVE-MARKETS", "ICT-2017-TOPDOWN-SHORT-TERM"]
 }
 ```
 

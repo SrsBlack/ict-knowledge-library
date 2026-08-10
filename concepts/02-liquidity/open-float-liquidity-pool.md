@@ -27,6 +27,13 @@ terms of time" (06:16).
 - Measured on the **daily** chart.
 - Windows are **20 / 40 / 60 trading days**, taken both **before and after** a
   reference date (02:03–02:28). 60+60 = **120 trading days** of total open float (06:31).
+  ⚠ **ICT contradicts himself inside this lecture, and the 120 is the correct figure.** His
+  opening framing is looser and roughly half the size — "taking the last month and a half to the
+  next month and a half in the future… basically, you're looking at **three months of data**"
+  [01:20–01:36] — but he then defines it precisely twice: "60 days look back and 60 days cast
+  forward, **that is open float**" [02:32] and "so we have **120 trading days** of what we call
+  open float" [06:31]. 120 trading days is ~5.5 calendar months, not three. Verified 2026-08-10
+  after the opening line was flagged as evidence the page overstated the span; it does not.
 - The pool levels are the **highest high and lowest low** between the two reference
   points in time (02:41).
 - Shorter windows narrow the read: "when we look out 40 days, it gives us a little bit

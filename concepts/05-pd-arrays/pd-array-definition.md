@@ -3,9 +3,9 @@
 **Category:** 05-pd-arrays
 **Aliases:** Premium/Discount Array, PDA, institutional price level
 **ICT Confidence:** high
-**Year Introduced:** 2016
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2016-PD-ARRAYS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-HTF-PD-ARRAYS, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** pd-array, premium, discount, foundational
 
 ## Definition
@@ -60,10 +60,10 @@ Every entry decision asks: "Is the buyable PD array at a discount, or are we lon
   ],
   "timeframes": ["M1","M5","M15","H1","H4","D","W","MN"],
   "confidence": "high",
-  "year_introduced": "2016",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["premium-array","discount-array","pd-array-hierarchy","pd-array-nesting","dealing-range","equilibrium-definition","fair-value-gap","bullish-order-block","bearish-order-block","breaker-block"],
-  "sources": ["ICT-2016-PD-ARRAYS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-HTF-PD-ARRAYS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 

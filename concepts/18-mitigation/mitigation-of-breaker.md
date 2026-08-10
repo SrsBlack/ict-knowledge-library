@@ -3,9 +3,9 @@
 **Category:** 18-mitigation
 **Aliases:** breaker mitigation, breaker tested, BB retest
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2023
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-BREAKER-BLOCK, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** mitigation, breaker
 
 ## Definition
@@ -50,10 +50,10 @@ breaker_mitigation(bb, retest_candle):
   ],
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2023",
   "related": ["mitigation-definition","breaker-block","bullish-breaker","bearish-breaker","failed-breaker","mitigation-of-ob","mitigation-of-fvg"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-BREAKER-BLOCK","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 

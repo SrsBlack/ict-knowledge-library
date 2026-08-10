@@ -2,10 +2,19 @@
 
 **Category:** 06-fair-value-gaps
 **Aliases:** nested FVGs, FVG-in-FVG, multi-TF FVG nest
-**ICT Confidence:** high
-**Year Introduced:** 2022
+**ICT Confidence:** medium
+**Year Introduced:** 2017
 **Year Refined:** 2025
-**Source IDs:** ICT-2022-MENTORSHIP-OVERVIEW, ICT-2025-ADV-LIQUIDITY
+**Source IDs:** ICT-2017-SWING-BULL-SETUPS, ICT-2022-MENTORSHIP-OVERVIEW, ICT-2025-ADV-LIQUIDITY
+
+⚠ **Dated to its nearest antecedent 2026-08-10, and confidence downgraded `high` → `medium`.**
+The page previously claimed 2022 while citing only 2022 and 2025 sources. The corpus teaches
+*array-inside-array* nesting in Feb 2017 — "daily bullish discount arrays **at or nested in** weekly
+discount arrays … a weekly liquidity void **or fair value gap**" (`ICT-2017-SWING-BULL-SETUPS`
+[04:01–04:41]) — but the strict **same-polarity FVG-inside-FVG** construction this page formalises
+is **not located verbatim anywhere in the corpus**, which ends Aug 2017. Same treatment as
+[judas-swing-failure](../13-judas-swing/judas-swing-failure.md): dated to the antecedent ICT does
+teach, marked `medium`, with the gap stated rather than papered over.
 **Tags:** fvg, nesting, multi-tf, confluence
 
 ## Definition
@@ -47,11 +56,11 @@ nested_at_ce := abs(ltf_fvg.center - htf_fvg.ce) <= small_tolerance
     {"id": "c3", "expr": "both_fresh_unmitigated == true"}
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
-  "confidence": "high",
-  "year_introduced": "2022",
+  "confidence": "medium",
+  "year_introduced": "2017",
   "year_refined": "2025",
   "related": ["fair-value-gap","pd-array-nesting","htf-pd-array-hierarchy","consequent-encroachment","ce-as-primary-entry","pd-array-confluence"],
-  "sources": ["ICT-2022-MENTORSHIP-OVERVIEW","ICT-2025-ADV-LIQUIDITY"]
+  "sources": ["ICT-2017-SWING-BULL-SETUPS","ICT-2022-MENTORSHIP-OVERVIEW","ICT-2025-ADV-LIQUIDITY"]
 }
 ```
 

@@ -2,10 +2,22 @@
 
 **Category:** 08-breaker-blocks
 **Aliases:** broken breaker, breaker failure, BB invalidated
-**ICT Confidence:** high
-**Year Introduced:** 2018
+**ICT Confidence:** medium
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-TRADE-CONDITIONS, ICT-2017-PD-ARRAY-MATRIX, ICT-2022-MENTORSHIP-OVERVIEW
+
+⚠ **Dated to its nearest antecedent 2026-08-10, and confidence downgraded `high` → `medium`.**
+**"Failed breaker" is not a label ICT uses anywhere in the corpus.** All **37** packets containing
+"breaker" were scanned for failure-adjacent language; 15 windows matched and none names a failed or
+invalidated breaker. What he teaches is the breaker as a *target that may give way* — "we'd have to
+weigh out whether or not there's a significant force that would **drive it through a breaker**"
+(`ICT-2017-TRADE-CONDITIONS` [02:25–02:34]) and bearish breakers expected "**to give way** … you
+should just be going right through those" (`ICT-2017-PD-ARRAY-MATRIX` [24:32–24:45]) — which is the
+breaker-as-target role, not the breaker-as-entry role this page describes. This is the **third**
+page of that shape, with [judas-swing-failure](../13-judas-swing/judas-swing-failure.md) and
+[smt-failure](../16-smt-divergence/smt-failure.md): a *failure/invalidation* concept the original
+build assigned a year and `high` confidence on no located source.
 **Tags:** breaker, failure, invalidation
 
 ## Definition
@@ -47,11 +59,11 @@ bearish_breaker_failure := close_t > high(breaker_zone)
     {"id": "c3", "expr": "displacement_after_failure_present == true"}
   ],
   "timeframes": ["M15","H1","H4","D"],
-  "confidence": "high",
-  "year_introduced": "2018",
+  "confidence": "medium",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["breaker-block","bullish-breaker","bearish-breaker","mitigation-block","htf-bias-framework"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-TRADE-CONDITIONS","ICT-2017-PD-ARRAY-MATRIX","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
