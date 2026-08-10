@@ -35,6 +35,10 @@ The original mentorship; foundational vocabulary. Most lectures are private; cit
 - `ICT-2017-CBDR` — "Month 08 — Central Bank Dealers Range", `nI1AMOC1pro`, uploaded 2022-10-03 (Apr-2017 mentorship, lesson 3). **Defines CBDR: 2 p.m.–8 p.m. New York, ideal range <40 pips, standard deviations 1–4.**
 - `ICT-2017-OPEN-INTEREST` — "Month 10 — Open Interest Secrets & Smart Money Footprints", `qRYkTWePXF0`, uploaded 2022-10-16 (Jun-2017 mentorship, commodity lesson 5). Defines open interest and the trend-sponsorship read; attributes the framework to Larry Williams.
 - `ICT-2017-HIGH-REWARD-SETUPS` — "Month 02 — The Secrets To Selecting High Reward Setups", `bftKgceXqYo`, uploaded 2022-08-29. Commodities/dollar-index inverse relationship; interest-rate differentials and carrying-charge markets.
+- `ICT-2017-COT` — "Month 10 — Commitment Of Traders", `9H4iaaQXV5Y`, uploaded 2022 (Jun-2017 mentorship, commodity lesson 1). Weekly CFTC report; futures-only; commercial net position; zero-line buy/sell programs; 12-to-6-month lookback band.
+- `ICT-2017-OPEN-FLOAT` — "Month 05 — Defining Open Float Liquidity Pools", `vqtA1S9JH34`, uploaded 2022 (Jan-2017 mentorship, lesson 1.4). **60 trading days back + 60 cast forward = 120-day open float**; highest high / lowest low mark the large-fund pools.
+- `ICT-2017-RATE-DIFFERENTIALS` — "Month 05 — Interest Rate Differentials", `w6VlX-rsTUs`, uploaded 2022 (Jan-2017 mentorship, lesson 2.3). Central-bank policy-rate table as the start of the macro read; capital flows to yield.
+- `ICT-2017-CARRYING-CHARGE` — "Month 10 — Premium Vs. Carrying Charge Market", `WsolkBzpDOQ`, uploaded 2022 (Jun-2017 mentorship, commodity lesson 4). Nearby vs next month out; no premium = carrying charge; premium = demand high / supply short.
 
 ## ICT 2018–2020 Public Era
 

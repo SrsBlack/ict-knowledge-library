@@ -6,6 +6,23 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-09] ingest | Distillation tranche 1 — four concepts from dedicated Core Content lectures
+
+Continuing the market-context backlog. Method: a **curriculum map** — a lecture *titled* after a concept is far stronger evidence than a frequent phrase — which ranked 36 lectures (14.2 hrs) whose subject the library did not cover. Tranche 1 took the four with the strongest dedicated teaching behind them.
+
+- [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md) — weekly CFTC report, **futures positions only**, commercial net = long − short; above the zero line is a buy program, below a sell program; judged against that market's **own 12-to-6-month band**, not an absolute count. (`ICT-2017-COT`, 35 min)
+- [open-float-liquidity-pool](concepts/02-liquidity/open-float-liquidity-pool.md) — **60 trading days back + 60 cast forward = 120 days**; highest high / lowest low mark the *large-fund* pools, which stay live until the forward horizon expires. (`ICT-2017-OPEN-FLOAT`, 28 min)
+- [interest-rate-differentials](concepts/03-order-flow/interest-rate-differentials.md) — central-bank policy-rate table as the start of the macro read; capital flows to yield; output is HTF bias only. (`ICT-2017-RATE-DIFFERENTIALS`, 19 min)
+- [premium-vs-carrying-charge-market](concepts/03-order-flow/premium-vs-carrying-charge-market.md) — nearby vs next month out; no premium = carrying charge (normal), nearby above later months = premium = demand high / supply short. (`ICT-2017-CARRYING-CHARGE`, 19 min)
+
+⚠ **Open float is NOT the IPDA 60-day lookback.** IPDA windows are *trailing only*; open float is symmetric and carries an expiry horizon. The lookback halves coincide, the concepts do not — disambiguated on both pages so the pair cannot be silently conflated later.
+
+⚠ **"Carrying charge" means two different things.** In commodities it is the delivery-month curve; in FX it is a rate-differential carry. Same phrase, different mechanism — cross-noted on both pages.
+
+Four new Source IDs. Full-library lint clean.
+
+**Backlog:** 32 candidate lectures remain (~11 hrs), including the Mega-Trades series (161 min, four markets, zero coverage), *How Market Makers Condition The Market*, and *Market Maker Trap Head & Shoulders*. Several curriculum-map hits are psychology or admin rather than concepts (*No Fear Of Losing*, *Growing Small Accounts*) — the method has false positives by design and they are filtered by reading, not by score.
+
 ## [2026-08-09] ingest | Core Content mined: the library was missing ICT's entire market-context layer
 
 Ingested the 114-video *Mentorship Core Content* curriculum (113 usable) bringing the corpus to 153 packets / 59 hrs. Ran a coverage scan — recurring 2–4 word phrases across all 148 usable transcripts, minus every term the library already names — and the gap was structural, not incidental.

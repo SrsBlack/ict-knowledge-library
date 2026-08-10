@@ -48,6 +48,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [draw-on-liquidity](concepts/02-liquidity/draw-on-liquidity.md) — the specific pool the algorithm targets next (DOL).
 - [liquidity-matrix](concepts/02-liquidity/liquidity-matrix.md) — multi-TF map of all pools.
 - [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md) — within-tolerance EQH/EQL (REH/REL).
+- [open-float-liquidity-pool](concepts/02-liquidity/open-float-liquidity-pool.md) — 60 days back + 60 forward; large-fund pools on the daily.
 
 ### 03 — Order Flow
 - [institutional-order-flow](concepts/03-order-flow/institutional-order-flow.md) — directional flow from algorithmic signatures.
@@ -57,6 +58,9 @@ Format: `- [Concept Name](path) — one-line summary`
 - [smart-money-footprint](concepts/03-order-flow/smart-money-footprint.md) — multi-signature confluence read.
 - [open-interest](concepts/03-order-flow/open-interest.md) — outstanding futures contracts; trend-sponsorship read.
 - [dollar-index](concepts/03-order-flow/dollar-index.md) — USDX/DXY as intermarket reference for FX and commodities.
+- [commitment-of-traders](concepts/03-order-flow/commitment-of-traders.md) — weekly CFTC commercial positioning; zero-line buy/sell programs.
+- [interest-rate-differentials](concepts/03-order-flow/interest-rate-differentials.md) — central-bank rate spread as HTF macro bias.
+- [premium-vs-carrying-charge-market](concepts/03-order-flow/premium-vs-carrying-charge-market.md) — commodity delivery-month curve; premium = demand > supply.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
