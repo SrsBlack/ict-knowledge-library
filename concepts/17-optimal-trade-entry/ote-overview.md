@@ -5,12 +5,16 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-OTE, ICT-2020-OTE-VOL01, ICT-2020-OTE-VOL10, ICT-2020-OTE-EURUSD-EXAMPLE, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-OTE, ICT-2017-OTE-DRILL-GOLD, ICT-2020-OTE-VOL01, ICT-2020-OTE-VOL03, ICT-2020-OTE-VOL10, ICT-2020-OTE-VOL16, ICT-2020-OTE-VOL18, ICT-2020-OTE-EURUSD-EXAMPLE, ICT-2021-OTE-PRICE-ACTION-LESSON, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** ote, fibonacci, entry, foundational, continuation
 
 ## Definition
 
-Optimal Trade Entry (OTE) is ICT's **canonical entry methodology** for taking a position on a measured pullback **in the direction of the preceding impulse**. An impulse leg **breaks a prior swing level in the trade direction**; price then **retraces into the 0.62–0.79 zone** of that leg, where the trader enters in the impulse's direction. The OTE zone is the 0.62–0.79 retracement of a clean swing leg, with **0.705 as the optimal mid-point**. OTE is one of the original ICT setups and remains a foundational entry tool taught in every mentorship cycle since.
+Optimal Trade Entry (OTE) is ICT's **canonical entry methodology** for taking a position on a measured pullback **in the direction of the preceding impulse**. An impulse leg **breaks a prior swing level in the trade direction**; price then **retraces into the 0.62–0.79 zone** of that leg, where the trader enters in the impulse's direction. The OTE zone is the 0.62–0.79 retracement of a clean swing leg, with **0.705 as the optimal mid-point**. OTE is one of the original ICT setups and remains a foundational entry tool taught in every mentorship cycle since — "the **flagship pattern** I teach on this YouTube channel" (`ICT-2021-OTE-PRICE-ACTION-LESSON`, 03:44).
+
+**What makes it "optimal" is the character of the move that follows, not the depth of the entry.** ICT gives the definition outright: "it just takes off really explosive, which is the hallmark of the ICT optimal trade entry — that's what makes it *optimal*. It gives you volatility, it gives you magnitude, it gives you impulsive price action; that's what you want, and that's how you know it's smart money behind it" (`ICT-2017-OTE-DRILL-GOLD`, 00:21–00:40).
+
+**OTE is not FX-specific.** "One of the central tenets to this pattern is it's **not limited to forex**" (`ICT-2020-OTE-VOL03`, 00:16–00:29), which then works an S&P e-mini futures example. The Pattern Recognition Series applies the identical rule set to **crude oil** (`ICT-2020-OTE-VOL16`) and the **30-year Treasury bond** (`ICT-2020-OTE-VOL18`), and the 2021 lesson to **spot FX** and **NASDAQ**. Only the stop and target units change — pips, ticks, handles, or 32nds — never the geometry. ICT states the scaling rule for the pattern itself: "the pattern can be **scaled to whatever time frame** you really want" (`ICT-2020-OTE-VOL03`, 00:51).
 
 > ⚠ **OTE is a CONTINUATION setup, not a reversal setup.** A counter-directional liquidity sweep is **not** a precondition. Across the dedicated OTE teachings — the 2017 Primer (`ICT-2017-OTE`, the definitional video, which ICT himself defers to from the 2022 mentorship), Pattern Recognition Vol.01 (`ICT-2020-OTE-VOL01`) and the worked EURUSD example (`ICT-2020-OTE-EURUSD-EXAMPLE`) — the words *sweep / raid / stop-hunt / inducement* **never appear as entry conditions**. Where "sweep" appears in an applied OTE example it is **after entry, on the way to the target**. The popular "counter-sweep → displacement → MSS → OTE-style entry" sequence is a **different, later, composite model** — the ICT 2022 Model, filed at [ict-2022-model](../31-models/ict-2022-model.md), whose canonical entry is an FVG at CE. Do not use this page's criteria to describe that model, or vice versa. *(Correction applied 2026-08-05 after a primary-source verification pass against official-channel caption tracks; the two setups have opposite geometry and conflating them is a documented, expensive failure mode.)*
 
@@ -75,14 +79,16 @@ T0..T3     = 1.0900 / 1.0927 / 1.0962 / 1.1000
     {"id": "c4", "expr": "stop in [leg_origin_extreme (fib 1.0), fixed_pip]", "strength": "era-fork"},
     {"id": "c5", "expr": "PD_array_present_in_zone == true", "strength": "convention"},
     {"id": "c6", "expr": "HTF_bias_agrees_with_entry_direction == true", "strength": "convention"},
-    {"id": "c7", "expr": "counter_directional_sweep_required == false"}
+    {"id": "c7", "expr": "counter_directional_sweep_required == false"},
+    {"id": "c8", "expr": "asset_class in [forex, index_futures, commodities, bonds]", "strength": "explicitly not FX-limited"},
+    {"id": "c9", "expr": "post_entry_move is impulsive/explosive", "strength": "the stated meaning of 'optimal'"}
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["fib-anchoring","ote-62","ote-705","ote-79","ote-rules","ote-failure","ict-2022-model","ict-fib-overview","fib-62","fib-705","fib-79","fib-vs-ote","standard-deviation-projections","pd-array-definition"],
-  "sources": ["ICT-2017-OTE","ICT-2020-OTE-VOL01","ICT-2020-OTE-VOL10","ICT-2020-OTE-EURUSD-EXAMPLE","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-OTE","ICT-2017-OTE-DRILL-GOLD","ICT-2020-OTE-VOL01","ICT-2020-OTE-VOL03","ICT-2020-OTE-VOL10","ICT-2020-OTE-VOL16","ICT-2020-OTE-VOL18","ICT-2020-OTE-EURUSD-EXAMPLE","ICT-2021-OTE-PRICE-ACTION-LESSON","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -147,4 +153,13 @@ Most actionable on M5–H4 entry TFs. Daily OTE setups exist but the swing leg s
 ## Citations
 
 - `ICT-2017-OTE` (the definitional "OTE Primer", official channel, 2017-09-30), `ICT-2020-OTE-VOL01`, `ICT-2020-OTE-EURUSD-EXAMPLE`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2020-OTE-VOL10` (01:39–02:00) — the fib preset's own projection levels, "half standard deviation, full standard deviation, one and a half standard deviation and two standard deviations"; the source of target ladder B above.
 - Corrections of 2026-08-05 (continuation framing, structure-break criterion, stop at leg origin, target ladder, R:R and time-window forks) rest on a primary-source verification pass over official-channel caption tracks of the four videos above.
+
+Added 2026-08-11:
+
+- `ICT-2017-OTE-DRILL-GOLD` (00:21–00:40) — "it just takes off really explosive, which is the **hallmark of the ICT optimal trade entry — that's what makes it optimal**. It gives you volatility, it gives you magnitude, it gives you impulsive price action … and that's how you know it's smart money behind it."
+- `ICT-2020-OTE-VOL03` (00:16–00:29) — "one of the central tenets to this pattern is it's **not limited to forex**"; (00:51) "the pattern can be scaled to whatever time frame you really want." Worked on June-2020 S&P e-mini futures.
+- `ICT-2020-OTE-VOL16` — the same rule set on **crude oil**, a commodity market, with tick-denominated risk.
+- `ICT-2020-OTE-VOL18` — the same rule set on the **September 2020 Treasury bond** contract, priced in 32nds.
+- `ICT-2021-OTE-PRICE-ACTION-LESSON` (03:44) — "the **flagship pattern** I teach on this YouTube channel, which is the optimal trade entry."

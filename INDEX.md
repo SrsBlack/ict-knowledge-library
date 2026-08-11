@@ -52,6 +52,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [liquidity-matrix](concepts/02-liquidity/liquidity-matrix.md) — multi-TF map of all pools.
 - [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md) — within-tolerance EQH/EQL (REH/REL).
 - [open-float-liquidity-pool](concepts/02-liquidity/open-float-liquidity-pool.md) — 60 days back + 60 forward; large-fund pools on the daily.
+- [high-resistance-liquidity-run](concepts/02-liquidity/high-resistance-liquidity-run.md) — a run at a stop pool that must first clear a stack of intervening old highs and lows; ICT's least-probable condition (HRLR).
 
 ### 03 — Order Flow
 - [institutional-order-flow](concepts/03-order-flow/institutional-order-flow.md) — directional flow from algorithmic signatures.
@@ -70,6 +71,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [interest-rate-triad](concepts/03-order-flow/interest-rate-triad.md) — 30Y/10Y/5Y; a failure swing in one validates a DXY PD array, its absence is a pass rule.
 - [relative-strength-analysis](concepts/03-order-flow/relative-strength-analysis.md) — ranks a group against a benchmark; the member refusing to follow is the leadership issue, the one that follows is sympathetic.
 - [multi-asset-analysis](concepts/03-order-flow/multi-asset-analysis.md) — bonds / currencies / commodities / stocks as one regime read; coupling sets magnitude expectation, not direction.
+- [institutional-sponsorship](concepts/03-order-flow/institutional-sponsorship.md) — the willingness of banks to defend a swing already underway; the gate that separates a defended setup from one allowed to fail.
 
 ### 04 — Time Cycles
 - [90-minute-cycle](concepts/04-time-cycles/90-minute-cycle.md) — smallest fractal-time unit; 4 mini-quarters of A/M/D/X.
@@ -85,6 +87,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [quarterly-shift-theory](concepts/04-time-cycles/quarterly-shift-theory.md) — fractal time hierarchy + 2024–2025 IPDA quarterly rotation.
 - [time-of-day-pivots](concepts/04-time-cycles/time-of-day-pivots.md) — TDO, 08:30, 09:30, PDH/PDL etc.
 - [dst-handling](concepts/04-time-cycles/dst-handling.md) — DST mismatch + canonical NY-clock anchoring.
+- [ipda-true-day](concepts/04-time-cycles/ipda-true-day.md) — the 2017 interbank day: 00:00 → 15:00 NY, with London KZ 01:00–05:00 and NY KZ 07:00–10:00; contradicts the public killzone table.
 
 ### 05 — PD Arrays
 - [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md) — umbrella concept for institutional price levels.
@@ -120,7 +123,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [mitigated-order-block](concepts/07-order-blocks/mitigated-order-block.md) — tested OB state.
 - [unmitigated-order-block](concepts/07-order-blocks/unmitigated-order-block.md) — fresh OB, highest conviction.
 - [reclaimed-order-block](concepts/07-order-blocks/reclaimed-order-block.md) — block from the opposing leg of a market maker curve, re-used as a new entry.
-- [propulsion-block](concepts/07-order-blocks/propulsion-block.md) — wide-body displacement candle as continuation reference.
+- [propulsion-block](concepts/07-order-blocks/propulsion-block.md) — an order block nested on an order block; same-colour candle trading back into a prior OB, mean threshold must hold.
 - [vacuum-block](concepts/07-order-blocks/vacuum-block.md) — opening-gap candle.
 - [reversal-order-block](concepts/07-order-blocks/reversal-order-block.md) — OB at CHoCH/MSS pivot.
 - [continuation-order-block](concepts/07-order-blocks/continuation-order-block.md) — OB at BOS pivot in trend.
@@ -172,6 +175,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md) — smaller-scale NY AM Judas.
 - [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md) — when no reversal happens.
 - [market-protraction](concepts/13-judas-swing/market-protraction.md) — time-anchored counter-directional impulse swing; the parent concept of the Judas swing.
+- [asia-judas-swing](concepts/13-judas-swing/asia-judas-swing.md) — the 00:00 GMT / 20:00 NY Judas; smallest of the four, sweeps a prior late-session swing.
+- [london-close-judas-swing](concepts/13-judas-swing/london-close-judas-swing.md) — the post-10:00 NY protraction that prints the day's extreme and is faded; gated on the 5-day ADR being exceeded.
 
 ### 14 — Asian Range
 - [asian-range](concepts/14-asian-range/asian-range.md) — bounded engineered-liquidity range from Asia session.
@@ -196,6 +201,9 @@ Format: `- [Concept Name](path) — one-line summary`
 - [flout](concepts/15-sessions/flout.md) — CBDR + Asian range combined; SD unit is HALF the range, projected from its centre, unbounded count.
 - [session-overlaps](concepts/15-sessions/session-overlaps.md) — high-volume intersection windows.
 - [session-vs-killzone](concepts/15-sessions/session-vs-killzone.md) — disambiguation page.
+- [cbdr-projected-daily-range](concepts/15-sessions/cbdr-projected-daily-range.md) — the protraction multiplier: SDs consumed making the first extreme, replicated from the opposite CBDR edge to call the second.
+- [london-session-avoidance](concepts/15-sessions/london-session-avoidance.md) — the chart-free stand-aside rule set: 2× ADR, three consecutive closes, NFP/FOMC/holiday, CBDR > 50, and the consolidation requirement.
+- [twenty-pips-per-day](concepts/15-sessions/twenty-pips-per-day.md) — two fixed 20-for-20 M5 scalps: the Asian-session raid on late-NY stops, and the New York expansion with ADR5 unfilled.
 
 ### 16 — SMT Divergence
 - [smt-divergence](concepts/16-smt-divergence/smt-divergence.md) — Smart Money Technique divergence between correlated assets.
@@ -271,6 +279,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [anticipatory-setup-development](concepts/25-htf-bias/anticipatory-setup-development.md) — two monthly candles define the range and the objective; refine downward.
 - [weekly-range-profiles](concepts/25-htf-bias/weekly-range-profiles.md) — the twelve weekly profiles: classic Tuesday, Wednesday, Thursday reversal, midweek, seek and destroy, weekly reversal.
 - [monday-wednesday-range](concepts/25-htf-bias/monday-wednesday-range.md) — weekly extreme forms Mon–Wed ~70 %; 30–50 % of the range done by Wednesday's London close; the break as confirmation.
+- [day-trade-routine](concepts/25-htf-bias/day-trade-routine.md) — the ordered daily pass: calendar → DXY → IPDA 60/40/20 → pair D/H4/H1 → M15 confluence → weekly template. No entry rule.
+- [order-flow-subordination](concepts/25-htf-bias/order-flow-subordination.md) — LTF consolidation breaks take their meaning from daily/H4 order flow; fade the expansion away from equilibrium, target the return to it.
 
 ### 26 — Imbalance
 - [imbalance-definition](concepts/26-imbalance/imbalance-definition.md) — umbrella term for any unworked price region.
@@ -338,6 +348,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [market-maker-manipulation-template](concepts/31-models/market-maker-manipulation-template.md) — entry/target overlay per weekly profile; the target array must sit on a lesser timeframe than the entry array.
 - [one-shot-one-kill](concepts/31-models/one-shot-one-kill.md) — ICT's short-term model: monthly/weekly opposing arrays, H1 execution, 50–75 pips a week (OSOK).
 - [htf-daily-candle-entries](concepts/31-models/htf-daily-candle-entries.md) — buy stop at the down candle's open, buy limit at its close.
+- [ideal-swing-conditions](concepts/31-models/ideal-swing-conditions.md) — lesson 1's market-profile filter: trending or already out of consolidation on M/W, or the market is dropped.
+- [million-dollar-swing-setup](concepts/31-models/million-dollar-swing-setup.md) — the assembled swing model: six gated stages, order type set by array type, quarter-by-quarter management.
 
 ### 32 — Risk Management
 - [risk-per-trade](concepts/32-risk-management/risk-per-trade.md) — per-trade % risk discipline.
@@ -349,6 +361,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [correlation-risk](concepts/32-risk-management/correlation-risk.md) — cluster exposure tracking.
 - [capital-allocation-30-percent](concepts/32-risk-management/capital-allocation-30-percent.md) — risk % is taken on 30 % of equity, not the whole account.
 - [ipda-trailing-stop](concepts/32-risk-management/ipda-trailing-stop.md) — trail behind the 40-day extreme, tighten to 20-day late in the move.
+- [six-percent-monthly-model](concepts/32-risk-management/six-percent-monthly-model.md) — 1.5% risk, 1:1, 20 pips, one trade a week: 6% a month, doubling the account in a year.
+- [loss-mitigation-half-size-reentry](concepts/32-risk-management/loss-mitigation-half-size-reentry.md) — re-enter a stopped-out setup at half size with the stop below the whole order block; R2 repays the full prior loss.
 
 ### 99 — Glossary (deep-dives)
 - Per-letter deep-dives deferred — single-page [`GLOSSARY.md`](GLOSSARY.md) at root supersedes. Rename-history is captured inline in disambiguation files (`mss-vs-choch`, `session-vs-killzone`, `breaker-vs-mitigation`, `amd-vs-po3`, `crt-vs-amd`, `imbalance-vs-fvg`, `liquidity-void-vs-fvg`, `fib-vs-ote`, `order-block-vs-supply-demand`, `killzone-vs-session`). See [`concepts/99-glossary/README.md`](concepts/99-glossary/README.md).

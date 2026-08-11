@@ -3,14 +3,29 @@
 **Category:** 19-rejection-blocks
 **Aliases:** RB, wick rejection block, long-wick block
 **ICT Confidence:** medium
-**Year Introduced:** 2018
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-HTF-PD-ARRAYS, ICT-2022-MENTORSHIP-OVERVIEW
+
+⚠ **Re-dated 2018 → 2017 and the body/wick anchor corrected 2026-08-11.** The page previously
+claimed 2018 citing only `ICT-2018-BLOCKS` — a registry stub with no video ID, no quotation and no
+distilled content behind it. The rejection block is defined in **Jan 2017** in the PD-array hierarchy
+lecture, and it is placed second in the premium ladder, immediately inside the old high
+(`ICT-2017-HTF-PD-ARRAYS` [18:46–19:05]).
+
+⚠ **The anchor was inverted.** These pages had the level drawn at the **wick**. ICT draws it at the
+**body**: "the rejection block would be **just above the candle's body, not the wicks**. So the actual
+high and low is the wick — but then the next area of importance is the rejection block that would be
+just above the candle's body" [18:49–18:57]; the discount mirror is "just below the most lowest
+candle and its body … if it has wicks, long wicks below it, we're only going to be looking for a move
+**just below the bodies** of the candle" [29:02–29:15]. The long wick is what **identifies** the
+candle; the **body edge is the level**, and the wick is the part expected to be run out. Same defect
+class as the propulsion-block inversion corrected the same day.
 **Tags:** rejection-block, wick, foundational
 
 ## Definition
 
-A rejection block is a candle (or short cluster) characterized by a **strong wick rejection at a key level**, leaving a long wick relative to the body. The wick documents that price tried to go through a level and was forcibly rejected. Distinct from order blocks (which use the body), rejection blocks reference the **wick** as the key zone — the rejected portion is what becomes the future entry/SL anchor. Less standardized than OBs and FVGs; ICT teaches RBs as secondary references.
+A rejection block is a candle (or short cluster) characterized by a **strong wick rejection at a key level**, leaving a long wick relative to the body. The wick documents that price tried to go through a level and was forcibly rejected. ⚠ **The level is the body edge, not the wick.** The long wick is what *identifies* the candle; ICT draws the rejection block "just above the candle's body, not the wicks" and expects the wick itself to be run out (`ICT-2017-HTF-PD-ARRAYS` [18:49–18:57]). Less standardized than OBs and FVGs; ICT teaches RBs as secondary references.
 
 ## Formal Criteria
 
@@ -53,10 +68,10 @@ is_bullish_rb := lower_wick >= 0.60 * range_n
   ],
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "medium",
-  "year_introduced": "2018",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["bullish-rejection-block","bearish-rejection-block","liquidity-sweep","turtle-soup","stop-run-definition","bullish-order-block","bearish-order-block"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-HTF-PD-ARRAYS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -102,6 +117,5 @@ M15+. Lower TFs have noisy long wicks that aren't structurally meaningful.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
-
-> Confidence is `medium` because RB usage varies across the ICT community; many practitioners fold the concept into liquidity sweeps and OBs.
+- `ICT-2017-HTF-PD-ARRAYS` (18:46–19:05) the rejection block placed second in the premium ladder; (18:49) "just above the candle's body, not the wicks"; (29:02–29:15) the discount mirror.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

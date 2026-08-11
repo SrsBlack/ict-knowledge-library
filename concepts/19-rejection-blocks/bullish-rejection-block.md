@@ -3,14 +3,29 @@
 **Category:** 19-rejection-blocks
 **Aliases:** bullish RB, lower-wick rejection block
 **ICT Confidence:** medium
-**Year Introduced:** 2018
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-HTF-PD-ARRAYS, ICT-2022-MENTORSHIP-OVERVIEW
+
+⚠ **Re-dated 2018 → 2017 and the body/wick anchor corrected 2026-08-11.** The page previously
+claimed 2018 citing only `ICT-2018-BLOCKS` — a registry stub with no video ID, no quotation and no
+distilled content behind it. The rejection block is defined in **Jan 2017** in the PD-array hierarchy
+lecture, and it is placed second in the premium ladder, immediately inside the old high
+(`ICT-2017-HTF-PD-ARRAYS` [18:46–19:05]).
+
+⚠ **The anchor was inverted.** These pages had the level drawn at the **wick**. ICT draws it at the
+**body**: "the rejection block would be **just above the candle's body, not the wicks**. So the actual
+high and low is the wick — but then the next area of importance is the rejection block that would be
+just above the candle's body" [18:49–18:57]; the discount mirror is "just below the most lowest
+candle and its body … if it has wicks, long wicks below it, we're only going to be looking for a move
+**just below the bodies** of the candle" [29:02–29:15]. The long wick is what **identifies** the
+candle; the **body edge is the level**, and the wick is the part expected to be run out. Same defect
+class as the propulsion-block inversion corrected the same day.
 **Tags:** rejection-block, bullish
 
 ## Definition
 
-A bullish rejection block is a candle with a **long lower wick** that rejects downward at a key level, leaving the body near the top of the range. The wick documents an SSL sweep + immediate reversal. Functions as a discount-side reference for future long entries.
+A bullish rejection block is a candle with a **long lower wick** that rejects downward at a key level, leaving the body near the top of the range. The wick documents an SSL sweep + immediate reversal. ⚠ **The tradeable level sits just below the candle's body, not at the wick low** — "we're only going to be looking for a move just below the bodies of the candle" (`ICT-2017-HTF-PD-ARRAYS` [29:09]). Functions as a discount-side reference for future long entries.
 
 ## Formal Criteria
 
@@ -47,10 +62,10 @@ bullish_rb := lower_wick / range_n >= 0.60
   ],
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "medium",
-  "year_introduced": "2018",
+  "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["rejection-block","bearish-rejection-block","sell-side-liquidity","liquidity-sweep","bullish-order-block","turtle-soup"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-HTF-PD-ARRAYS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -92,4 +107,5 @@ M15+.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-HTF-PD-ARRAYS` (29:02–29:15) "below the order block would be a rejection block, which is just below the most lowest candle and its body … we're only going to be looking for a move just below the bodies of the candle".
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

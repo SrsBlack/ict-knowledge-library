@@ -3,9 +3,11 @@
 **Category:** 07-order-blocks
 **Aliases:** vacuum, gap candle, no-rest block
 **ICT Confidence:** medium
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-VACUUM-BLOCK, ICT-2022-MENTORSHIP-OVERVIEW
+
+⚠ **Re-dated 2018 → 2016 on 2026-08-11.** The page cited only `ICT-2018-BLOCKS`, a registry stub with no video ID, no quotation and no distilled content behind it. The vacuum block has a **dedicated Dec-2016 lecture** (`ICT-2016-VACUUM-BLOCK`, `shPGUz9pU-A`) which defines it as "a gap created in price action as a result of a volatility event" formed by "a vacuum of liquidity" [00:49–00:58] and equates it to a breakaway gap [12:48].
 **Tags:** order-block, vacuum, gap, displacement
 
 ## Definition
@@ -48,10 +50,10 @@ vacuum_size := vacuum_high - vacuum_low
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "medium",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["fair-value-gap","volume-imbalance","liquidity-void","ndog","nwog","sunday-open-gap"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-VACUUM-BLOCK","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -101,6 +103,5 @@ M15+ generally; vacuum gaps on M1/M5 from feed jitter are noise.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
-
-> Confidence is `medium` because the term "vacuum block" is used inconsistently across the ICT community; some teach it as a synonym for FVG, others reserve it for opening gaps as defined here.
+- `ICT-2016-VACUUM-BLOCK` (00:49–00:58) the definition; (06:31–06:43) treated as a synthetic candle with its own open, close and mean threshold; (12:48) "a vacuum block is nothing more than a breakaway gap"; (04:40) ICT explicitly declines to quantify fill probability.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

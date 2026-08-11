@@ -5,12 +5,14 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2017
-**Source IDs:** ICT-2017-STT-WEEKLY-PROFILES, ICT-2017-STT-MM-TEMPLATES, ICT-2017-STT-BLENDING-IPDA-PD, ICT-2017-STT-INTRAWEEK-REVERSALS, ICT-2017-TOPDOWN-SHORT-TERM
+**Source IDs:** ICT-2017-STT-WEEKLY-PROFILES, ICT-2017-STT-MM-TEMPLATES, ICT-2017-STT-BLENDING-IPDA-PD, ICT-2017-STT-INTRAWEEK-REVERSALS, ICT-2017-TOPDOWN-SHORT-TERM, ICT-2017-DAYTRADE-ROUTINE
 **Tags:** weekly, profile, day-of-week, short-term-trading, taxonomy
 
 ## Definition
 
-Weekly range profiles are ICT's **closed catalogue of the shapes a trading week takes** — six bidirectional families, twelve variants in all, each defined by *which day makes the weekly high or low* and *what manipulation precedes it*. Delivered as lesson 2 of the March-2017 short-term-trading month, it is the catalogue that the August-2017 top-down lecture defers to (`ICT-2017-TOPDOWN-SHORT-TERM`, 16:16).
+Weekly range profiles are ICT's **catalogue of the shapes a trading week takes** — six bidirectional families, twelve variants in all, each defined by *which day makes the weekly high or low* and *what manipulation precedes it*. Delivered as lesson 2 of the March-2017 short-term-trading month, it is the catalogue that the August-2017 top-down lecture defers to (`ICT-2017-TOPDOWN-SHORT-TERM`, 16:16).
+
+⚠ **It is a closed set of *named profiles*, not a closed enumeration of which day can make the weekly extreme.** No variant here is anchored on **Monday**, yet ICT treats a Monday weekly extreme as routine in three other 2017 lessons — including one in **this same March module**. The May-2017 routine lecture starts the search there: "we obviously **start from the Monday low of the week**, and if Monday doesn't give us enough evidence, we look for **Tuesday low of the week** to form" (`ICT-2017-DAYTRADE-ROUTINE`, 41:52–41:54). See `## Common Mistakes` for the full reconciliation; the twelve profiles remain the taught catalogue.
 
 Each profile is stated as a triple: an underlying directional bias you already hold, a **manipulation** signature, and an **anticipation** rule that fires *before* the profile completes. The anticipation rule is the same shape in every bullish profile — the market **fails to reach a higher-timeframe discount array** on the earlier days, so the drive into it is deferred to the named day — and mirrored in every bearish one.
 
@@ -85,14 +87,18 @@ seek_and_destroy_*      := consolidate(Mon..Thu) AND shallow_stops_both_sides
     {"id": "c5", "expr": "consolidation_thursday_reversal fires ~14:00 America/New_York on FOMC or rate release"},
     {"id": "c6", "expr": "seek_and_destroy is neutral/low-probability; ICT says avoid trading it"},
     {"id": "c7", "expr": "wednesday_weekly_reversal is located at a long- or intermediate-term extreme, not at news"},
-    {"id": "c8", "expr": "all profile diagrams drawn on H1"}
+    {"id": "c8", "expr": "all profile diagrams drawn on H1"},
+    {"id": "c9", "expr": "closed set of NAMED profiles; NOT a closed enumeration of extreme-forming days"},
+    {"id": "c10", "expr": "no Monday-anchored variant exists, but a Monday weekly extreme is taught elsewhere in 2017"},
+    {"id": "c11", "expr": "day-of-week search order (day-trade routine) == Monday -> Tuesday -> Wednesday, weekly high capped ~Thursday NY open"},
+    {"id": "c12", "expr": "a US holiday shifts the whole day-of-week frame forward one session"}
   ],
   "timeframes": ["H1", "H4", "D", "W"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2017",
-  "related": ["daily-bias", "weekly-bias", "top-down-analysis", "monday-wednesday-range", "market-maker-manipulation-template", "intraweek-market-reversal", "one-shot-one-kill", "turtle-soup", "premium-array", "discount-array", "liquidity-pool"],
-  "sources": ["ICT-2017-STT-WEEKLY-PROFILES", "ICT-2017-STT-MM-TEMPLATES", "ICT-2017-STT-BLENDING-IPDA-PD", "ICT-2017-STT-INTRAWEEK-REVERSALS", "ICT-2017-TOPDOWN-SHORT-TERM"]
+  "related": ["daily-bias", "weekly-bias", "top-down-analysis", "monday-wednesday-range", "market-maker-manipulation-template", "intraweek-market-reversal", "one-shot-one-kill", "turtle-soup", "premium-array", "discount-array", "liquidity-pool", "day-trade-routine"],
+  "sources": ["ICT-2017-STT-WEEKLY-PROFILES", "ICT-2017-STT-MM-TEMPLATES", "ICT-2017-STT-BLENDING-IPDA-PD", "ICT-2017-STT-INTRAWEEK-REVERSALS", "ICT-2017-TOPDOWN-SHORT-TERM", "ICT-2017-DAYTRADE-ROUTINE"]
 }
 ```
 
@@ -140,7 +146,13 @@ Profiles are read on **H1** (the teaching chart) and framed by **monthly / weekl
 - **Confusing "Wednesday low of week" with "Wednesday weekly reversal".** ICT separates them explicitly: "this is not the same as the Wednesday low of the week templates" (`ICT-2017-STT-MM-TEMPLATES`, 35:58). The first is a routine pullback into a discount array; the second is a HTF turn at a long- or intermediate-term extreme.
 - **Waiting for the profile to complete before acting.** Each profile carries its own *forward-looking* anticipation rule, keyed on an array the market has so far failed to reach.
 - **Reading the profile without a prior bias.** Every non-neutral profile opens "this is a market profile that is generally bullish so you're already looking for bullish prices anyway" (01:02). The profile refines an existing bias; it does not create one.
-- **Expecting a systematic classifier.** ICT concedes elsewhere that he "never been able to create a systematic approach for forecasting weekly profiles" (`ICT-2017-TOPDOWN-SHORT-TERM`, 18:19).
+- **Expecting a systematic classifier.** ICT concedes elsewhere that he "never been able to create a systematic approach for forecasting weekly profiles" (`ICT-2017-TOPDOWN-SHORT-TERM`, 18:19), and that no template can be chosen in advance: "you're **never going to know** what weekly template it's going to unfold **before Sunday's open**" (`ICT-2017-DAYTRADE-ROUTINE`, 44:19).
+- **Reading the twelve as the complete list of days a weekly extreme can form on.** They are not, and the gap is Monday. Reconciliation, in ICT's own sources:
+  - **Same module, lesson-level:** "notice how the **lows of the week are generally formed in Monday**, Tuesday, and Wednesday in this context" (`ICT-2017-STT-MONTHLY-WEEKLY-RANGES`, 42:33), and "the high or low to form on **Monday through Wednesday** with the **70 %** odds" (`ICT-2017-STT-ONE-SHOT-ONE-KILL`, 01:30). Both are cited on [monday-wednesday-range](monday-wednesday-range.md).
+  - **April 2017:** Monday is normally small-range, *except* when a large range out of the gate into a daily array "often marks the week's high or low" (`ICT-2017-DAYTRADE-ESSENTIALS`, 19:44–20:47, via [ict-day-trading-model](../31-models/ict-day-trading-model.md)).
+  - **May 2017:** the routine's search **starts** at Monday (41:52).
+  The consistent reading is that the twelve name the *recurring, anticipable* shapes — each carrying a manipulation signature and an anticipation rule — while a Monday extreme is treated as a **day-of-week statistic without a named profile**. It has no manipulation signature to anticipate, which is plausibly why it was never given one.
+- **Applying the day names through a holiday week.** The frame shifts with the sessions, not the calendar: "**Monday is a U.S. holiday** … then **Tuesday becomes what would normally be a Monday**", pushing an expected reversal to Wednesday (`ICT-2017-DAYTRADE-ROUTINE`, 57:16–57:34). The March catalogue carries no such rule.
 
 ## Related Concepts
 
@@ -149,6 +161,7 @@ Profiles are read on **H1** (the teaching chart) and framed by **monthly / weekl
 - [intraweek-market-reversal](../31-models/intraweek-market-reversal.md) — what happens when the profile you chose is the wrong one.
 - [one-shot-one-kill](../31-models/one-shot-one-kill.md) — the model that consumes these profiles.
 - [daily-bias](daily-bias.md), [weekly-bias](weekly-bias.md), [top-down-analysis](top-down-analysis.md).
+- [day-trade-routine](day-trade-routine.md) — the May-2017 pass that selects a profile in step 6, and the source of the Monday-first search order and the holiday-shift rule.
 - [turtle-soup](../20-turtle-soup/turtle-soup.md) — the consolidation-Thursday-reversal entry is a turtle soup.
 - [premium-array](../05-pd-arrays/premium-array.md), [discount-array](../05-pd-arrays/discount-array.md), [liquidity-pool](../02-liquidity/liquidity-pool.md).
 
@@ -156,4 +169,7 @@ Profiles are read on **H1** (the teaching chart) and framed by **monthly / weekl
 
 - `ICT-2017-STT-WEEKLY-PROFILES` (00:00) "Welcome back to lesson two of short-term trading **March 2017** ICT mentorship content"; (00:16) "This lesson is defining the weekly range profiles"; (00:19–00:49) the "looks rather ambiguous" preface and the price-data homework; (01:02–01:37) classic Tuesday low, its manipulation and anticipation; (01:44–02:16) classic Tuesday high; (02:16–02:41) the shared caveat that the Tuesday London extreme can be exceeded later in the week; (02:48–03:39) Wednesday low of week; (03:46–04:33) Wednesday high of week; (04:34–06:18) consolidation Thursday reversal, bullish and bearish, "around the 2 o'clock Eastern Standard Time or 2 p.m. New York time" and "generally on rate announcements FOMC or interest rate adjustments"; (06:18–07:33) consolidation midweek rally and decline; (07:34–08:58) seek and destroy bullish and bearish Friday — "neutral or low probability", July and August, "better to avoid trading these conditions altogether"; (08:59–10:03) Wednesday weekly reversal, bullish and bearish, paired with pending sell-side / buy-side liquidity at a long- or intermediate-term extreme; (10:04–10:44) the one-hour-chart study assignment; (10:47) "We will be giving you more insights about this when we start looking at the market maker templates."
 - `ICT-2017-STT-MM-TEMPLATES` (00:22–01:04) the templates blend onto the lesson-2 profiles; (01:22–01:38) "all of the charts or diagrams are represented in and depicted as a 60 minute chart"; (35:58) "this is not the same as the Wednesday low of the week templates".
+- `ICT-2017-STT-BLENDING-IPDA-PD` — lesson 4 of the same March-2017 module; supplies **Example 1**, the AUDUSD classic-Tuesday-high week. (10:50) "originally long or bullish on the Australian dollar with the expectation of a larger price move" — the pre-existing bias every profile requires; (13:44–14:04) "forming the **high of the week on Tuesday**, trading at an old monthly, weekly and or daily high liquidity pool… it traded slightly above Monday's high, rejected it" — the classic-Tuesday manipulation signature in live data, including the Monday-high sweep the shared caveat describes; (13:28) the 76.80 → 76.05 objective closing an H4 liquidity void "right to the PIP". Also supplies the PD-array search order the anticipation rules run against (01:39–02:44) and the exhausted-array exclusion (04:31), both used when testing whether the HTF array has in fact gone unreached.
+- `ICT-2017-STT-INTRAWEEK-REVERSALS` — lesson 7 of the same module; supplies **Example 2**, the GBPUSD Wednesday weekly reversal. (04:56–12:19) "over 200 points in a period of 24 hours" into a **daily bullish order block mean threshold** forming Wednesday's low, then "IPDA draws price up into a four hour bearish order block premium PD array" (11:43). Supplies the profile's **diagnostic**: "whatever the **average daily range is for the last five days**, if it gets well above it, chances are you're probably going to see a **market reversal profile**" (20:48–21:04), read on **Monday and Tuesday only**, with the worked week's whole range "really formed on Tuesday" (21:23); confirmation is that price is "**unwilling to leave the premium**" (08:47). Frequency: "Wednesday or Thursday reversals generally form **every month**" (22:51). Stated cause: "they occur in **overlapping models** … **the higher time frame discipline will always win**" (26:03–26:24). ⚠ Distinct from `ICT-2017-MARKET-REVERSALS`, which is the May-2017 day-trading lecture.
 - `ICT-2017-TOPDOWN-SHORT-TERM` (16:16) the August-2017 deferral of the full profile catalogue to March's content; (18:19) "I've never been able to create a systematic approach for forecasting weekly profiles".
+- `ICT-2017-DAYTRADE-ROUTINE` — May-2017 lesson 8; the profile-selection step in practice. (41:37–41:49) "if we're bullish, there's only **so many weekly templates** to outline the range for the weekly range to be bullish — so we look for **evidence to support those**"; (41:52–41:58) "we obviously **start from the Monday low of the week**, and if Monday doesn't give us enough evidence, we look for **Tuesday low of the week** to form. If Tuesday starts to trade up, then we know that **Wednesday** is probably going to be a good buying day"; (42:03–42:13) "all the way up into **Thursday's New York open**, where we can basically expect the **weekly high** to start to form — it doesn't have to, but that's the conditions we anticipate"; (42:17–42:23) "if Thursday continues higher, then there's probably going to be some **profit taking on Friday** — so **try not to buy on Friday**"; (44:19–44:28) "you're **never going to know** what weekly template it's going to unfold **before Sunday's open**"; (57:16–57:34) "**Monday is a U.S. holiday** … then **Tuesday becomes what would normally be a Monday**".

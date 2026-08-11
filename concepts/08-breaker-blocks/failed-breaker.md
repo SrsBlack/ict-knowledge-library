@@ -106,4 +106,6 @@ M15+.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-TRADE-CONDITIONS` (02:25–02:34) the breaker as a target that may give way — "whether or not there's a significant force that would drive it through a breaker".
+- `ICT-2017-PD-ARRAY-MATRIX` (24:32–24:45) bearish breakers expected "to give way… you should just be going right through those".
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

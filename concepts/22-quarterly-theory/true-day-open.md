@@ -1,16 +1,23 @@
 # True Day Open (TDO)
 
 **Category:** 22-quarterly-theory
-**Aliases:** TDO, midnight open, daily true open
+**Aliases:** TDO, midnight open, daily true open, IPDA true day open
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2023
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2023-QUARTERLY-THEORY
-**Tags:** quarterly-theory, true-day-open, foundational
+**Source IDs:** ICT-2017-DEFINING-DAILY-RANGE, ICT-2017-CHARTER-OVERVIEW, ICT-2023-QUARTERLY-THEORY
+**Tags:** quarterly-theory, true-day-open, foundational, ipda
 
 ## Definition
 
 The **True Day Open (TDO)** is the **00:00 NY-time price** — the official daily candle opening per ICT's framework. Distinct from "session open" or "broker open" times: TDO is anchored to NY midnight regardless of broker convention. ICT teaches TDO as the **primary intraday premium/discount reference**: price above TDO = intraday premium (favor shorts in bearish-bias contexts); price below TDO = intraday discount (favor longs in bullish-bias contexts). TDO is one of the most-cited time-of-day pivots in ICT analysis.
+
+The term is ICT's own and it is defined verbatim in the April-2017 mentorship: "**every day at
+12 a.m. midnight New York time begins the IPDA true day** — this is the beginning of the
+24-hour interbank trading day" (`ICT-2017-DEFINING-DAILY-RANGE`, 05:07–05:29). The same lesson
+supplies the *other* end of that interval, which TDO alone does not: the IPDA true day **ends
+at 3 p.m. New York time** (05:29–05:38). See [ipda-true-day](../04-time-cycles/ipda-true-day.md)
+for the full 00:00 → 15:00 frame and its rationale.
 
 ## Formal Criteria
 
@@ -18,6 +25,9 @@ The **True Day Open (TDO)** is the **00:00 NY-time price** — the official dail
 - Not the same as: 17:00 NY forex close, 18:00 NY Sunday open (NWOG), or broker server-time daily candle open.
 - Acts as a horizontal price level on intraday charts; price relative to TDO drives intraday bias.
 - Premium / discount classification on intraday is **TDO-anchored**, not necessarily the same as the daily-dealing-range premium/discount.
+- **The open ICT names is the start of a bounded interval, not of a rolling 24 hours.** The
+  IPDA true day runs **00:00 → 15:00 NY**; the daily open, high, low and close ICT frames are
+  the extremes of that window (`ICT-2017-DEFINING-DAILY-RANGE`, 05:17–05:38, 10:21).
 
 ## Formula / Math
 
@@ -42,14 +52,15 @@ bearish_bias_setup_zone := price > tdo (intraday premium in bearish bias)
   "criteria": [
     {"id": "c1", "expr": "tdo = open at 00:00 NY"},
     {"id": "c2", "expr": "horizontal intraday reference"},
-    {"id": "c3", "expr": "drives intraday premium/discount classification"}
+    {"id": "c3", "expr": "drives intraday premium/discount classification"},
+    {"id": "c4", "expr": "opens the IPDA true day interval 00:00 -> 15:00 America/New_York"}
   ],
   "timeframes": ["M5","M15","H1","H4"],
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2023",
-  "related": ["quarterly-theory-overview","daily-quarters","time-of-day-pivots","ndog","true-week-open","htf-bias-framework"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2023-QUARTERLY-THEORY"]
+  "related": ["quarterly-theory-overview","daily-quarters","time-of-day-pivots","ndog","true-week-open","htf-bias-framework","ipda-true-day"],
+  "sources": ["ICT-2017-DEFINING-DAILY-RANGE","ICT-2017-CHARTER-OVERVIEW","ICT-2023-QUARTERLY-THEORY"]
 }
 ```
 
@@ -86,8 +97,10 @@ M5 / M15 / H1 / H4.
 
 ## Related Concepts
 
+- [ipda-true-day](../04-time-cycles/ipda-true-day.md) — the 00:00 → 15:00 interval this open begins, and the rest of the 2017 time frame.
 - [quarterly-theory-overview](quarterly-theory-overview.md), [daily-quarters](daily-quarters.md), [time-of-day-pivots](../04-time-cycles/time-of-day-pivots.md), [ndog](../31-models/ndog.md), [true-week-open](true-week-open.md), [htf-bias-framework](../25-htf-bias/htf-bias-framework.md).
 
 ## Citations
 
+- `ICT-2017-DEFINING-DAILY-RANGE` (00:14) "this is **lesson two of the April 2017 ICT mentorship** content dealing with ICT day trading model — this lesson is defining the daily range" — dates the source; (05:07–05:29) "the IPDA true day definition — **every day at 12 a.m. midnight New York time begins the IPDA true day**. This is the beginning of the 24-hour interbank trading day"; (05:29–05:38) "**every day at 3 p.m. New York time ends the IPDA true day**"; (10:21) "that's how you frame the entire daily range — **open, high, low and close**".
 - `ICT-2017-CHARTER-OVERVIEW`, `ICT-2023-QUARTERLY-THEORY`.

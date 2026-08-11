@@ -118,4 +118,6 @@ M15+.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-BREAKER-BLOCK` — the definitional Dec-2016 breaker lecture; breaker framed as "this form of mitigation" [00:26].
+- `ICT-2016-MITIGATION-BLOCKS` — the Dec-2016 mitigation-block lecture; "an implication of order block theory" [00:28], and forward-refers to the breaker as not yet taught [01:50].
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

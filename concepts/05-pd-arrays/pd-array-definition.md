@@ -108,5 +108,7 @@ Every TF — PD arrays are fractal. HTF PD arrays (D, H4) are higher-conviction 
 
 ## Citations
 
+- `ICT-2017-HTF-PD-ARRAYS` (00:00) "lesson 6.1 of the January 2017 ICT Mentorship, Defining High Time Frame PD Arrays"; (02:01) "this teaching is to teach you the hierarchy on the tools that I use for framing the trades". ⚠ The word "array" appears in **zero** of the 35 Sep–Dec 2016 packets — the umbrella term originates here, while the premium/discount market states are Sep 2016.
+
 - `ICT-2016-PD-ARRAYS` — original PD-array introduction.
 - `ICT-2022-MENTORSHIP-OVERVIEW` — operational framework refined.

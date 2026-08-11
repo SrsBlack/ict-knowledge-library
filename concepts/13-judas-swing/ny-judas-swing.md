@@ -37,8 +37,8 @@ A NY Judas swing is the smaller-scale session-open Judas at NY AM (08:00 NY) —
 
 ⚠ **NY is one of four session Judas swings, not the second of two.** `ICT-2017-MARKET-REVERSALS`
 [28:07] enumerates London open, CME open (New York), Asia at 20:00 NY / 00:00 GMT, and London
-close. This library has pages for the London and NY variants only — the Asia and London-close
-Judas swings are named in the corpus but undocumented here.
+close. All four now have pages — see [asia-judas-swing](asia-judas-swing.md) and
+[london-close-judas-swing](london-close-judas-swing.md), written 2026-08-11.
 
 ## Formula / Math
 
@@ -65,7 +65,7 @@ ny_judas := session == NY_AM_KZ [08:00, 11:00] NY
   "confidence": "high",
   "year_introduced": "2017",
   "year_refined": "2022",
-  "related": ["judas-swing","london-judas-swing","judas-swing-failure","ny-am-killzone","macro-time-0950-1010","silver-bullet-ny-am"],
+  "related": ["judas-swing","london-judas-swing","asia-judas-swing","london-close-judas-swing","judas-swing-failure","ny-am-killzone","macro-time-0950-1010","silver-bullet-ny-am"],
   "sources": ["ICT-2017-MARKET-REVERSALS","ICT-2017-BREAD-BUTTER-BUY","ICT-2017-BREAD-BUTTER-SELL","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
@@ -110,7 +110,7 @@ M1 / M5 / M15.
 
 ## Related Concepts
 
-- [judas-swing](judas-swing.md), [london-judas-swing](london-judas-swing.md), [judas-swing-failure](judas-swing-failure.md), [ny-am-killzone](../10-killzones/ny-am-killzone.md), [macro-time-0950-1010](../04-time-cycles/macro-time-0950-1010.md), [silver-bullet-ny-am](../11-silver-bullet/silver-bullet-ny-am.md).
+- [judas-swing](judas-swing.md), [london-judas-swing](london-judas-swing.md), [asia-judas-swing](asia-judas-swing.md), [london-close-judas-swing](london-close-judas-swing.md), [judas-swing-failure](judas-swing-failure.md), [ny-am-killzone](../10-killzones/ny-am-killzone.md), [macro-time-0950-1010](../04-time-cycles/macro-time-0950-1010.md), [silver-bullet-ny-am](../11-silver-bullet/silver-bullet-ny-am.md).
 
 ## Citations
 

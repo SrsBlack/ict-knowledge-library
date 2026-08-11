@@ -116,6 +116,8 @@ D / W / MN are the natural TFs for IPDA-level reference. Lookback ranges are mea
 
 ## Citations
 
+- `ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` (04:44–05:12) the earliest located definition of the algorithm itself — "it's a price engine… 90 % done by electronic algorithms".
+
 - `ICT-2017-IPDA-DATA-RANGES` (81:03) — "It's January 12, 2017"; (21:38–21:46) "IPTA is the Interbank Price Delivery Algorithm"; (27:52–28:27) "if you look back 60 days in the past, what was the highest high in the last 60 days? There's going to be buy stops above that high… Inside of the range of 20 days, 40 days, and 60 days."
 - `ICT-2017-QUARTERLY-SHIFTS` (00:21) — "the January 2017 ICT Mentorship Long Term Analysis Lesson 1.1"; (22:22–23:41) "60 trading days, 40 trading days, and 20 trading days… and they're all trading days, not calendar days."
 - `ICT-2022-MENTORSHIP-OVERVIEW` — operational use refined.

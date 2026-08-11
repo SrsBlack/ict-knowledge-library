@@ -3,9 +3,11 @@
 **Category:** 29-stop-runs
 **Aliases:** stop run + breaker entry, breaker-anchored stop run
 **ICT Confidence:** high
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2023
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-BREAKER-BLOCK, ICT-2022-MENTORSHIP-OVERVIEW
+
+⚠ **Re-dated 2018 → 2016 on 2026-08-11.** The page cited only `ICT-2018-BLOCKS`, a registry stub with no video ID, no quotation and no distilled content behind it. Breaker vocabulary is **2016**, not 2018: the term is used in Nov 2016 (`ICT-2016-TIMEFRAME-SELECTION` [36:20]) and has a dedicated Dec-2016 lecture (`ICT-2016-BREAKER-BLOCK`, `UrS-mtGHtAA`), whose whole subject is the stop run into the breaker — the raid is named a "false break or **turtle soup**" at [00:49] and the entry is the mitigation on the retest [05:56]. This aligns the page with its three siblings in `29-stop-runs/`, all evidenced to 2016.
 **Tags:** stop-run, breaker, entry
 
 ## Definition
@@ -47,10 +49,10 @@ stop_run_into_breaker(setup):
   ],
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2023",
   "related": ["stop-run-definition","stop-run-into-fvg","stop-run-into-ob","breaker-block","bullish-breaker","bearish-breaker","liquidity-sweep","mitigation-of-breaker"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-BREAKER-BLOCK","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -96,4 +98,5 @@ M15+.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-BREAKER-BLOCK` (00:49) the preceding raid named a "false break or turtle soup"; (05:08) the bullish breaker definition; (05:56) the retest entry as mitigation of the trapped side.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

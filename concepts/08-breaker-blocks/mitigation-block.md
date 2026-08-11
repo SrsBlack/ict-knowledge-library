@@ -3,9 +3,11 @@
 **Category:** 08-breaker-blocks
 **Aliases:** MB, mitigation, hedge block
 **ICT Confidence:** medium
-**Year Introduced:** 2018
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2018-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-MITIGATION-BLOCKS, ICT-2022-MENTORSHIP-OVERVIEW
+
+⚠ **Re-dated 2018 → 2016 on 2026-08-11.** The page cited only `ICT-2018-BLOCKS`, a registry stub with no video ID, no quotation and no distilled content behind it. The mitigation block has a **dedicated Dec-2016 lecture** (`ICT-2016-MITIGATION-BLOCKS`, `FOUzW0QmsfI`) which frames it as "an implication of order block theory" [00:28].
 **Tags:** mitigation-block, breaker-related, foundational
 
 ## Definition
@@ -45,10 +47,10 @@ mitigation_block(ob) := ob was violated
   ],
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "medium",
-  "year_introduced": "2018",
+  "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["breaker-block","breaker-vs-mitigation","bullish-order-block","bearish-order-block","mitigated-order-block","mitigation-definition"],
-  "sources": ["ICT-2018-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-MITIGATION-BLOCKS","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -90,6 +92,5 @@ M15+.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
-
-> Confidence is `medium` because mitigation-block usage varies widely across the ICT community; the boundary with breakers is taught inconsistently.
+- `ICT-2016-MITIGATION-BLOCKS` (00:28) "an implication of order block theory"; (03:56–05:09) the M-pattern failure swing plus a market-structure shift marking the range whose last down candle becomes the sell level; (01:50) forward-refers to the breaker as not yet taught.
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

@@ -93,4 +93,5 @@ M15+.
 
 ## Citations
 
-- `ICT-2018-BLOCKS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-BREAKER-BLOCK` (01:39–01:46) "there is going to be orders inside that high that will be looking to be mitigated"; (05:56) the retest entry taken "with the expectation that there is going to be a mitigation that is taking place".
+- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.

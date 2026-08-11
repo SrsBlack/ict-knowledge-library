@@ -94,4 +94,6 @@ M1 / M5 / M15.
 
 ## Citations
 
+- `ICT-2025-FOMC-2STAGE` — the 2025 two-stage delivery framing this page's refinement is aligned to. ⚠ No corpus evidence exists for a CPI protocol at any year: the local corpus ends Aug 2017 and contains two CPI mentions, neither teaching a protocol.
+
 - `ICT-2022-MENTORSHIP-OVERVIEW`.

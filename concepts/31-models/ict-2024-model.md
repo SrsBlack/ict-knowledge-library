@@ -18,7 +18,7 @@ Extends [ict-2022-model](ict-2022-model.md) and [ict-2023-model](ict-2023-model.
 
 - **FVG classification awareness** — distinguish immediate vs delayed rebalance ([fvg-classification-2025](../06-fair-value-gaps/fvg-classification-2025.md)).
 - **IFVG recognition** — when the original FVG fails, treat it as an inversion zone.
-- **Propulsion block** as continuation reference (post-OB displacement candle).
+- **Propulsion block** as continuation reference. ⚠ **Geometry corrected 2026-08-11:** this line previously read "post-OB displacement candle", which reverses the concept. Per the Dec-2016 primary source in which ICT coins the term, a propulsion block is an **order block nested on an order block** — a candle of the *same* colour as the prior order block trading back into it, i.e. **opposite** in direction to the displacement it precedes. See [propulsion-block](../07-order-blocks/propulsion-block.md).
 - **Stricter sweep wick** — 60%+ wick percentage required.
 - **HTF PD-array nesting** — preference for HTF FVG containing LTF entry FVG.
 

@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2016-VACUUM-BLOCK, ICT-2016-LIQUIDITY-VOIDS, ICT-2016-FVG-REINFORCED, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-VACUUM-BLOCK, ICT-2016-LIQUIDITY-VOIDS, ICT-2016-FVG-REINFORCED, ICT-2016-REINFORCING-LIQUIDITY, ICT-2022-MENTORSHIP-OVERVIEW
 **Tags:** displacement, gap, classification
 
 ⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced
@@ -59,6 +59,25 @@ Containment hierarchy:
 | **Measuring gap** | Named alongside FVGs and breakaway gaps (`ICT-2016-FVG-REINFORCED`, [08:36]) | Not developed in the local corpus — see caveat below |
 | **Exhaustion gap** | "This could potentially be an exhaustion gap. An exhaustion gap is typically a graphic depiction of capitulation" (`ICT-2016-VACUUM-BLOCK`, [02:57–03:06]) | Marks the last of the momentum in a prolonged trend |
 
+### Gap risk — the position-holder's view of an unfilled gap
+
+ICT names a third framing in the same month, orthogonal to both taxonomies above: not what a gap
+*is*, but what it *does to an open position*.
+
+- **Definition:** "gap risk is nothing more than simply when the market **quickly reprices to a level
+  where there was very little or no trading**" (`ICT-2016-REINFORCING-LIQUIDITY`, [01:57–02:05]).
+- **Both void and FVG carry it:** "when the current trading range is likely to remain, **liquidity
+  voids will fill in**, and this is associated with gap risk. And when the current trading range is
+  likely to remain, **fair value gaps will also fill in**, and this is attributed to gap risk"
+  [01:34–01:57]. Both are listed there as forms of **internal range liquidity**.
+- **The recognition cue:** "when we see a liquidity run to close in a range where there's only like
+  **one candle, real long candle** — usually that's a gap fill" [02:05–02:14].
+- **The exposure:** "whenever you're in a long and you have a **big gap underneath you, that's gap
+  risk**. So the market many times will **reprice aggressively** to close in those ranges, and that's
+  what you see **stops you out** as a trader" [02:14–02:29].
+- **The inversion:** "**we look for them as opportunities**" [02:29–02:31] — the same unfilled region
+  is the hazard to a held position and the draw that a new position targets.
+
 ⚠ **Measuring gap is under-sourced.** In the 153-packet local corpus the term appears exactly once,
 in a forward reference to written study notes ("a lot of information about fair value gaps and
 breakaway gaps and measuring gaps that's going to be coming your way in the form of the December
@@ -90,14 +109,16 @@ FVG ⊇ implied_VI (always — an FVG implies a body gap exists)
     {"id": "c2", "expr": "VI = 2-candle body gap (wicks may overlap)"},
     {"id": "c3", "expr": "liquidity_void = multi-candle expansion with directional dominance"},
     {"id": "c4", "expr": "containment: void contains FVGs; FVG implies VI"},
-    {"id": "c5", "expr": "orthogonal role taxonomy: common | breakaway | measuring | exhaustion"}
+    {"id": "c5", "expr": "orthogonal role taxonomy: common | breakaway | measuring | exhaustion"},
+    {"id": "c6", "expr": "gap_risk := an unfilled void or FVG against an open position; the market may reprice aggressively to close it"},
+    {"id": "c7", "expr": "gap_risk cue := a range covered by a single long candle is a likely gap fill"}
   ],
   "timeframes": ["M5","M15","H1","H4","D"],
   "confidence": "high",
   "year_introduced": "2016",
   "year_refined": "2022",
-  "related": ["displacement-definition","displacement-and-fvg","fair-value-gap","volume-imbalance","liquidity-void","liquidity-void-vs-fvg","imbalance-vs-fvg"],
-  "sources": ["ICT-2016-VACUUM-BLOCK","ICT-2016-LIQUIDITY-VOIDS","ICT-2016-FVG-REINFORCED","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "related": ["displacement-definition","displacement-and-fvg","fair-value-gap","volume-imbalance","liquidity-void","liquidity-void-vs-fvg","imbalance-vs-fvg","internal-range-liquidity"],
+  "sources": ["ICT-2016-VACUUM-BLOCK","ICT-2016-LIQUIDITY-VOIDS","ICT-2016-FVG-REINFORCED","ICT-2016-REINFORCING-LIQUIDITY","ICT-2022-MENTORSHIP-OVERVIEW"]
 }
 ```
 
@@ -162,4 +183,5 @@ M5+.
 - `ICT-2016-VACUUM-BLOCK` — "Month 04 — ICT Vacuum Block", `shPGUz9pU-A` (Dec 2016). Exhaustion gap defined [02:57–03:06]; breakaway gap equated with the vacuum block [12:48]; "not all gaps fill completely" [12:58].
 - `ICT-2016-LIQUIDITY-VOIDS` — "Month 04 — Liquidity Voids", `HTQgH11W37o` (Dec 2016). Liquidity void defined [00:57]; displacement equated with price imbalance [01:54]; common gap named [12:37].
 - `ICT-2016-FVG-REINFORCED` — "Month 04 — ICT Fair Value Gaps FVG", `FgacYSN9QEo` (Dec 2016). FVG defined [00:33]; FVG↔liquidity-void timeframe relationship [05:14–05:33]; measuring/breakaway gaps referenced [08:36].
+- `ICT-2016-REINFORCING-LIQUIDITY` — "Month 04 — Reinforcing Liquidity Concepts & Price Delivery", `npL3ZXJ5zOU` (Dec 2016). Supplies **gap risk**, the position-holder framing: defined [01:57–02:05]; both liquidity voids and fair value gaps named as internal range liquidity that will fill and is "attributed to gap risk" [01:34–01:57]; the single-long-candle recognition cue [02:05–02:14]; "whenever you're in a long and you have a big gap underneath you, that's gap risk… that's what you see stops you out as a trader" [02:14–02:29]; "we look for them as opportunities" [02:29–02:31].
 - `ICT-2022-MENTORSHIP-OVERVIEW` — retained for the 2022 refinement only.

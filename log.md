@@ -6,6 +6,60 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-08-11] distill | Corpus closed at 151/153; two definitions found inverted; half the library is still stub-sourced
+
+**The final 38 packets read in full** — the Month 01/02/03/04/06/08/09 tails and all 21 non-Core
+OTE videos. **151 of 153 packets are now cited.** The two that are not have **no transcript at all**
+(313-character boilerplate; captions missing and Whisper failed) — `S8ztuGt29FM` and `QklZ1x4GFaU`,
+the latter the corpus's only NASDAQ OTE. Both need a re-ingest, not a re-read.
+
+287 pages, **191 Source IDs**, lint 0, TIMELINE placement 0.
+
+⚠⚠ **TWO DEFINITIONS WERE INVERTED, not merely mis-dated.**
+- **Propulsion block**: the page said "a **wide-body candle** with same direction as the
+  displacement… the takeoff candle". ICT, in the lecture where he **coins the name**: "all it is is
+  a **down closed candle that trades down into a previous down closed candle**"
+  (`ICT-2016-PROPULSION-BLOCK` [04:39]) — direction-**opposite**, an order block on an order block.
+- **Rejection block**: the pages drew the level at the **wick**. ICT draws it at the **body** —
+  "the rejection block would be **just above the candle's body, not the wicks**"
+  (`ICT-2017-HTF-PD-ARRAYS` [18:49]); the wick is what gets run out.
+
+Both pages were stub-sourced at fabricated dates. **Where the build had no real source, it also
+tended to invent the mechanics.**
+
+⚠ **The "2018 block vocabulary expansion" never happened.** `ICT-2018-BLOCKS` is a registry stub —
+no video ID, no quotation, no content — and all four of its concepts have earlier located lectures
+(propulsion/vacuum/mitigation Dec 2016, breaker Nov 2016, rejection Jan 2017). **Seven pages
+re-dated off it.** ⚠ It survived the 08-10 placement pass because *its pages and the TIMELINE
+section agreed with each other* — the placement check catches disagreement, not shared error.
+
+⚠ **A false absence claim traced to a title-level rejection.** `r-multiple.md` asserted "enumerating
+**every accuracy figure in the 59-hour corpus** gives three: 30 %, 33 %, 34 %" and "every figure ICT
+quotes sits above the 25 % breakeven". Both false: `ICT-2016-GROWING-SMALL-ACCOUNTS` [07:40–09:08]
+holds a **six-row table** ending at **25 % → 3:1**. That lecture had been triaged NOT-A-CONCEPT from
+its title and never opened — so the enumeration was over what someone had *read*, not the corpus.
+Reconciled rather than overwritten: the table is the breakeven **floor**, 30 % is where ICT models
+above it, and 33 % is the 2:1 rung of that curve.
+
+**All three title-level NOT-A-CONCEPT rejections tested this pass were overturned** (one in part).
+
+**New this pass:** the Asia and London-close Judas swings (ICT names four; two were undocumented);
+`institutional-sponsorship`, a term four 2017 pages used and none defined; high- and
+low-resistance liquidity runs, origin Sep 2016 rather than 2017 and measured structurally;
+`true-week-open` corrected — ICT explicitly **discards Sunday** and anchors Monday 00:00 NY.
+Month 06's swing module reconstructed: 8 lessons, 7 located, **lesson 3 absent from the corpus**.
+
+⚠ **New lint check `citations_cover_sources`** — every header Source ID must appear in `## Citations`.
+Added after three re-dated pages kept citing the source that had just been removed; header↔JSON
+agreement cannot see it because Citations is a **third surface**. Mutation-tested both directions.
+
+⚠⚠ **STRUCTURAL FINDING, not acted on.** Classifying every Source ID as *evidenced* (carries a
+verified video ID) or *stub*: of 287 pages, **73 are fully evidenced, 61 partial, and 153 rest
+entirely on stubs — 143 of those at `high` confidence.** 98 of the 153 are dated 2016–2017 and this
+corpus could now source them; **55 are dated 2018+ and it cannot**, the corpus ending Aug 2017.
+Nothing in the repo distinguishes "verified" from "correct-looking but unverified" — which is
+exactly the gap that let two inverted definitions sit undetected.
+
 ## [2026-08-10] distill+redate | Months 05 and 07 read in full; the 17 TIMELINE mismatches resolved; IPDA splits into two dates
 
 **21 packets read in full** — the January-2017 long-term-analysis module (13, including the

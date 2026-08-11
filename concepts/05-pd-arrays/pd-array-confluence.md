@@ -107,5 +107,7 @@ Most actionable on entry TFs (M5 / M15) where multiple factors can align. HTF-on
 
 ## Citations
 
+- `ICT-2017-INDEX-TRADE-SETUPS` (10:55–11:08) "a overlap or a nested premium array… the higher time frame confluence with nested ideas of premium array"; (13:05) a nested HTF discount array "further bolsters the idea".
+
 - `ICT-2022-MENTORSHIP-OVERVIEW` — confluence discipline taught for entry selection.
 - `ICT-2025-ADV-LIQUIDITY` — strengthening principle and multi-factor framing refined in 2025.

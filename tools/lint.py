@@ -109,6 +109,17 @@ def main() -> int:
                 f"json-only={sorted(json_sources - header_sources)})"
             )
 
+        # citations_cover_sources — every ID in the header must actually appear in the
+        # ## Citations section. Added 2026-08-11 after three pages were re-dated with the
+        # header and JSON updated together while the Citations list kept naming the source
+        # that had just been removed. header/JSON agreement cannot catch this: Citations is
+        # a third surface stating the same fact, and nothing was reading it.
+        cit = re.search(r"^## Citations\s*(.*?)\Z", text, re.M | re.S)
+        if cit:
+            missing = sorted(s for s in header_sources if s not in cit.group(1))
+            if missing:
+                bad(f"{rel}: Source IDs absent from ## Citations: {missing}")
+
         header_year = re.search(r"\*\*Year Introduced:\*\* (\d{4})", text).group(1)
         if blob.get("year_introduced") != header_year:
             bad(
