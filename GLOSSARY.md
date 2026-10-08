@@ -14,16 +14,16 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## B
 
-- **BB** — Breaker Block. An order block whose extreme has been broken; flips polarity. → [breaker-block](concepts/08-breaker-blocks/breaker-block.md)
-- **BISI** — Buy-side Imbalance / Sell-side Inefficiency. The bullish form of an FVG. → [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md)
-- **BOS** — Break of Structure. Price making a new swing high (bullish) or low (bearish) in the current trend direction. → [bos-bullish](concepts/01-market-structure/bos-bullish.md) / [bos-bearish](concepts/01-market-structure/bos-bearish.md)
-- **BPR** — Balanced Price Range. A range with overlapping bullish and bearish FVGs. → [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md)
+- **BB** — Breaker Block. A swing high/low that formed before a liquidity run and is then broken back through; full candle range; flips polarity. → [breaker-block](concepts/08-breaker-blocks/breaker-block.md)
+- **BISI** — Buy-side Imbalance / Sell-side Inefficiency. The bullish form of an FVG — ⚠ SMC/community label, 0 hits in the 2016-17 / 2022 corpus. → [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md)
+- **BOS** — Break of Structure — **SMC label, not ICT's** (0 hits in the 2016-17 / 2022 corpus). ICT says "break in market structure" for continuation and reversal alike. → [bos-bullish](concepts/01-market-structure/bos-bullish.md) / [bos-bearish](concepts/01-market-structure/bos-bearish.md)
+- **BPR** — Balanced Price Range. Overlapping bullish and bearish FVGs — ⚠ unverified in the corpus; ICT's 2017 "price balanced range" is a consolidation, a different sense. → [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md)
 - **BSL** — Buy-Side Liquidity. Resting buy-stops above swing highs / equal highs. → [buy-side-liquidity](concepts/02-liquidity/buy-side-liquidity.md)
 
 ## C
 
-- **CE** — Consequent Encroachment. The 50% midpoint of an FVG. → [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md)
-- **CHoCH** — Change of Character. A structural break in the opposite direction of the prior trend. → [choch-bullish](concepts/01-market-structure/choch-bullish.md) / [choch-bearish](concepts/01-market-structure/choch-bearish.md)
+- **CE** — Consequent Encroachment. The 50% midpoint of an FVG — ⚠ term not found in the 2016-17 / 2022 corpus; 2022 ICT enters at the gap's near edge. → [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md)
+- **CHoCH** — Change of Character — **SMC label, not ICT's** (0 hits in the 2016-17 / 2022 corpus). ICT uses "market structure shift" / "break" interchangeably. → [choch-bullish](concepts/01-market-structure/choch-bullish.md) / [choch-bearish](concepts/01-market-structure/choch-bearish.md)
 - **CRT** — Candle Range Theory. Community-attributed (Romeo, ~2024). NOT ICT-original. → [candle-range-theory](concepts/21-crt/candle-range-theory.md)
 
 ## D
@@ -33,10 +33,10 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## E
 
-- **EQH** — Equal Highs. Two or more highs at the same price level — pool of liquidity. → [equal-highs](concepts/02-liquidity/equal-highs.md)
+- **EQH** — Equal Highs. Highs in close proximity — pool of buy-side liquidity. ICT gives no numeric tolerance. → [equal-highs](concepts/02-liquidity/equal-highs.md)
 - **EQL** — Equal Lows. Mirror of EQH on the sell side. → [equal-lows](concepts/02-liquidity/equal-lows.md)
 - **EQ** — Equilibrium. The 50% midpoint of a dealing range. → [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md)
-- **ERL** — External Range Liquidity. Liquidity outside the current dealing range. → [external-range-liquidity](concepts/02-liquidity/external-range-liquidity.md)
+- **ERL** — External Range Liquidity. Liquidity at/beyond the current trading range's bounds (Dec 2016). → [external-range-liquidity](concepts/02-liquidity/external-range-liquidity.md)
 
 ## F
 
@@ -51,9 +51,9 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## I
 
-- **IFVG** — Inversion FVG. A traded-through FVG whose role flips (support↔resistance). → [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md)
+- **IFVG** — Inversion FVG. A traded-through FVG whose role flips — ⚠ term and rules not found in the 2016-17 / 2022 corpus. → [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md)
 - **IPDA** — Interbank Price Delivery Algorithm. ICT's name for the institutional algorithm; uses 20/40/60-day lookbacks. → [ipda-definition](concepts/23-ipda/ipda-definition.md)
-- **IRL** — Internal Range Liquidity. Liquidity inside the current dealing range (FVGs, OBs, internal swing points). → [internal-range-liquidity](concepts/02-liquidity/internal-range-liquidity.md)
+- **IRL** — Internal Range Liquidity. Liquidity inside the current trading range (FVGs, OBs, internal swing points) (Dec 2016). → [internal-range-liquidity](concepts/02-liquidity/internal-range-liquidity.md)
 
 ## L
 
@@ -62,20 +62,20 @@ Format: `**ABBR**` — full term — short note — link.
 
 ## M
 
-- **MMBM** — Market Maker Buy Model. AMD running to upside distribution. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
-- **MMSM** — Market Maker Sell Model. AMD running to downside distribution. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
-- **MSS** — Market Structure Shift. A specific form of CHoCH characterized by displacement through the prior structure level. → [mss](concepts/01-market-structure/mss.md)
+- **MMBM** — Market Maker Buy Model. ICT's market-maker curve model (buy side) — a distinct concept, not an alias of PO3/AMD. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
+- **MMSM** — Market Maker Sell Model. ICT's market-maker curve model (sell side) — a distinct concept, not an alias of PO3/AMD. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
+- **MSS** — Market Structure Shift. ICT uses "shift" and "break in market structure" interchangeably; no FVG or close required (2022 prefers an energetic break). → [mss](concepts/01-market-structure/mss.md)
 
 ## N
 
-- **NDOG** — New Day Opening Gap. Gap between previous day's close and new day's open at midnight NY. → [ndog](concepts/31-models/ndog.md)
+- **NDOG** — New Day Opening Gap — ⚠ term not in corpus; the corpus's daily gap is the 18:00 NY futures reopen (holiday/Sunday examples), not midnight. → [ndog](concepts/31-models/ndog.md)
 - **NFP** — Non-Farm Payrolls. Monthly US labor report; high-impact news. → [nfp-protocol](concepts/30-news-driven/nfp-protocol.md)
-- **NWOG** — New Week Opening Gap. Gap between Friday close and Sunday/Monday open. → [nwog](concepts/31-models/nwog.md)
+- **NWOG** — New Week Opening Gap — ⚠ term not in corpus; 2022 precursor is the Sunday 18:00 NY index-futures reopen gap. → [nwog](concepts/31-models/nwog.md)
 - **NY** — New York time. The canonical timezone for every time-of-day reference in this library (subject to DST). → [dst-handling](concepts/04-time-cycles/dst-handling.md)
 
 ## O
 
-- **OB** — Order Block. Last opposite-direction candle before a displacement. → [bullish-order-block](concepts/07-order-blocks/bullish-order-block.md) / [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md)
+- **OB** — Order Block. 2016: the lowest down-close candle with the most body range near support (bullish); 2022: must carry an imbalance — not simply "the last opposite candle". → [bullish-order-block](concepts/07-order-blocks/bullish-order-block.md) / [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md)
 - **OTE** — Optimal Trade Entry. The 0.62–0.79 retracement zone, typically entered at 0.705. → [ote-overview](concepts/17-optimal-trade-entry/ote-overview.md)
 
 ## P
@@ -83,7 +83,7 @@ Format: `**ABBR**` — full term — short note — link.
 - **PD Array** — Premium / Discount Array. Any institutional price level (FVG, OB, breaker, equilibrium, etc.). → [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md)
 - **PDH / PDL** — Previous Day High / Low. Liquidity reference levels for the current day. → covered in `02-liquidity` and `25-htf-bias`
 - **PMH / PML** — Previous Month High / Low. Monthly liquidity reference. → covered in `25-htf-bias`
-- **PO3** — Power of Three. Same as AMD. → [power-of-three](concepts/12-power-of-three/power-of-three.md)
+- **PO3** — Power of Three — accumulation, manipulation, distribution (AMD). → [power-of-three](concepts/12-power-of-three/power-of-three.md)
 - **PWH / PWL** — Previous Week High / Low. Weekly liquidity reference. → covered in `25-htf-bias`
 
 ## R
@@ -93,7 +93,7 @@ Format: `**ABBR**` — full term — short note — link.
 ## S
 
 - **SD** — Standard Deviation (in ICT's projection tool). Used at -1.5, -2, -2.5, -4 SD targets. → [standard-deviation-projections](concepts/28-fibonacci-levels/standard-deviation-projections.md)
-- **SIBI** — Sell-side Imbalance / Buy-side Inefficiency. The bearish form of an FVG. → [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md)
+- **SIBI** — Sell-side Imbalance / Buy-side Inefficiency. The bearish form of an FVG — ⚠ SMC/community label, 0 hits in the 2016-17 / 2022 corpus. → [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md)
 - **SMC** — Smart Money Concepts. Community rebrand of ICT material. Distinct from ICT-original. SMC vocabulary maps to ICT concepts; see "SMC Vocabulary Cross-Reference" section at the bottom of this file.
 - **SMT** — Smart Money Technique (divergence). Divergence between correlated assets. → [smt-divergence](concepts/16-smt-divergence/smt-divergence.md)
 - **SSL** — Sell-Side Liquidity. Resting sell-stops below swing lows / equal lows. → [sell-side-liquidity](concepts/02-liquidity/sell-side-liquidity.md)
@@ -132,9 +132,9 @@ The Smart Money Concepts (SMC) community uses several terms that are **synonyms 
 | Supply zone / supply block | Bearish Order Block | [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md) |
 | Liquidity grab | Liquidity Sweep (raid / stop hunt) | [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md) |
 | Fakeout / swing failure | Turtle Soup (failed breakout) | [turtle-soup](concepts/20-turtle-soup/turtle-soup.md) |
-| Internal BOS / external BOS | Internal vs external structure + BOS | [bos-bullish](concepts/01-market-structure/bos-bullish.md), [bos-bearish](concepts/01-market-structure/bos-bearish.md), [internal-structure](concepts/01-market-structure/internal-structure.md), [external-structure](concepts/01-market-structure/external-structure.md) |
+| Internal BOS / external BOS | No ICT equivalent term — ICT says "break in market structure"; "internal/external" is his liquidity vocabulary (IRL/ERL), not a break taxonomy | [bos-bullish](concepts/01-market-structure/bos-bullish.md), [bos-bearish](concepts/01-market-structure/bos-bearish.md), [internal-structure](concepts/01-market-structure/internal-structure.md), [external-structure](concepts/01-market-structure/external-structure.md) |
 | Imbalance | FVG / volume imbalance | [imbalance-vs-fvg](concepts/26-imbalance/imbalance-vs-fvg.md) |
-| Buy-side imbalance (BISI) / Sell-side imbalance (SIBI) | Bullish / Bearish FVG | [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md), [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md) |
+| Buy-side imbalance (BISI) / Sell-side imbalance (SIBI) — SMC labels, not in corpus | Bullish / Bearish FVG | [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md), [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md) |
 | Equal highs / equal lows | Same as ICT (already shared vocabulary) | [equal-highs](concepts/02-liquidity/equal-highs.md), [equal-lows](concepts/02-liquidity/equal-lows.md) |
 | Premium / discount / equilibrium | Same (ICT-original) | [premium-array](concepts/05-pd-arrays/premium-array.md), [discount-array](concepts/05-pd-arrays/discount-array.md), [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md) |
 | Compression | Range contraction / accumulation phase | [range-contraction](concepts/01-market-structure/range-contraction.md), [accumulation-phase](concepts/12-power-of-three/accumulation-phase.md) |

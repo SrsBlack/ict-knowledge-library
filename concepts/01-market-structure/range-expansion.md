@@ -1,35 +1,33 @@
 # Range Expansion
 
 **Category:** 01-market-structure
-**Aliases:** expansion, expansion phase, breakout
+**Aliases:** expansion, expansion phase
 **ICT Confidence:** high
-**Year Introduced:** 2022
-**Year Refined:** 2022
-**Source IDs:** ICT-2022-MENTORSHIP-OVERVIEW
-**Tags:** structure, expansion, breakout, momentum, dealing-range
+**Year Introduced:** 2016
+**Year Refined:** 2017
+**Source IDs:** ICT-2016-ELEMENTS-OF-A-TRADE-SETUP, ICT-2017-DAYTRADE-ESSENTIALS, ICT-2016-MARKET-EFFICIENCY-PARADIGM, ICT-2017-EXPLOSIVE-MARKETS
+**Tags:** structure, expansion, momentum, trade-setup-condition
 
 ## Definition
 
-Range expansion is the phase in which price breaks out of a prior contraction or consolidation and travels with momentum, typically widening the average true range and producing displacement candles. ICT pairs expansion with [range-contraction](range-contraction.md) as the two complementary phases of price delivery: contraction builds energy via consolidation; expansion releases it via directional movement.
+Expansion is one of ICT's four conditions a market can be in at any time — "expansion," "retracement," "reversal," "consolidation" — and "they can only be one of these four conditions" (`ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` [01:59]–[02:36], Sep 2016, lesson 1 of Month 1). ICT's own definition: "expansion is when price moves quickly from a level of equilibrium" ([10:28]), and "when price leaves a level quickly, this indicates a willingness on the part of the market makers to reveal their intended repricing model" ([10:42]). Expansion couples directly with the order block as its companion tool ([10:32]).
 
 ## Formal Criteria
 
-- The most recent dealing range (consolidation between an LTH and an LTL) has just been broken via an external BOS.
-- Subsequent candles show an ATR (or candle-body length) materially larger than the contraction-phase average.
-- Price travels in a single direction with shallow pullbacks until it reaches its next external structure target (HTF liquidity pool, HTF PD array, etc.).
-- Expansion ends when displacement subsides and price begins to consolidate again.
+- Price moves quickly away from equilibrium, in one of the four mutually-exclusive market conditions ICT names (`ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` [02:36]).
+- "Eventually, the market will move outside of the consolidation. ... It moves away from the equilibrium price point." ([12:02]–[12:09]).
+- The phrase "range expansion" is ICT's own, used across the corpus: "range expansion on a weekly chart is a gold mine" (`ICT-2017-DAYTRADE-ESSENTIALS` [30:17]); "after the high or low is formed, the range will start expanding" (`ICT-2016-MARKET-EFFICIENCY-PARADIGM` [15:25]).
+- ICT gives no numeric trigger, multiple, or percentage for when expansion begins or ends — it is taught qualitatively throughout both corpora.
 
 ## Formula / Math
 
 ```
-ATR_contraction = mean(true_range, last_N_contraction_bars)
-ATR_expansion   = mean(true_range, last_N_post_break_bars)
-
-range_expanding := ATR_expansion >= K * ATR_contraction      [K typically 1.5..3]
-                    AND directional_close_count >= 0.7 * N    [70% closes in same direction]
+# ICT gives no number for this. Expansion is identified qualitatively:
+# price moving quickly, away from equilibrium, with the market no longer
+# in consolidation/retracement/reversal.
 ```
 
-ICT teaches expansion qualitatively rather than with a fixed numerical filter; the formula above is a common quantification used in research.
+ICT teaches expansion qualitatively, not with a fixed numerical filter. This library does not supply a substitute formula where ICT gives none.
 
 ## Machine-Readable
 
@@ -37,60 +35,62 @@ ICT teaches expansion qualitatively rather than with a fixed numerical filter; t
 {
   "id": "range-expansion",
   "category": "01-market-structure",
-  "aliases": ["expansion-phase", "breakout"],
+  "aliases": ["expansion-phase"],
   "criteria": [
-    {"id": "c1", "expr": "external_bos_just_occurred == true"},
-    {"id": "c2", "expr": "ATR_recent >= 1.5 * ATR_contraction"},
-    {"id": "c3", "expr": "directional_close_majority == true"}
+    {"id": "c1", "expr": "price_moves_quickly_away_from_equilibrium == true"},
+    {"id": "c2", "expr": "numeric_trigger: not given by ICT"}
   ],
   "timeframes": ["M5","M15","H1","H4","D","W"],
   "confidence": "high",
-  "year_introduced": "2022",
-  "year_refined": "2022",
-  "related": ["range-contraction","bos-bullish","bos-bearish","displacement-definition","external-structure"],
-  "sources": ["ICT-2022-MENTORSHIP-OVERVIEW"]
+  "year_introduced": "2016",
+  "year_refined": "2017",
+  "related": ["bos-bullish","bos-bearish","displacement-definition","equilibrium-definition"],
+  "sources": ["ICT-2016-ELEMENTS-OF-A-TRADE-SETUP","ICT-2017-DAYTRADE-ESSENTIALS","ICT-2016-MARKET-EFFICIENCY-PARADIGM","ICT-2017-EXPLOSIVE-MARKETS"]
 }
 ```
 
 ## Visual Pattern
 
 ```
-   contraction               expansion
-   ───────────────────       ───────────────
-       /\  /\  /\                 ▲
-      /  \/  \/  \               █▲
-     /            \             █ █
-    /              \           █  █
-                              █   █
-                     ─→ break ─→ wide directional candles
+   equilibrium level
+   ──────────────────────
+                 \
+                  \   ← price leaves EQ quickly: expansion
+                   \
+                    \
 ```
 
-Tight, overlapping candles → external BOS → wide, mostly-one-color candles.
+Qualitative signature only: fast, directional movement away from the equilibrium price point. ICT names no candle-geometry test for it (contrast with [displacement-definition](../09-displacement/displacement-definition.md), which does have a quality description for individual candles).
 
 ## Timeframes
 
-Every TF M5 → W. Higher-TF expansion is rarer but produces the largest moves and the cleanest [displacement](../09-displacement/displacement-definition.md) signatures.
+ICT applies "range expansion" from weekly charts ("a gold mine," `ICT-2017-DAYTRADE-ESSENTIALS` [30:17]) down to intraday price action. No TF restriction is stated.
 
 ## Examples
 
-**Example 1 — H1 expansion after contraction:**
-- H1 prints 30 bars in a 35-pip range; ATR ≈ 8 pips.
-- An H1 candle breaks the range high and prints a 28-pip body. Subsequent 5 bars all close green, average body 18 pips.
-- → range expansion. Bias: continuation toward next HTF liquidity target.
+**Example 1 — the four-condition framework (ICT's own structure):**
+- A market is, at any moment, in exactly one of: expansion, retracement, reversal, consolidation (`ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` [02:36]).
+- Expansion is identified by price leaving the prior equilibrium level quickly ([10:28]).
+
+**Example 2 — order block as the companion tool:**
+- Price expands away from an order block. ICT: "We don't want to chase price. We're going to wait for price to come back down into the order block." ([11:03]–[11:05]) — i.e. the entry is the retracement into the level that produced the expansion, not the expansion move itself.
 
 ## Common Mistakes
 
-- **Confusing every breakout with expansion.** A break that immediately stalls is not expansion; it's a failed break or a sweep.
-- **Ignoring direction quality.** Expansion is mostly one-color candles. Mixed-color, overlapping bodies = still ranging.
-- **Trading against expansion.** ICT teaches that fading expansion is low-probability; counter-trend setups belong to the contraction phase or to specific HTF reversal setups (CHoCH/MSS).
+- **Citing a numeric ATR multiple, close-direction percentage, or "ends when displacement subsides" rule as ICT's.** No such figures appear in either corpus; expansion is taught qualitatively.
+- **Treating "contraction" as expansion's stated complementary phase.** ICT's complementary set is the four conditions (expansion / retracement / reversal / consolidation, `ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` [02:36]). "Contraction" is a separate, narrower idea he teaches as a volatility filter — "a contraction idea where price moves from a large range down to a small range," measured on candle bodies, not wicks (`ICT-2017-EXPLOSIVE-MARKETS` [21:27]–[22:04]). Do not collapse the two.
+- **Requiring an "external BOS of the dealing range" as the expansion trigger.** Not stated anywhere in either corpus; ICT's trigger is leaving equilibrium/consolidation, with the order block as the companion tool.
+- **Chasing the expansion move itself.** ICT explicitly teaches waiting for the retracement into the order block instead ([11:03]–[11:05]).
 
 ## Related Concepts
 
-- [range-contraction](range-contraction.md) — the prior phase.
-- [bos-bullish](bos-bullish.md) / [bos-bearish](bos-bearish.md) — usually triggers the expansion.
-- [displacement-definition](../09-displacement/displacement-definition.md) — what an expansion candle looks like.
-- [external-structure](external-structure.md) — what is being broken.
+- [bos-bullish](bos-bullish.md) / [bos-bearish](bos-bearish.md) — a structure break often accompanies the start of expansion, though ICT does not state it as the formal trigger.
+- [displacement-definition](../09-displacement/displacement-definition.md) — the candle-level signature often seen during expansion.
+- [equilibrium-definition](../27-equilibrium/equilibrium-definition.md) — the level expansion moves away from.
 
 ## Citations
 
-- `ICT-2022-MENTORSHIP-OVERVIEW` — expansion / contraction framing for live trading.
+- `ICT-2016-ELEMENTS-OF-A-TRADE-SETUP` [01:50]–[02:36], [10:20]–[10:42], [11:03]–[11:08], [12:02]–[12:09] — the four conditions; expansion defined; order block as companion tool (Sep 2016).
+- `ICT-2017-DAYTRADE-ESSENTIALS` [30:11]–[30:17] — "range expansion on a weekly chart is a gold mine."
+- `ICT-2016-MARKET-EFFICIENCY-PARADIGM` [15:24]–[15:28] — "range expansion" named after the Judas swing (Sep 2016).
+- `ICT-2017-EXPLOSIVE-MARKETS` [21:24]–[22:08] — contraction as a separate, body-measured volatility filter.

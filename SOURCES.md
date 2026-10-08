@@ -216,6 +216,49 @@ unknown. Anything else is an inference dressed as provenance.
 - `ICT-2022-SILVER-BULLET` — three windows formalized: 03–04 NY (London SB), 10–11 NY (NY AM SB), 14–15 NY (NY PM SB).
 - `ICT-2022-MACROS` — macro time windows introduced.
 
+**2022 ICT Mentorship, episode-level (added 2026-10-08).** Public YouTube series, official channel, recorded 2022. Evidence = YouTube auto-captions saved verbatim at `meta/audit-2026-10-08/m22-captions/epNN.<id>.txt` (`[mm:ss]` = paragraph start; auto-caption spelling errors are common — quote the caption text, correct only in brackets). ep01 is the introduction video.
+- `ICT-2022-MENTORSHIP-EP01` — "2022 ICT Mentorship Episode 1" (Introduction), official channel `kt6V4ai60fI`, 2022.
+- `ICT-2022-MENTORSHIP-EP02` — "2022 ICT Mentorship Episode 2", official channel `tmeCWULSTHc`, 2022.
+- `ICT-2022-MENTORSHIP-EP03` — "2022 ICT Mentorship Episode 3", official channel `nQfHZ2DEJ8c`, 2022.
+- `ICT-2022-MENTORSHIP-EP04` — "2022 ICT Mentorship Episode 4", official channel `L-ReMHiavPM`, 2022.
+- `ICT-2022-MENTORSHIP-EP05` — "2022 ICT Mentorship Episode 5", official channel `N29ZJ-o31xs`, 2022.
+- `ICT-2022-MENTORSHIP-EP06` — "2022 ICT Mentorship Episode 6", official channel `Bkt8B3kLATQ`, 2022.
+- `ICT-2022-MENTORSHIP-EP07` — "2022 ICT Mentorship Episode 7", official channel `G8-z91acgG4`, 2022.
+- `ICT-2022-MENTORSHIP-EP08` — "2022 ICT Mentorship Episode 8", official channel `7rbV8aWkcqY`, 2022.
+- `ICT-2022-MENTORSHIP-EP09` — "2022 ICT Mentorship Episode 9", official channel `iZLXnNiZm_s`, 2022.
+- `ICT-2022-MENTORSHIP-EP10` — "2022 ICT Mentorship Episode 10", official channel `S9ORTYmXwdE`, 2022.
+- `ICT-2022-MENTORSHIP-EP11` — "2022 ICT Mentorship Episode 11", official channel `Sqw2bww93Zo`, 2022.
+- `ICT-2022-MENTORSHIP-EP12` — "2022 ICT Mentorship Episode 12", official channel `8GkQfdAXZP0`, 2022.
+- `ICT-2022-MENTORSHIP-EP13` — "2022 ICT Mentorship Episode 13", official channel `tpPtItWqmlg`, 2022.
+- `ICT-2022-MENTORSHIP-EP14` — "2022 ICT Mentorship Episode 14", official channel `NUdu1n-ML98`, 2022.
+- `ICT-2022-MENTORSHIP-EP15` — "2022 ICT Mentorship Episode 15", official channel `tGxuitjtO88`, 2022.
+- `ICT-2022-MENTORSHIP-EP16` — "2022 ICT Mentorship Episode 16", official channel `EpGQnhjXBq8`, 2022.
+- `ICT-2022-MENTORSHIP-EP17` — "2022 ICT Mentorship Episode 17", official channel `5WIqHJDQ_p4`, 2022.
+- `ICT-2022-MENTORSHIP-EP18` — "2022 ICT Mentorship Episode 18", official channel `eai0nHhAC8w`, 2022.
+- `ICT-2022-MENTORSHIP-EP19` — "2022 ICT Mentorship Episode 19", official channel `IEa1N0rTtbc`, 2022.
+- `ICT-2022-MENTORSHIP-EP20` — "2022 ICT Mentorship Episode 20", official channel `Q6GFu8-Z4rY`, 2022.
+- `ICT-2022-MENTORSHIP-EP21` — "2022 ICT Mentorship Episode 21", official channel `kmVXVJE08eQ`, 2022.
+- `ICT-2022-MENTORSHIP-EP22` — "2022 ICT Mentorship Episode 22", official channel `QKc_i90chVg`, 2022.
+- `ICT-2022-MENTORSHIP-EP23` — "2022 ICT Mentorship Episode 23", official channel `TV9TfwHXuqs`, 2022.
+- `ICT-2022-MENTORSHIP-EP24` — "2022 ICT Mentorship Episode 24", official channel `nv0ey5UyOmY`, 2022.
+- `ICT-2022-MENTORSHIP-EP25` — "2022 ICT Mentorship Episode 25", official channel `CnTXwAuDi9Y`, 2022.
+- `ICT-2022-MENTORSHIP-EP26` — "2022 ICT Mentorship Episode 26", official channel `k26euOG6zAk`, 2022.
+- `ICT-2022-MENTORSHIP-EP27` — "2022 ICT Mentorship Episode 27", official channel `gLK4Qm6jte8`, 2022.
+- `ICT-2022-MENTORSHIP-EP28` — "2022 ICT Mentorship Episode 28", official channel `j0Z2EbuJXGU`, 2022.
+- `ICT-2022-MENTORSHIP-EP29` — "2022 ICT Mentorship Episode 29", official channel `QkokVv0owSE`, 2022.
+- `ICT-2022-MENTORSHIP-EP30` — "2022 ICT Mentorship Episode 30", official channel `CL94EnGqB4Q`, 2022.
+- `ICT-2022-MENTORSHIP-EP31` — "2022 ICT Mentorship Episode 31", official channel `OYNpIeu9czw`, 2022.
+- `ICT-2022-MENTORSHIP-EP32` — "2022 ICT Mentorship Episode 32", official channel `hzoMJQlEv5M`, 2022.
+- `ICT-2022-MENTORSHIP-EP33` — "2022 ICT Mentorship Episode 33", official channel `8z6My18WZqA`, 2022.
+- `ICT-2022-MENTORSHIP-EP34` — "2022 ICT Mentorship Episode 34", official channel `t8flQP5jy-Q`, 2022.
+- `ICT-2022-MENTORSHIP-EP35` — "2022 ICT Mentorship Episode 35", official channel `MdYrslpUezU`, 2022.
+- `ICT-2022-MENTORSHIP-EP36` — "2022 ICT Mentorship Episode 36", official channel `pWnMpdN_g98`, 2022.
+- `ICT-2022-MENTORSHIP-EP37` — "2022 ICT Mentorship Episode 37", official channel `HuZurY0ghDI`, 2022.
+- `ICT-2022-MENTORSHIP-EP38` — "2022 ICT Mentorship Episode 38", official channel `36184dDAqtM`, 2022.
+- `ICT-2022-MENTORSHIP-EP39` — "2022 ICT Mentorship Episode 39", official channel `yFpHbBnsK_c`, 2022.
+- `ICT-2022-MENTORSHIP-EP40` — "2022 ICT Mentorship Episode 40", official channel `koN1ge8bewI`, 2022.
+- `ICT-2022-MENTORSHIP-EP41` — "2022 ICT Mentorship Episode 41", official channel `2XhDi5GoNUI`, 2022.
+
 ## ICT 2023 Public Lectures
 
 - `ICT-2023-QUARTERLY-THEORY` — Quarterly Theory taught publicly (yearly / monthly / weekly / daily / 90-min quarters).

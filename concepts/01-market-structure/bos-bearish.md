@@ -1,31 +1,38 @@
-# Bearish Break of Structure (BOS)
+# Bearish Structure Break
 
 **Category:** 01-market-structure
-**Aliases:** bearish BOS, bearish structure break, continuation low break
+**Aliases:** bearish break in market structure, bearish market structure break, Break of Structure / BOS (SMC term — "BOS" and "break of structure" are 0 hits in corpus; ICT says "break in market structure")
 **ICT Confidence:** high
-**Year Introduced:** 2017
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2022-MENTORSHIP-OVERVIEW
-**Tags:** structure, bos, bearish, continuation, foundational
+**Source IDs:** ICT-2017-OPEN-FLOAT-L12, ICT-2022-MENTORSHIP-EP12, ICT-2016-USDX-SMT, ICT-2017-OTE
+**Tags:** structure, break, bearish, foundational
 
 ## Definition
 
-A bearish BOS is a candle close below the most recent confirmed swing low while the prevailing trend is already bearish. It **confirms continuation** of an existing downtrend, not a reversal. Mirror of [bos-bullish](bos-bullish.md).
+Mirror of [bos-bullish](bos-bullish.md). ICT's term is "break in market structure" / "market structure break," not "BOS" or "Break of Structure" (both 0 hits in 153 2016-17/2020 packets and 41 2022 episodes). A bearish structure break is a candle trading through (2016-17) or closing beyond (2022, preferred) the relevant swing low. ICT uses the identical phrase for both continuation and reversal contexts.
 
 ## Formal Criteria
 
-- The reference swing low `SL_ref` must be a confirmed swing low.
-- A bearish BOS occurs when a later candle has `close < L(SL_ref)`.
-- The prior trend must already be bearish; if it was bullish, the same close-below is a [choch-bearish](choch-bearish.md).
-- Internal vs external distinction applies (same as bullish BOS).
+- The reference swing low must be a confirmed swing low.
+- 2016-17: called on the trade-through — "When price traded below that low, that was a break in market structure. ... So we had a market shift below that low." (`ICT-2017-OPEN-FLOAT-L12` [07:38]–[07:45]).
+- 2022: energetic move preferred, close stated as a preference, not a hard rule (see [mss](mss.md)).
+- **No continuation-only restriction.** ICT's significance distinction is scope, not direction: "if we have a break below and any return low then we have what — a significant break in Market structure — this is something that's more significant just simply than going into a chart saying okay well it took out a short-term low" (`ICT-2022-MENTORSHIP-EP12` [31:09]).
+- A break below a short-term low is read as a liquidity event (stop run) that can precede a reversal higher, not automatically "continuation": "when the market trades back below that short-term low it's going to gather up sell stops to pair new buying with and it'll most likely trade higher and make a new higher high" (`ICT-2016-USDX-SMT` [04:59]–[05:05]).
+- Breaking a higher-order (older) swing low is the MORE significant break, mirroring the bullish case (`ICT-2017-OTE` [34:35]–[35:30]).
 
 ## Formula / Math
 
 ```
-SL_ref = price of most recent confirmed swing low
-trend_prior = direction of last structural break on this TF
+SL_ref = price of the relevant confirmed swing low
 
-bearish_BOS := close < SL_ref AND trend_prior == "bearish"
+bearish_structure_break(n) := price_trades_through_or_closes_beyond(SL_ref, n)
+
+# NOT part of ICT's own rule:
+#   a continuation-vs-reversal restriction on the term itself
+#   an "internal vs external BOS" sub-taxonomy (ICT's internal/external
+#     vocabulary applies to liquidity, not to structure breaks — see
+#     bos-bullish Common Mistakes)
 ```
 
 ## Machine-Readable
@@ -34,17 +41,18 @@ bearish_BOS := close < SL_ref AND trend_prior == "bearish"
 {
   "id": "bos-bearish",
   "category": "01-market-structure",
-  "aliases": ["bearish-bos", "bearish-structure-break"],
+  "aliases": ["bearish-break-in-market-structure", "bearish-market-structure-break"],
   "criteria": [
-    {"id": "c1", "expr": "close < L(SL_ref)"},
-    {"id": "c2", "expr": "trend_prior == bearish"}
+    {"id": "c1", "expr": "price_trades_through_or_closes_beyond(SL_ref)"},
+    {"id": "c2", "expr": "continuation_only_restriction == false"},
+    {"id": "c3", "expr": "break_can_precede_reversal == true"}
   ],
   "timeframes": ["M1","M5","M15","H1","H4","D","W"],
   "confidence": "high",
-  "year_introduced": "2017",
+  "year_introduced": "2016",
   "year_refined": "2022",
-  "related": ["bos-bullish","choch-bearish","mss","swing-low","internal-structure","external-structure"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "related": ["bos-bullish","mss","swing-low","displacement-definition"],
+  "sources": ["ICT-2017-OPEN-FLOAT-L12","ICT-2022-MENTORSHIP-EP12","ICT-2016-USDX-SMT","ICT-2017-OTE"]
 }
 ```
 
@@ -58,38 +66,47 @@ bearish_BOS := close < SL_ref AND trend_prior == "bearish"
    SL_ref ──┴──────── ← prior swing low
                    \
                     \
-                     close<SL ✔ (BOS)
+                     trade-through / close ✔
 ```
 
-Trend was already down; rally pulled back up; next leg breaks the prior low → BOS.
+Same shape whether read as continuation or as a stop run that precedes a reversal — ICT names the event "break in market structure" either way.
 
 ## Timeframes
 
-Every TF M1 → W. HTF BOS dominates LTF counter-signals.
+Every TF M1 → W. HTF breaks carry more structural weight.
 
 ## Examples
 
-**Example 1 — Daily continuation:**
-- Daily trend bearish (last structural shift was a CHoCH down).
-- Most recent confirmed daily swing low at 1.0750.
-- After a pullback to 1.0820, a daily candle closes at 1.0735.
-- → bearish BOS. Continuation confirmed; next draw is sell-side liquidity below.
+**Example 1 — the break event itself (2016-17 style):**
+- Price trades below the relevant confirmed swing low.
+- → "break in market structure" / "market shift below that low" (`ICT-2017-OPEN-FLOAT-L12` [07:38]–[07:45]), regardless of whether the prior leg was up or down.
+
+**Example 2 — break read as a stop run, not automatic continuation:**
+- Price trades below a short-term low, gathering sell stops.
+- ICT: this "most likely" sets up new buying and a higher high (`ICT-2016-USDX-SMT` [04:59]–[05:05]) — the opposite of a continuation-only reading.
 
 ## Common Mistakes
 
-- **Wick-only break.** Spike below SL with a close back above is a sweep, not a BOS.
-- **Reversal vs continuation naming.** If the prior trend was bullish, this is a CHoCH bearish.
-- **Stale swing low.** Always use the most recent confirmed swing low.
+- **Treating "BOS" as ICT's acronym, reserved for continuation, with reversals relabeled "CHoCH."** Neither "BOS"/"break of structure" nor "CHoCH" appears in either corpus; ICT uses one phrase for both.
+- **Requiring a close, not a trade-through.** See [bos-bullish](bos-bullish.md) Common Mistakes — the same era-split applies here.
+- **Assuming a break below a swing low is automatically bearish continuation.** ICT reads it as a liquidity/stop-run event that often precedes a higher high (`ICT-2016-USDX-SMT` [04:59]–[05:05]).
+- **Inventing "internal vs external BOS."** ICT's internal/external vocabulary names liquidity, not structure breaks.
+- **Stale swing low.** The most recent swing low is the default reference; a break of an older, higher-order low is a more significant event, not a disqualified one.
+
+## ICT vs Community
+
+Same note as [bos-bullish](bos-bullish.md): "BOS" and the continuation/CHoCH split are SMC vocabulary, kept here only as a labeled cross-reference, not attributed to ICT.
 
 ## Related Concepts
 
 - [bos-bullish](bos-bullish.md) — mirror.
-- [choch-bearish](choch-bearish.md) — same close-below pattern when prior trend was bullish.
-- [mss](mss.md) — displacement-driven structure shift.
+- [mss](mss.md) — ICT's interchangeable "shift"/"break" terminology.
 - [swing-low](swing-low.md) — the reference.
-- [external-structure](external-structure.md) — when a BOS bounds the range.
+- [displacement-definition](../09-displacement/displacement-definition.md) — the 2022 energetic/close-preference filter.
 
 ## Citations
 
-- `ICT-2017-CHARTER-OVERVIEW` — BOS terminology.
-- `ICT-2022-MENTORSHIP-OVERVIEW` — internal vs external operationalized.
+- `ICT-2017-OPEN-FLOAT-L12` [07:38]–[07:45] — "break in market structure" on trade-through below a swing low (Jan 2017).
+- `ICT-2022-MENTORSHIP-EP12` [31:09] — significance distinction is scope, not continuation/reversal.
+- `ICT-2016-USDX-SMT` [04:59]–[05:05] — a break below a short-term low read as a stop run preceding a higher high (Nov 2016).
+- `ICT-2017-OTE` [34:35]–[35:30] — breaking the higher-order swing is the more significant/reliable break.

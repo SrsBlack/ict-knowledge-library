@@ -1,47 +1,38 @@
 # Displacement Strength Criteria
 
 **Category:** 09-displacement
-**Aliases:** displacement quality, displacement scoring, strong vs weak displacement
+**Aliases:** displacement quality, energetic vs. anemic/lethargic displacement
 **ICT Confidence:** high
-**Year Introduced:** 2017
-**Year Refined:** 2024
-**Source IDs:** ICT-2017-DISPLACEMENT, ICT-2022-MENTORSHIP-OVERVIEW
-**Tags:** displacement, scoring, quality
+**Year Introduced:** 2022
+**Year Refined:** 2022
+**Source IDs:** ICT-2022-MENTORSHIP-EP05, ICT-2022-MENTORSHIP-EP06, ICT-2022-MENTORSHIP-EP24, ICT-2022-MENTORSHIP-EP40
+**Tags:** displacement, quality
 
 ## Definition
 
-Displacement Strength Criteria are the **quality scoring** for displacement candles. Not all displacement is equal: a candle with body 90% of range and zero opposing wick is much stronger than one at 70% with a 15% wick. ICT teaches displacement scoring qualitatively as "weak / moderate / strong" — this file formalizes the criteria so setups can be calibrated by displacement quality.
+ICT grades displacement **qualitatively and binary** — energetic/animated versus weak/anemic/lethargic — not with a numeric score. He does not teach a "weak / moderate / strong" three-tier framework or any multi-factor scoring: searched both corpora (153 2016-17/2020 packets, 41 2022 episodes) for `weak displacement`, `moderate displacement`, `strong displacement`, `displacement is (weak|strong)`: 0 hits in either. His own contrast pairs are: "energetic" vs. "a little lethargic little move" (`ICT-2022-MENTORSHIP-EP06` [19:05]); "energetic break" vs. "a very weak anemic move" (`ICT-2022-MENTORSHIP-EP05` [20:40]); "toe in the water" vs. "meaningful displacement" (`ICT-2022-MENTORSHIP-EP40` [08:56]); "melted ... no displacement, no energetic move" (`ICT-2022-MENTORSHIP-EP24` [23:30]). (A prior version of this page presented an unsourced 5-factor numeric scoring system; this version replaces it with ICT's own binary test, cited below.)
 
 ## Formal Criteria
 
-The 5-factor displacement scoring:
+ICT's actual test is pass/fail on each of the following qualitative reads, not a weighted score:
 
-| Factor | Weak | Moderate | Strong |
-|---|---|---|---|
-| Body / range | 0.50–0.70 | 0.70–0.85 | 0.85+ |
-| Opposing wick % | 20–30% | 10–20% | <10% |
-| Body vs avg | 1.0–1.5× | 1.5–2× | 2×+ |
-| FVG formed | small or absent | clear FVG | wide FVG inside |
-| Follow-through | none | 1–2 candles continue | 3+ candles continue |
+- Does the move look energetic/animated, or lethargic/weak/anemic? (EP05 [20:40], EP06 [19:05])
+- Did it "fall in" with conviction, or was it only a "toe in the water"? (EP40 [08:56])
+- Did price actually move/close through the level, or did it "melt" without displacing? (EP24 [23:30])
 
-Score = sum of factor levels (1-3 each) → range 5-15.
-
-- 5–8: weak (low conviction).
-- 9–11: moderate (standard).
-- 12–15: strong (highest conviction).
+ICT states no numeric sub-criteria (body/range ratio, opposing-wick percentage, body-vs-average multiple, or a "follow-through candle count") for any of these reads.
 
 ## Formula / Math
 
 ```
-displacement_score(candle) = sum([
-    body_range_score(0.50, 0.70, 0.85),
-    opposing_wick_score(0.30, 0.20, 0.10),
-    body_vs_avg_score(1.0, 1.5, 2.0),
-    fvg_score(absent_or_small, clear, wide),
-    followthrough_score(none, 1-2_candles, 3+_candles),
-])
-
-# returns 5-15
+# ICT gives no number for this.
+# No 5-factor score, no 0.50/0.70/0.85 body-ratio bands, no 1.0/1.5/2.0x
+# body-vs-average bands, no 5-15 point scale, and no "follow-through:
+# 3+ candles" criterion appear in either corpus (searched `follow.?through`:
+# 4 raw hits, all about session/contract follow-through, unrelated to
+# displacement; 0 hits in the 2022 episodes).
+#
+# ICT's test is binary: energetic/animated vs. lethargic/anemic/weak.
 ```
 
 ## Machine-Readable
@@ -50,61 +41,63 @@ displacement_score(candle) = sum([
 {
   "id": "displacement-strength-criteria",
   "category": "09-displacement",
-  "aliases": ["displacement-quality", "displacement-scoring"],
+  "aliases": ["displacement-quality"],
   "criteria": [
-    {"id": "c1", "expr": "5-factor scoring: body/range, opposing wick, body vs avg, FVG, follow-through"},
-    {"id": "c2", "expr": "weak 5-8, moderate 9-11, strong 12-15"}
+    {"id": "c1", "expr": "binary: energetic/animated vs. lethargic/anemic/weak"},
+    {"id": "c2", "expr": "five_factor_numeric_score: not given by ICT (0 hits, both corpora)"}
   ],
-  "timeframes": ["M5","M15","H1","H4","D"],
+  "timeframes": ["M1","M5","M15","H1","H4","D"],
   "confidence": "high",
-  "year_introduced": "2017",
-  "year_refined": "2024",
-  "related": ["displacement-definition","bullish-displacement","bearish-displacement","displacement-and-fvg","fair-value-gap"],
-  "sources": ["ICT-2017-DISPLACEMENT","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "year_introduced": "2022",
+  "year_refined": "2022",
+  "related": ["displacement-definition","bullish-displacement","bearish-displacement","displacement-and-fvg"],
+  "sources": ["ICT-2022-MENTORSHIP-EP05","ICT-2022-MENTORSHIP-EP06","ICT-2022-MENTORSHIP-EP24","ICT-2022-MENTORSHIP-EP40"]
 }
 ```
 
 ## Visual Pattern
 
 ```
-   Weak displacement:                Strong displacement:
-   
-        ▲                                ▲   ← tiny wick
-       ▲▲                               ▲▲
-       █▲▲   ← upper wick 25%           ██
-       ██   ← body 60% of range         ██   ← body 90% of range
-       ██                               ██
-       █                                ██
-        ▲   ← lower wick                 ▲
-                                         (no opposing wick)
-   small/no FVG                       clear wide FVG
-   no follow-through                  3+ continuation candles
+   "toe in the water" (not enough):          "fell in" / energetic (meaningful):
+
+        ╱╲   small, hesitant dip                  ▲
+       ╱  ╲                                       ██
+      ╱    ╲                                      ██   wide, fast, commits
+                                                   ██   through the level
 ```
+
+ICT's own imagery — "toe in the water" vs. a candle that "falls in" — is the closest thing to a visual test; there is no bar-geometry formula behind it.
 
 ## Timeframes
 
-M5–D.
+M1–D, matching the timeframes displacement itself is taught on.
 
 ## Examples
 
-**Example 1 — strong displacement scoring:**
-- Body 28/32 = 87% (strong → 3).
-- Upper wick 2/32 = 6% (strong → 3).
-- Body 28 vs avg 8 = 3.5× (strong → 3).
-- Clear FVG formed (clear → 2 — wide would be 3).
-- 4 follow-up candles continued (strong → 3).
-- Score = 3+3+3+2+3 = 14 → strong displacement.
+**Example 1 — ICT's own pass/fail reasoning, not a score:**
+- Sell-side stops are run below a low: "they go down, run out the sell stops, traders are caught in; then what — what's the next logic? we got to look for displacement, it's got to trade back above this old low, it's got to have displacement above that; did it happen here? no" (`ICT-2022-MENTORSHIP-EP24` [22:52]).
+- Price returns to the old low but "melted, didn't do anything above that oh[ld] low — there was no displacement, no energetic move" (EP24 [23:30]).
+- → fails ICT's qualitative test (no displacement above the old low), so there is no long idea. There is no partial-credit scoring step.
 
 ## Common Mistakes
 
-- **Single-factor scoring.** Body/range alone doesn't capture displacement quality; use all 5 factors.
-- **Treating wide-but-wicked candles as strong.** A 90%-body candle with 20% upper wick is moderate, not strong.
-- **Ignoring follow-through.** A "strong" displacement that immediately reverses isn't really strong — follow-through is part of the signature.
+- **Attributing a 5-factor table, numeric bands (0.50/0.70/0.85, 1.0/1.5/2.0×), or a 5–15 point score to ICT.** None of this is in either corpus; it is a prior library invention that was mislabeled as ICT's.
+- **Citing "Year Refined 2024."** Neither corpus reaches 2024; this library has no source for that date, and it has been removed.
+- **Treating "follow-through candle count" as an ICT displacement criterion.** The only `follow-through` hits in either corpus are about session/contract follow-through, unrelated to displacement quality.
+- **Single-factor numeric scoring of any kind.** Use ICT's own binary, verbal judgment instead (energetic/animated vs. lethargic/anemic/weak).
+
+## ICT vs Community
+
+A prior version of this page attributed an invented 5-factor numeric score to ICT; searched both corpora for `weak displacement`, `moderate displacement`, `strong displacement`, `displacement is (weak|strong)`, and `follow.?through` near displacement context: 0 supporting hits in either. ICT's own test is a binary, qualitative read — energetic/animated vs. lethargic/anemic/weak/"toe in the water" — documented under Formal Criteria above.
 
 ## Related Concepts
 
-- [displacement-definition](displacement-definition.md), [bullish-displacement](bullish-displacement.md), [bearish-displacement](bearish-displacement.md), [displacement-and-fvg](displacement-and-fvg.md), [fair-value-gap](../06-fair-value-gaps/fair-value-gap.md).
+- [displacement-definition](displacement-definition.md) — the qualitative test this page restates in detail.
+- [bullish-displacement](bullish-displacement.md), [bearish-displacement](bearish-displacement.md), [displacement-and-fvg](displacement-and-fvg.md).
 
 ## Citations
 
-- `ICT-2017-DISPLACEMENT`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2022-MENTORSHIP-EP05` [20:40] — "energetic break" vs. "very weak anemic move."
+- `ICT-2022-MENTORSHIP-EP06` [19:05] — "energetic" vs. "a little lethargic little move."
+- `ICT-2022-MENTORSHIP-EP24` [22:52]–[23:30] — sell-stop run below a low; "melted ... no displacement, no energetic move" above the old low.
+- `ICT-2022-MENTORSHIP-EP40` [08:56] — "toe in the water" vs. meaningful displacement.

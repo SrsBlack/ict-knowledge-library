@@ -1,33 +1,36 @@
 # Dealing Range
 
 **Category:** 05-pd-arrays
-**Aliases:** trading range, range, swing range, reference range
-**ICT Confidence:** high
-**Year Introduced:** 2016
+**Aliases:** trading range (2016 name for the same reference band), short-term dealing range
+**ICT Confidence:** medium
+**Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2016-PD-ARRAYS, ICT-2022-MENTORSHIP-OVERVIEW
-**Tags:** range, dealing-range, foundational
+**Source IDs:** ICT-2017-OTE-USDCAD-REVIEW, ICT-2020-OTE-VOL09, ICT-2022-MENTORSHIP-EP11, ICT-2022-MENTORSHIP-EP19, ICT-2022-MENTORSHIP-EP32, ICT-2022-MENTORSHIP-EP33, ICT-2022-MENTORSHIP-EP34, ICT-2022-MENTORSHIP-EP35, ICT-2022-MENTORSHIP-EP38, ICT-2016-FAIR-VALUATION, ICT-2017-HTF-PD-ARRAYS, ICT-2016-EQUILIBRIUM-DISCOUNT
+**Tags:** range, dealing-range, pd-array
 
 ## Definition
 
-A dealing range is the price band bounded by the most recent confirmed long-term high (LTH) and long-term low (LTL) on the analysis timeframe — the **reference frame** for premium/discount classification, equilibrium, OTE, and PD-array depth measurements. ICT's analysis nearly always begins by identifying the current dealing range; without this frame, premium/discount cannot be defined and PD arrays have no reference.
+A dealing range is the price band ICT measures a swing leg across to derive premium/discount and equilibrium. The term "dealing range" itself is **not** 2016-17 Core Content vocabulary — it has 0 hits across all 110 `MONTH-*` Core Content packets. Its earliest located corpus hit is `ICT-2017-OTE-USDCAD-REVIEW` [08:46] ("It's being held in a rather tight dealing range," Nov 2017) — but that is the loose, "held in consolidation" sense of the phrase, not yet the measured premium/discount band this page defines. The measurement sense — a range you derive equilibrium and premium/discount from — first appears at `ICT-2020-OTE-VOL09` [03:14] ("standard deviation of the dealing range used for the fib"), and is used extensively and operationally in the 2022 Mentorship. In 2016-17, the equivalent measured object is called the "most recent trading range" / "impulse price swing" / "price move": "The total range you're trading in, the equilibrium price point relative to the most recent trading range, high and low." (`ICT-2016-FAIR-VALUATION` [22:34], Sep 2016); "the most recent trading range that the market has moved from an old high to an old low" (`ICT-2017-HTF-PD-ARRAYS` [17:46], Jan 2017); "Equilibrium is a midway point of a price move." (`ICT-2016-EQUILIBRIUM-DISCOUNT` [10:26], cited via [equilibrium-definition](../27-equilibrium/equilibrium-definition.md)).
 
 ## Formal Criteria
 
-- The two most recent **unbroken** LTH and LTL on the reference TF define the bounds.
-- An external BOS (close beyond either bound) ends the current range and starts a new one (the broken bound usually becomes the entry point of the next range).
-- Inside the range: every price is either premium (above EQ), discount (below EQ), or at EQ.
-- A dealing range exists at every TF; pick the TF that matches your trade horizon.
+- ICT anchors the dealing range on the **most recent energetic 3-candle swing low → swing high** (or high → low), not on a depth-3 LTH/LTL pair: "so i'm just going to move over to the most recent swing low ... that swing low, that one here to here, that's my daily dealing range" (`ICT-2022-MENTORSHIP-EP19` [77:10]); "that's your dealing range, okay, i'm using that because it's the most energetic most recent low and high" (EP19 [93:22]).
+- The leg chosen is the current, impulsive/expansion leg in the trade direction, not an arbitrary high-to-low span: "you're looking at expansion swings, okay, or impulsive price swings in the direction you're trying to trade — you don't want to use a price leg ... measuring something that you're trying to go long" against (`ICT-2022-MENTORSHIP-EP34` [17:03]).
+- Re-anchored on the most recent market-structure swing when it shifts: "i'm going to use this one here for market structure — so market structure swing low here to swing high — that's my dealing range" (`ICT-2022-MENTORSHIP-EP38` [21:23]).
+- Plain statement: "what's a dealing range? well, dealing range would be like from this high down to that low" (`ICT-2022-MENTORSHIP-EP32` [05:28]).
+- EQ = midpoint of the dealing range (confirmed): "here's 50, that's equilibrium inside this dealing range high and low" (`ICT-2022-MENTORSHIP-EP11` [01:27]); "this dealing range here, i measured the low to the high, 50 is equilibrium" (`ICT-2022-MENTORSHIP-EP35` [04:23]).
+- No LTH/LTL (depth-3) bounding rule, and no "external BOS ends the range" rule, appear in either corpus — ICT's range-reset is simply re-measuring from the most recent relevant swing (EP19 [93:22], EP38 [21:23]), not a stated "external BOS" trigger. (ICT's internal/external vocabulary names liquidity, not a range-ending BOS condition — see [bos-bullish](../01-market-structure/bos-bullish.md) Common Mistakes.)
 
 ## Formula / Math
 
 ```
-LTH_ext = highest unbroken LTH on TF
-LTL_ext = lowest  unbroken LTL on TF
+# ICT's bounds: the most recent energetic 3-candle swing (low -> high or
+# high -> low) in the trade direction — re-measured when structure shifts.
+dealing_range = [swing_low, swing_high]   # most recent, most energetic
+EQ            = (swing_low + swing_high) / 2
 
-dealing_range = [LTL_ext, LTH_ext]
-range_size    = LTH_ext - LTL_ext
-EQ            = (LTH_ext + LTL_ext) / 2
+# ICT gives no LTH/LTL (depth-3) bounding rule and no numeric "external
+# BOS ends the range" trigger for this. Both are absent from both corpora.
 ```
 
 ## Machine-Readable
@@ -36,59 +39,67 @@ EQ            = (LTH_ext + LTL_ext) / 2
 {
   "id": "dealing-range",
   "category": "05-pd-arrays",
-  "aliases": ["trading-range", "swing-range", "reference-range"],
+  "aliases": ["trading-range", "short-term-dealing-range"],
   "criteria": [
-    {"id": "c1", "expr": "bounds == [most_recent_unbroken_LTL, most_recent_unbroken_LTH]"},
-    {"id": "c2", "expr": "current_price strictly_between bounds"}
+    {"id": "c1", "expr": "bounds == most_recent_energetic_3candle_swing(low, high)"},
+    {"id": "c2", "expr": "re-anchored on the most recent relevant market-structure swing"},
+    {"id": "c3", "expr": "LTH/LTL depth-3 bounding: not stated by ICT"}
   ],
-  "timeframes": ["M15","H1","H4","D","W","MN"],
-  "confidence": "high",
-  "year_introduced": "2016",
+  "timeframes": ["M5","M15","H1","H4","D","W","MN"],
+  "confidence": "medium",
+  "year_introduced": "2017",
   "year_refined": "2022",
-  "related": ["pd-array-definition","premium-array","discount-array","equilibrium-definition","external-structure","internal-structure","internal-range-liquidity","external-range-liquidity"],
-  "sources": ["ICT-2016-PD-ARRAYS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "related": ["pd-array-definition","premium-array","discount-array","equilibrium-definition","swing-high","swing-low"],
+  "sources": ["ICT-2017-OTE-USDCAD-REVIEW","ICT-2020-OTE-VOL09","ICT-2022-MENTORSHIP-EP11","ICT-2022-MENTORSHIP-EP19","ICT-2022-MENTORSHIP-EP32","ICT-2022-MENTORSHIP-EP33","ICT-2022-MENTORSHIP-EP34","ICT-2022-MENTORSHIP-EP35","ICT-2022-MENTORSHIP-EP38","ICT-2016-FAIR-VALUATION","ICT-2017-HTF-PD-ARRAYS","ICT-2016-EQUILIBRIUM-DISCOUNT"]
 }
 ```
 
 ## Visual Pattern
 
 ```
-   LTH_ext ──────────────────  ← upper bound (premium ceiling)
+   swing_high ──────────────────  ← upper bound (most recent energetic swing)
             (premium half)
    ──────────────────────────  ← EQ (50% midpoint)
             (discount half)
-   LTL_ext ──────────────────  ← lower bound (discount floor)
+   swing_low  ──────────────────  ← lower bound
 ```
 
 ## Timeframes
 
-H1+ produces meaningful dealing ranges. M5/M15 ranges are too noisy and shift constantly. ICT analysis routinely names the dealing-range TF explicitly ("the daily dealing range is …").
+ICT does not restrict the term to H1+. He names a short-term dealing range explicitly on a lower-TF scrub: "if you're looking at it from the relationship of short-term dealing range — this swing High, That Swing Low — we have our fair value Gap here" (`ICT-2022-MENTORSHIP-EP33` [13:56]), and works one on a 5-minute chart (`ICT-2022-MENTORSHIP-EP35` [03:08]).
 
 ## Examples
 
-**Example 1 — daily dealing range:**
-- Daily LTH 1.1000 (formed last week), LTL 1.0800 (formed two weeks ago).
-- Daily dealing range = [1.0800, 1.1000], EQ = 1.0900.
-- Until either bound is broken on a daily close, this is the reference for daily premium/discount.
+**Example 1 — 2022 worked example, swing-to-swing anchoring:**
+- "i want to use this most recent one and this is my dealing range, the short-term low, the short-term high" (`ICT-2022-MENTORSHIP-EP35` [03:08]).
+- EQ is then the midpoint of that leg, not of a wider LTH/LTL span (EP35 [04:23]).
 
-**Example 2 — fractal contradiction resolved:**
-- H4 dealing range: 1.0850–1.0925 (smaller, recent).
-- D dealing range: 1.0800–1.1000 (larger, older).
-- Current price 1.0890 = premium on H4 (above 1.0888 H4 EQ), but below D EQ (1.0900) = D discount.
-- Resolution: state the reference TF when discussing premium/discount.
+**Example 2 — short-term dealing range on a lower TF:**
+- A swing high to swing low on a scrubbed-down chart is itself called a (short-term) dealing range, with its own FVG inside it (`ICT-2022-MENTORSHIP-EP33` [13:56]).
 
 ## Common Mistakes
 
-- **Stale range.** An external BOS ends the current range. Failing to redefine the range produces wrong premium/discount labels.
-- **Mixing TF references.** Premium/discount only makes sense relative to a stated TF range. Multi-TF analysis should label each.
-- **Ignoring fractal hierarchy.** Long-term highs / lows that bound the range are themselves the most-recent ITH/ITL pair *that became LTH/LTL*. See [external-structure](../01-market-structure/external-structure.md).
+- **Bounding the dealing range with LTH/LTL (depth-3 swings).** ICT's own worked examples anchor on the most recent energetic 3-candle swing, not a higher-order LTH/LTL pair — using LTH/LTL systematically picks an older, less current range than ICT's.
+- **Requiring H1+ for a "meaningful" dealing range.** ICT names dealing ranges on scrubbed-down lower timeframes, including a 5-minute chart; "M5/M15 is too noisy" is not stated anywhere in either corpus.
+- **Inventing an "external BOS ends the range" rule.** Not in either corpus; ICT simply re-measures from the current relevant swing when structure shifts (EP19 [93:22], EP38 [21:23]).
+- **Missing the rebalanced-imbalance route to ITH/ITL status.** When a dealing range's bound is itself an intermediate-term swing, ICT's 2022 "rebalanced imbalance ⇒ ITH/ITL" rule is a second, non-geometric route to that status — see [swing-high](../01-market-structure/swing-high.md) / [swing-low](../01-market-structure/swing-low.md).
 
 ## Related Concepts
 
 - [pd-array-definition](pd-array-definition.md), [premium-array](premium-array.md), [discount-array](discount-array.md), [equilibrium-definition](../27-equilibrium/equilibrium-definition.md).
-- [external-structure](../01-market-structure/external-structure.md), [internal-structure](../01-market-structure/internal-structure.md).
-- [internal-range-liquidity](../02-liquidity/internal-range-liquidity.md), [external-range-liquidity](../02-liquidity/external-range-liquidity.md).
+- [swing-high](../01-market-structure/swing-high.md), [swing-low](../01-market-structure/swing-low.md) — the anchors ICT actually uses.
 
 ## Citations
 
-- `ICT-2016-PD-ARRAYS`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2017-OTE-USDCAD-REVIEW` [08:44]–[08:48] — earliest corpus use of "dealing range," in the loose consolidation sense (Nov 2017).
+- `ICT-2020-OTE-VOL09` [03:14]–[03:18] — "standard deviation of the dealing range used for the fib" — first corpus hit of the measurement sense this page defines.
+- `ICT-2016-FAIR-VALUATION` [22:34] — "the equilibrium price point relative to the most recent trading range" (Sep 2016).
+- `ICT-2017-HTF-PD-ARRAYS` [17:46] — "the most recent trading range that the market has moved from an old high to an old low" (Jan 2017).
+- `ICT-2016-EQUILIBRIUM-DISCOUNT` [10:26] — "Equilibrium is a midway point of a price move" (Sep 2016).
+- `ICT-2022-MENTORSHIP-EP11` [01:27] — EQ as the dealing range's 50% midpoint.
+- `ICT-2022-MENTORSHIP-EP19` [77:10], [93:22] — anchored on the most recent energetic 3-candle swing.
+- `ICT-2022-MENTORSHIP-EP32` [05:28] — "dealing range would be like from this high down to that low."
+- `ICT-2022-MENTORSHIP-EP33` [13:56] — short-term dealing range on a scrubbed lower TF.
+- `ICT-2022-MENTORSHIP-EP34` [17:03] — impulsive/expansion leg in the trade direction, not an arbitrary leg.
+- `ICT-2022-MENTORSHIP-EP35` [03:08]–[04:23] — swing-to-swing anchoring, including on a 5-minute chart.
+- `ICT-2022-MENTORSHIP-EP38` [21:23] — re-anchored on the most recent market-structure swing.

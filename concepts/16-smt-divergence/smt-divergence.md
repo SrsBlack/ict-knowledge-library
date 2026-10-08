@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2016-USDX-SMT, ICT-2017-HIGH-REWARD-SETUPS, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-USDX-SMT, ICT-2017-HIGH-REWARD-SETUPS, ICT-2017-INTERMARKET, ICT-2022-MENTORSHIP-EP22, ICT-2022-MENTORSHIP-EP35, ICT-2022-MENTORSHIP-EP38
 **Tags:** smt, divergence, intermarket, foundational
 
 ⚠ **Dating corrected 2026-08-10.** This page previously carried `Year Introduced: 2018` sourced only to
@@ -18,7 +18,7 @@ Oct 2016) already teaches it a month earlier at **[39:44]**. Re-dated to **2016*
 
 ## Definition
 
-**SMT (Smart Money Technique) Divergence** is a price-action divergence between **two correlated assets**: when one asset makes a new high (or low) but the correlated asset fails to confirm with its own new high (or low), the divergence signals that institutional flow is differentiated and a reversal often follows. Common SMT pairings: EURUSD vs GBPUSD, NQ vs ES (US indices), gold vs silver, EURUSD vs DXY (inverse). SMT is one of ICT's most-relied-upon confirmation signals — entering a setup with SMT confluence is significantly higher conviction than without.
+**SMT (Smart Money Technique) Divergence** is a price-action divergence between **two correlated assets**: when one asset makes a new high (or low) but the correlated asset fails to confirm with its own new high (or low), the divergence signals that institutional flow is differentiated and a reversal often follows. Confirmed SMT pairings in this corpus: EURUSD vs GBPUSD, NQ vs ES (`ICT-2022-MENTORSHIP-EP22` [43:05], `ICT-2022-MENTORSHIP-EP35` [07:03]), and EURUSD vs DXY (inverse, 2016). ⚠ **"Gold vs silver" is NOT IN CORPUS** — searched `gold.{0,40}silver` in both corpora: only relative-strength lists, and `ICT-2017-INTERMARKET` (12:15–12:32) "not meant for metals like silver, palladium, platinum, gold" refers to a commodity-index-selection caveat, not an SMT pairing. SMT is one of ICT's most-relied-upon confirmation signals — entering a setup with SMT confluence is significantly higher conviction than without.
 
 ## Formal Criteria
 
@@ -62,7 +62,7 @@ bearish_smt(t):
   "year_introduced": "2016",
   "year_refined": "2022",
   "related": ["correlated-pairs-smt","index-smt","smt-confirmation","smt-failure","liquidity-sweep","htf-bias-framework"],
-  "sources": ["ICT-2016-USDX-SMT","ICT-2017-HIGH-REWARD-SETUPS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2016-USDX-SMT","ICT-2017-HIGH-REWARD-SETUPS","ICT-2017-INTERMARKET","ICT-2022-MENTORSHIP-EP22","ICT-2022-MENTORSHIP-EP35","ICT-2022-MENTORSHIP-EP38"]
 }
 ```
 
@@ -85,7 +85,7 @@ bearish_smt(t):
 
 ## Timeframes
 
-M5–D. HTF SMT (D, W) is most reliable; LTF SMT (M5) noisier but useful for entry timing.
+M5–D. HTF SMT (D, W) is most reliable; LTF SMT (M5) noisier but useful for entry timing. The 2022 teaching adds a time-of-day note the earlier teaching lacks: "smt usually will occur around a 9 30 time period when there has already been a nice early run before seven o'clock" (`ICT-2022-MENTORSHIP-EP35`, 13:49), alongside a caution that "if you don't know where it's going you're going to many times encounter what would look like smt divergence and then it disappears" (07:39).
 
 ## Examples
 
@@ -110,4 +110,7 @@ M5–D. HTF SMT (D, W) is most reliable; LTF SMT (M5) noisier but useful for ent
 
 - `ICT-2016-USDX-SMT` (02:21) "stands for smart money tool or smart money technique and we're going to be looking for a divergence between closely correlated or inversely correlated assets"; (05:28) "when the dollar index makes a lower low in the foreign currency fails to trade higher than a previous high — this is US dollar index SMT or USDX SMT; this does not confirm current price action and the underlying trend is likely not to continue"; (08:28) "do we see a lower low form in the dollar index? No — that's a USDX SMT bullish divergence". The earliest dedicated SMT teaching located in the corpus, which is why this page is dated 2016 rather than 2018.
 - `ICT-2017-HIGH-REWARD-SETUPS` (39:44, Oct-2016 lecture despite the ID's year token) "the dollar index SMT analysis is basically just looking at the relationship between the dollar making higher highs … if the British pound versus the dollar fails to make lower lows, that's a crack in correlation" — earliest mention in the corpus.
-- `ICT-2022-MENTORSHIP-OVERVIEW` — operational SMT use in the 2022 re-teaching (basis for `Year Refined`).
+- `ICT-2017-INTERMARKET` (12:15–12:32) "not meant for metals like silver, palladium, platinum, gold" — the commodity-index caveat that shows "gold vs silver" is not an SMT pairing in this corpus.
+- `ICT-2022-MENTORSHIP-EP22` (43:05) NQ vs ES SMT pairing.
+- `ICT-2022-MENTORSHIP-EP35` (07:03) NQ vs ES SMT pairing; (07:39) "if you don't know where it's going you're going to many times encounter what would look like smt divergence and then it disappears"; (13:49) "smt usually will occur around a 9 30 time period when there has already been a nice early run before seven o'clock."
+- `ICT-2022-MENTORSHIP-EP38` (46:46) "we have the lower low in nasdaq higher low in s p that sets the stage for that run higher" — bullish SMT example; (41:34) "smt smart money tool or smart money technique i never really settled on what the t was going to be" (basis for `Year Refined`).

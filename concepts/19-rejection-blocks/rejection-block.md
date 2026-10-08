@@ -1,43 +1,66 @@
 # Rejection Block
 
 **Category:** 19-rejection-blocks
-**Aliases:** RB, wick rejection block, long-wick block
+**Aliases:** RB
 **ICT Confidence:** medium
 **Year Introduced:** 2017
-**Year Refined:** 2022
-**Source IDs:** ICT-2017-HTF-PD-ARRAYS, ICT-2022-MENTORSHIP-OVERVIEW
-
-⚠ **Re-dated 2018 → 2017 and the body/wick anchor corrected 2026-08-11.** The page previously
-claimed 2018 citing only `ICT-2018-BLOCKS` — a registry stub with no video ID, no quotation and no
-distilled content behind it. The rejection block is defined in **Jan 2017** in the PD-array hierarchy
-lecture, and it is placed second in the premium ladder, immediately inside the old high
-(`ICT-2017-HTF-PD-ARRAYS` [18:46–19:05]).
-
-⚠ **The anchor was inverted.** These pages had the level drawn at the **wick**. ICT draws it at the
-**body**: "the rejection block would be **just above the candle's body, not the wicks**. So the actual
-high and low is the wick — but then the next area of importance is the rejection block that would be
-just above the candle's body" [18:49–18:57]; the discount mirror is "just below the most lowest
-candle and its body … if it has wicks, long wicks below it, we're only going to be looking for a move
-**just below the bodies** of the candle" [29:02–29:15]. The long wick is what **identifies** the
-candle; the **body edge is the level**, and the wick is the part expected to be run out. Same defect
-class as the propulsion-block inversion corrected the same day.
+**Year Refined:** 2017
+**Source IDs:** ICT-2017-HTF-PD-ARRAYS, ICT-2017-QUARTERLY-SHIFTS, ICT-2017-PD-ARRAY-MATRIX, ICT-2017-TRADE-CONDITIONS
 **Tags:** rejection-block, wick, foundational
+
+⚠ **Re-dated 2018 → 2017 and the body/wick anchor corrected 2026-08-11; re-audited 2026-10-08
+(MINOR-FIXES); "wick gets run through" claim removed and two swapped citations fixed in review.**
+The body-edge anchor, the premium-ladder placement, and the multi-candle-cluster reading are all
+CONFIRMED verbatim against the corpus. The **≥ 60% wick threshold**, the **named key-level list**
+(round number, session extreme, FVG/OB edge), and the **"confirmed by next-candle displacement"**
+clause are EMBELLISHED — no numeric threshold or displacement-confirmation rule appears anywhere in
+either corpus. The "2022 restatement" claim is dropped: 0 hits for "rejection block" across all 41
+2022 Mentorship episodes. The aliases "wick rejection block" / "long-wick block" are this page's own
+unsourced editorial shorthand, not attested in the corpus, and are dropped.
 
 ## Definition
 
-A rejection block is a candle (or short cluster) characterized by a **strong wick rejection at a key level**, leaving a long wick relative to the body. The wick documents that price tried to go through a level and was forcibly rejected. ⚠ **The level is the body edge, not the wick.** The long wick is what *identifies* the candle; ICT draws the rejection block "just above the candle's body, not the wicks" and expects the wick itself to be run out (`ICT-2017-HTF-PD-ARRAYS` [18:49–18:57]). Less standardized than OBs and FVGs; ICT teaches RBs as secondary references.
+A rejection block is a **level drawn at a candle's body edge, identified by a long wick on the other
+side of that body**. ⚠ **The level is the body edge, not the wick tip.** ICT: "the rejection block
+would be **just above the candle's body, not the wick's**. So the actual high and low is the wick —
+but then the next area of importance is the rejection block, that would be just above the candle's
+body" (`ICT-2017-HTF-PD-ARRAYS` [18:49–18:57], `[sic]` — transcript reads "the wick's" with an
+apostrophe). Discount mirror: "just below the most lowest candle and its body … if it has wicks,
+long wicks below it, we're only going to be looking for a move **just below the bodies** of the
+candle" [29:02–29:15]. The long wick **identifies** the candidate candle; price is expected to trade
+just past the body edge, into that wick zone, and fail there — it is **not** expected to run all the
+way through the wick's own extreme: "we look for a price to go just below the bodies of the candles,
+and we'll trade right below that like a turtle soup. **It doesn't need to go through the wicks.**"
+(`ICT-2017-PD-ARRAY-MATRIX` [22:13–22:17]); "when you see the long wicked candles and you're bearish,
+chances are it probably won't go above the wicks. Many times we'll just go above the bodies of the
+candles and then fail there — that's the rejection block." [36:12–36:20].
+
+It sits second in the premium ladder, immediately inside the old high: "old high, old low. The next
+thing you'll be looking for is a rejection block." [18:46–18:47]. Further attestation: "if those highs
+have a lot of wicks, you're going to be looking for rejection blocks, which would be a move above the
+bodies of the candles for a potential sell-off" (`ICT-2017-QUARTERLY-SHIFTS` [24:28]); "many times
+we'll just go above the bodies of the candles and then fail there — that's the rejection block."
+(`ICT-2017-PD-ARRAY-MATRIX` [36:17–36:20]); "it went below the bodies of the candles in here, that is
+going to be a rejection block" (`ICT-2017-TRADE-CONDITIONS` [09:58]).
 
 ## Formal Criteria
 
-A rejection block:
-
-- A candle has a long wick on one side (≥ 60% of total candle range).
-- The wick reaches a known key level (HTF swing, prior FVG/OB edge, round number, session extreme).
-- Price rejects the wick extreme strongly (the close is far from the wick tip).
-- Often combined with displacement on the next candle confirming the rejection.
-
-For a **bullish** RB: long lower wick rejecting downward (price tried to go down, rejected up).
-For a **bearish** RB: long upper wick rejecting upward (price tried to go up, rejected down).
+- A candle (or a short cluster of candles — see below) has a **long wick** on one side. No numeric
+  threshold is stated anywhere in the corpus (searched `(60|sixty|percent|%)` within 80 characters of
+  "wick": 0 hits in `raw/`, 0 in `m22/`); ICT's own language is qualitative — "long wicks"
+  (`ICT-2017-HTF-PD-ARRAYS` [29:09]), "a lot of wicks" (`ICT-2017-QUARTERLY-SHIFTS` [24:28]) — both
+  phrasings occur in both lectures ([22:59] "a lot of wicks" in HTF-PD; [24:37] "long wicks" in QTR).
+- The **level is the candle's body edge**, not the wick tip. Price is expected to trade just past
+  that edge and fail — "it doesn't need to go through the wicks" (`ICT-2017-PD-ARRAY-MATRIX`
+  [22:17]); the wick is not a target to be run through.
+- Context is an **old high/low region whose candles carry wicks** rather than a named key level:
+  "the candles that have wicks at short-term highs … there would be liquidity resting just above the
+  bodies of the candle" (`ICT-2017-PD-ARRAY-MATRIX` [03:09–03:15]). No "round number", "session
+  extreme" or "FVG/OB edge" anchor is stated — remove those from the criteria.
+- **Can be a cluster of equal-bodied candles**, not only a single candle: "equal bodied candles above
+  that we would expect to see a rejection block" (`ICT-2017-TRADE-CONDITIONS` [13:29]).
+- No next-candle displacement confirmation is stated — searched "rejection block" ±6 lines across all
+  2017 packets: no confirmation/displacement clause found.
 
 ## Formula / Math
 
@@ -45,13 +68,18 @@ For a **bearish** RB: long upper wick rejecting upward (price tried to go up, re
 range_n = high(n) - low(n)
 body_n  = abs(close(n) - open(n))
 
-# Bullish RB:
+# Bullish RB (discount side):
 lower_wick = min(open(n), close(n)) - low(n)
-is_bullish_rb := lower_wick >= 0.60 * range_n
-                  AND wick reaches known key level
-                  AND close near top of range
+is_bullish_rb_candidate := lower_wick is a "long" / "a lot of" wick   # NO numeric threshold given by ICT
+rb_level := min(open(n), close(n))     # the BODY EDGE, not low(n)
 
-# Bearish RB: symmetric on upper wick
+# expected behaviour: price trades a short distance PAST rb_level (into the wick zone) and fails;
+# it is NOT expected to reach low(n) itself — "it doesn't need to go through the wicks"
+
+# Bearish RB (premium side): symmetric on the upper wick, rb_level := max(open(n), close(n))
+
+# Cluster form:
+rb_level := edge shared by a run of equal-bodied candles, not a single candle's extreme
 ```
 
 ## Machine-Readable
@@ -60,18 +88,21 @@ is_bullish_rb := lower_wick >= 0.60 * range_n
 {
   "id": "rejection-block",
   "category": "19-rejection-blocks",
-  "aliases": ["RB", "wick-rejection-block", "long-wick-block"],
+  "aliases": ["RB"],
   "criteria": [
-    {"id": "c1", "expr": "wick_pct >= 0.60 of candle range"},
-    {"id": "c2", "expr": "wick reaches known key level"},
-    {"id": "c3", "expr": "rejection confirmed by close + next-candle displacement"}
+    {"id": "c1", "expr": "candle has a qualitatively long wick on one side — NO numeric threshold stated"},
+    {"id": "c2", "expr": "rb_level := the candle's BODY EDGE, not the wick tip"},
+    {"id": "c3", "expr": "expected behaviour: price trades a short distance past rb_level and fails; does NOT need to reach the wick's own extreme"},
+    {"id": "c4", "expr": "context := an old high/low region whose candles carry wicks (no named key-level list)"},
+    {"id": "c5", "expr": "may be a cluster of equal-bodied candles sharing one edge, not only a single candle"},
+    {"id": "c6", "expr": "no displacement-confirmation clause is stated for the next candle"}
   ],
-  "timeframes": ["M15","H1","H4","D"],
+  "timeframes": ["D","W","MN"],
   "confidence": "medium",
   "year_introduced": "2017",
-  "year_refined": "2022",
-  "related": ["bullish-rejection-block","bearish-rejection-block","liquidity-sweep","turtle-soup","stop-run-definition","bullish-order-block","bearish-order-block"],
-  "sources": ["ICT-2017-HTF-PD-ARRAYS","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "year_refined": "2017",
+  "related": ["bullish-order-block","bearish-order-block"],
+  "sources": ["ICT-2017-HTF-PD-ARRAYS","ICT-2017-QUARTERLY-SHIFTS","ICT-2017-PD-ARRAY-MATRIX","ICT-2017-TRADE-CONDITIONS"]
 }
 ```
 
@@ -80,42 +111,57 @@ is_bullish_rb := lower_wick >= 0.60 * range_n
 ```
    bullish rejection block:
           ▲
-          █  ← close near top of range
+          █  ← body
           █
-          █
-        ▼     ← long lower wick (60%+ of range)
-        ▼
-        ▼
-       (wick tip reaches key level)
+        ░░░   ← long lower wick (qualitative — "a lot of wicks" / "long wicks")
+        ░░░
+        ░░░
+       (price trades a short distance past the body edge, into the wick zone, and
+        fails — it does NOT need to go through the wick's own extreme)
 
-   bearish RB: mirror.
+   rb_level = the BODY's lower edge (min(open, close)), marked ──
+
+   bearish RB: mirror, level at the body's UPPER edge.
 ```
 
 ## Timeframes
 
-M15+. Lower TFs have noisy long wicks that aren't structurally meaningful.
+No timeframe floor is stated by ICT; the construct is taught on monthly/weekly/daily PD arrays
+(`ICT-2017-HTF-PD-ARRAYS` [31:08–31:24]) — the JSON `timeframes` above lists what the corpus shows,
+not a floor ICT states.
 
 ## Examples
 
-**Example 1 — bullish RB at PWL:**
-- H1 candle: open 1.0865, close 1.0875, low 1.0848 (deep wick), high 1.0876.
-- Lower wick = 0.0017 (17 pips); range = 0.0028 (28 pips); wick% = 60.7%.
-- Wick tip 1.0848 = PWL (prior week low) SSL pool.
-- Next H1: 22-pip green displacement; bullish FVG.
-- → bullish rejection block at the PWL level. Long zone reference for future retests.
+**Example 1 — bearish RB above a cluster of wicked highs (schematic, following the lecture language):**
+- A cluster of candles sits at an old high, each carrying a long upper wick — "a lot of wicks" at
+  that level.
+- The rejection block level is drawn at the **shared body edge** of that cluster (the top of the
+  bodies), not at the highest wick tip.
+- Price later trades up a short distance past the body edge (into the wick zone) and is expected to
+  fail there — it does not need to go through the wicks' own extreme.
 
 ## Common Mistakes
 
-- **Calling every long-wick candle "RB."** Without a key-level anchor, the long wick is just noise.
-- **Confusing RB with sweep.** Liquidity sweeps and rejection blocks overlap heavily. RBs emphasize the resulting *zone* (the wick + body); sweeps emphasize the *event*.
-- **Trading RB without confirmation.** Single-candle RB with no follow-through displacement is low-conviction.
+- **Calling every long-wick candle "RB."** Without an old-high/old-low context with wicked candles,
+  the long wick is noise — but no numeric wick percentage disqualifies or qualifies it either way.
+- **Drawing the level at the wick tip.** The level is the **body edge**; a prior version of this page
+  marked "wick tip = key level" in its own Example/Common-Mistakes text, inverting ICT's correction.
+- **Claiming the wick itself "is expected to be run through."** ICT states the opposite — price need
+  only trade past the body edge; "it doesn't need to go through the wicks" (`ICT-2017-PD-ARRAY-MATRIX`
+  [22:13–22:17]).
+- **Requiring a named key level (round number, session extreme, FVG/OB edge).** Not stated; the
+  context is simply an old high/low region whose candles carry wicks.
+- **Requiring next-candle displacement to confirm.** No such clause exists in the corpus.
+- **Confusing RB with a liquidity sweep as a single-candle event.** A rejection block can be a
+  **cluster** of equal-bodied candles sharing one edge, not necessarily one candle.
 
 ## Related Concepts
 
-- [bullish-rejection-block](bullish-rejection-block.md), [bearish-rejection-block](bearish-rejection-block.md).
-- [liquidity-sweep](../02-liquidity/liquidity-sweep.md), [turtle-soup](../20-turtle-soup/turtle-soup.md), [stop-run-definition](../29-stop-runs/stop-run-definition.md), [bullish-order-block](../07-order-blocks/bullish-order-block.md), [bearish-order-block](../07-order-blocks/bearish-order-block.md).
+- [bullish-order-block](../07-order-blocks/bullish-order-block.md), [bearish-order-block](../07-order-blocks/bearish-order-block.md) — adjacent array in the premium/discount ladder.
 
 ## Citations
 
-- `ICT-2017-HTF-PD-ARRAYS` (18:46–19:05) the rejection block placed second in the premium ladder; (18:49) "just above the candle's body, not the wicks"; (29:02–29:15) the discount mirror.
-- `ICT-2022-MENTORSHIP-OVERVIEW` — 2022 restatement.
+- `ICT-2017-HTF-PD-ARRAYS` [18:46–18:47] placed second in the premium ladder; [18:49–18:57] "just above the candle's body, not the wick's" `[sic]`; [22:53–23:02], [22:59] used when a bearish OB is absent due to wicks, "a lot of wicks"; [29:02–29:15] discount mirror; [29:09] "long wicks"; [31:08–31:24] identical hierarchy on all HTFs.
+- `ICT-2017-QUARTERLY-SHIFTS` [24:28] "a lot of wicks … rejection blocks, which would be a move above the bodies of the candles"; [24:37] "long wicks" (the mirrored phrasing also occurs here).
+- `ICT-2017-PD-ARRAY-MATRIX` [03:09–03:15] wicked candles at short-term highs; [22:09] "every rejection block below, candles have wicks"; [22:13–22:17] "we look for a price to go just below the bodies of the candles … it doesn't need to go through the wicks"; [36:12–36:20] "when you see the long wicked candles and you're bearish, chances are it probably won't go above the wicks … that's the rejection block."
+- `ICT-2017-TRADE-CONDITIONS` [02:00], [02:47], [03:29] rejection block in the PD-array ladder; [09:58] "it went below the bodies of the candles in here, that is going to be a rejection block"; [13:29–13:37] cluster of equal-bodied candles forming a rejection block.

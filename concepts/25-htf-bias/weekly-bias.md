@@ -5,7 +5,7 @@
 **ICT Confidence:** high
 **Year Introduced:** 2017
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-CHARTER-OVERVIEW, ICT-2017-INTERMEDIATE-TOP-DOWN, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2017-INTERMEDIATE-TOP-DOWN, ICT-2022-MENTORSHIP-EP02, ICT-2022-MENTORSHIP-EP40, ICT-2016-EQUILIBRIUM-DISCOUNT, ICT-2020-OTE-VOL16, ICT-2017-TOPDOWN-SHORT-TERM
 **Tags:** htf-bias, weekly
 
 ## Definition
@@ -14,15 +14,29 @@ Weekly bias is the directional read from the **weekly chart**. ICT teaches weekl
 
 ## Formal Criteria
 
+⚠ **"External BOS / CHoCH" is SMC vocabulary, not ICT's words for this test** —
+searched `break of structure|\bBOS\b|change of character|choch` in both corpora: zero
+hits. "EQ" (equilibrium) and "DOL" (draw on liquidity) are **ICT's own terms**, not
+SMC: a whole Oct-2016 lecture is titled *Equilibrium Vs. Discount*
+(`ICT-2016-EQUILIBRIUM-DISCOUNT`; `equilibrium` occurs in 44 packets + 17 episodes), and
+"draw on liquidity" is ICT's own phrase — "Okay. That is a draw on liquidity."
+(`ICT-2020-OTE-VOL16`, 03:53; the phrase occurs in 4 packets + 18 episodes). Only the
+**external BOS** clause below is unsourced library shorthand. ICT's own closest
+statement for the test as a whole is: "the only thing you're looking for is a likely
+movement higher or lower based on on the weekly candle okay that's all you're doing
+that sets your initial bias for the week on the daily chart you're looking for swing
+highs and swing lows to get your liquidity" (`ICT-2022-MENTORSHIP-EP02`, 16:23); "i'm
+trying to determine the likely weekly expansion" (`ICT-2022-MENTORSHIP-EP40`, 21:09).
+
 Weekly bias is bullish when:
 
-- Most recent weekly external BOS was up.
-- Price below weekly EQ.
-- Weekly DOL is upside (PWH-area BSL ahead).
+- Most recent weekly external BOS was up. *(library shorthand, not an ICT quote — see warning above)*
+- Price below weekly EQ — ICT's own term, equilibrium.
+- Weekly DOL is upside (PWH-area BSL ahead) — ICT's own term, draw on liquidity.
 
 Bearish when symmetric. Neutral when conflicting / at EQ.
 
-Common time-of-week tendency: PWL (previous week low) often gets swept early in the week (Mon/Tue) before the weekly direction asserts (Wed-Thu distribution).
+Common time-of-week tendency: a load often forms early in the week before the weekly direction asserts. ⚠ **"PWL swept" is this library's specification, not ICT's wording** — ICT names Monday's "load," not a swept level: "There could be a load that forms on Monday … take off going through the second portion of Tuesday, all of Wednesday and the first half of Thursday" (`ICT-2017-TOPDOWN-SHORT-TERM`, 14:04–14:11).
 
 **ICT's own weekly routine** (`ICT-2017-INTERMEDIATE-TOP-DOWN`) — tier 2 of [top-down-analysis](top-down-analysis.md), run at the start of each new week. The three inputs that opened the monthly tier are **replaced, not repeated**: "there's a couple things missing here that we saw in the monthly that is not in the weekly portion… we had three different things that started off the monthly" (04:38).
 
@@ -75,7 +89,7 @@ weekly_bias :=
   "year_introduced": "2017",
   "year_refined": "2022",
   "related": ["htf-bias-framework","monthly-bias","daily-bias","bias-confluence","top-down-analysis","htf-amd","dealing-range","commitment-of-traders","relative-strength-analysis","sentiment-effect","institutional-order-flow","pd-array-matrix"],
-  "sources": ["ICT-2017-CHARTER-OVERVIEW","ICT-2017-INTERMEDIATE-TOP-DOWN","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "sources": ["ICT-2017-INTERMEDIATE-TOP-DOWN","ICT-2022-MENTORSHIP-EP02","ICT-2022-MENTORSHIP-EP40","ICT-2016-EQUILIBRIUM-DISCOUNT","ICT-2020-OTE-VOL16","ICT-2017-TOPDOWN-SHORT-TERM"]
 }
 ```
 
@@ -109,7 +123,8 @@ W / D.
 - **Late-week bias change.** A weekly CHoCH near Friday may reverse on Sunday/Monday open; wait for a fresh week's confirmation.
 - **Day-trading weekly bias only.** Weekly is backdrop; daily-and-below structures the actual entries.
 - **Carrying the monthly inputs down.** Seasonals, quarterly shifts and rate differentials are tier-1 only; substituting them for relative strength / COT / sentiment skips the entire weekly input set.
-- **Fitting the %R period to the current swing.** The period is calibrated against the chart's **past** important highs and lows, then left alone. ICT names the temptation as he does it — "this does look like form fitting, I know, but you'll see what I'm doing here" (13:34) — and rejects the shortest setting because "the smallest one will always generally give you a good reading regardless, and that sometimes is a little too sugar-coated" (40:59).
+- **Fitting the %R period to the current swing.** The period is calibrated against the chart's **past** important highs and lows, then left alone. ICT names the temptation as he does it — "this does look like form fitting, I know, but you'll see what I'm doing here" (40:28) — and rejects the shortest setting because "the smallest one will always generally give you a good reading regardless, and that sometimes is a little too sugar-coated" (40:59).
+  ⚠ **Timestamp corrected 2026-10-08.** This bullet previously attributed the "form fitting" quote to 13:34; that timestamp is actually "like diametrically opposed." The correct timestamp is 40:28.
 - **Treating one sentiment reading as sentiment.** Headlines, forums and the oscillator are three inputs; the signal is their agreement.
 - **Reading the printed COT zero line.** The weekly tier uses the recentred 12-month midpoint. See [commitment-of-traders](../03-order-flow/commitment-of-traders.md).
 
@@ -125,4 +140,8 @@ W / D.
 ## Citations
 
 - `ICT-2017-INTERMEDIATE-TOP-DOWN` (00:22) "this teaching is ICT intermediate term top-down analysis, weekly to daily"; (02:46–02:52) relative strength first, "because I may not have a clear picture from the monthly"; (03:13–04:25) COT then sentiment; (05:33) "ideally you want to be diametrically opposed to that in an alignment with what smart money is doing"; (04:38–05:13) the three monthly inputs named as absent from this tier; (06:39–06:55) institutional order flow on down- and up-close candles; (08:02–08:20) "I come to a weekly bias… and transpose that to the daily chart"; (08:23) "I determine what markets **lead in strength** by failing to make lower lows and **lead in weakness** by failing to make higher highs" — both leadership, not leader-vs-laggard; (08:50) IBD top 30 industry groups; (09:23) "I look for leadership and laggards, so I want to know what the strongest is and the weakest" — the separate ranking axis; (10:28–10:58) commercials at 12-month, 6-month, 2-year and 4-year extremes; (12:02–13:11) headlines faded, "real big descriptive adjectives", forums haunted for retail thinking; (13:34–14:24) "I use a percent R on a weekly chart in periods of 20, 14, period, and 10… I look for which one is the most accurately depicting or overlaps with the previous important highs and lows"; (19:05–19:42) the 12-month high/low split in half replacing the zero line; (40:01–41:23) ideal long at 80 and short at 20, the 10-period rejected as "too sugar-coated", 14 optimal; (46:44) time-of-day analysis not required on monthly and weekly.
-- `ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW` — the general weekly-context restatement in later years.
+- `ICT-2022-MENTORSHIP-EP02` (16:23) "the only thing you're looking for is a likely movement higher or lower based on on the weekly candle okay that's all you're doing that sets your initial bias for the week on the daily chart you're looking for swing highs and swing lows to get your liquidity."
+- `ICT-2022-MENTORSHIP-EP40` (21:09) "i'm trying to determine the likely weekly expansion."
+- `ICT-2016-EQUILIBRIUM-DISCOUNT` — "Equilibrium Vs. Discount," the Sep-2016 lecture naming equilibrium as ICT's own term, not SMC vocabulary.
+- `ICT-2020-OTE-VOL16` (03:53) "Okay. That is a draw on liquidity." — DOL as ICT's own term, not SMC vocabulary.
+- `ICT-2017-TOPDOWN-SHORT-TERM` (14:04–14:11) "There could be a load that forms on Monday … take off going through the second portion of Tuesday, all of Wednesday and the first half of Thursday" — ICT names a "load," not a swept "PWL."

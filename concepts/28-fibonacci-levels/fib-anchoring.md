@@ -4,8 +4,8 @@
 **Aliases:** body anchoring, candle-body fib, where to drop the fib, fib attachment points
 **ICT Confidence:** high
 **Year Introduced:** 2017
-**Year Refined:** 2020
-**Source IDs:** ICT-2017-OTE, ICT-2017-OTE-AUSSIE-NYO, ICT-2017-OTE-FIBER-NYO, ICT-2017-OTE-DRILL-FIBER, ICT-2017-OTE-DRILL-GOLD, ICT-2017-OTE-DRILL-USDJPY, ICT-2017-OTE-DRILL-USDCAD, ICT-2017-OTE-USDCAD-REVIEW, ICT-2017-OTE-LONDON-DEMO, ICT-2020-OTE-EURUSD-EXAMPLE, ICT-2020-OTE-VOL01, ICT-2020-OTE-VOL13
+**Year Refined:** 2022
+**Source IDs:** ICT-2017-OTE, ICT-2017-OTE-AUSSIE-NYO, ICT-2017-OTE-FIBER-NYO, ICT-2017-OTE-DRILL-FIBER, ICT-2017-OTE-DRILL-GOLD, ICT-2017-OTE-DRILL-USDJPY, ICT-2017-OTE-DRILL-USDCAD, ICT-2017-OTE-USDCAD-REVIEW, ICT-2017-OTE-LONDON-DEMO, ICT-2020-OTE-EURUSD-EXAMPLE, ICT-2020-OTE-VOL01, ICT-2020-OTE-VOL13, ICT-2022-MENTORSHIP-EP16, ICT-2022-MENTORSHIP-EP22, ICT-2022-MENTORSHIP-EP23
 **Tags:** fibonacci, fib, ote, anchoring, candle-body, measurement
 
 ## Definition
@@ -16,15 +16,20 @@ This rule governs the **fib tool only**. PD arrays keep their own anchoring conv
 
 ⚠ **Scope narrowed 2026-08-11 — the bodies rule is stated for the *retracement*, and ICT names two places he uses wicks instead.** A sweep of the 21 remaining non-Core OTE packets found **eight independent restatements of the bodies rule and zero contradictions**, but two of those packets also carve out exceptions the library did not previously record:
 
-1. **Target projections may incorporate wicks.** "It's real important — that's the reason why I'm doing it [not] on the wicks. Now, when I do **projections on targets**, sometimes I will **incorporate wicks**, but you'll learn that in the tutorials. But for now I'm kind of keep things germane and salient to the original rules — we're just using the body of the candles" (`ICT-2017-OTE-DRILL-GOLD`, 04:17–04:31). ⚠ The whisper transcript renders the first clause as "that's the reason why I'm doing it **now** on the wicks", which inverts the sentence; the surrounding clauses ("we're getting the measurement of the bulk of the volume", "we're just using the body of the candles") make "not on the wicks" the only coherent reading. Flagged rather than silently repaired. The exception is qualified — "sometimes" — and no rule is given for when.
+1. **Target projections may incorporate wicks.** "It's real important — that's the reason why I'm doing it [not] on the wicks. Now, when I do **projections on targets**, sometimes I will **incorporate wicks**, but you'll learn that in the tutorials. But for now I'm kind of keep things germane and salient to the original rules — we're just using the body of the candles" (`ICT-2017-OTE-DRILL-GOLD`, 04:17–04:31). ⚠ The whisper transcript renders the first clause as "that's the reason why I'm doing it **now** on the wicks", which inverts the sentence; the surrounding clauses ("we're getting the measurement of the bulk of the volume", "we're just using the body of the candles") make "not on the wicks" the only coherent reading. Flagged rather than silently repaired. The exception is qualified — "sometimes" — and no rule is given for when. The 2022 mentorship restates the projection as body-anchored by default, which is the backdrop the point-3 volatility exception departs from: "you take your fibonacci and you anchor it to the highest body, it could be open or closed, it doesn't make a difference… notice I'm not putting on the high here" (`ICT-2022-MENTORSHIP-EP16`, 08:47–09:15).
 2. **A late-entry validity ceiling uses the wick high, and ICT says so explicitly.** Having missed the ideal fill, he re-anchors: "**Now I'm using the high for this now. Not the body.** This is when you want to [bring] in the wicks from the point at which you draw the fib up to. You want to find the **highest high**. As long as we're at that level or below it, I would be OK with getting long on it" (`ICT-2017-OTE-USDCAD-REVIEW`, 13:28–13:44). This is a separate decision from where the fib attaches — the fib in that same video is body-anchored [11:32] — so it does not weaken the retracement rule; it means an implementation needs **two** swing-extreme functions, not one.
+
+⚠ **Two further wick uses, added 2026-10-08 from the 2022 mentorship.** Neither is the retracement fib itself, but both touch what "anchor the fib" means in practice:
+
+3. **A volatility-conditioned anchoring statement, demonstrated on a projection fib.** ICT states the general principle, then demonstrates it on a target projection, not the retracement: "I'm going to use the fib here, and what I'm doing is anchoring it to the high down to the low — now this is the most extreme. Now, usually I'll use the highest open or close and the lowest opener close [open or close] in the price swing when it's not expected to have a whole lot of volatility, because it's the FOMC, it's more likely to be much more volatile — that means the extreme of the ranges should be considered" (`ICT-2022-MENTORSHIP-EP23`, 12:06–12:34) — immediately followed by "now I'm going to use the wi[c]ks… I'm going to draw it from the low up to the high, I'm looking for upside objectives" (12:34–13:03). The fib he actually anchors to wicks here is the **projection**, consistent with point 1's "sometimes" carve-out, not a new exception on the retracement fib. No source anywhere in either corpus anchors the *retracement* fib to wicks around a volatility event — the Common Mistakes bullet below ("no source… states a wick anchor for a retracement fib") still holds without qualification. *(Corrected 2026-10-08, same day as first added: the initial write-up filed this as a retracement-fib exception, which the quote does not support.)*
+4. **The premium/discount (dealing-range) fib is wick-anchored; the OTE retracement fib is body-anchored — ICT draws this contrast directly.** "The range from the high and the low, you can get that for your discount, the premium — but for optimal trade entry I like to use the bodies, lowest open or close, in the swings" (`ICT-2022-MENTORSHIP-EP22`, 49:13–49:49). The dealing-range equilibrium fib is a **different fib, on a different anchor convention**, from the OTE retracement fib this page otherwise describes. See [equilibrium-definition](../27-equilibrium/equilibrium-definition.md) for the dealing-range fib itself; do not apply the body-anchoring rule on this page to it.
 
 ## Formal Criteria
 
 - The leg-end anchor is the **highest body** (bullish leg) or **lowest body** (bearish leg) of the terminal swing — not the extreme of its wick.
 - The leg-origin anchor is likewise the body extreme of the origin swing.
 - For a candle whose body extreme is the anchor, the price used is that candle's **open or close**, whichever is the relevant extreme. In the Primer's worked example the highest body belongs to a down-close candle, so the anchor price is its **open**. Restated twice in the 2017 drills: "we're using the **highest open or close** down to the **lowest bodied open or close**" (`ICT-2017-OTE-DRILL-USDJPY`, 01:07); "it's the lowest close — it could be open down here as well, guys; it's not the close is [the] important factor" (`ICT-2017-OTE-DRILL-GOLD`, 04:02–04:10).
-- Wick extremes are used for **structure and PD-array identification** (swing pivots, order-block boundaries) but not as fib attachment points. Two further wick uses are disclosed above: target projections (sometimes) and the late-entry ceiling.
+- Wick extremes are used for **structure and PD-array identification** (swing pivots, order-block boundaries) but not as the OTE retracement fib's attachment points. Further wick uses are disclosed above: target projections (sometimes, and demonstrated around a volatility event in ep23), the late-entry ceiling, and the **separate** dealing-range/premium-discount fib, which is wick-anchored per `ICT-2022-MENTORSHIP-EP22` (49:13).
 - **Zone-tolerance is judged on bodies too.** When price overshoots the 0.79 boundary on a wick, the setup still stands if the bodies hold: "overshot just a little bit here, but here that's okay — now the **bodies are certainly respecting** that … area of high probability entry" (`ICT-2017-OTE-LONDON-DEMO`, 04:11–04:24).
 - **Leg selection between two candidate swing highs is decided on bodies.** Given two adjacent highs, ICT takes the lower-wicked one when its body is the dominant one: "you can see this one's slightly higher than this one, but this one's where all the volume is, and you see that with the **bodies of candles versus this wick**" (`ICT-2020-OTE-VOL13`, 02:37–02:50).
 
@@ -52,11 +57,17 @@ leg_size  := leg_end - leg_start        # signed by direction
 #   leg_end = open of that candle = 1.1799
 #   the wick above 1.1799 is deliberately excluded
 
-# TWO wick-based references coexist with the body-anchored fib (2026-08-11):
-#   projection_anchor  := MAY use high_n / low_n   (ICT-2017-OTE-DRILL-GOLD 04:17, "sometimes")
-#   late_entry_ceiling := max(high_n) over terminal swing   # NOT body_high
-#                         long is acceptable while price <= late_entry_ceiling
-#                         (ICT-2017-OTE-USDCAD-REVIEW 13:28)
+# THREE wick-based references coexist with the body-anchored retracement fib:
+#   projection_anchor    := MAY use high_n / low_n   (ICT-2017-OTE-DRILL-GOLD 04:17, "sometimes";
+#                           demonstrated around a volatility event, ICT-2022-MENTORSHIP-EP23
+#                           12:34-13:03, "I'm looking for upside objectives" — a PROJECTION, not
+#                           the retracement fib)
+#   late_entry_ceiling   := max(high_n) over terminal swing   # NOT body_high
+#                           long is acceptable while price <= late_entry_ceiling
+#                           (ICT-2017-OTE-USDCAD-REVIEW 13:28)
+#   dealing_range_fib    := anchored on high_n / low_n (wicks), NOT this page's rule —
+#                           a DIFFERENT fib from the OTE retracement fib
+#                           (ICT-2022-MENTORSHIP-EP22 49:13)
 #
 # zone tolerance is body-based:
 #   valid_touch := body_low(n) within [0.62, 0.79]   # a wick beyond 0.79 does not void it
@@ -76,14 +87,16 @@ leg_size  := leg_end - leg_start        # signed by direction
     {"id": "c4", "expr": "order_block_boundary_anchor == wick", "strength": "contrast"},
     {"id": "c5", "expr": "projection_anchor MAY include wick", "strength": "disclosed exception, 'sometimes'"},
     {"id": "c6", "expr": "late_entry_ceiling == max(high) over terminal swing", "strength": "disclosed exception"},
-    {"id": "c7", "expr": "zone_tolerance judged on body, not wick"}
+    {"id": "c7", "expr": "zone_tolerance judged on body, not wick"},
+    {"id": "c8", "expr": "fib_anchor MAY switch to wick around a scheduled high-volatility event (stated generally; shown on a projection fib, ICT-2022-MENTORSHIP-EP23)", "strength": "disclosed exception, projection only"},
+    {"id": "c9", "expr": "dealing_range_fib (premium/discount, equilibrium) is wick-anchored", "strength": "a different fib from the OTE retracement fib on this page"}
   ],
   "timeframes": ["M1","M5","M15","H1","H4","D","W"],
   "confidence": "high",
   "year_introduced": "2017",
-  "year_refined": "2020",
-  "related": ["ict-fib-overview","fib-62","fib-705","fib-79","fib-vs-ote","symmetrical-price-projections","ote-overview","ote-rules","bullish-order-block"],
-  "sources": ["ICT-2017-OTE","ICT-2017-OTE-AUSSIE-NYO","ICT-2017-OTE-FIBER-NYO","ICT-2017-OTE-DRILL-FIBER","ICT-2017-OTE-DRILL-GOLD","ICT-2017-OTE-DRILL-USDJPY","ICT-2017-OTE-DRILL-USDCAD","ICT-2017-OTE-USDCAD-REVIEW","ICT-2017-OTE-LONDON-DEMO","ICT-2020-OTE-EURUSD-EXAMPLE","ICT-2020-OTE-VOL01","ICT-2020-OTE-VOL13"]
+  "year_refined": "2022",
+  "related": ["ict-fib-overview","fib-62","fib-705","fib-79","fib-vs-ote","symmetrical-price-projections","ote-overview","ote-rules","bullish-order-block","equilibrium-definition"],
+  "sources": ["ICT-2017-OTE","ICT-2017-OTE-AUSSIE-NYO","ICT-2017-OTE-FIBER-NYO","ICT-2017-OTE-DRILL-FIBER","ICT-2017-OTE-DRILL-GOLD","ICT-2017-OTE-DRILL-USDJPY","ICT-2017-OTE-DRILL-USDCAD","ICT-2017-OTE-USDCAD-REVIEW","ICT-2017-OTE-LONDON-DEMO","ICT-2020-OTE-EURUSD-EXAMPLE","ICT-2020-OTE-VOL01","ICT-2020-OTE-VOL13","ICT-2022-MENTORSHIP-EP16","ICT-2022-MENTORSHIP-EP22","ICT-2022-MENTORSHIP-EP23"]
 }
 ```
 
@@ -135,7 +148,7 @@ All TFs. The absolute error from wick-anchoring scales with candle range, so the
 - **Assuming the body extreme is a close.** It is whichever of open/close is more extreme. In the Primer's example the anchor is an **open**.
 - **Treating this as cosmetic.** It changes `leg_size`, so it changes the OTE band, the stop, and every target. It is load-bearing, not a preference.
 - **Voiding a setup because a wick pierced 0.79.** Tolerance is read on the bodies (`ICT-2017-OTE-LONDON-DEMO`, 04:17). A wick overshoot is expected, not disqualifying.
-- **Generalising "bodies" to every fib on the chart.** The rule is stated for the *retracement*. ICT says projections sometimes use wicks, and he uses the wick high outright for the late-entry ceiling. A single global anchoring switch gets at least one of the three wrong.
+- **Generalising "bodies" to every fib on the chart.** The rule is stated for the OTE *retracement*. ICT says projections sometimes use wicks, uses the wick high outright for the late-entry ceiling, switches to wicks around a scheduled volatility event, and wick-anchors the separate dealing-range/premium-discount fib entirely. A single global anchoring switch gets at least one of these wrong.
 - **Loose phrasing in the later videos is not a rule change.** `ICT-2021-OTE-PRICE-ACTION-LESSON` says only "if we take our fib and anchor it to the high, to the low" [04:07] with no body/wick qualifier. That is an unspecific description in a bias-focused lesson, not a restatement — no source located in the 43-video OTE population states a wick anchor for a retracement fib.
 
 ## Related Concepts
@@ -146,6 +159,7 @@ All TFs. The absolute error from wick-anchoring scales with candle range, so the
 - [fib-vs-ote](fib-vs-ote.md) — disambiguation of the tool from the setup.
 - [ote-overview](../17-optimal-trade-entry/ote-overview.md), [ote-rules](../17-optimal-trade-entry/ote-rules.md) — the setup that consumes these levels.
 - [bullish-order-block](../07-order-blocks/bullish-order-block.md) — the contrasting wick-anchored convention.
+- [equilibrium-definition](../27-equilibrium/equilibrium-definition.md) — the dealing-range/premium-discount fib, wick-anchored, a different fib from the one on this page.
 
 ## Citations
 
@@ -164,3 +178,9 @@ Added 2026-08-11 from the 21 remaining non-Core OTE packets:
 - `ICT-2017-OTE-USDCAD-REVIEW` (00:34, 00:48) — "I'm using this body here … I'm using this right here, the **open** on this candle here"; (11:32–11:45) "you can see I have the **body** on this swing low. The open on this candle is the lowest of the body. **Reference points open or close**"; (13:28–13:44) the wick-based late-entry ceiling — "now I'm using the high for this now, **not the body** … you want to find the highest high."
 - `ICT-2017-OTE-LONDON-DEMO` (04:11–04:24) — "overshot just a little bit here, but here that's okay — now the **bodies are certainly respecting** that … area of high probability entry."
 - `ICT-2020-OTE-VOL13` (02:37–02:50) — leg selection between two swing highs decided on bodies: "this one's slightly higher than this one, but this one's where all the volume is, and you see that with the **bodies of candles versus this wick**."
+
+Added 2026-10-08 from the 2022 mentorship (two omitted wick exceptions):
+
+- `ICT-2022-MENTORSHIP-EP23` (12:06–12:34) — "I'm going to use the fib here... usually I'll use the highest open or close and the lowest opener close [open or close] in the price swing when it's not expected to have a whole lot of volatility because it's the FOMC, it's more likely to be much more volatile — that means **the extreme of the ranges should be considered**"; (12:34–13:03) "now I'm going to use the wi[c]ks… I'm looking for upside objectives" — the projection, not the retracement fib.
+- `ICT-2022-MENTORSHIP-EP22` (49:13–49:49) — "the range from the high and the low, you can get that for your discount, the premium — but for **optimal trade entry I like to use the bodies**, lowest open or close, in the swings."
+- `ICT-2022-MENTORSHIP-EP16` (08:47–09:15) — "you take your fibonacci and you anchor it to the highest body, it could be open or closed, it doesn't make a difference… notice I'm not putting on the high here" — the 2022 swing-projection fib restated as body-anchored, the backdrop for the ep23 volatility exception above.

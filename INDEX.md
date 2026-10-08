@@ -24,13 +24,13 @@ Format: `- [Concept Name](path) — one-line summary`
 - [swing-low](concepts/01-market-structure/swing-low.md) — local price trough; STL/ITL/LTL fractal hierarchy.
 - [internal-structure](concepts/01-market-structure/internal-structure.md) — swings inside the current dealing range.
 - [external-structure](concepts/01-market-structure/external-structure.md) — LTH/LTL pair that bounds the range.
-- [bos-bullish](concepts/01-market-structure/bos-bullish.md) — close above prior swing high in already-bullish trend (continuation).
-- [bos-bearish](concepts/01-market-structure/bos-bearish.md) — close below prior swing low in already-bearish trend.
+- [bos-bullish](concepts/01-market-structure/bos-bullish.md) — ICT's "break in market structure" (up); BOS is an SMC label (0 corpus hits); not continuation-only.
+- [bos-bearish](concepts/01-market-structure/bos-bearish.md) — ICT's "break in market structure" (down); BOS is an SMC label (0 corpus hits); not continuation-only.
 - [choch-bullish](concepts/01-market-structure/choch-bullish.md) — first close above swing high after bearish leg (reversal).
 - [choch-bearish](concepts/01-market-structure/choch-bearish.md) — first close below swing low after bullish leg.
-- [mss](concepts/01-market-structure/mss.md) — CHoCH with displacement + FVG.
-- [mss-vs-choch](concepts/01-market-structure/mss-vs-choch.md) — disambiguation page.
-- [range-expansion](concepts/01-market-structure/range-expansion.md) — momentum phase post-breakout.
+- [mss](concepts/01-market-structure/mss.md) — ICT's shift / break in market structure (used interchangeably); no FVG or close required; 2022 prefers an energetic break.
+- [mss-vs-choch](concepts/01-market-structure/mss-vs-choch.md) — disambiguation: CHoCH is SMC (0 corpus hits); ICT uses shift/break interchangeably; when he separates them, break is the more significant.
+- [range-expansion](concepts/01-market-structure/range-expansion.md) — price moving quickly away from equilibrium; one of ICT's four market conditions (Sep 2016).
 - [range-contraction](concepts/01-market-structure/range-contraction.md) — accumulation/consolidation phase.
 - [institutional-swing-points](concepts/01-market-structure/institutional-swing-points.md) — the only two ways a market turns: breaker swing point or failure swing.
 - [quarterly-market-structure-shift](concepts/01-market-structure/quarterly-market-structure-shift.md) — the daily chart changes direction every 3–4 months; anchors the IPDA data ranges.
@@ -38,19 +38,19 @@ Format: `- [Concept Name](path) — one-line summary`
 ### 02 — Liquidity
 - [buy-side-liquidity](concepts/02-liquidity/buy-side-liquidity.md) — resting buy stops above price (BSL).
 - [sell-side-liquidity](concepts/02-liquidity/sell-side-liquidity.md) — resting sell stops below price (SSL).
-- [equal-highs](concepts/02-liquidity/equal-highs.md) — densest BSL pool form (EQH).
-- [equal-lows](concepts/02-liquidity/equal-lows.md) — densest SSL pool form (EQL).
+- [equal-highs](concepts/02-liquidity/equal-highs.md) — BSL pool at equal highs; ICT gives no numeric tolerance ("close proximity").
+- [equal-lows](concepts/02-liquidity/equal-lows.md) — SSL pool at equal lows; ICT gives no numeric tolerance ("close proximity").
 - [trendline-liquidity](concepts/02-liquidity/trendline-liquidity.md) — sloped liquidity along retail trendlines.
 - [liquidity-pool](concepts/02-liquidity/liquidity-pool.md) — umbrella concept for any concentrated stop cluster.
 - [low-resistance-liquidity-run](concepts/02-liquidity/low-resistance-liquidity-run.md) — unobstructed travel between opposing PD arrays; 60-day range graded body-to-body into quadrants (LRLR).
-- [liquidity-void](concepts/02-liquidity/liquidity-void.md) — wide multi-bar expansion span with no two-sided trade.
-- [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md) — wick-through-pool followed by close back inside.
-- [liquidity-run](concepts/02-liquidity/liquidity-run.md) — full approach + sweep + resolution sequence.
-- [internal-range-liquidity](concepts/02-liquidity/internal-range-liquidity.md) — liquidity inside the dealing range (IRL).
-- [external-range-liquidity](concepts/02-liquidity/external-range-liquidity.md) — liquidity at/beyond range bounds (ERL).
+- [liquidity-void](concepts/02-liquidity/liquidity-void.md) — fast one-sided move leaving inefficiency; same imbalance as an FVG viewed on a lower TF.
+- [liquidity-sweep](concepts/02-liquidity/liquidity-sweep.md) — price pokes past a pool and reverses (ICT 2022); no close-back rule in ICT; 10-20 pip depth on 15-30m FX charts.
+- [liquidity-run](concepts/02-liquidity/liquidity-run.md) — price runs through a pool and "doesn't look back" (ICT 2022); high/low-resistance run taxonomy (2016).
+- [internal-range-liquidity](concepts/02-liquidity/internal-range-liquidity.md) — liquidity inside the current trading range (IRL); Dec 2016.
+- [external-range-liquidity](concepts/02-liquidity/external-range-liquidity.md) — liquidity at/beyond the current trading range's bounds (ERL); Dec 2016.
 - [draw-on-liquidity](concepts/02-liquidity/draw-on-liquidity.md) — the specific pool the algorithm targets next (DOL).
 - [liquidity-matrix](concepts/02-liquidity/liquidity-matrix.md) — multi-TF map of all pools.
-- [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md) — within-tolerance EQH/EQL (REH/REL).
+- [relative-equal-highs-lows](concepts/02-liquidity/relative-equal-highs-lows.md) — ICT's "relative equal" highs/lows — same phenomenon as EQH/EQL, no tolerance tier.
 - [open-float-liquidity-pool](concepts/02-liquidity/open-float-liquidity-pool.md) — 60 days back + 60 forward; large-fund pools on the daily.
 - [high-resistance-liquidity-run](concepts/02-liquidity/high-resistance-liquidity-run.md) — a run at a stop pool that must first clear a stack of intervening old highs and lows; ICT's least-probable condition (HRLR).
 
@@ -93,7 +93,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [pd-array-definition](concepts/05-pd-arrays/pd-array-definition.md) — umbrella concept for institutional price levels.
 - [premium-array](concepts/05-pd-arrays/premium-array.md) — PD arrays above EQ; sell-side references.
 - [discount-array](concepts/05-pd-arrays/discount-array.md) — PD arrays below EQ; buy-side references.
-- [dealing-range](concepts/05-pd-arrays/dealing-range.md) — LTH/LTL-bounded reference frame for premium/discount.
+- [dealing-range](concepts/05-pd-arrays/dealing-range.md) — most recent energetic swing low→high ("current trading range" in 2016); no LTH/LTL depth rule; EQ = its midpoint.
 - [pd-array-hierarchy](concepts/05-pd-arrays/pd-array-hierarchy.md) — type-by-type conviction ranking.
 - [pd-array-nesting](concepts/05-pd-arrays/pd-array-nesting.md) — overlapping arrays produce stronger zones (2024–2025 strengthening principle).
 - [htf-pd-array-hierarchy](concepts/05-pd-arrays/htf-pd-array-hierarchy.md) — multi-TF top-down array prioritization.
@@ -102,23 +102,23 @@ Format: `- [Concept Name](path) — one-line summary`
 
 ### 06 — Fair Value Gaps
 - [fair-value-gap](concepts/06-fair-value-gaps/fair-value-gap.md) — canonical 3-candle imbalance.
-- [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md) — BISI variant.
-- [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md) — SIBI variant.
-- [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md) — IFVG; polarity-flip after break.
-- [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md) — CE; FVG midpoint.
+- [bullish-fvg](concepts/06-fair-value-gaps/bullish-fvg.md) — bullish 3-candle gap: candle 1 high → candle 3 low; no displacement requirement (BISI = SMC alias).
+- [bearish-fvg](concepts/06-fair-value-gaps/bearish-fvg.md) — bearish 3-candle gap: candle 1 low → candle 3 high; no displacement requirement (SIBI = SMC alias).
+- [inversion-fvg](concepts/06-fair-value-gaps/inversion-fvg.md) — IFVG; term and rules not found in the 2016-17/2022 corpus (unverified, likely 2023+).
+- [consequent-encroachment](concepts/06-fair-value-gaps/consequent-encroachment.md) — CE; FVG midpoint — term not in corpus; 2022 ICT enters at the near edge, not CE.
 - [ce-as-primary-entry](concepts/06-fair-value-gaps/ce-as-primary-entry.md) — 2025: CE elevated to default entry.
-- [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md) — BPR; overlapping bull+bear FVGs.
+- [balanced-price-range](concepts/06-fair-value-gaps/balanced-price-range.md) — BPR; overlapping opposing FVGs — unverified in corpus; 2017 "price balanced range" is a different (consolidation) sense.
 - [volume-imbalance](concepts/06-fair-value-gaps/volume-imbalance.md) — body-vs-body gap.
 - [immediate-rebalance-fvg](concepts/06-fair-value-gaps/immediate-rebalance-fvg.md) — fills within 1-3 bars.
 - [delayed-rebalance-fvg](concepts/06-fair-value-gaps/delayed-rebalance-fvg.md) — stays unfilled 5+ bars.
 - [fvg-classification-2025](concepts/06-fair-value-gaps/fvg-classification-2025.md) — immediate/delayed taxonomy.
 - [liquidity-void-vs-fvg](concepts/06-fair-value-gaps/liquidity-void-vs-fvg.md) — disambiguation.
-- [fvg-mitigation](concepts/06-fair-value-gaps/fvg-mitigation.md) — fresh/partial/mitigated state.
+- [fvg-mitigation](concepts/06-fair-value-gaps/fvg-mitigation.md) — rebalance / fill status of an FVG (ICT's words: rebalance, closed in, fill — not "mitigation").
 - [nested-fvg](concepts/06-fair-value-gaps/nested-fvg.md) — multi-TF FVG nesting.
 
 ### 07 — Order Blocks
-- [bullish-order-block](concepts/07-order-blocks/bullish-order-block.md) — last bearish candle before bullish displacement+BOS.
-- [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md) — mirror.
+- [bullish-order-block](concepts/07-order-blocks/bullish-order-block.md) — 2016: lowest down-close candle with the most body range near support; 2022: must have an imbalance — not "last candle before displacement".
+- [bearish-order-block](concepts/07-order-blocks/bearish-order-block.md) — mirror of bullish-order-block.
 - [order-block-criteria](concepts/07-order-blocks/order-block-criteria.md) — qualification rules.
 - [mitigated-order-block](concepts/07-order-blocks/mitigated-order-block.md) — tested OB state.
 - [unmitigated-order-block](concepts/07-order-blocks/unmitigated-order-block.md) — fresh OB, highest conviction.
@@ -130,18 +130,18 @@ Format: `- [Concept Name](path) — one-line summary`
 - [order-block-vs-supply-demand](concepts/07-order-blocks/order-block-vs-supply-demand.md) — disambiguation.
 
 ### 08 — Breaker Blocks
-- [breaker-block](concepts/08-breaker-blocks/breaker-block.md) — failed OB whose polarity flips.
-- [bullish-breaker](concepts/08-breaker-blocks/bullish-breaker.md) — failed bearish OB → support.
-- [bearish-breaker](concepts/08-breaker-blocks/bearish-breaker.md) — failed bullish OB → resistance.
-- [mitigation-block](concepts/08-breaker-blocks/mitigation-block.md) — violated OB without polarity flip (BOS context).
-- [breaker-vs-mitigation](concepts/08-breaker-blocks/breaker-vs-mitigation.md) — disambiguation.
+- [breaker-block](concepts/08-breaker-blocks/breaker-block.md) — swing point between two highs/lows that fails after a liquidity run; full candle range; flips polarity.
+- [bullish-breaker](concepts/08-breaker-blocks/bullish-breaker.md) — up-close candle in the swing high before an old low is run (sell-side stop run); retest from above → support.
+- [bearish-breaker](concepts/08-breaker-blocks/bearish-breaker.md) — down-close candle in the swing low before an old high is run (buy-side stop run); retest from below → resistance.
+- [mitigation-block](concepts/08-breaker-blocks/mitigation-block.md) — last down candle at a failure-swing low (M pattern) — DOES flip polarity; body zone.
+- [breaker-vs-mitigation](concepts/08-breaker-blocks/breaker-vs-mitigation.md) — disambiguation: stop-run swing (breaker) vs failure swing (mitigation); both flip.
 - [failed-breaker](concepts/08-breaker-blocks/failed-breaker.md) — breaker that fails on retest.
 
 ### 09 — Displacement
-- [displacement-definition](concepts/09-displacement/displacement-definition.md) — wide-body force candle.
+- [displacement-definition](concepts/09-displacement/displacement-definition.md) — energetic vs lethargic move (qualitative); ICT gives no numeric thresholds.
 - [displacement-and-fvg](concepts/09-displacement/displacement-and-fvg.md) — displacement ↔ FVG mutual implication.
 - [bullish-displacement](concepts/09-displacement/bullish-displacement.md), [bearish-displacement](concepts/09-displacement/bearish-displacement.md) — directional variants.
-- [displacement-strength-criteria](concepts/09-displacement/displacement-strength-criteria.md) — 5-factor quality scoring.
+- [displacement-strength-criteria](concepts/09-displacement/displacement-strength-criteria.md) — ICT's binary energetic-vs-weak test; the old 5-factor score was a library invention.
 - [gap-classification](concepts/09-displacement/gap-classification.md) — FVG vs VI vs liquidity-void disambiguation.
 
 ### 10 — Killzones
@@ -151,7 +151,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ny-am-killzone](concepts/10-killzones/ny-am-killzone.md) — 08:00–11:00 NY; highest-volume KZ.
 - [london-close-killzone](concepts/10-killzones/london-close-killzone.md) — 10:00–12:00 NY; overlaps NY AM.
 - [ny-pm-killzone](concepts/10-killzones/ny-pm-killzone.md) — 13:30–16:00 NY; secondary delivery.
-- [killzone-times-table](concepts/10-killzones/killzone-times-table.md) — quick-reference card.
+- [killzone-times-table](concepts/10-killzones/killzone-times-table.md) — quick-reference card: April-2017 set vs 2022 set (NY 07:00-10:00 forex in both; 08:30-11:00 indices, 2022).
 - [killzone-vs-session](concepts/10-killzones/killzone-vs-session.md) — disambiguation (mirror).
 
 ### 11 — Silver Bullet
@@ -159,18 +159,18 @@ Format: `- [Concept Name](path) — one-line summary`
 - [silver-bullet-london](concepts/11-silver-bullet/silver-bullet-london.md) — 03:00–04:00 NY.
 - [silver-bullet-ny-am](concepts/11-silver-bullet/silver-bullet-ny-am.md) — 10:00–11:00 NY (highest probability).
 - [silver-bullet-ny-pm](concepts/11-silver-bullet/silver-bullet-ny-pm.md) — 14:00–15:00 NY (lowest).
-- [silver-bullet-rules](concepts/11-silver-bullet/silver-bullet-rules.md) — 8-point checklist.
+- [silver-bullet-rules](concepts/11-silver-bullet/silver-bullet-rules.md) — checklist — UNVERIFIED: no Silver Bullet teaching in the 2016-17/2022 corpus.
 - [silver-bullet-formalized-2025](concepts/11-silver-bullet/silver-bullet-formalized-2025.md) — 2025 micro-execution refinements.
 - [silver-bullet-failure-modes](concepts/11-silver-bullet/silver-bullet-failure-modes.md) — four common failure patterns.
 
 ### 12 — Power of Three
-- [power-of-three](concepts/12-power-of-three/power-of-three.md) — PO3 / AMD doctrine.
+- [power-of-three](concepts/12-power-of-three/power-of-three.md) — PO3 / AMD — accumulation, manipulation, distribution.
 - [accumulation-phase](concepts/12-power-of-three/accumulation-phase.md), [manipulation-phase](concepts/12-power-of-three/manipulation-phase.md), [distribution-phase](concepts/12-power-of-three/distribution-phase.md) — phases.
 - [intraday-amd](concepts/12-power-of-three/intraday-amd.md) — daily-scale Asia-London-NY mapping.
 - [htf-amd](concepts/12-power-of-three/htf-amd.md) — weekly/monthly/yearly AMD.
 
 ### 13 — Judas Swing
-- [judas-swing](concepts/13-judas-swing/judas-swing.md) — session-open false-direction move + reversal.
+- [judas-swing](concepts/13-judas-swing/judas-swing.md) — false move off a session's opening price, then reversal (midnight / 08:20 / 08:30 / zero-GMT anchors).
 - [london-judas-swing](concepts/13-judas-swing/london-judas-swing.md) — canonical LO-KZ Judas with Asian-range sweep.
 - [ny-judas-swing](concepts/13-judas-swing/ny-judas-swing.md) — smaller-scale NY AM Judas.
 - [judas-swing-failure](concepts/13-judas-swing/judas-swing-failure.md) — when no reversal happens.
@@ -179,7 +179,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [london-close-judas-swing](concepts/13-judas-swing/london-close-judas-swing.md) — the post-10:00 NY protraction that prints the day's extreme and is faded; gated on the 5-day ADR being exceeded.
 
 ### 14 — Asian Range
-- [asian-range](concepts/14-asian-range/asian-range.md) — bounded engineered-liquidity range from Asia session.
+- [asian-range](concepts/14-asian-range/asian-range.md) — 20:00-00:00 NY range; ICT's filter: 20-30 pips ideal, >40 pips changes the London read.
 - [asian-range-high](concepts/14-asian-range/asian-range-high.md) — BSL pool at the top.
 - [asian-range-low](concepts/14-asian-range/asian-range-low.md) — SSL pool at the bottom.
 - [asian-range-sweep](concepts/14-asian-range/asian-range-sweep.md) — London-driven sweep of one bound.
@@ -188,13 +188,13 @@ Format: `- [Concept Name](path) — one-line summary`
 
 ### 15 — Sessions
 - [session-overview](concepts/15-sessions/session-overview.md) — full NY-time session map.
-- [central-bank-dealers-range](concepts/15-sessions/central-bank-dealers-range.md) — 2pm-8pm NY range; SD 1-4 projections frame the next day.
+- [central-bank-dealers-range](concepts/15-sessions/central-bank-dealers-range.md) — 2pm-8pm NY range, <40 pips; day's extreme usually within SD3, ideally ≤SD2, often SD1.
 - [asia-session](concepts/15-sessions/asia-session.md) — 18:00 prev → 03:00 NY; accumulation / range-building.
-- [london-session](concepts/15-sessions/london-session.md) — 02:00 → 11:00 NY; manipulation + expansion.
+- [london-session](concepts/15-sessions/london-session.md) — no single clocked session window; London open / close killzones + the midnight-open Judas.
 - [ny-am-session](concepts/15-sessions/ny-am-session.md) — 08:00 → 12:00 NY; distribution / largest range.
 - [ny-lunch](concepts/15-sessions/ny-lunch.md) — 12:00 → 13:30 NY; dead session, skip.
 - [ny-pm-session](concepts/15-sessions/ny-pm-session.md) — 13:30 → 16:00 NY; secondary delivery, reversals.
-- [london-close](concepts/15-sessions/london-close.md) — 10:00 → 12:00 NY; European unwind; overlaps NY AM.
+- [london-close](concepts/15-sessions/london-close.md) — 10:00-12:00 NY (2017) / 10:00-11:00 NY profit-taking hour (2022).
 - [futures-opening-range](concepts/15-sessions/futures-opening-range.md) — 08:00–09:00 NY for bonds, 09:30–10:30 NY for index futures; the day's primary reference block.
 - [bond-split-session-rules](concepts/15-sessions/bond-split-session-rules.md) — ZB day map: London reference 02:00–05:00, AM 08:00–12:00, PM 12:00–15:00.
 - [index-am-pm-trend](concepts/15-sessions/index-am-pm-trend.md) — AM trend 09:30–12:00 and PM trend 13:00–16:00; index SMT windows 05:00–09:30 and 12:00–15:00.
@@ -228,7 +228,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [partial-vs-full-mitigation](concepts/18-mitigation/partial-vs-full-mitigation.md) — fresh/partial/mitigated/fully-consumed lifecycle.
 
 ### 19 — Rejection Blocks
-- [rejection-block](concepts/19-rejection-blocks/rejection-block.md) — long-wick rejection at key level.
+- [rejection-block](concepts/19-rejection-blocks/rejection-block.md) — long-wick candles at a swing extreme; level at the BODY, not the wick.
 - [bullish-rejection-block](concepts/19-rejection-blocks/bullish-rejection-block.md) — lower-wick variant.
 - [bearish-rejection-block](concepts/19-rejection-blocks/bearish-rejection-block.md) — upper-wick variant.
 
@@ -293,7 +293,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [equilibrium-definition](concepts/27-equilibrium/equilibrium-definition.md) — 50% midpoint of any reference range.
 - [dealing-range-equilibrium](concepts/27-equilibrium/dealing-range-equilibrium.md) — primary EQ in the dealing-range frame.
 - [equilibrium-as-decision-point](concepts/27-equilibrium/equilibrium-as-decision-point.md) — operational EQ pivot rules.
-- [mean-threshold](concepts/27-equilibrium/mean-threshold.md) — OB body midpoint (MT).
+- [mean-threshold](concepts/27-equilibrium/mean-threshold.md) — OB body midpoint (MT); the line not to be violated (closing basis), not wick-based.
 
 ### 28 — Fibonacci Levels
 - [ict-fib-overview](concepts/28-fibonacci-levels/ict-fib-overview.md) — ICT-specific fib retracement + projection set.
@@ -320,7 +320,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [news-blackout-rules](concepts/30-news-driven/news-blackout-rules.md) — pre/post blackout windows.
 
 ### 31 — Models
-- [ict-2022-model](concepts/31-models/ict-2022-model.md) — flagship multi-step setup framework.
+- [ict-2022-model](concepts/31-models/ict-2022-model.md) — NY-session sweep → MSS with displacement → FVG limit entry at the near edge; stop above the FVG candle.
 - [mega-trade](concepts/31-models/mega-trade.md) — the one prolonged annual move; months-long, seasonally driven, sponsorship-verified.
 - [explosive-market-selection](concepts/31-models/explosive-market-selection.md) — the eight hallmarks that qualify a market for an explosive swing move.
 - [swing-trading-hallmarks](concepts/31-models/swing-trading-hallmarks.md) — seven cumulative checks for whether a swing trade is valid; static rule filtering.
@@ -339,8 +339,8 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ny-am-open-range-model](concepts/31-models/ny-am-open-range-model.md) — 08:00–08:30/09:00 NY OR sweep model.
 - [london-close-reversal](concepts/31-models/london-close-reversal.md) — 10:00–12:00 NY morning-fade pattern.
 - [ny-pm-reversal](concepts/31-models/ny-pm-reversal.md) — afternoon fade of AM trend.
-- [ndog](concepts/31-models/ndog.md) — New Day Opening Gap (midnight NY).
-- [nwog](concepts/31-models/nwog.md) — New Week Opening Gap (Sunday/Monday).
+- [ndog](concepts/31-models/ndog.md) — daily opening gap — term unverified; corpus examples are the 18:00 NY futures reopen (holiday / Sunday), not midnight.
+- [nwog](concepts/31-models/nwog.md) — weekly opening gap — term unverified; 2022 precursor = Sunday 18:00 NY index-futures reopen gap.
 - [sunday-open-gap](concepts/31-models/sunday-open-gap.md) — 18:00 NY Sunday open event.
 - [venom-model](concepts/31-models/venom-model.md) — Apr 2025; pre-cash-open range fake-breakout for US indices.
 - [zircon-model](concepts/31-models/zircon-model.md) — Jan 2026 silent demo (demo-stage).
@@ -355,7 +355,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [risk-per-trade](concepts/32-risk-management/risk-per-trade.md) — per-trade % risk discipline.
 - [r-multiple](concepts/32-risk-management/r-multiple.md) — R as universal trade-quality measure.
 - [position-sizing](concepts/32-risk-management/position-sizing.md) — lot/contract calculation.
-- [stop-placement-by-pd-array](concepts/32-risk-management/stop-placement-by-pd-array.md) — structural SL.
+- [stop-placement-by-pd-array](concepts/32-risk-management/stop-placement-by-pd-array.md) — structural stop per PD array: OTE at the leg-origin extreme; FVG beyond the creating candle; era-split buffers.
 - [partial-takes](concepts/32-risk-management/partial-takes.md) — scaling-out ladder.
 - [static-drawdown-2026](concepts/32-risk-management/static-drawdown-2026.md) — 2026 prop-firm rule shift adaptation.
 - [correlation-risk](concepts/32-risk-management/correlation-risk.md) — cluster exposure tracking.

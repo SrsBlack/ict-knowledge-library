@@ -4,21 +4,28 @@
 **Aliases:** PB, propulsion candle, order block on an order block
 **ICT Confidence:** high
 **Year Introduced:** 2016
-**Year Refined:** 2024
-**Source IDs:** ICT-2016-PROPULSION-BLOCK, ICT-2018-BLOCKS, ICT-2024-PROPULSION-BLOCKS
+**Year Refined:** 2016
+**Source IDs:** ICT-2016-PROPULSION-BLOCK, ICT-2016-INSTITUTIONAL-ORDER-FLOW
 **Tags:** order-block, propulsion, nesting, mean-threshold, entry
 
-⚠ **Definition reversed and re-dated 2026-08-10 against the primary source.** This page previously
-defined the propulsion block as a **wide-body candle aligned with the displacement** — "the takeoff
-candle, not the absorption candle" — introduced in **2018**. Both claims are contradicted by the
-December-2016 lecture in which ICT names the concept: it is a **down-close candle that trades back
-into a previous down-close candle** (bullish case) — direction-**opposite** to the displacement, an
-order block sitting on an order block — and ICT coins the label in that lecture: "that's why I gave
-you the name; it's a propulsion candle because it **propels price quickly and suddenly**"
-(`ICT-2016-PROPULSION-BLOCK`, [07:20–07:28]). The former wide-body / minimal-wick / FVG-inside
-criteria are **not supported by any primary source in this corpus** and have been removed. The two
-later source IDs are retained as re-teach pointers only; they are registry stubs with no distilled
-content behind them.
+⚠ **Definition reversed and re-dated 2026-08-10 against the primary source; re-audited 2026-10-08.**
+This page previously defined the propulsion block as a **wide-body candle aligned with the
+displacement** — "the takeoff candle, not the absorption candle" — introduced in **2018**. Both
+claims are contradicted by the December-2016 lecture in which ICT names the concept: it is a
+**down-close candle that trades back into a previous down-close candle** (bullish case) —
+direction-**opposite** to the displacement, an order block sitting on an order block — and ICT coins
+the label in that lecture: "that's why I gave you the name; it's a propulsion candle because it
+**propels price quickly and suddenly**" (`ICT-2016-PROPULSION-BLOCK`, [07:20–07:28]). The former
+wide-body / minimal-wick / FVG-inside criteria are **not supported by any primary source in this
+corpus** and remain removed. The 2026-10-08 audit searched the 2022 Mentorship corpus (41 episodes)
+for "propulsion": **0 hits**, and found no 2018 or 2024 material in either corpus, so the prior
+`ICT-2018-BLOCKS` / `ICT-2024-PROPULSION-BLOCKS` stub citations have been dropped — they carried no
+distilled content and supported no claim on this page. `Year Refined` is set back to **2016**
+(never meaningfully refined in the corpus). In its place, `ICT-2016-INSTITUTIONAL-ORDER-FLOW`
+(Nov 2016, one month before the dedicated lecture) is added: it already shows the same pattern —
+"Down candle. Propulsion candle. Rallies up. Small little drop down. Hits the exact high of that
+candle here." (`ICT-2016-INSTITUTIONAL-ORDER-FLOW`, [22:09–22:13]) — consistent with the down-candle /
+high-entry construction below, and it is the earliest located use of the term.
 
 ## Definition
 
@@ -29,7 +36,8 @@ order block and **takes over the role of price support for higher price movement
 (`ICT-2016-PROPULSION-BLOCK`, [00:31–00:38]).
 
 The qualifying condition is the nesting, not the size: "what makes it propulsion is that it's already
-dropped back down into an order block that's **already predisposed to go higher**" [01:02–01:11];
+dropped back down into a[n] owner block [order block — ASR "owner block"] that's **already
+predisposed to go higher**" [01:02–01:11];
 "all it is is a **down closed candle that trades down into a previous down closed candle**"
 [04:39–04:46]. The result is a highly sensitive level whose defining behaviour is an immediate,
 violent departure — "the market will show a **sudden and violent movement away** from that down
@@ -42,10 +50,13 @@ on **reinforcing order block theory**" [00:22].
 
 **Bullish propulsion block**
 
-- A **bullish order block** already exists — the last down-close candle (or a run of consecutive
-  down candles treated as one block) before an up move that trades through the highest of those down
-  candles: "this candle here trades through the highest of the down candles, so that **confirms this
-  is a bullish order block**" [03:40–03:48].
+- A **bullish order block** already exists — in this Dec-2016 lecture's own framing, the last
+  down-close candle (or a run of consecutive down candles treated as one block) before an up move
+  that trades through the highest of those down candles: "this candle here trades through the
+  highest of the down candles, so that **confirms this is a bullish order block**" [03:40–03:48].
+  ⚠ The sibling [bullish-order-block](bullish-order-block.md) page documents that ICT's 2022
+  teaching rejects "last candle" as the general OB definition; this page states the Dec-2016
+  lecture's own construction, not a claim that "last candle" still holds in 2022.
 - A **later down-close candle trades back down into that order block**: "we have a new down close
   candle that trades right back into it… **that candle becomes a propulsion candle**" [00:51–01:02].
 - The **underlying context must be bullish**: "what makes it a propulsion candle is that we are
@@ -101,10 +112,10 @@ pb_mt   := (O_n + C_n) / 2             # mean threshold
 entry_primary   := touch of H_n        # "trades down into the high of the candle"
 entry_tolerated := touch of pb_mt      # allowed, but "most likely it will never do that"
 overshoot_ok    := H_n - price <= ~2 pips
-invalidated     := price < pb_mt       # mean threshold gives way -> stand aside or reverse
+invalidated     := close < pb_mt       # mean threshold GIVES WAY (a close, not a mere touch) -> stand aside or reverse
 
 # Bearish mirror: C_n > O_n ; H_n >= OB_low ; entry at L_n or pb_mt ;
-#                 invalidated when price > pb_mt.
+#                 invalidated when close > pb_mt.
 ```
 
 ## Machine-Readable
@@ -127,9 +138,9 @@ invalidated     := price < pb_mt       # mean threshold gives way -> stand aside
   "timeframes": ["M15","H1","H4","D"],
   "confidence": "high",
   "year_introduced": "2016",
-  "year_refined": "2024",
+  "year_refined": "2016",
   "related": ["bullish-order-block","bearish-order-block","order-block-criteria","mean-threshold","vacuum-block","pd-array-nesting","displacement-definition"],
-  "sources": ["ICT-2016-PROPULSION-BLOCK","ICT-2018-BLOCKS","ICT-2024-PROPULSION-BLOCKS"]
+  "sources": ["ICT-2016-PROPULSION-BLOCK","ICT-2016-INSTITUTIONAL-ORDER-FLOW"]
 }
 ```
 
@@ -159,8 +170,10 @@ invalidated     := price < pb_mt       # mean threshold gives way -> stand aside
 
 The worked bullish example is a **15-minute chart**, with ICT noting he would have preferred a
 higher tier: "this is a 15 minute time frame — I don't have a way of showing you a **45 minute
-chart** here, but it's the same price action" [04:46–04:54]. No timeframe restriction is stated;
-M15–D is the practical range for a construction that depends on candle bodies.
+chart** here, but it's the same price action" [04:46–04:54]. ICT names only the 15-minute chart and a
+45-minute preference; no other timeframe is stated in the corpus. The `["M15","H1","H4","D"]` JSON
+range below is the writer's unsourced extrapolation (a construction that depends on candle bodies
+should work on any TF), not an ICT-stated floor or ceiling.
 
 ## Examples
 
@@ -215,5 +228,5 @@ M15–D is the practical range for a construction that depends on candle bodies.
 
 ## Citations
 
-- `ICT-2016-PROPULSION-BLOCK` (00:22) "we're going to be continuing our discussion on reinforcing order block theory"; (00:31–00:38) "a propulsion block is a candle or bar that is previously traded down into a down candle or bullish order block and takes over the role of price support for higher price movement"; (00:51–01:02) the new down-close candle trading back in "becomes a propulsion candle"; (01:02–01:11) "what makes it propulsion is that it's already dropped back down into an order block that's already predisposed to go higher"; (01:24–01:31) "it should never see the mean threshold break — half of the body's height or the middle of the range of that candle's body"; (01:41–01:51) the mean threshold tolerated but "very most likely it will never do that"; (01:51–02:02) entry at the candle's high, "a pip or two below" permitted; (02:02–02:08) "a sudden and violent movement away from that down candle"; (02:37–03:23) three consecutive down candles framed as one bullish order block; (03:40–03:48) "trades through the highest of the down candles, so that confirms this is a bullish order block"; (04:00–04:07) "when the underlying context is bullish"; (04:26–04:34) the 133.45 open-and-low retest; (04:39–04:46) "all it is is a down closed candle that trades down into a previous down closed candle"; (04:46–04:54) the 15-minute chart and the 45-minute preference; (05:21–05:41) mean-threshold loss as invalidation, sideline or reverse; (05:26–05:34) the ultra-tight stop; (05:41–06:30) the bearish mirror and the mean-threshold entry; (07:09–07:15) "it doesn't need to go up to the body; it's the low of the candle"; (07:20–07:31) "that's why I gave you the name… it propels price quickly and suddenly… very little drawdown, immediate price responsiveness".
-- `ICT-2018-BLOCKS`, `ICT-2024-PROPULSION-BLOCKS` — registry stubs recording later re-teaches. ⚠ No distilled primary content sits behind either; do not quote criteria from them.
+- `ICT-2016-PROPULSION-BLOCK` (00:22) "we're going to be continuing our discussion on reinforcing order block theory"; (00:31–00:38) "a propulsion block is a candle or bar that is previously traded down into a down candle or bullish order block and takes over the role of price support for higher price movement"; (00:51–01:02) the new down-close candle trading back in "becomes a propulsion candle"; (01:02–01:11) "what makes it propulsion is that it's already dropped back down into a[n] owner block [order block — ASR "owner block"] that's already predisposed to go higher"; (01:24–01:31) "it should never see the mean threshold break — half of the body's height or the middle of the range of that candle's body"; (01:41–01:51) the mean threshold tolerated but "very most likely it will never do that"; (01:51–02:02) entry at the candle's high, "a pip or two below" permitted; (02:02–02:08) "a sudden and violent movement away from that down candle"; (02:37–03:23) three consecutive down candles framed as one bullish order block; (03:40–03:48) "trades through the highest of the down candles, so that confirms this is a bullish order block"; (04:00–04:07) "when the underlying context is bullish"; (04:26–04:34) the 133.45 open-and-low retest; (04:39–04:46) "all it is is a down closed candle that trades down into a previous down closed candle"; (04:46–04:54) the 15-minute chart and the 45-minute preference; (05:21–05:41) mean-threshold loss as invalidation, sideline or reverse; (05:26–05:34) the ultra-tight stop; (05:41–06:30) the bearish mirror and the mean-threshold entry; (07:09–07:15) "it doesn't need to go up to the body; it's the low of the candle"; (07:20–07:31) "that's why I gave you the name… it propels price quickly and suddenly… very little drawdown, immediate price responsiveness".
+- `ICT-2016-INSTITUTIONAL-ORDER-FLOW` (Nov 2016) [22:09–22:13] "Down candle. Propulsion candle. Rallies up. Small little drop down. Hits the exact high of that candle here." — the earliest located use of the term, one month before the dedicated lecture, attesting the same down-candle/high-entry construction. ⚠ No 2018 or 2024 material exists in either corpus for this concept; prior `ICT-2018-BLOCKS` / `ICT-2024-PROPULSION-BLOCKS` stub citations are dropped — searched "propulsion" in the 2022 Mentorship corpus (41 episodes): 0 hits.

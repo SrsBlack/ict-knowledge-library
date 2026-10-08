@@ -6,6 +6,51 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-10-08] audit+fix | 68 load-bearing pages checked against ICT's own words and rewritten; 2022 Mentorship added as a source
+
+**Why.** These pages define the terms downstream trading work relies on, and the 08-11 entry found two
+inverted definitions on stub-sourced pages. 68 pages (structure, liquidity, FVG/gaps, order/breaker
+blocks, OTE/fib/risk, time/bias/models) were audited claim-by-claim against both corpora.
+
+**New primary source.** All 41 episodes of the public **2022 ICT Mentorship** — YouTube auto-captions,
+saved verbatim at `meta/audit-2026-10-08/m22-captions/epNN.<id>.txt` — registered as
+`ICT-2022-MENTORSHIP-EP01` … `EP41` in SOURCES.md.
+
+**Audit verdicts (68 pages):** 24 WRONG, 31 MINOR, 9 SOUND, 4 UNVERIFIABLE. Headline errors:
+- **CHoCH / BOS are SMC labels** — 0 hits in either corpus. ICT says "market structure shift" /
+  "break in market structure" and uses them interchangeably (EP03 [02:20]).
+- **Order block** pages carried the SMC "last opposite candle before displacement" framing ICT
+  rejects ("that is not my order block", EP12 [24:54]); 2022 OB requires an imbalance (EP18 [40:41]).
+- **Sweep vs run inverted**: sweep = past the level and reverse, run = through and "doesn't look back"
+  (EP23 [05:16]). "Close back inside" appears nowhere in either corpus.
+- **Dealing range** = most recent energetic swing low→high (EP19 [77:10]), not LTH/LTL. **MSS needs
+  no FVG** (EP10 [37:43]). **Displacement** has no numeric thresholds.
+- **Invented numbers removed**: displacement 1.5×/70 %/20 %, EQH pip tolerances, R-by-setup table,
+  account-type risk table, "2–5 pip" stop buffer, NY AM 08:00–11:00, Asian range 25–60 pips.
+- **Stops**: OTE stop is at the leg-origin extreme ("not 10 pips or five pips below that", OTE Primer
+  [12:39]); 2022 FVG stop is beyond the candle that creates the gap (EP06 [36:06]).
+- **Breaker** requires a prior liquidity run (BREAKER-BLOCK [02:11]; EP39 [20:25]); mitigation block
+  DOES flip polarity (failure swing, last down candle, body).
+- **CE / IFVG / NWOG / NDOG / BPR / Silver Bullet**: terms absent from both corpora — now labelled
+  unverified. 2022 ICT enters an FVG at the near edge, not CE (EP18 [08:49]).
+
+**Process.** Six auditors → six writers (one cluster each) → six independent reviewers (91 FIX items)
+→ writers fixed → two final verifiers (88/91 resolved first pass, residuals then fixed). A mechanical
+checker matched 224/231 timestamp-cited quotes verbatim; the rest are ASR-trivial. One audit-report
+misreading was caught by review and corrected (EP39 "if you leave that out it's not a breaker" is
+about knowing the draw on liquidity, not the run).
+
+**Central edits.** TIMELINE: 32 pages re-dated (mostly 2017 → 2016). INDEX: 43 one-liners. GLOSSARY:
+CHoCH/BOS/BISI/SIBI flagged SMC; OB, BB, CE, MSS, NDOG, NWOG, IFVG, BPR, MMBM/MMSM corrected.
+
+**Open — pages outside this batch that now contradict it** (see `meta/audit-2026-10-08/verify-index.md`,
+`verify-a.md`, `verify-b.md`): choch-bullish/bearish, internal/external-structure, failed-breaker,
+mitigated/unmitigated-order-block, mitigation-of-fvg, ce-as-primary-entry, displacement-and-fvg,
+liquidity-void-vs-fvg, sunday-open-gap, fib-705/fib-79 (dating + "79 = invalidation"), asia-session,
+ny-am-killzone, ny-am-session, london-close-killzone, silver-bullet-* , judas-swing-failure,
+asian-range-sweep, stop-run-definition, stop-run-into-fvg; killzone pages dated 2016 though no 2016
+packet holds a killzone clock. Remaining ~150 stub-sourced pages unaudited.
+
 ## [2026-08-11] distill | Corpus closed at 151/153; two definitions found inverted; half the library is still stub-sourced
 
 **The final 38 packets read in full** — the Month 01/02/03/04/06/08/09 tails and all 21 non-Core
