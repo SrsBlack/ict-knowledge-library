@@ -10,7 +10,7 @@
 
 ## Definition
 
-A market structure shift (MSS) is ICT's term for the violation of a swing point that signals a change in directional bias. ICT uses "market structure shift," "shift in market structure," "break in market structure," and "market structure break" for the **same event** — he states this explicitly: "a lot of people try to teach my concepts it'll talk about market structure breaks or shifts and we'll use that term interchangeably" (`ICT-2022-MENTORSHIP-EP03` [02:20]). The only distinction he draws is significance, not mechanism: "shift" names an intraday, lesser event, "break" a more significant one — "when i'm gonna lean on that term market structure break it means a little bit more in context versus an intraday shift" (EP03 [02:51]). There is no ICT concept named "CHoCH" (change of character) — the term has 0 hits across 153 2016-17/2020 packets and 41 2022 episodes — and ICT draws no MSS-is-a-stricter-CHoCH hierarchy. See [mss-vs-choch](mss-vs-choch.md).
+A market structure shift (MSS) is ICT's term for the violation of a swing point that signals a change in directional bias. ICT uses "market structure shift," "shift in market structure," "break in market structure," and "market structure break" for the **same event** — he states this explicitly: "a lot of people try to teach my concepts it'll talk about market structure breaks or shifts and we'll use that term interchangeably" (`ICT-2022-MENTORSHIP-EP03` [02:20]). The only distinction he draws is significance, not mechanism: "shift" names an intraday, lesser event, "break" a more significant one — "when i'm gonna lean on that term market structure break it means a little bit more in context versus an intraday shift" (EP03 [02:51]). There is no ICT concept named "CHoCH" (change of character) — the term has 0 hits across 153 2016-17/2020 packets and 40 captioned 2022 episodes — and ICT draws no MSS-is-a-stricter-CHoCH hierarchy. See [mss-vs-choch](mss-vs-choch.md).
 
 ## Formal Criteria
 
@@ -95,7 +95,7 @@ All timeframes: "when you're looking at market structure shifts this is all time
 
 ## ICT vs Community
 
-"MSS" / "market structure shift" / "break in market structure" are ICT's own, used interchangeably by him. The CHoCH/BOS vocabulary — and the idea that MSS is a displacement-and-FVG-filtered subset of CHoCH — comes from the Smart Money Concepts (SMC) community, not ICT. Searches of 153 2016-17/2020 packets and 41 2022 Mentorship episodes for `choch`, `change of character`, `change in character`, and the bare word `character` returned 0 hits. This library keeps CHoCH as a cross-reference (tagged SMC) on [mss-vs-choch](mss-vs-choch.md) but does not present it as ICT's concept.
+"MSS" / "market structure shift" / "break in market structure" are ICT's own, used interchangeably by him. The CHoCH/BOS vocabulary — and the idea that MSS is a displacement-and-FVG-filtered subset of CHoCH — comes from the Smart Money Concepts (SMC) community, not ICT. Searches of 153 2016-17/2020 packets and 40 captioned 2022 Mentorship episodes for `choch`, `change of character`, `change in character`, and the bare word `character` returned 0 hits. This library keeps CHoCH as a cross-reference (tagged SMC) on [mss-vs-choch](mss-vs-choch.md) but does not present it as ICT's concept.
 
 ## Related Concepts
 

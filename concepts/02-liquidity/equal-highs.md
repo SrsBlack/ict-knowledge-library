@@ -20,7 +20,7 @@ Equal highs are two or more swing highs at (approximately) the same price level 
 
 ## Formula / Math
 
-ICT gives **no numeric tolerance** for equal highs in either corpus (0 hits for "tolerance" across 153 2016-17/2020-21 packets and 41 2022 episodes). His qualifiers are verbal: "close proximity," "too clean." Any pip/tick figure (e.g. "2 pips on EURUSD H1") is the library's own convention, not ICT's — do not present it as sourced.
+ICT gives **no numeric tolerance** for equal highs in either corpus (0 hits for "tolerance" across 153 2016-17/2020-21 packets and 40 captioned 2022 episodes). His qualifiers are verbal: "close proximity," "too clean." Any pip/tick figure (e.g. "2 pips on EURUSD H1") is the library's own convention, not ICT's — do not present it as sourced.
 
 ```
 equal_highs(SH_1, SH_2) := H(SH_1) "in close proximity to" H(SH_2)   [no ICT-given numeric bound]

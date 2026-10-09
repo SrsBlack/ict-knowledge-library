@@ -10,7 +10,7 @@
 
 ## Definition
 
-Mirror of [bos-bullish](bos-bullish.md). ICT's term is "break in market structure" / "market structure break," not "BOS" or "Break of Structure" (both 0 hits in 153 2016-17/2020 packets and 41 2022 episodes). A bearish structure break is a candle trading through (2016-17) or closing beyond (2022, preferred) the relevant swing low. ICT uses the identical phrase for both continuation and reversal contexts.
+Mirror of [bos-bullish](bos-bullish.md). ICT's term is "break in market structure" / "market structure break," not "BOS" or "Break of Structure" (both 0 hits in 153 2016-17/2020 packets and 40 captioned 2022 episodes). A bearish structure break is a candle trading through (2016-17) or closing beyond (2022, preferred) the relevant swing low. ICT uses the identical phrase for both continuation and reversal contexts.
 
 ## Formal Criteria
 

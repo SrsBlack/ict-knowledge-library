@@ -12,7 +12,7 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 inverted definitions on stub-sourced pages. 68 pages (structure, liquidity, FVG/gaps, order/breaker
 blocks, OTE/fib/risk, time/bias/models) were audited claim-by-claim against both corpora.
 
-**New primary source.** All 41 episodes of the public **2022 ICT Mentorship** — YouTube auto-captions,
+**New primary source.** The public **2022 ICT Mentorship** — YouTube auto-captions for 40 of 41 episodes (ep28 is 2:35 long with no captions),
 saved verbatim at `meta/audit-2026-10-08/m22-captions/epNN.<id>.txt` — registered as
 `ICT-2022-MENTORSHIP-EP01` … `EP41` in SOURCES.md.
 

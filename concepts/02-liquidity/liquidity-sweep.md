@@ -42,7 +42,7 @@ beyond_25_pips       := "if it starts moving beyond 25 pips, I think is a fair
                         (ICT-2016-LIQUIDITY-POOLS, 11:30-11:39)
 ```
 
-The library's prior "(high_n − close_n) > 0.6 × range_n" wick-percentage test and the "closes back below the level" close test are **not in the corpus** (0 hits for "close back"/"closes back"/"closed back" describing a sweep candle, across 153 2016-17/2020-21 packets and 41 2022 episodes). Do not treat either as ICT's rule — they are the library's own operationalisation of a behavioural distinction ICT states only in words ("doesn't look back" vs "sweep and reverse").
+The library's prior "(high_n − close_n) > 0.6 × range_n" wick-percentage test and the "closes back below the level" close test are **not in the corpus** (0 hits for "close back"/"closes back"/"closed back" describing a sweep candle, across 153 2016-17/2020-21 packets and 40 captioned 2022 episodes). Do not treat either as ICT's rule — they are the library's own operationalisation of a behavioural distinction ICT states only in words ("doesn't look back" vs "sweep and reverse").
 
 ## Machine-Readable
 

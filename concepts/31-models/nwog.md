@@ -9,7 +9,7 @@
 **Tags:** model, weekend-gap, unverified-term
 
 ⚠ **UNVERIFIABLE (term) per 2026-10-08 audit.** `nwog|new week opening gap|weekend gap` has
-**zero hits** in either corpus (153 2016-17/2020-21 packets, 41 2022 Mentorship episodes); the
+**zero hits** in either corpus (153 2016-17/2020-21 packets, 40 captioned 2022 Mentorship episodes); the
 term and its 2023 date are consistent with, but not confirmed by, this library's material. The
 2022 precursor located is on **index futures**, not FX, and anchors to the **session reopen
 (~18:00 NY, "six o'clock")**, not to a stated 17:00 NY Friday close — the page's prior FX-first

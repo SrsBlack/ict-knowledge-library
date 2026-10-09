@@ -19,8 +19,8 @@ candle" [13:19–13:33] (`ICT-2016-FVG-REINFORCED`). The companion lecture *Liqu
 the same two-candle body gap a **common gap** [12:37] (`ICT-2016-LIQUIDITY-VOIDS`). Re-dated to
 2016. ⚠ **Updated 2026-10-08 per audit.** The *label* "volume imbalance" does not appear anywhere
 in either corpus — not the 153-packet 2016-17/2020-21 local corpus, and (contrary to this page's
-prior claim) not the 41-episode 2022 Mentorship corpus either (searched `volume imbalance` and
-`body gap|gap between the bodies`: 0 hits across all 41 episodes; every 2022 "bodies"-near-"gap"
+prior claim) not the 40-captioned-episode 2022 Mentorship corpus either (searched `volume imbalance` and
+`body gap|gap between the bodies`: 0 hits across all 40 captioned episodes; every 2022 "bodies"-near-"gap"
 hit instead concerns a candle body respecting a 3-candle FVG, e.g. ep03/ep09/ep19, not a
 close-to-open body gap). `Year Refined` is corrected to **2016**: no 2022 corpus passage teaches
 this body-gap pattern itself, so neither the pattern's refinement nor the label's date can be
@@ -113,7 +113,7 @@ All TFs. ICT gives no timeframe or size floor — see Formal Criteria.
   ICT's own 2016 worked example uses a 2-pip body gap as a live limit-order level
   (`ICT-2016-FVG-REINFORCED` [12:37]–[12:47]; `ICT-2016-LIQUIDITY-VOIDS` [12:45]–[12:52]).
 - **Calling "volume imbalance" the 2022-mentorship name for this pattern.** It has 0 hits in the
-  41-episode 2022 corpus; its date is unverified, not 2022.
+  40-captioned-episode 2022 corpus; its date is unverified, not 2022.
 
 ## Related Concepts
 

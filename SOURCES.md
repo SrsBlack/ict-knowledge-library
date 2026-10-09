@@ -244,7 +244,7 @@ unknown. Anything else is an inference dressed as provenance.
 - `ICT-2022-MENTORSHIP-EP25` — "2022 ICT Mentorship Episode 25", official channel `CnTXwAuDi9Y`, 2022.
 - `ICT-2022-MENTORSHIP-EP26` — "2022 ICT Mentorship Episode 26", official channel `k26euOG6zAk`, 2022.
 - `ICT-2022-MENTORSHIP-EP27` — "2022 ICT Mentorship Episode 27", official channel `gLK4Qm6jte8`, 2022.
-- `ICT-2022-MENTORSHIP-EP28` — "2022 ICT Mentorship Episode 28", official channel `j0Z2EbuJXGU`, 2022.
+- `ICT-2022-MENTORSHIP-EP28` — "2022 ICT Mentorship Episode 28", official channel `j0Z2EbuJXGU`, 2022. ⚠ 2:35 long and has **no captions** on YouTube — not in `m22-captions/`, never searched.
 - `ICT-2022-MENTORSHIP-EP29` — "2022 ICT Mentorship Episode 29", official channel `QkokVv0owSE`, 2022.
 - `ICT-2022-MENTORSHIP-EP30` — "2022 ICT Mentorship Episode 30", official channel `CL94EnGqB4Q`, 2022.
 - `ICT-2022-MENTORSHIP-EP31` — "2022 ICT Mentorship Episode 31", official channel `OYNpIeu9czw`, 2022.

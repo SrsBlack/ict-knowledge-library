@@ -22,7 +22,7 @@ A liquidity void is a wide, fast-traversed price region produced by displacement
 
 ## Formula / Math
 
-ICT gives **no quantitative threshold** for a liquidity void. Searched "80 percent"/"eighty percent," "0.3," and "pullback" near "void" in both corpora (153 2016-17/2020-21 packets, 41 2022 episodes): all "80%" hits are position-sizing or audience-share contexts, unrelated to voids. The library's prior thresholds are **invented**:
+ICT gives **no quantitative threshold** for a liquidity void. Searched "80 percent"/"eighty percent," "0.3," and "pullback" near "void" in both corpora (153 2016-17/2020-21 packets, 40 captioned 2022 episodes): all "80%" hits are position-sizing or audience-share contexts, unrelated to voids. The library's prior thresholds are **invented**:
 
 ```
 # ICT gives no number for this:

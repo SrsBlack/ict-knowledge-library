@@ -17,7 +17,7 @@ itself has no located source, and two of its items are contradicted by content t
 library does have.
 
 ⚠ **Corpus status: no Silver Bullet teaching exists in either corpus searched for this
-audit** (153 2016-17/2020-21 packets + the 41-episode 2022 YouTube mentorship).
+audit** (153 2016-17/2020-21 packets + the 40-captioned-episode 2022 YouTube mentorship).
 `grep -c -i "silver bullet"` across both corpora: **5 hits in 4 files, all idiomatic** —
 "They're not a silver bullet" (`ICT-2017-BREAD-BUTTER-SELL`, 19:18); "interest rate SMT
 is going to be that little silver bullet" (`ICT-2017-MEGA-BOND`, 03:35); index SMT "is

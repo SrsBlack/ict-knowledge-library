@@ -14,7 +14,7 @@ The body-edge anchor, the premium-ladder placement, and the multi-candle-cluster
 CONFIRMED verbatim against the corpus. The **≥ 60% wick threshold**, the **named key-level list**
 (round number, session extreme, FVG/OB edge), and the **"confirmed by next-candle displacement"**
 clause are EMBELLISHED — no numeric threshold or displacement-confirmation rule appears anywhere in
-either corpus. The "2022 restatement" claim is dropped: 0 hits for "rejection block" across all 41
+either corpus. The "2022 restatement" claim is dropped: 0 hits for "rejection block" across all 40 captioned
 2022 Mentorship episodes. The aliases "wick rejection block" / "long-wick block" are this page's own
 unsourced editorial shorthand, not attested in the corpus, and are dropped.
 

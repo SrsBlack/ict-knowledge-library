@@ -9,7 +9,7 @@
 **Tags:** ce, fvg, midpoint, unverified-term
 
 ⚠ **UNVERIFIABLE (term) / ERA-SPLIT (role) per 2026-10-08 audit.** `consequent|encroach*` has
-**zero hits** in either corpus (153 2016-17/2020-21 packets, 41 2022 Mentorship episodes). The
+**zero hits** in either corpus (153 2016-17/2020-21 packets, 40 captioned 2022 Mentorship episodes). The
 *midpoint* idea exists without this name in both eras (see Definition), but "CE is the primary
 entry zone" is contradicted for this corpus's era — ICT's 2022 statements enter at the FVG's
 **near edge**, not its midpoint, and explicitly decline the midpoint as a requirement. The

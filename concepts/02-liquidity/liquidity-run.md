@@ -8,7 +8,7 @@
 **Source IDs:** ICT-2016-LIQUIDITY-RUNS, ICT-2016-LIQUIDITY-POOLS, ICT-2016-REINFORCING-LIQUIDITY, ICT-2022-MENTORSHIP-EP23, ICT-2022-MENTORSHIP-EP35, ICT-2022-MENTORSHIP-EP02
 **Tags:** liquidity, run, sweep, foundational
 
-> ⚠ **Rewritten 2026-10-08.** This page previously defined a run as the broader sequence containing a sweep, with "run-and-reverse" as one branch. That is **contradicted** by ICT: he uses *run* and *sweep* as **alternative outcomes**, not a superset/subset pair — a sweep reverses, a run doesn't look back. "Run-and-reverse" and "run-and-continue" are **0 hits** in both corpora (153 2016-17/2020-21 packets, 41 2022 episodes) and should not be read as ICT vocabulary. The page previously cited only placeholder sources (`ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`) and dated the term 2017; the term is the title of a September 2016 lecture.
+> ⚠ **Rewritten 2026-10-08.** This page previously defined a run as the broader sequence containing a sweep, with "run-and-reverse" as one branch. That is **contradicted** by ICT: he uses *run* and *sweep* as **alternative outcomes**, not a superset/subset pair — a sweep reverses, a run doesn't look back. "Run-and-reverse" and "run-and-continue" are **0 hits** in both corpora (153 2016-17/2020-21 packets, 40 captioned 2022 episodes) and should not be read as ICT vocabulary. The page previously cited only placeholder sources (`ICT-2017-CHARTER-OVERVIEW`, `ICT-2022-MENTORSHIP-OVERVIEW`) and dated the term 2017; the term is the title of a September 2016 lecture.
 
 ## Definition
 

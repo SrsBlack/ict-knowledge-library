@@ -10,7 +10,7 @@
 
 ## Definition
 
-ICT's term for this event is "break in market structure" / "market structure break," not "BOS" or "Break of Structure" — both acronym and expanded phrase are 0 hits across 153 2016-17/2020 packets and 41 2022 episodes (searched `\bBOS\b` and `break of structure`; `break in market structure` returns 12 hits in 11 raw packets, `market structure break` in `ICT-2017-OTE`). A bullish structure break is a candle trading through (2016-17) or closing beyond (2022, preferred) the relevant swing high. ICT uses the identical phrase for **both continuation and reversal** — it is not a continuation-only label. See Common Mistakes.
+ICT's term for this event is "break in market structure" / "market structure break," not "BOS" or "Break of Structure" — both acronym and expanded phrase are 0 hits across 153 2016-17/2020 packets and 40 captioned 2022 episodes (searched `\bBOS\b` and `break of structure`; `break in market structure` returns 12 hits in 11 raw packets, `market structure break` in `ICT-2017-OTE`). A bullish structure break is a candle trading through (2016-17) or closing beyond (2022, preferred) the relevant swing high. ICT uses the identical phrase for **both continuation and reversal** — it is not a continuation-only label. See Common Mistakes.
 
 ## Formal Criteria
 

@@ -9,7 +9,7 @@
 **Tags:** order-block, bearish, foundational
 
 ⚠ **Rewritten 2026-10-08 against an audit of `raw/*/report.md` (153 packets) and `m22/ep*.txt`
-(41 episodes).** Mirror of [bullish-order-block](bullish-order-block.md); the same ERA-SPLIT and
+(40 captioned episodes).** Mirror of [bullish-order-block](bullish-order-block.md); the same ERA-SPLIT and
 fresh-zone corrections apply. See [order-block-criteria](order-block-criteria.md) for the shared
 multi-candle/confirmation rules.
 

@@ -10,7 +10,7 @@
 
 ## Definition
 
-"CHoCH" (change of character) is **not an ICT term**. Searches of 153 2016-17/2020 mentorship packets and 41 2022 Mentorship episodes for `choch`, `change of character`, `change in character`, and the bare word `character` returned 0 hits in both corpora. It is Smart Money Concepts (SMC) community vocabulary, and the claim that "every MSS is a CHoCH, but not every CHoCH is an MSS" is an SMC overlay, not an ICT distinction. This page exists to document that overlay for readers coming from SMC material and to state the ONE hierarchy ICT actually draws between his own two words, "shift" and "break."
+"CHoCH" (change of character) is **not an ICT term**. Searches of 153 2016-17/2020 mentorship packets and 40 captioned 2022 Mentorship episodes for `choch`, `change of character`, `change in character`, and the bare word `character` returned 0 hits in both corpora. It is Smart Money Concepts (SMC) community vocabulary, and the claim that "every MSS is a CHoCH, but not every CHoCH is an MSS" is an SMC overlay, not an ICT distinction. This page exists to document that overlay for readers coming from SMC material and to state the ONE hierarchy ICT actually draws between his own two words, "shift" and "break."
 
 ## Formal Criteria
 
@@ -91,7 +91,7 @@ Applies on every timeframe ICT teaches structure on, including the multi-month q
 
 ## Common Mistakes
 
-- **Citing "CHoCH" as ICT's word.** It is not — 0 hits in 153 packets and 41 episodes.
+- **Citing "CHoCH" as ICT's word.** It is not — 0 hits in 153 packets and 40 captioned episodes.
 - **Treating MSS as the stricter, displaced member of a CHoCH/MSS pair.** ICT's only stated hierarchy (shift vs. break) is about significance, and "break" is the MORE significant term — the opposite direction from "MSS = CHoCH + extra filter."
 - **Assuming the distinction matters on HTF because every HTF reversal is displaced.** Not stated anywhere in either corpus; ICT applies "shift" at every timeframe including the quarterly cycle without a displacement caveat.
 

@@ -11,7 +11,7 @@
 ⚠ **UNVERIFIABLE per 2026-10-08 audit — read before using.** The term "inversion FVG" and every
 stated rule (close-through-with-displacement, formal retest-with-displacement confirmation) have
 **zero hits** in this library's local corpus. Searched both corpora (153 2016-17/2020-21 packets,
-41 2022 Mentorship episodes) for `inversion|inverted|invert|inverse|polarity|flip|flipped|old gap|failed gap|gap fail`:
+40 captioned 2022 Mentorship episodes) for `inversion|inverted|invert|inverse|polarity|flip|flipped|old gap|failed gap|gap fail`:
 20 "inverted"/5 "inversion" hits in the raw corpus are all head-and-shoulders, yield-curve or
 USDCAD-correlation usage, none FVG-related; 3 "inverted" hits in the 2022 corpus are a pyramid
 metaphor (ep13) and dollar/euro correlation (ep20, ep21), again none FVG-related. Both cited
@@ -25,7 +25,7 @@ kept here as an unverified placeholder, not as a confirmed definition. `ICT Conf
 An Inversion FVG is commonly described as a previously-formed FVG that price has traded through
 and that then **flips polarity** — a bullish FVG that fails as support becomes resistance on
 retest, and vice versa. **No definition, name, or rule for this exists in the 153-packet
-2016-17/2020-21 corpus or the 41-episode 2022 Mentorship corpus searched here.** The closest
+2016-17/2020-21 corpus or the 40-captioned-episode 2022 Mentorship corpus searched here.** The closest
 precursor located is a 2022 statement with no name attached, describing an FVG's low used as
 resistance after price has fallen through it: "now i can revisit the bottom and under that fair
 value gap and bump it kind of like a support resistance idea and that would be a shorting

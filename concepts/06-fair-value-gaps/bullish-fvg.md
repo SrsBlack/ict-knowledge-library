@@ -9,7 +9,7 @@
 **Tags:** fvg, bullish, foundational
 
 ⚠ **Edited 2026-10-08 per audit.** "BISI" (buy-side imbalance / sell-side inefficiency) has zero
-hits in either corpus (153 2016-17/2020-21 packets, 41 2022 Mentorship episodes, searched
+hits in either corpus (153 2016-17/2020-21 packets, 40 captioned 2022 Mentorship episodes, searched
 `bisi|sibi` word-bounded) — kept only as an alias tagged `(SMC)`, not presented as ICT's own
 2016/2022 term. The body/wick-ratio displacement criterion and the CE-entry worked example were
 invented; both removed or corrected below, matching the fix applied to

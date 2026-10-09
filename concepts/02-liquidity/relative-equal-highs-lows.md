@@ -23,7 +23,7 @@ Relative Equal Highs (REH) and Relative Equal Lows (REL) are pairs of swing high
 
 ## Formula / Math
 
-ICT gives **no pip/tick tolerance** for REH/REL in either corpus (0 hits for "tolerance," "few pips," "pip tolerance" in a REH/REL context across 153 2016-17/2020-21 packets and 41 2022 episodes). The only numbers found near "equal highs" are price levels themselves or the *reach beyond* a level once taken (10–20 pips typical, see [liquidity-sweep](liquidity-sweep.md)) — never a tolerance *between* the two highs/lows.
+ICT gives **no pip/tick tolerance** for REH/REL in either corpus (0 hits for "tolerance," "few pips," "pip tolerance" in a REH/REL context across 153 2016-17/2020-21 packets and 40 captioned 2022 episodes). The only numbers found near "equal highs" are price levels themselves or the *reach beyond* a level once taken (10–20 pips typical, see [liquidity-sweep](liquidity-sweep.md)) — never a tolerance *between* the two highs/lows.
 
 ```
 REH(SH_1, SH_2) := H(SH_1) "in close proximity to" H(SH_2)   [ICT gives no number for this]

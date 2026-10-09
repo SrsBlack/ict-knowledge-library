@@ -26,7 +26,7 @@ A single-page reference card for every ICT killzone time anchor in NY-clock time
 | New York (indices, PM) | 13:30 – 16:00 | "the 1 30 to 4 new york local time that's the pm session new york index pm" (ep41 [05:53]) |
 | London Close | 10:00 – 11:00 | "that time frame 10 to 11 that's london close … i've always taught that 10 o'clock until 11 o'clock in the morning is london closed profit taking hour" (ep40 [17:18], [18:14]); news days widen it "between 10 o'clock to noon" (ep40 [18:14]) |
 
-No Asian killzone clock, no macro windows, and no Silver Bullet windows appear anywhere in the 2022 episodes (searched `macro` and `silver bullet` across all 41 episodes; see [asian-range](../14-asian-range/asian-range.md) and [silver-bullet-rules](../11-silver-bullet/silver-bullet-rules.md)).
+No Asian killzone clock, no macro windows, and no Silver Bullet windows appear anywhere in the 2022 episodes (searched `macro` and `silver bullet` across all 40 captioned episodes; see [asian-range](../14-asian-range/asian-range.md) and [silver-bullet-rules](../11-silver-bullet/silver-bullet-rules.md)).
 
 **The April-2017 mentorship set** (`ICT-2017-DEFINING-DAILY-RANGE`, 02:27–05:38):
 
@@ -39,7 +39,7 @@ No Asian killzone clock, no macro windows, and no Silver Bullet windows appear a
 | ICT London close killzone | 10:00 – 12:00 | 2022 narrows to 10:00 – 11:00 |
 | IPDA true day | 00:00 – 15:00 | the containing interval; not a killzone |
 
-**Macros and Silver Bullet windows are NOT IN CORPUS.** Searched `macro` in both corpora (153 2016-17/2020-21 packets + 41 2022 episodes): raw hits are all "macro economic"; the only 2022 hits name an unclocked "algorithm macro" (ep05 [32:15]) and a session-close "macro" (ep39 [72:50]) — no 20-minute windows anywhere. Silver Bullet windows: `grep -c -i "silver bullet"` across both corpora — 5 hits in 4 files, all idiomatic ("not going to give you a silver bullet that removes losing trades", ep10 [28:38]); no teaching of 03–04 / 10–11 / 14–15 windows exists (see [silver-bullet-rules](../11-silver-bullet/silver-bullet-rules.md) for the full count). Both are late-2022/2023 material outside this library's corpus. `# ICT gives no number for macros or Silver Bullet windows in this corpus.`
+**Macros and Silver Bullet windows are NOT IN CORPUS.** Searched `macro` in both corpora (153 2016-17/2020-21 packets + 40 captioned 2022 episodes): raw hits are all "macro economic"; the only 2022 hits name an unclocked "algorithm macro" (ep05 [32:15]) and a session-close "macro" (ep39 [72:50]) — no 20-minute windows anywhere. Silver Bullet windows: `grep -c -i "silver bullet"` across both corpora — 5 hits in 4 files, all idiomatic ("not going to give you a silver bullet that removes losing trades", ep10 [28:38]); no teaching of 03–04 / 10–11 / 14–15 windows exists (see [silver-bullet-rules](../11-silver-bullet/silver-bullet-rules.md) for the full count). Both are late-2022/2023 material outside this library's corpus. `# ICT gives no number for macros or Silver Bullet windows in this corpus.`
 
 ICT's own ruling on fills vs windows: "Kill zones are when you determine your entry, and you place your orders, and you walk away. You don't need to have your entry filled inside that kill zone window" (ep18 [48:30]).
 

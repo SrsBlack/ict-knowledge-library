@@ -11,7 +11,7 @@
 ⚠ **WRONG dating/attribution — corrected 2026-10-08 per audit; year is a PLACEHOLDER, not a
 finding.** This page previously stated "Year Introduced: 2017" sourced to the stub
 `ICT-2017-CHARTER-OVERVIEW`. `balanced price range|bpr` has **zero hits** as the two-opposing-FVGs
-pattern in either corpus (153 2016-17/2020-21 packets, 41 2022 Mentorship episodes), and **no
+pattern in either corpus (153 2016-17/2020-21 packets, 40 captioned 2022 Mentorship episodes), and **no
 dated source for that pattern exists anywhere in `SOURCES.md`** — the only 2023 registry entry,
 `ICT-2023-NDOG-NWOG`, is for a different concept (NDOG/NWOG) and is not cited here. "2023" above
 is a four-digit **placeholder** required by this vault's lint format (which requires a bare year),

@@ -9,7 +9,7 @@
 **Tags:** order-block, bullish, foundational
 
 ⚠ **Rewritten 2026-10-08 against an audit of `raw/*/report.md` (153 packets) and `m22/ep*.txt`
-(41 episodes).** The page previously defined a bullish OB as "the last bearish candle before a
+(40 captioned episodes).** The page previously defined a bullish OB as "the last bearish candle before a
 bullish displacement move that breaks structure" and named MT the default entry. Neither survives:
 the 2016 definition has no structure-break clause, and 2022 explicitly rejects the "last candle"
 framing and the fresh-zone premise. See [order-block-criteria](order-block-criteria.md) for the
