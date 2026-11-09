@@ -91,7 +91,7 @@ All TFs — ICT's own defining example is **M1**, not M15+. Do not present "void
 
 ## Related Concepts
 
-- [fair-value-gap](../06-fair-value-gaps/fair-value-gap.md) — the same imbalance, often the lower-timeframe view of a void.
+- [fair-value-gap](../06-fair-value-gaps/fair-value-gap.md) — the same imbalance; an FVG on one timeframe often shows as a liquidity void on a lower timeframe (`ICT-2016-FVG-REINFORCED` [05:14]).
 - [liquidity-void-vs-fvg](../06-fair-value-gaps/liquidity-void-vs-fvg.md) — disambiguation.
 - [displacement-definition](../09-displacement/displacement-definition.md) — what creates a void.
 - [range-expansion](../01-market-structure/range-expansion.md) — phase that produces voids.

@@ -112,7 +112,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [immediate-rebalance-fvg](concepts/06-fair-value-gaps/immediate-rebalance-fvg.md) — fills within 1-3 bars.
 - [delayed-rebalance-fvg](concepts/06-fair-value-gaps/delayed-rebalance-fvg.md) — stays unfilled 5+ bars.
 - [fvg-classification-2025](concepts/06-fair-value-gaps/fvg-classification-2025.md) — immediate/delayed taxonomy.
-- [liquidity-void-vs-fvg](concepts/06-fair-value-gaps/liquidity-void-vs-fvg.md) — disambiguation.
+- [liquidity-void-vs-fvg](concepts/06-fair-value-gaps/liquidity-void-vs-fvg.md) — disambiguation: same one-sided delivery at two timeframes (FVG on T ≈ void on a lower TF); no numeric void thresholds in ICT.
 - [fvg-mitigation](concepts/06-fair-value-gaps/fvg-mitigation.md) — rebalance / fill status of an FVG (ICT's words: rebalance, closed in, fill — not "mitigation").
 - [nested-fvg](concepts/06-fair-value-gaps/nested-fvg.md) — multi-TF FVG nesting.
 
@@ -221,7 +221,7 @@ Format: `- [Concept Name](path) — one-line summary`
 - [ote-failure](concepts/17-optimal-trade-entry/ote-failure.md) — invalidation & response.
 
 ### 18 — Mitigation
-- [mitigation-definition](concepts/18-mitigation/mitigation-definition.md) — umbrella concept of zone "tested" state.
+- [mitigation-definition](concepts/18-mitigation/mitigation-definition.md) — ICT's "mitigate" = traders offsetting a losing position (or your own loss); the zone fresh/tested state and CE/MT thresholds are not ICT's.
 - [mitigation-of-ob](concepts/18-mitigation/mitigation-of-ob.md) — MT-threshold OB mitigation.
 - [mitigation-of-fvg](concepts/18-mitigation/mitigation-of-fvg.md) — CE-threshold FVG mitigation (2025 default).
 - [mitigation-of-breaker](concepts/18-mitigation/mitigation-of-breaker.md) — breaker retest mechanics.

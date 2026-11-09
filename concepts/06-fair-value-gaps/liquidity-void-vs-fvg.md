@@ -3,54 +3,83 @@
 **Category:** 06-fair-value-gaps
 **Aliases:** none (disambiguation page)
 **ICT Confidence:** high
-**Year Introduced:** 2017
+**Year Introduced:** 2016
 **Year Refined:** 2022
-**Source IDs:** ICT-2017-DISPLACEMENT, ICT-2022-MENTORSHIP-OVERVIEW
+**Source IDs:** ICT-2016-FVG-REINFORCED, ICT-2016-LIQUIDITY-VOIDS, ICT-2017-HTF-PD-ARRAYS, ICT-2022-MENTORSHIP-EP38
 **Tags:** fvg, liquidity-void, disambiguation, terminology
+
+⚠ **Rewritten 2026-11-09 against ICT's own words.** The prior version gave a liquidity void
+fixed thresholds (≥ 80 % directional closes, ≤ 30 % pullback, "5+ bars") and said a void
+contains **1-3** FVGs on the same chart. None of those numbers is in the corpus. Searched both corpora
+(153 2016-17/2020-21 packets, 40 captioned 2022 Mentorship episodes) — see
+[liquidity-void](../02-liquidity/liquidity-void.md), Formula / Math, for the search (bar-count search, "five/5 candles|bars" near void: no hits either). ICT's main
+link between the two is a **timeframe** link.
+Re-dated 2017 → 2016: both concepts and their relationship are taught in December 2016.
 
 ## Definition
 
-This page resolves the confusion between **Liquidity Void** and **Fair Value Gap** — two related but distinct concepts.
+**Short version:** ICT links the two by **timeframe**: a gap printed on the chart you are studying is
+*typically* seen on a lower timeframe as several one-sided candles — a liquidity void. On a single
+chart he still lists them as separate PD arrays in his hierarchy (`ICT-2017-HTF-PD-ARRAYS` [19:05],
+[20:16]–[20:28]).
 
-**Short version:**
-- **FVG** is a **specific 3-candle wick imbalance pattern**.
-- **Liquidity Void** is a **multi-candle wider unworked region** that often *contains* one or more FVGs as nested sub-patterns.
+- **FVG** — "a range in price delivery where one side of the market liquidity is offered and
+  typically confirmed with a liquidity void on the lower timeframe charts in the same range of
+  price" (`ICT-2016-FVG-REINFORCED` [00:36]–[00:46]).
+- **Liquidity void** — "a range in price delivery where one side of the market liquidity is shown in
+  wide or long one-sided ranges or candles" (`ICT-2016-LIQUIDITY-VOIDS` [00:57]).
+- **The link, in ICT's words:** "if we're studying a specific timeframe, the gap occurs on the
+  timeframe you're looking at. You can break this down further into smaller timeframes, but in the
+  smaller timeframes, you'll probably end up seeing a liquidity void where the gap would be indicated
+  here on this timeframe" (`ICT-2016-FVG-REINFORCED` [05:04]–[05:14]); "on a lower timeframe, it would
+  many times appear as a liquidity void where it's multiple candles that create that open space of
+  range" ([05:26]). He then walks through "the overlap of liquidity voids and fair value gaps" on a chart
+  ([09:43]); the arrays "overlap … in a lot of different ways" ([09:01]).
 
-A liquidity void is the macroscale; an FVG is the microscale. Voids can be 5–20+ bars wide; FVGs are exactly 3 candles wide.
+So when an FVG and a void cover the same range on two timeframes, ask **which timeframe's candles you
+are describing**. ICT's hedges ("typically", "probably", "many times") and his separate hierarchy slots
+mean this is a tendency, not an identity.
 
 ## Formal Criteria
 
-### FVG (specific)
+### FVG (geometric, on the chart being studied)
 
-- 3 candles, `L_{n+1} > H_{n-1}` (bullish) or `H_{n+1} < L_{n-1}` (bearish).
-- Tight, well-defined geometric pattern.
+- 3 candles, `L_{n+1} > H_{n-1}` (bullish) or `H_{n+1} < L_{n-1}` (bearish). See
+  [fair-value-gap](fair-value-gap.md).
 
-### Liquidity Void (broader)
+### Liquidity void (descriptive)
 
-- Multi-candle expansion span (typically 5+ bars).
-- Directional close percentage ≥ 80%.
-- Minimal pullback within the span (≤ 30% of expansion size).
-- Often contains 1–3 nested FVGs as internal patterns.
+- Long or wide one-sided candles where price was delivered in one direction only
+  (`ICT-2016-LIQUIDITY-VOIDS` [00:57], [03:08]: "long bodied candles where price has only been
+  delivered on the downside and has a small little gap in between the two biggest down candles").
+- ICT gives **no** directional-close percentage, pullback fraction, or minimum bar count.
 
-### Containment Relationship
+### Relationship
 
-```
-FVG ⊂ liquidity_void  (often, but not always)
-```
-
-A liquidity void usually contains FVGs; an FVG is rarely a liquidity void on its own (too narrow geometrically).
+- An FVG on timeframe T is *typically* seen as a liquidity void on a lower timeframe over the same
+  price range ([00:42], [05:14]). "Typically" / "probably" / "many times" are ICT's hedges — it is a
+  tendency, not a rule.
+- ICT gives no count of FVGs inside a void. He does point to "a small little gap in between the two
+  biggest down candles" inside his one-minute void (`ICT-2016-LIQUIDITY-VOIDS` [03:08]) and to a gap
+  inside the lower-timeframe void in the FVG drill (`ICT-2016-FVG-REINFORCED` [10:49]–[11:05]).
+- On one chart, ICT ranks them as separate arrays — "the next order of hierarchy is liquidity void …
+  The next thing, is there a fair value gap?" (`ICT-2017-HTF-PD-ARRAYS` [20:16]–[20:28]) — and both
+  can be present: "there is a gap and it may be a liquidity void and a gap" ([28:30]).
 
 ## Formula / Math
 
 ```
-is_fvg(n)         := strict_3_candle_imbalance(n)
-is_liquidity_void(span) := multi_candle_expansion(span)
-                            AND directional_close_pct(span) >= 0.8
-                            AND max_pullback_pct(span) <= 0.3
+# ICT's relationship (ICT-2016-FVG-REINFORCED [00:42], [05:14], [05:26]):
+fvg(tf=T, range=R)  ~typically~  liquidity_void(tf=lower_than_T, range≈R)
 
-# void can contain multiple FVGs:
-contained_fvgs_in_void(void) := { fvg | fvg.range ⊂ void.range }
+# NOT ICT's (removed 2026-11-09, no corpus source):
+#   directional_close_pct(span) >= 0.8
+#   max_pullback_pct(span) <= 0.3
+#   void.bar_count >= 5
+#   "void contains 1-3 FVGs on the same chart"   (a gap inside a void is shown; the count is not)
 ```
+
+Any numeric void detector is the user's own operationalisation and should be labelled that way.
 
 ## Machine-Readable
 
@@ -60,69 +89,63 @@ contained_fvgs_in_void(void) := { fvg | fvg.range ⊂ void.range }
   "category": "06-fair-value-gaps",
   "aliases": [],
   "criteria": [
-    {"id": "c1", "expr": "fvg == strict_3_candle_pattern"},
-    {"id": "c2", "expr": "liquidity_void == multi_candle_expansion_with_directional_dominance"},
-    {"id": "c3", "expr": "void_often_contains_FVGs == true"}
+    {"id": "c1", "expr": "fvg == 3-candle wick gap on the timeframe being studied"},
+    {"id": "c2", "expr": "liquidity_void == wide/long one-sided candles; no numeric threshold in ICT"},
+    {"id": "c3", "expr": "fvg on timeframe T typically appears as a liquidity void on a lower timeframe over the same range"}
   ],
-  "timeframes": ["M5","M15","H1","H4","D"],
+  "timeframes": ["M1","M5","M15","H1","H4","D","W"],
   "confidence": "high",
-  "year_introduced": "2017",
+  "year_introduced": "2016",
   "year_refined": "2022",
-  "related": ["fair-value-gap","liquidity-void","imbalance-definition","displacement-definition","range-expansion"],
-  "sources": ["ICT-2017-DISPLACEMENT","ICT-2022-MENTORSHIP-OVERVIEW"]
+  "related": ["fair-value-gap","liquidity-void","imbalance-definition","displacement-definition","gap-classification"],
+  "sources": ["ICT-2016-FVG-REINFORCED","ICT-2016-LIQUIDITY-VOIDS","ICT-2017-HTF-PD-ARRAYS","ICT-2022-MENTORSHIP-EP38"]
 }
 ```
 
 ## Visual Pattern
 
 ```
-   Liquidity Void (5-bar example) containing FVGs:
-
-   ▲                                      
-   █  ← bar 1                             
-   █                                      
-   ▲▲                                      
-   ██  ← bar 2 + nested FVG #1            
-   ██                                      
-   ▲▲▲                                     
-   ███  ← bar 3                            
-   ███                                     
-   ▲▲▲▲                                    
-   ████  ← bar 4 + nested FVG #2          
-   ████                                    
-   ▲▲▲▲▲                                   
-   █████  ← bar 5                          
-                                           
-   Void = full 5-bar span                 
-   FVGs = specific 3-candle patterns inside
+   Daily (timeframe T)            Lower timeframe, same price range
+   ───────────────────            ─────────────────────────────────
+        │  c3                          █
+        │                              █
+   ░░░░░░░  ← FVG (c1 high → c3 low)   █   ← several one-sided candles
+        █  c2                          █      = liquidity void
+        │  c1                          █
 ```
 
 ## Timeframes
 
-All TFs.
+All. The relationship is relative: whatever timeframe shows the FVG, a lower one tends to show the void.
 
 ## Examples
 
-**Example A — void with 2 FVGs:**
-- During an NFP release, M5 prints 6 consecutive green candles, total range 75 pips, max pullback 9 pips (12%).
-- Liquidity void: 6 bars.
-- Contained FVGs: bars 2-3-4 (FVG #1), bars 4-5-6 (FVG #2).
-- Subsequent retracement often returns to fill at least one FVG (typically the deeper one) without filling the entire void.
-
-**Example B — FVG without surrounding void:**
-- A single 3-candle FVG forms on a pullback inside a larger ranging market.
-- This is an FVG but not a liquidity void (no multi-bar one-sided expansion around it).
+**ICT's own drill (`ICT-2016-FVG-REINFORCED` [09:43]–[10:54]):** on a five-minute chart at the
+104.75 level (the caption says "euro dollar"; "104.75" is read as spoken pips), price runs above an
+old high that also sits in the fair value gap he has been marking — "it's trading into the fair value gap" ([10:47]) — and
+ICT points out the lower-timeframe picture of that same gap: "I said on the lower time frames, many
+times this will create a liquidity void" ([10:49]).
 
 ## Common Mistakes
 
-- **Treating a wide expansion as a single "FVG."** A 5-bar expansion is a void; the FVGs are the specific 3-candle patterns inside it.
-- **Treating a 3-candle FVG as a void.** An FVG alone, without surrounding multi-bar expansion, is just an FVG.
-- **Demanding voids fill completely.** Voids often partially rebalance via internal FVG fills without fully closing.
+- **Applying invented thresholds as ICT's rule.** The 80 % / 30 % / 5-bar numbers were this library's
+  own and have been removed.
+- **Counting the HTF FVG and the LTF void over the same range as two confirmations.** When they are the
+  same range seen on two timeframes, that is one delivery (library guidance, from ICT's timeframe link
+  [05:14]). This does not merge the two PD arrays in general — ICT ranks them separately
+  (`ICT-2017-HTF-PD-ARRAYS` [20:16]–[20:28]).
+- **Insisting a void must refill.** Era-split: 2016 "price typically will want to revisit this porous
+  range" (`ICT-2016-LIQUIDITY-VOIDS` [01:09]), "there's no specific time limit" ([02:19]); 2022 "I'm not
+  trying to insist that these imbalances completely rebalance" (`ICT-2022-MENTORSHIP-EP38` [04:56]–[05:26]).
+  See [liquidity-void](../02-liquidity/liquidity-void.md).
 
 ## Related Concepts
 
-- [fair-value-gap](fair-value-gap.md), [liquidity-void](../02-liquidity/liquidity-void.md), [imbalance-definition](../26-imbalance/imbalance-definition.md), [displacement-definition](../09-displacement/displacement-definition.md), [range-expansion](../01-market-structure/range-expansion.md).
+- [fair-value-gap](fair-value-gap.md), [liquidity-void](../02-liquidity/liquidity-void.md), [gap-classification](../09-displacement/gap-classification.md), [imbalance-definition](../26-imbalance/imbalance-definition.md), [displacement-definition](../09-displacement/displacement-definition.md).
 
 ## Citations
 
-- `ICT-2017-DISPLACEMENT`, `ICT-2022-MENTORSHIP-OVERVIEW`.
+- `ICT-2016-FVG-REINFORCED` [00:36]–[00:46], [05:04]–[05:26], [09:01], [09:43], [10:47]–[11:05].
+- `ICT-2016-LIQUIDITY-VOIDS` [00:57], [01:09], [02:19], [03:08].
+- `ICT-2017-HTF-PD-ARRAYS` [19:05], [20:16]–[20:28], [28:30].
+- `ICT-2022-MENTORSHIP-EP38` [04:56]–[05:26].

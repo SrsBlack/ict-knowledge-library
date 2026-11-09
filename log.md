@@ -6,6 +6,26 @@ Per the Karpathy LLM Wiki pattern, this file complements [`INDEX.md`](INDEX.md) 
 
 ---
 
+## [2026-11-09] audit+fix | liquidity-void-vs-fvg and mitigation-definition rewritten against ICT's own words
+
+**Why.** GitHub issue #1 (an outside reader building an event ontology) was pointed at both pages; both
+were unaudited stubs that stated the library's own thresholds as ICT rules.
+
+- **liquidity-void-vs-fvg:** removed the ≥ 80 % directional-close / ≤ 30 % pullback / 5-bar void
+  thresholds and the same-chart "void contains FVGs" claim. ICT's relationship is timeframe-based: an
+  FVG on the studied chart "typically" shows as a liquidity void on a lower timeframe
+  (`ICT-2016-FVG-REINFORCED` [00:42], [05:14], [05:26]); ICT still ranks them as separate PD arrays on
+  one chart (`ICT-2017-HTF-PD-ARRAYS` [20:16]–[20:28]) and shows a gap inside a void ([03:08]), so only
+  the 1-3 count was removed there. Re-dated 2017 → 2016. `liquidity-void` Related line fixed: it had
+  the FVG/void timeframe direction backwards.
+- **mitigation-definition:** the zone fresh → tested state machine and CE/MT/body thresholds are not
+  in either corpus. Outside the block name, every `mitigat*` use is about a **position or a loss** — trapped traders
+  offsetting losing positions on a return (breaker, mitigation block, institutional order flow) or
+  the trader recovering their own loss (`ICT-2016-MITIGATE-LOSING-TRADES`). Re-dated 2017 → 2016.
+- INDEX one-liners and TIMELINE placement updated. **Still open:** child pages `mitigation-of-ob`,
+  `mitigation-of-fvg`, `mitigation-of-breaker`, `partial-vs-full-mitigation` are unaudited and still
+  use the zone-state sense.
+
 ## [2026-10-08] audit+fix | 68 load-bearing pages checked against ICT's own words and rewritten; 2022 Mentorship added as a source
 
 **Why.** These pages define the terms downstream trading work relies on, and the 08-11 entry found two
